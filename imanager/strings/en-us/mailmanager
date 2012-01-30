@@ -1,0 +1,980 @@
+#
+# mail manager strings
+#
+# $SMEId: local/imanager/strings/en/mailmanager,v 2.12.2.3 2006/04/11 23:01:52 rus Exp $
+#
+
+$MAILMANAGER_TITLE = "$SOFTWARE_TITLE: Mail Manager - __MAILBOX__";
+$MAILMANAGER_TITLE_PLAIN = "$SOFTWARE_TITLE: Mail Manager";
+
+$MAILMANAGER_RETURN = "Return to Mail Manager";
+
+##############################################################################
+# some generic error strings
+
+$MAILMANAGER_DENIED_TITLE = "$SOFTWARE_TITLE: Mail Manager - Access Denied";
+$MAILMANAGER_DENIED_TEXT = 
+  "Your login profile does not include privileges for 'mail'.  Therefore
+   you will not be allowed to access the Mail Manager utilities.";
+$MAILMANAGER_PERMISSION_DENIED = 
+  "Permission to access the path \"__PATH__\" is denied.";
+
+$MAILMANAGER_RESOURCE_ERROR_TITLE = 
+  "$SOFTWARE_TITLE: Mail Manager - Resource Error";
+$MAILMANAGER_RESOURCE_ERROR_TEXT = 
+  "An error occurred while attempting to execute a command.  A description
+   of the error is given below:";
+
+$MAILMANAGER_MESSAGE_NOT_FOUND_TEXT = 
+  "That's strange... the mailbox, \"__MAILBOX__\", does not contain the
+   message you specified (\"__MESSAGEID__\").";
+
+$MAILMANAGER_FOLDER_EMPTY_TEXT = 
+  "The mailbox, \"__MAILBOX__\", does not contain any e-mail messages.";
+
+$MAILMANAGER_NONE_SELECTED = "You failed to select any messages... oops.";
+
+##############################################################################
+# mailbox and message view strings
+
+$MAILMANAGER_DEFAULT_FOLDER = "INBOX";
+
+$MAILMANAGER_FOLDER_NAME = "Current Mail Folder";
+$MAILMANAGER_FOLDER_NUM_MESSAGES = "Total Messages";
+$MAILMANAGER_FOLDER_SIZE = "Mail Folder Size";
+$MAILMANAGER_FOLDER_OPEN = "Open Mail Folder: '__FOLDER__'";
+$MAILMANAGER_FOLDER_RETURN = "Return to Mail Folder: '__FOLDER__'";
+
+$MAILMANAGER_REFRESH_TEXT = "Refresh";
+$MAILMANAGER_REFRESH_UNITS = "seconds";
+
+$MAILMANAGER_ACTIONS = "Actions";
+
+$MAILMANAGER_MESSAGE_DATE = "Date";
+$MAILMANAGER_MESSAGE_TO = "To";
+$MAILMANAGER_MESSAGE_SENDER = "From";
+$MAILMANAGER_MESSAGE_SUBJECT = "Subject";
+$MAILMANAGER_MESSAGE_NUMBER = "Message #";
+$MAILMANAGER_MESSAGE_SIZE = "Message Size";
+$MAILMANAGER_MESSAGE_SIZE_ABBREVIATED = "Size";
+$MAILMANAGER_MESSAGE_REPLY_TO = "Reply-To";
+$MAILMANAGER_MESSAGE_CC = "Cc";
+$MAILMANAGER_MESSAGE_BCC = "Bcc";
+$MAILMANAGER_MESSAGE_FCC = "Save Copy of Outgoing Message to Mail Folder";
+$MAILMANAGER_MESSAGE_FCC_BROWSE = "Browse";
+$MAILMANAGER_MESSAGE_FCC_BROWSE_HELP = 
+  "Use a file browser to select a mail folder on your server that you 
+   would like to save a copy of the outgoing message.";
+$MAILMANAGER_MESSAGE_FCC_SELECT = "Select Outgoing Mail Folder";
+$MAILMANAGER_MESSAGE_VIEW = "View Message: '__SUBJECT__'";
+
+$MAILMANAGER_SORT_BY_DATE = "Sort by Date";
+$MAILMANAGER_SORT_BY_SENDER = "Sort by Sender";
+$MAILMANAGER_SORT_BY_SUBJECT = "Sort by Subject";
+$MAILMANAGER_SORT_BY_SIZE = "Sort by Size";
+$MAILMANAGER_SORT_BY_THREAD = "Sort by Thread";
+$MAILMANAGER_SORT_IN_ORDER = "Do Not Sort";
+
+$MAILMANAGER_SHOW_FULL_HEADERS = "Show full headers";
+$MAILMANAGER_SHOW_PARTIAL_HEADERS = "Show partial headers";
+
+$MAILMANAGER_PRINTER_FRIENDLY_FORMAT = "Printer Friendly Format";
+
+$MAILMANAGER_MESSAGE_NOT_SHOWN = "original __TYPE__ message not shown";
+$MAILMANAGER_MESSAGE_VIEW_TYPE = "View __TYPE__ message separately";
+$MAILMANAGER_MESSAGE_VIEW_TYPE_INLINE = "View __TYPE__ message in-line";
+$MAILMANAGER_MESSAGE_HIDE_TYPE_INLINE = 
+  "Hide in-line display of __TYPE__ message";
+$MAILMANAGER_MESSAGE_SAVE_TYPE = "Save __TYPE__ message to server";
+$MAILMANAGER_MESSAGE_VIEW_SEPARATELY = "View separately";
+$MAILMANAGER_MESSAGE_VIEW_SEPARATELY_HELP = 
+  "View the message separately.  When you click on this link the
+   mail message will be transmitted to your browser.  Depending on 
+   the configuration of your browser, it will be displayed in-line
+   (i.e. in your browser window) or it will be relayed by your 
+   browser to another program (i.e. a 'helper' application that is
+   capable of handling a '__TYPE__' file)."; 
+$MAILMANAGER_MESSAGE_VIEW_INLINE_HELP = 
+  "View the '__TYPE__' message in-line, i.e. displayed within the body 
+   of the current web page.";
+$MAILMANAGER_MESSAGE_HIDE_INLINE_HELP = 
+  "Hide the display of the '__TYPE__' message shown above.";
+$MAILMANAGER_MESSAGE_SAVE_HELP = 
+  "Save the message to the server.  When you click on this link a
+   file browser will open and allow you to select a target filename
+   where the '__TYPE__' message will be saved.";
+
+$MAILMANAGER_ATTACHMENT_NOT_SHOWN = "original __TYPE__ attachment not shown";
+$MAILMANAGER_ATTACHMENT_VIEW_TYPE = "View __TYPE__ attachment separately";
+$MAILMANAGER_ATTACHMENT_VIEW_TYPE_INLINE = "View __TYPE__ attachment in-line";
+$MAILMANAGER_ATTACHMENT_HIDE_TYPE_INLINE = 
+  "Hide in-line display of __TYPE__ attachment";
+$MAILMANAGER_ATTACHMENT_SAVE_TYPE = "Save __TYPE__ attachment to server";
+$MAILMANAGER_ATTACHMENT_VIEW_SEPARATELY = "View separately";
+$MAILMANAGER_ATTACHMENT_VIEW_SEPARATELY_HELP = 
+  "View the attachment separately.  When you click on this link the
+   attachment will be transmitted to your browser.  Depending on 
+   the configuration of your browser, it will be displayed in-line
+   (i.e. in your browser window) or it will be relayed by your 
+   browser to another program (i.e. a 'helper' application that is
+   capable of handling a '__TYPE__' file)."; 
+$MAILMANAGER_ATTACHMENT_VIEW_INLINE_HELP = 
+  "View the '__TYPE__' attachment in-line, i.e. displayed within the body 
+   of the current web page.";
+$MAILMANAGER_ATTACHMENT_HIDE_INLINE_HELP = 
+  "Hide the display of the '__TYPE__' attachment shown above.";
+$MAILMANAGER_ATTACHMENT_SAVE_HELP = 
+  "Save the attachment to the server.  When you click on this link a
+   file browser will open and allow you to select a target filename
+   where the '__TYPE__' attachment will be saved.";
+
+$MAILMANAGER_ATTACHMENT_NUMBER = "Attachment \#__NUM__";
+$MAILMANAGER_ATTACHMENT_TYPE = "Type";
+$MAILMANAGER_ATTACHMENT_ENCODING = "Encoding";
+$MAILMANAGER_ATTACHMENT_SIZE = "Size";
+
+$MAILMANAGER_NO_SUBJECT = "[ no subject ]";
+
+$MAILMANAGER_CREATEDIR = "Create Mail Directory";
+
+$MAILMANAGER_FOLDER_SELECT_CURDIR = "Current Directory: __DIR__";
+$MAILMANAGER_FOLDER_SELECT_SYMLINK = "link";
+$MAILMANAGER_FOLDER_SELECT_MESSAGES = "Messages";
+$MAILMANAGER_FOLDER_SELECT_SHOW_DETAILS = "show details";
+$MAILMANAGER_FOLDER_SELECT_SHOW_DETAILS_FILE = 
+  "Refresh the browser display and include expanded details about each 
+   of the files.  Details include file size and last modifcation date.";
+$MAILMANAGER_FOLDER_SELECT_SHOW_DETAILS_MAIL = 
+  "Refresh the browser display and include expanded details about each 
+   of the mail folders.  Details include folder size, number of messages 
+   in folder, and folder last modifcation date.";
+$MAILMANAGER_FOLDER_SELECT_HIDE_DETAILS = "hide details";
+$MAILMANAGER_FOLDER_SELECT_HIDE_DETAILS_FILE = 
+  "Refresh the browser display and hide the expanded details about each 
+   of the files.";
+$MAILMANAGER_FOLDER_SELECT_HIDE_DETAILS_MAIL = 
+  "Refresh the browser display and hide the expanded details about each 
+   of the mail folders.";
+$MAILMANAGER_FOLDER_SELECT_TARGET = "Select: '__TARGET__'";
+
+$MAILMANAGER_FOLDER_RANGE_SELECT = "Show custom range";
+$MAILMANAGER_FOLDER_RANGE_SUMMARY = 
+  "Showing mail messages __LOW__-__HIGH__ of __TOTAL__ total";
+
+$MAILMANAGER_CHECK_MAIL = "Check for New Messages";
+
+$MAILMANAGER_FOLDER_CONTENTS = "Mail Folder Contents";
+$MAILMANAGER_FOLDER_CONTENTS_STATUS = "As of: __TIME__";
+
+$MAILMANAGER_FOLDER_LIST = "Folder List";
+$MAILMANAGER_FOLDER_OUT = "Outgoing";
+$MAILMANAGER_FOLDER_JUNK = "Junk Mail";
+$MAILMANAGER_FOLDER_OTHER = "Other...";
+
+$MAILMANAGER_MESSAGE_TAG = "Tag";
+$MAILMANAGER_MESSAGE_FLAGS = "Flags";
+
+$MAILMANAGER_MESSAGE_PREV = "Prev";
+$MAILMANAGER_MESSAGE_NEXT = "Next";
+$MAILMANAGER_MESSAGE_PREV_TITLE = "View previous __NUM__ messages";
+$MAILMANAGER_MESSAGE_NEXT_TITLE = "View next __NUM__ messages";
+
+$MAILMANAGER_VIEW_NEXT = "Next Message";
+$MAILMANAGER_VIEW_PREV = "Previous Message";
+$MAILMANAGER_VIEW_NEXT_TITLE = "View Next Message";
+$MAILMANAGER_VIEW_PREV_TITLE = "View Previous Message";
+
+$MAILMANAGER_FLAGS_TITLE = "Message Flags";
+$MAILMANAGER_FLAGS_HELP_N = "N - new or unread message";
+$MAILMANAGER_FLAGS_HELP_r = "r - message has been replied to";
+$MAILMANAGER_FLAGS_HELP_PLUS = "+ - message is to you and you only";
+$MAILMANAGER_FLAGS_HELP_T = "T - message is to you (among others)";
+$MAILMANAGER_FLAGS_HELP_C = "C - message is cc'ed to you";
+$MAILMANAGER_FLAGS_HELP_F = "F - message is from you";
+
+$MAILMANAGER_OPEN_URL = "Open URL";
+   
+##############################################################################
+# compose message strings
+
+$MAILMANAGER_COMPOSE = "Compose New Message";
+$MAILMANAGER_COMPOSE_CANCEL_TEXT = 
+  "Your compose new message request was cancelled; no action was taken.";
+
+$MAILMANAGER_MESSAGE_ORIGINAL_ATTACHMENTS = "Attachments in Original Message";
+$MAILMANAGER_MESSAGE_UPLOAD_ATTACHMENTS = 
+  "Files on Your Computer to Include as Attachments";
+$MAILMANAGER_MESSAGE_LOCAL_ATTACHMENTS = 
+  "Files on This Server to Include as Attachments";
+$MAILMANAGER_MESSAGE_LOCAL_ATTACHMENTS_BROWSE = "Browse";
+$MAILMANAGER_MESSAGE_LOCAL_ATTACHMENTS_BROWSE_HELP = 
+  "Use a file browser to select files on your server that you 
+   would like to include as attachments to the message.";
+
+$MAILMANAGER_LOCAL_ATTACHMENT_NOT_EXIST = 
+  "Could not find \"__FILE__\" to attach to outgoing message.";
+
+##############################################################################
+# redirect message strings
+
+$MAILMANAGER_BOUNCE = "Redirect Message";
+$MAILMANAGER_BOUNCE_CANCEL_TEXT = 
+  "Your redirect message request was cancelled; no action was taken.";
+$MAILMANAGER_BOUNCE_HELP_TEXT = 
+  "What address(es) would you like to redirect the original message to?";
+$MAILMANAGER_BOUNCE_ORIGINAL_MESSAGE = "Original Message";
+
+##############################################################################
+# forward message strings
+
+$MAILMANAGER_FORWARD = "Forward Message";
+$MAILMANAGER_FORWARD_CANCEL_TEXT = 
+  "Your forward message request was cancelled; no action was taken.";
+$MAILMANAGER_FORWARD_STRING_BEGIN = 
+  "===== Forwarded message from __EMAIL__ =====";
+$MAILMANAGER_FORWARD_STRING_END = "===== End forwarded message =====";
+
+$MAILMANAGER_FORWARD_INCLUDE_HELP = 
+  "(check box to include in forwarded message)";
+
+# next string now defunct
+$MAILMANAGER_ATTACHMENT_INCLUDE_FORWARD = "Include in forwarded message";
+
+##############################################################################
+# reply to message strings
+
+$MAILMANAGER_REPLY = "Reply to Message";
+$MAILMANAGER_REPLY_GROUP = "Group Reply";
+$MAILMANAGER_REPLY_CANCEL_TEXT = 
+  "Your message reply request was cancelled; no action was taken.";
+$MAILMANAGER_REPLY_STRING = "On __DATE__, __EMAIL__ wrote:";
+
+$MAILMANAGER_NO_SUBJECT_REPLY = "your mail";
+
+$MAILMANAGER_REPLY_INCLUDE_HELP = 
+  "(check box to include in message reply)";
+
+# next string now defunct
+$MAILMANAGER_ATTACHMENT_INCLUDE_RESPONSE = "Include in this reply";
+
+##############################################################################
+# send message strings
+
+$MAILMANAGER_SEND = "Send";
+$MAILMANAGER_SEND_ERROR_TO_EMPTY = 
+  "You failed to supply a '$MAILMANAGER_MESSAGE_TO' address... oops.";
+$MAILMANAGER_SEND_ERROR_TO_INVALID = 
+  "The address you specified, \"__EMAIL__\", includes an invalid character.
+   The valid character set for addresses include A-Z, a-z, 0-9, dashes,
+   underscores, periods, and an ampersand.";
+$MAILMANAGER_SEND_ERROR_FROM_EMPTY = 
+  "You failed to supply a '$MAILMANAGER_MESSAGE_SENDER' address... oops.";
+$MAILMANAGER_SEND_ERROR_UPLOAD_FILE_LOST = 
+  "Note: Your uploaded files were ignored and need to be reset.";
+
+$MAILMANAGER_SEND_SUCCESS = "Your message was successfully sent.";
+$MAILMANAGER_SEND_SUCCESS_REPLY = "Your reply was successfully sent.";
+$MAILMANAGER_SEND_SUCCESS_BOUNCE = 
+  "This message was successfully redirected to __ADDRESS__.";
+
+##############################################################################
+# delete message strings
+
+$MAILMANAGER_DELETE_TAGGED = "Delete Tagged Messages";
+$MAILMANAGER_DELETE_ALL = "Delete All Messages";
+$MAILMANAGER_DELETE_SINGLE = "Delete Message";
+$MAILMANAGER_DELETE_CANCEL_TEXT = 
+  "Your delete message request was cancelled; no action was taken.";
+$MAILMANAGER_DELETE_CONFIRM_TEXT = 
+  "Are you sure you want to delete the following message(s)?";
+$MAILMANAGER_DELETE_CONFIRM_ALL_TEXT = 
+  "Are you sure you want to delete all messages found in the 
+   selected mailbox (\"__MAILBOX__\")?";
+$MAILMANAGER_DELETE_CONFIRM_ALL_UNDONE_TEXT = 
+  "This operation cannot be undone.";
+$MAILMANAGER_DELETE_SUCCESS_TEXT = 
+  "Your delete message request was successfully fulfilled.";
+
+##############################################################################
+# save message strings
+
+$MAILMANAGER_SAVE_TAGGED = "Save Tagged Messages";
+$MAILMANAGER_SAVE_ALL = "Save All Messages";
+$MAILMANAGER_SAVE_SINGLE = "Save Message";
+$MAILMANAGER_SAVE_ALL_HELP_TEXT = 
+  "You have requested to save all messages in the selected mailbox
+   \"__MAILBOX__\" into a target folder you will specify.";
+$MAILMANAGER_SAVE_SELECTED_HELP_TEXT = 
+  "You have selected the following __NUMBER__ message(s):";
+$MAILMANAGER_SAVE_SELECTED_CROPPED_TEXT = "__NUMBER__ others";
+$MAILMANAGER_SAVE_SELECTED_REMOVE_FROM_SOURCE = 
+  "Remove selected message(s) from source folder";
+$MAILMANAGER_SAVE_SELECT_HELP_TEXT =
+  "Please use the form below to specify a new target mail folder to which
+   your would to save the selected message(s).  Or, if you wish, select
+   an existing target mail folder to which your selected message(s) will 
+   be appended.  A file selector is provided for your convenience.";
+$MAILMANAGER_SAVE_CANCEL_TEXT = 
+  "Your save message request was cancelled; no action was taken.";
+$MAILMANAGER_SAVE_SUCCESS_TEXT = 
+  "Your save message request was successfully fulfilled.";
+$MAILMANAGER_MOVE_SUCCESS_TEXT = 
+  "Your move message request was successfully fulfilled.";
+$MAILMANAGER_SAVE_DENIED_TEXT = 
+  "Your login profile does not include privileges for 'ftp'.  Therefore
+   you will not be allowed to use the Save Message utility.";
+$MAILMANAGER_SAVE_IDENTICAL_FOLDER_ERROR = 
+  "The destination folder must not be identical to the source folder.";
+
+$MAILMANAGER_SAVE_ATTACHMENT = "Save Attachment";
+$MAILMANAGER_SAVE_MESSAGE_BODY = "Save Message Body";
+$MAILMANAGER_SAVE_ATTACHMENT_SELECT_HELP_TEXT =
+  "Please use the form below to choose a target file to which your 
+   selected __ATYPE__ will be saved.  Information about the __ATYPE__ 
+   you have selected, as well as a file browser are provided below 
+   for your convenience.";
+$MAILMANAGER_SAVE_ATTACHMENT_CANCEL_TEXT = 
+  "Your save attachment request was cancelled; no action was taken.";
+$MAILMANAGER_SAVE_ATTACHMENT_SUCCESS_TEXT = 
+  "Your save attachment request was successfully fulfilled.";
+$MAILMANAGER_SAVE_ATTACHMENT_DENIED_TEXT = 
+  "Your login profile does not include privileges for 'ftp'.  Therefore
+   you will not be allowed to use the Save Attachment utility.";
+$MAILMANAGER_SAVE_ATTACHMENT_SUCCESS_TEXT = 
+  "Your save __ATYPE__ request has been successfully fulfilled.";
+$MAILMANAGER_SAVE_ATTACHMENT_QUOTA_ERROR = 
+  "Your save __ATYPE__ request (which requires approximately __SIZE__
+   of free server disk space) could not be completed successfully because
+   of quota restrictions.  You will need to either free up disk space by
+   removing unneeded files or you will need to request additional disk
+   space from your server administrator.";
+
+$MAILMANAGER_CONTENT_TYPE = "Type";
+$MAILMANAGER_CONTENT_TRANSFER_ENCODING = "Encoding";
+$MAILMANAGER_CONTENT_DISPOSITION = "Description";
+$MAILMANAGER_CONTENT_DISPOSITION_ATTACHMENT = "attachment";
+$MAILMANAGER_CONTENT_DISPOSITION_BODY = "message body";
+$MAILMANAGER_CONTENT_DISPOSITION_FILENAME = "filename";
+
+##############################################################################
+# select mailbox strings
+
+$MAILMANAGER_SELECT_MAILBOX = "Change Mail Folder";
+$MAILMANAGER_SELECT_MAILBOX_HELP_TEXT =
+  "Use the following form to change your active mail folder.  
+   A file selector is provided for your convenience.";
+$MAILMANAGER_SELECT_INCOMING = 
+  "(Use '!' to change your active folder back to your incoming mailbox).";
+$MAILMANAGER_SELECT_CANCEL_TEXT = 
+  "Your change mail folder request was cancelled; no action was taken.";
+$MAILMANAGER_SELECT_ERROR_FOLDER_DOES_NOT_EXIST = 
+  "The mail folder you specified does not exist";
+$MAILMANAGER_SELECT_DENIED_TEXT = 
+  "Your login profile does not include privileges for 'ftp'.  Therefore
+   you will not be allowed to use the Change Mail Folder utility.";
+
+##############################################################################
+# mail addressbook strings
+
+$MAILMANAGER_ADDRESSBOOK_VIEW = "View Address Book";
+
+$MAILMANAGER_ADDRESSBOOK_TITLE = "Mail Manager Address Book";
+$MAILMANAGER_ADDRESSBOOK_TITLE_SHORT = "Address Book";
+$MAILMANAGER_ADDRESSBOOK_SIZE_ENTRIES = "Total Entries";
+$MAILMANAGER_ADDRESSBOOK_SIZE_BYTES = "Address Book Size";
+$MAILMANAGER_ADDRESSBOOK_ACTIONS= "Actions";
+
+$MAILMANAGER_ADDRESSBOOK_RANGE_SELECT = "Show custom range";
+$MAILMANAGER_ADDRESSBOOK_RANGE_SUMMARY = 
+  "Showing contacts __LOW__-__HIGH__ of __TOTAL__ total";
+
+$MAILMANAGER_ADDRESSBOOK_CONTACT_TAG = "Tag";
+$MAILMANAGER_ADDRESSBOOK_CONTACT_NAME = "Name or Group";
+$MAILMANAGER_ADDRESSBOOK_CONTACT_EMAIL = "E-mail Address or Address List";
+$MAILMANAGER_ADDRESSBOOK_CONTACT_VIEW = "View Contacts";
+
+$MAILMANAGER_ADDRESSBOOK_SORT_BY_NAME = "Sort by Name";
+$MAILMANAGER_ADDRESSBOOK_SORT_BY_ADDRESS = "Sort by E-mail Address";
+
+$MAILMANAGER_ADDRESSBOOK_WRITE = "Write";
+$MAILMANAGER_ADDRESSBOOK_WRITE_TAGGED = "Write to Tagged";
+$MAILMANAGER_ADDRESSBOOK_WRITE_SINGLE = "Write to Contact";
+
+$MAILMANAGER_ADDRESSBOOK_ADD = "Add New Contacts";
+$MAILMANAGER_ADDRESSBOOK_ADD_HELP_TEXT =
+  "Please use the entry fields provided below to manually add new 
+   contacts into your address book.";
+$MAILMANAGER_ADDRESSBOOK_ADD_SUCCESS = 
+  "Your add new address book contact request was successfully processed.";
+$MAILMANAGER_ADDRESSBOOK_ADD_CANCEL = 
+  "Your add new address book contact request was cancelled.
+   No action was taken.";
+$MAILMANAGER_ADDRESSBOOK_ADD_SINGLE = "Add '__EMAIL__' to address book";
+$MAILMANAGER_ADDRESSBOOK_ADD_GROUP = "add to address book as a group:";
+$MAILMANAGER_ADDRESSBOOK_ADD_GROUP_HELP = 
+  "Add '__EMAIL__' to address book as a group entry.";
+
+$MAILMANAGER_ADDRESSBOOK_EDIT = "Edit";
+$MAILMANAGER_ADDRESSBOOK_EDIT_TITLE = "Edit Selected Contacts";
+$MAILMANAGER_ADDRESSBOOK_EDIT_TAGGED = "Edit Tagged";
+$MAILMANAGER_ADDRESSBOOK_EDIT_SINGLE = "Edit Contact";
+$MAILMANAGER_ADDRESSBOOK_EDIT_HELP_TEXT =
+  "Please use the entry fields provided below to edit the contact(s)
+   you selected.";
+$MAILMANAGER_ADDRESSBOOK_EDIT_SUCCESS =
+  "Your edit address book contact request was sucessfully processed.";
+$MAILMANAGER_ADDRESSBOOK_EDIT_CANCEL =
+  "Your edit address book contact request was cancelled.
+   No action was taken.";
+
+$MAILMANAGER_ADDRESSBOOK_CHANGE_NONE_FOUND = "No changes were found.";
+$MAILMANAGER_ADDRESSBOOK_CHANGE_CONFIRM_TEXT =
+  "Please confirm that the change(s) below should be made to your 
+   address book:";
+$MAILMANAGER_ADDRESSBOOK_CHANGE_CONFIRM_REMOVE = 
+  "Remove the entry for '__ENTRY__'";
+$MAILMANAGER_ADDRESSBOOK_CHANGE_CONFIRM_EDIT_NAME = 
+  "Change the name of '__ENTRY__' to '__NEWENTRY__'";
+$MAILMANAGER_ADDRESSBOOK_CHANGE_CONFIRM_EDIT_VALUE = 
+  "Change the value for '__ENTRY__'";
+$MAILMANAGER_ADDRESSBOOK_CHANGE_CONFIRM_OVERWRITE = 
+  "Overwrite the value for '__ENTRY__'";
+$MAILMANAGER_ADDRESSBOOK_CHANGE_CONFIRM_OLD_VALUE = "Old definition";
+$MAILMANAGER_ADDRESSBOOK_CHANGE_CONFIRM_NEW_VALUE = "New definition";
+
+$MAILMANAGER_ADDRESSBOOK_REMOVE = "Remove";
+$MAILMANAGER_ADDRESSBOOK_REMOVE_TITLE = "Remove Selected Contacts";
+$MAILMANAGER_ADDRESSBOOK_REMOVE_TAGGED = "Remove Tagged";
+$MAILMANAGER_ADDRESSBOOK_REMOVE_SINGLE = "Remove Contact";
+$MAILMANAGER_ADDRESSBOOK_REMOVE_CONFIRM_TEXT = 
+  "Are you sure you want to remove the following contact(s) from your 
+   address book?";
+$MAILMANAGER_ADDRESSBOOK_REMOVE_SUCCESS = 
+  "Your remove address book contact request was successfully processed.";
+$MAILMANAGER_ADDRESSBOOK_REMOVE_CANCEL = 
+  "Your remove address book contact request was cancelled.
+   No action was taken.";
+
+$MAILMANAGER_ADDRESSBOOK_PURGE = "Purge All Contacts";
+$MAILMANAGER_ADDRESSBOOK_PURGE_CONFIRM_TEXT = 
+  "Are you sure you want to permanently remove all contacts listed in your
+   address book?";
+$MAILMANAGER_ADDRESSBOOK_PURGE_SUCCESS = 
+  "All contacts in your address book were successfully removed.";
+$MAILMANAGER_ADDRESSBOOK_PURGE_CANCEL = 
+  "Your purge address book request was cancelled.
+   No action was taken.";
+
+$MAILMANAGER_ADDRESSBOOK_IMPORT = "Import Contacts from File";
+$MAILMANAGER_ADDRESSBOOK_IMPORT_SHORT = "Import Contacts";
+$MAILMANAGER_ADDRESSBOOK_IMPORT_HELP_TEXT =
+  "Use the form below to specify an existing delimited file (such as a CSV
+   file) which contains your address book contacts.  Each entry should be
+   listed on a single line.  A valid entry consists of a contact name or
+   group name, a field separator (such as a comma, tab, colon, semicolon),
+   followed by the corresponding contact e-mail address or address list.";
+$MAILMANAGER_ADDRESSBOOK_IMPORT_HELP_TEXT_2 =
+  "You can specify a filename on your computer which will be uploaded and
+   parsed for address book contacts, or you can specify a file from those
+   you have on this server.  If you specify both filenames, each one will
+   be parsed for address book contacts and the results will be combined."; 
+$MAILMANAGER_ADDRESSBOOK_IMPORT_UPLOAD_FILE = "File on Your Computer to Import";
+$MAILMANAGER_ADDRESSBOOK_IMPORT_LOCAL_FILE = "File on This Server to Import";
+$MAILMANAGER_ADDRESSBOOK_IMPORT_BROWSE = "Browse";
+$MAILMANAGER_ADDRESSBOOK_IMPORT_BROWSE_HELP = 
+  "Use a file browser to select a file on your server that you 
+   would like to be parsed for address book contacts.";
+$MAILMANAGER_ADDRESSBOOK_IMPORT_NO_FILENAME = "No filename was selected.";
+$MAILMANAGER_ADDRESSBOOK_IMPORT_PARSE_SUCCESS = 
+  "The following valid address book contact entries were found in the file
+   you selected.  Please review them for accuracy and completeness and 
+   select the 'Insert Contacts into Address Book' button to complete the
+   import process.  If conflicts are found to exist between the address 
+   book contacts found below and entries already currently defined in your
+   address book, the entries currently defined in your address book will
+   be overwritten.";
+$MAILMANAGER_ADDRESSBOOK_IMPORT_PARSE_INSERT = 
+  "Insert Contacts into Address Book";
+$MAILMANAGER_ADDRESSBOOK_IMPORT_PARSE_FAILURE = 
+  "No valid address book contacts were detected in the file(s) you selected.
+   Possible causes for the failure may include the use of a non-supported 
+   field separator or the mixture of quoted and non-quoted fields on the 
+   same line.  Please check the file format and try again.";
+$MAILMANAGER_ADDRESSBOOK_IMPORT_SUCCESS =
+  "Your import new address book contact request was successfully processed.";
+$MAILMANAGER_ADDRESSBOOK_IMPORT_CANCEL =
+  "Your address book import request was cancelled.  No action was taken.";
+
+$MAILMANAGER_ADDRESSBOOK_SELECT_ADD = "Add";
+$MAILMANAGER_ADDRESSBOOK_SELECT_ADD_TITLE = 
+  "Add an e-mail address from your address book to the '__FIELD__'
+   recipient list.";
+$MAILMANAGER_ADDRESSBOOK_SELECT_CLEAR = "Clear";
+$MAILMANAGER_ADDRESSBOOK_SELECT_CLEAR_TITLE = 
+  "Clear '__FIELD__' recipient list.";
+
+$MAILMANAGER_ADDRESSBOOK_EMPTY = 
+  "Your address book is empty.  Please use the 'Import' link to populate 
+   your address book from an existing delimited text file, or select the 
+   'Add New Contacts' link to manually enter addresses into your address 
+   book.";
+
+$MAILMANAGER_ADDRESSBOOK_ERROR_INCOMPLETE = 
+  "Values for both Name and E-mail must be specified.";
+
+$MAILMANAGER_ADDRESSBOOK_NONE_SELECTED = 
+  "You failed to select any contacts... oops.";
+
+##############################################################################
+# mail filter strings
+
+$MAILMANAGER_FILTERS_TITLE = "Spam Filters";
+$MAILMANAGER_FILTERS_EDIT = "View/Edit Spam Filters";
+
+$MAILMANAGER_FILTERS_ENABLE = "Enable Spam Filters";
+$MAILMANAGER_FILTERS_DISABLE = "Disable Spam Filters";
+
+$MAILMANAGER_FILTERS_CONFIRM_WARNING_TEXT_1 =
+  "In order to modify the mail filtering preferences, changes to one
+   or more different files must be made (the number of which depends on 
+   whether procmail is installed as your local delivery agent).  However, it
+   appears that changes were made to the following file(s) external to this
+   application:";
+$MAILMANAGER_FILTERS_CONFIRM_WARNING_TEXT_2 =
+  "It is possible, though perhaps unlikely, that the external changes made
+   to the above file(s) will be incompatible and produce conflicts with the
+   '__ACTION__' action you have requested.  These conflicts (should they
+   occur) may cause your e-mail delivery to behave erractically or 
+   malfunction entirely.  You can ignore possible conflicts and proceed,
+   restore original files and proceed, or cancel your request altogether.";
+
+$MAILMANAGER_FILTERS_VERSION = "SpamAssassin Version";
+
+$MAILMANAGER_FILTERS_STATUS = "Spam Filtering Status";
+$MAILMANAGER_FILTERS_STATUS_ON = "Spam Filters are Active";
+$MAILMANAGER_FILTERS_STATUS_OFF = "Spam Filters are Off";
+$MAILMANAGER_FILTERS_STATUS_SPAMASSASSIN_NOT_FOUND = 
+  "Cannot enable filters; SpamAssassin not found";
+$MAILMANAGER_FILTERS_STATUS_PROCMAIL_NOT_FOUND = 
+  "Cannot enable filters; procmail not found";
+$MAILMANAGER_FILTERS_STATUS_SET_SUCCESS =
+  "Your '__ACTION__' request was successfully processed.";
+
+$MAILMANAGER_FILTERS_HELP_TEXT =
+  "The mail filtering interface allows you to configure SpamAssassin user
+   preferences.  When used effectively, SpamAssassin can be a powerful 
+   filter for combatting the problem of unwanted and unsolicited e-mail.
+   Using the interface, you can change the operational mode (or spam
+   threshold) of SpamAssassin, manage white lists and black lists, and 
+   configure logging.  More information about the SpamAssassin filtering
+   engine can be found at <http://www.spamassassin.org/>.";
+
+$MAILMANAGER_FILTERS_SPAMASSASSIN_NOT_FOUND = 
+  "Note: SpamAssassin is not installed on your system or cannot be found.";
+
+$MAILMANAGER_FILTERS_PROCMAIL_NOT_FOUND = 
+  "Note: procmail is not installed on your system or cannot be found.
+   You will be able to change your filtering preferences but will not be
+   allowed to enable the mail filters.";
+
+$MAILMANAGER_FILTERS_MODE = "Spam Filtering Mode";
+$MAILMANAGER_FILTERS_MODE_STRICT = "Strict";
+$MAILMANAGER_FILTERS_MODE_DEFAULT = "Default";
+$MAILMANAGER_FILTERS_MODE_PERMISSIVE = "Permissive";
+$MAILMANAGER_FILTERS_MODE_CUSTOM = "Custom";
+$MAILMANAGER_FILTERS_MODE_CUSTOM_THRESHOLD = "Custom Threshold Level";
+$MAILMANAGER_FILTERS_MODE_CHANGE = "Change Mode";
+$MAILMANAGER_FILTERS_MODE_CHANGE_TITLE = "Change the Spam Filtering Mode";
+$MAILMANAGER_FILTERS_MODE_SET = "Set Mode";
+$MAILMANAGER_FILTERS_MODE_SET_SUCCESS =
+  "Your change mode request was successfully processed.";
+$MAILMANAGER_FILTERS_MODE_SET_CANCEL = 
+  "Your set mode request has been cancelled; no action was taken.";
+$MAILMANAGER_FILTERS_MODE_HELP = 
+  "The spam filtering engine can operate in four primary modes.  In 
+   'strict' mode, only e-mail messages that originate from domain 
+   names or e-mail addresses found in your 'white list' will be
+   delivered to your mailbox; all other messages will be filtered.
+   In 'permissive' mode, only e-mail messages that originate from
+   domain names or e-mail addresses explicitly listed in your
+   'black list' will be filtered; all other messages will be 
+   delivered to your mailbox.  Or in other words, 'permissive'
+   mode is the operational opposite of 'strict' mode.";
+$MAILMANAGER_FILTERS_MODE_HELP_DEFAULT = 
+  "The third mode, the 'default' mode, essentially separates incoming
+   e-mail messages into three groups: those that are 'white listed'
+   and delivered to your mailbox; those that are 'black listed' and
+   ignored (or saved to a separate spam folder); and a final group
+   which is scored according to a set of spam content rules.  If the
+   spam score of an e-mail message in this final group does not exceed
+   a default threshold, then that message is delivered to your mailbox.
+   If the e-mail message exceeds the spam scoring default threshold, it
+   is treated the same as if it were 'black listed', i.e. it is ignored
+   or saved to a separate spam folder (according to your preference).";
+$MAILMANAGER_FILTERS_MODE_HELP_CUSTOM = 
+  "The 'custom' mode only differs from the 'default' mode in that
+   you can set the threshold to be something other than the
+   default value.  Lower numbers filter more aggressively while higher 
+   numbers allow more email through.  The default threshold value is 5.";
+$MAILMANAGER_FILTERS_MODE_ERROR_CUSTOM_INVALID = 
+  "Please provide an integer or real value for the custom threshold.";
+$MAILMANAGER_FILTERS_MODE_ERROR_CUSTOM_UNDEFINED = 
+  "You failed to provide a value for the custom threshold.";
+
+$MAILMANAGER_FILTERS_SPAM_FOLDER_SAVE = "Save Filtered Spam Messages";
+$MAILMANAGER_FILTERS_SPAM_FOLDER_DISCARD = "Discard Filtered Spam Messages";
+$MAILMANAGER_FILTERS_SPAM_FOLDER_ENABLE = "Enable";
+$MAILMANAGER_FILTERS_SPAM_FOLDER_ENABLE_TITLE = 
+  "Enable the setting to save filtered spam messages to a separate folder.  
+   Currently, filtered spam messages are discarded.";
+$MAILMANAGER_FILTERS_SPAM_FOLDER_DISABLE = "Disable";
+$MAILMANAGER_FILTERS_SPAM_FOLDER_DISABLE_TITLE = 
+  "Disable the setting to save filtered spam messages to a separate folder.
+   Currently, filtered spam messages are being stored to __FOLDER__.";
+$MAILMANAGER_FILTERS_SPAM_FOLDER_SPEC = "Filtered Spam Folder";
+$MAILMANAGER_FILTERS_SPAM_FOLDER_CHANGE = "Change Spam Folder";
+$MAILMANAGER_FILTERS_SPAM_FOLDER_SIZE = "Filtered Spam Folder Size"; 
+$MAILMANAGER_FILTERS_SPAM_FOLDER_ONE_MESG = "1 message";
+$MAILMANAGER_FILTERS_SPAM_FOLDER_NUM_MESG = "__NUM__ messages";
+$MAILMANAGER_FILTERS_SPAM_FOLDER_NUKE = "Empty Spam Folder";
+$MAILMANAGER_FILTERS_SPAM_FOLDER_SET = "Save Preferences";
+$MAILMANAGER_FILTERS_SPAM_FOLDER_HELP = 
+  "Messages that are addressed to you but are not delivered to your 
+   mailbox by the filtering engine can either be saved to an alternate
+   spam folder or can be discarded.  It is recommended that you save
+   your filtered spam messages to an alternate folder so that false 
+   positives (should they occur) can be retrieved; discarded e-mail 
+   messages cannot be restored.";
+$MAILMANAGER_FILTERS_SPAM_FOLDER_HELP_SPEC = 
+  "If you choose to save filtered spam messages, you will need to specify 
+   an alternate spam folder where you want the filtered messages to be
+   delivered.  It is recommended that you use '\$HOME/Mail/spam' or a
+   similarly named folder ('\$HOME' refers to your home directory).";
+$MAILMANAGER_FILTERS_SPAM_FOLDER_CHANGE_ERROR = 
+  "Please provide a value for the filtered spam folder.";
+$MAILMANAGER_FILTERS_SPAM_FOLDER_CHANGE_SUCCESS = 
+  "Your modify spam folder options request was successfully processed.";
+$MAILMANAGER_FILTERS_SPAM_FOLDER_CHANGE_CANCEL = 
+  "Your modify filtered spam folder options request was cancelled.
+   No action was taken.";
+$MAILMANAGER_FILTERS_SPAM_FOLDER_NUKE_TITLE = "Empty Filtered Spam Folder";
+$MAILMANAGER_FILTERS_SPAM_FOLDER_NUKE_CONFIRM = 
+  "Are you sure you want to empty your filtered spam folder?
+   This operation cannot be undone.";
+$MAILMANAGER_FILTERS_SPAM_FOLDER_NUKE_OPTION_EMPTY = 
+  "Empty filtered spam message folder only";
+$MAILMANAGER_FILTERS_SPAM_FOLDER_NUKE_OPTION_RESET = 
+  "Empty filtered spam message folder and reset filtered spam message log";
+$MAILMANAGER_FILTERS_SPAM_FOLDER_NUKE_SUCCESS = 
+  "Your empty filtered spam folder request was successfully processed.";
+$MAILMANAGER_FILTERS_SPAM_FOLDER_NUKE_CANCEL = 
+  "Your empty filtered spam folder request was cancelled.
+   No action was taken.";
+
+$MAILMANAGER_FILTERS_LISTS_WHITE_COUNT = "White List Count";
+$MAILMANAGER_FILTERS_LISTS_WHITE_PATTERNS = "White List Definitions";
+$MAILMANAGER_FILTERS_LISTS_WHITE_EDIT = "Edit White List";
+$MAILMANAGER_FILTERS_LISTS_BLACK_COUNT = "Black List Count";
+$MAILMANAGER_FILTERS_LISTS_BLACK_PATTERNS = "Black List Definitions";
+$MAILMANAGER_FILTERS_LISTS_BLACK_EDIT = "Edit Black List";
+$MAILMANAGER_FILTERS_LISTS_CROPPED = "__NUM__ others";
+$MAILMANAGER_FILTERS_LISTS_EDIT_STORE = "Store New List Definitions";
+$MAILMANAGER_FILTERS_LISTS_EDIT_HELP_ABOUT = 
+  "The spam filtering engine allows you to define a 'white list', which 
+   is a list of domain names and/or e-mail addresses from which you will 
+   explicitly accept incoming e-mail messages.  Likewise, you can define 
+   a 'black list' of domain names and/or e-mail addresses from which you
+   categorically refuse to accept e-mail messages.";
+$MAILMANAGER_FILTERS_LISTS_EDIT_HELP_TYPES_FROM = 
+  "There are two types of white list and black list defintions: 'from'
+   definitions (black and white); and 'to' definitions (black and white).
+   The 'whitelist_from' directive is used to specify addresses from which 
+   you will accept mail irregardless of message content.  The 'blacklist_from'
+   directive is used to specify addresses from which you wish to filter 
+   messages irregardless of message content.";
+$MAILMANAGER_FILTERS_LISTS_EDIT_HELP_TYPES_TO = 
+  "Both the 'whitelist_to' and 'blacklist_to' definitions are matched
+   against the 'To:' and 'Cc:' headers of incoming e-mail messages.  If any
+   address listed in these header fields matches the e-mail addresses or 
+   domain names found in 'whitelist_to' definitions, then the incoming e-mail 
+   message will be 'whitelisted' (i.e. it will be delivered to your e-mail
+   inbox).  If a match is made against any of the domain names and/or 
+   addresses defined by 'blacklist_to' directives, then the incoming e-mail
+   message will be 'blacklisted' (i.e it will be filtered).";
+$MAILMANAGER_FILTERS_LISTS_EDIT_HELP_FORMAT = 
+  "You can use wildcards (*) with both white list and black list 
+   definitions (regular expressions are not supported).  Multiple 
+   domain name and/or e-mail addresses, separated by spaces, are allowed 
+   to be defined as part of a single directive.  Multiple occurrences of 
+   any directive is also acceptable.";
+$MAILMANAGER_FILTERS_LISTS_EDIT_HELP_EXAMPLES_1 = 
+  "Consider the following examples of whitelist_from, whitelist_to, 
+   blacklist_from, and blacklist_to definitions:";
+$MAILMANAGER_FILTERS_LISTS_EDIT_HELP_EXAMPLES_2 = 
+  "   whitelist_from     *\@some-domain.name
+   whitelist_from     friend\@some.isp neighbor\@another.isp
+   whitelist_to       mailing_list\@add.ress
+   blacklist_from     known\@spam.mer
+   blacklist_from     *.spam-haven.net";
+$MAILMANAGER_FILTERS_LISTS_EDIT_HELP = 
+  "Please use the form below to add/modify/delete your white list and 
+   black list definitions.";
+$MAILMANAGER_FILTERS_LISTS_EDIT_TITLE = "Edit White and Black Lists";
+$MAILMANAGER_FILTERS_LISTS_EDIT_SUCCESS = 
+  "Your edit whitelist/blacklist request was successfully processed.";
+$MAILMANAGER_FILTERS_LISTS_EDIT_CANCEL = 
+  "Your edit whitelist/blacklist request was cancelled.
+   No action was taken.";
+
+$MAILMANAGER_FILTERS_LOG_TITLE = "Spam Filter Log";
+$MAILMANAGER_FILTERS_LOG_STATUS = "Log Filtered Spam Messages";
+$MAILMANAGER_FILTERS_LOG_ENABLE = $MAILMANAGER_FILTERS_SPAM_FOLDER_ENABLE;
+$MAILMANAGER_FILTERS_LOG_DISABLE = $MAILMANAGER_FILTERS_SPAM_FOLDER_DISABLE;
+$MAILMANAGER_FILTERS_LOG_OPTIONS_EDIT = "Change Filtered Spam Log Options";
+$MAILMANAGER_FILTERS_LOG_FILE_SPEC = "Filtered Spam Log Filename";
+$MAILMANAGER_FILTERS_LOG_FILE_CHANGE = "Change Filename";
+$MAILMANAGER_FILTERS_LOG_FILE_SIZE = "Filtered Spam Log File Size";
+$MAILMANAGER_FILTERS_LOG_STATUS_ON = "Keep a log of Filtered Spam Messages";
+$MAILMANAGER_FILTERS_LOG_STATUS_OFF = "Do not log Filtered Spam Messages";
+$MAILMANAGER_FILTERS_LOG_FILE_VIEW = "View Log";
+$MAILMANAGER_FILTERS_LOG_FILE_RESET = "Reset Log";
+$MAILMANAGER_FILTERS_LOG_OPTIONS_STORE = "Store Log Options";
+$MAILMANAGER_FILTERS_LOG_OPTIONS_HELP = 
+  "You can keep a log of messages that are not delivered to your mailbox
+   by the filtering engine.  The delivery log can be helpful for quickly
+   tracking down false positives (should they occur).  If you choose to 
+   log filtered spam messages, you will need to specify a filename for the
+   delivery log.  It is recommended that you use '\$HOME/spam.log' or a
+   similarly named file ('\$HOME' refers to your home directory).";
+$MAILMANAGER_FILTERS_LOG_OPTIONS_CHANGE_SUCCESS = 
+  "Your modify log options request was successfully processed.";
+$MAILMANAGER_FILTERS_LOG_OPTIONS_CHANGE_CANCEL = 
+  "Your modify log options request was cancelled.  No action was taken.";
+$MAILMANAGER_FILTERS_LOG_FILE_RESET_TITLE = "Reset Filtered Spam Log";
+$MAILMANAGER_FILTERS_LOG_FILE_RESET_CONFIRM = 
+  "Are you sure you want to reset your filtered spam message delivery log?
+   This operation cannot be undone.";
+$MAILMANAGER_FILTERS_LOG_FILE_RESET_OPTION_EMPTY = 
+  "Reset filtered spam message delivery log only";
+$MAILMANAGER_FILTERS_LOG_FILE_RESET_OPTION_RESET = 
+  "Reset filtered spam message log and empty filtered spam message folder";
+$MAILMANAGER_FILTERS_LOG_FILE_RESET_SUCCESS = 
+  "Your reset log file request was successfully processed.";
+$MAILMANAGER_FILTERS_LOG_FILE_RESET_CANCEL = 
+  "Your reset log file request was cancelled.  No action was taken.";
+
+$MAILMANAGER_FILTERS_LOG_DISPLAY_CHANGE = "Change Display Options";
+$MAILMANAGER_FILTERS_LOG_DISPLAY_DATE_RANGE = "Display Options - Date Range";
+$MAILMANAGER_FILTERS_LOG_DISPLAY_DATE_ALL = "All";
+$MAILMANAGER_FILTERS_LOG_DISPLAY_DATE_TODAY = "Today";
+$MAILMANAGER_FILTERS_LOG_DISPLAY_DATE_YESTERDAY = "Yesterday";
+$MAILMANAGER_FILTERS_LOG_DISPLAY_DATE_LAST7DAYS = "Last 7 days";
+$MAILMANAGER_FILTERS_LOG_DISPLAY_DATE_CUSTOM = "Custom Range";
+$MAILMANAGER_FILTERS_LOG_DISPLAY_DATE_CUSTOM_FROM = "from:";
+$MAILMANAGER_FILTERS_LOG_DISPLAY_DATE_CUSTOM_TO = "to:";
+$MAILMANAGER_FILTERS_LOG_DISPLAY_DATE_CHANGE = "Change Date Range";
+$MAILMANAGER_FILTERS_LOG_DISPLAY_SENDER_MATCH = "Matching Sender Pattern";
+$MAILMANAGER_FILTERS_LOG_DISPLAY_SENDER_PATTERN = 
+  "Display Options - Sender Pattern";
+$MAILMANAGER_FILTERS_LOG_DISPLAY_SENDER_CHANGE = "Change Sender Pattern";
+$MAILMANAGER_FILTERS_LOG_DISPLAY_SENDER_HELP = 
+  "Refine display to include log entries for filtered spam messages which 
+   originate from an email address that matches the following pattern:";
+$MAILMANAGER_FILTERS_LOG_DISPLAY_SUBJECT_MATCH = "Matching Subject Pattern";
+$MAILMANAGER_FILTERS_LOG_DISPLAY_SUBJECT_PATTERN = 
+  "Display Options - Subject Pattern";
+$MAILMANAGER_FILTERS_LOG_DISPLAY_SUBJECT_CHANGE = "Change Subject Pattern";
+$MAILMANAGER_FILTERS_LOG_DISPLAY_SUBJECT_HELP = 
+  "Refine display to include log entries for filtered spam messages whose
+   subject matches the following pattern:";
+$MAILMANAGER_FILTERS_LOG_DISPLAY_NO_ENTRIES =
+  "Log file contains zero entries.";
+$MAILMANAGER_FILTERS_LOG_DISPLAY_NO_MATCHES =
+  "No log entries found that match your display options.";
+
+$MAILMANAGER_FILTERS_RETURN = "Return to Spam Filtering Utilities";
+
+##############################################################################
+# mail autoreply/vacation strings
+
+$MAILMANAGER_AUTOREPLY_TITLE = "Auto/Vacation Responder";
+$MAILMANAGER_AUTOREPLY_TITLE_SHORT = "Autoresponder";
+
+$MAILMANAGER_AUTOREPLY_ENABLE = "Enable Autoresponder";
+$MAILMANAGER_AUTOREPLY_DISABLE = "Disable Autoresponder";
+
+$MAILMANAGER_AUTOREPLY_EDIT_SETTINGS = "Edit Autoresponder Settings";
+$MAILMANAGER_AUTOREPLY_EDIT_SETTINGS_SHORT = "Edit Settings";
+
+$MAILMANAGER_AUTOREPLY_ENABLE_DENIED = 
+  "Cannot enable autoresponder; message content undefined";
+
+$MAILMANAGER_AUTOREPLY_CONFIRM_WARNING_TEXT_1 =
+  "In order to modify the autoresponder utility settings, changes to one
+   or more different files must be made (the number of which depends on 
+   whether spam filtering is enabled).  However, it appears that changes 
+   were made to the following file(s) external to this application:";
+$MAILMANAGER_AUTOREPLY_CONFIRM_WARNING_TEXT_2 =
+  "It is possible, though perhaps unlikely, that the external changes made
+   to the above file(s) will be incompatible and produce conflicts with the
+   '__ACTION__' action you have requested.  These conflicts (should they
+   occur) may cause your e-mail delivery to behave erractically or 
+   malfunction entirely.  You can ignore possible conflicts and proceed,
+   restore original files and proceed, or cancel your request altogether.";
+
+$MAILMANAGER_AUTOREPLY_STATUS = "Auto/Vacation Responder Status";
+$MAILMANAGER_AUTOREPLY_STATUS_ON = "Autoresponder is On";
+$MAILMANAGER_AUTOREPLY_STATUS_OFF = "Autoresponder is Off";
+$MAILMANAGER_AUTOREPLY_STATUS_SET_SUCCESS =
+  "Your '__ACTION__' request was successfully processed.";
+
+$MAILMANAGER_AUTOREPLY_HELP_TEXT =
+  "An autoresponder is useful for replying to e-mail upon receipt.  You can use
+   your autoresponder to easily allow customers to get a copy of your catalog
+   or FAQ by simply sending e-mail to an address.  Or you can use your 
+   autoresponder to indicate that you are on vacation and unable to respond to
+   e-mail until a later date.  Please use the utilities below to manage your
+   autorepsonder.";
+
+$MAILMANAGER_AUTOREPLY_MODE = "Auto/Vacation Responder Mode";
+$MAILMANAGER_AUTOREPLY_MODE_AUTOREPLY = "Autoreply Mode";
+$MAILMANAGER_AUTOREPLY_MODE_VACATION = "Vacation Mode";
+$MAILMANAGER_AUTOREPLY_MODE_UNDEFINED = "Not set yet";
+$MAILMANAGER_AUTOREPLY_MODE_CHANGE = "Change Mode";
+$MAILMANAGER_AUTOREPLY_MODE_SET = "Set Mode";
+$MAILMANAGER_AUTOREPLY_MODE_SET_SUCCESS =
+  "Your change mode request was successfully processed.";
+$MAILMANAGER_AUTOREPLY_MODE_SET_CANCEL = 
+  "Your set mode request has been cancelled; no action was taken.";
+$MAILMANAGER_AUTOREPLY_MODE_HELP = 
+  "Your autoresponder can operate in two different modes.  In 'autoreply'
+   mode, an autoresponse is generated for every e-mail that is received.  In
+   'vacation' mode, an autoresponse is only generated for a specific 
+   e-mail address once per 24 hour interval (i.e. when someone e-mails you
+   2 or more times while you are on vacation during a 24 hour period, that 
+   person will only receive one vacation reply).";
+
+$MAILMANAGER_AUTOREPLY_CONTENT = "Autoresponder Message Content";
+$MAILMANAGER_AUTOREPLY_CONTENT_SIZE = "Autoresponder Message Size";
+$MAILMANAGER_AUTOREPLY_CONTENT_DATE = "Autoresponder Message Time Stamp";
+$MAILMANAGER_AUTOREPLY_CONTENT_UNDEFINED = "Not set yet";
+$MAILMANAGER_AUTOREPLY_CONTENT_TEXT = "Text Portion of the Response";
+$MAILMANAGER_AUTOREPLY_CONTENT_FILES = "Files to Attach to the Response";
+$MAILMANAGER_AUTOREPLY_CONTENT_CROPPED = "cropped";
+$MAILMANAGER_AUTOREPLY_CONTENT_EDIT = "Edit Message";
+$MAILMANAGER_AUTOREPLY_CONTENT_EDIT_SUCCESS = 
+  "Your new autoresponder message was saved; a summary is shown below.";
+$MAILMANAGER_AUTOREPLY_CONTENT_EDIT_CANCEL = 
+  "Your edit message request has been cancelled; no action was taken.";
+$MAILMANAGER_AUTOREPLY_CONTENT_HELP = 
+  "The content of the outgoing message sent by the autorepsonder can be 
+   text-only, non-text files included as mail attachments, or a combination
+   of both.  Each component of your outgoing autoresponder message can be
+   defined using the form below.  Make sure you specify a subject, or your
+   autoresponse will be sent without one.  An input field is also provided
+   to allow you to manage the return address listed in the outgoing message
+   (the reply-to field).";
+$MAILMANAGER_AUTOREPLY_CONTENT_FROM = "Outgoing Message Sender";
+$MAILMANAGER_AUTOREPLY_CONTENT_SUBJECT = "Outgoing Message Subject";
+$MAILMANAGER_AUTOREPLY_CONTENT_REPLY_TO = "Outgoing Message Reply-To";
+$MAILMANAGER_AUTOREPLY_CONTENT_BODY = 
+  "Outgoing Message Content (text portion)";
+$MAILMANAGER_AUTOREPLY_CONTENT_ATTACHMENTS_EXISTING =
+  "Pre-existing Outgoing Message Attachments (mark checkbox to keep)";
+
+$MAILMANAGER_AUTOREPLY_CONTENT_REMOVE_SUCCESS = 
+  "Your old autoresponder message was successfully removed.";
+
+$MAILMANAGER_AUTOREPLY_LOG_VIEW = "View Autoresponder Log";
+$MAILMANAGER_AUTOREPLY_LOG_SIZE = "Auto/Vacation Responder Log Size";
+$MAILMANAGER_AUTOREPLY_LOG_ONE_ENTRY = "1 entry";
+$MAILMANAGER_AUTOREPLY_LOG_NUM_ENTRIES = "__NUM__ entries";
+$MAILMANAGER_AUTOREPLY_LOG_RESET = "Reset Log";
+$MAILMANAGER_AUTOREPLY_LOG_ENTRIES = 
+  "Your autoresponder log currently has the following entries:";
+$MAILMANAGER_AUTOREPLY_LOG_EMPTY = "Your autoresponder log is currently empty.";
+$MAILMANAGER_AUTOREPLY_LOG_RESET_SUCCESS = 
+  "Your autoreponsder log was sucessfully reset; all entries were cleared.";
+$MAILMANAGER_AUTOREPLY_LOG_RESET_CANCEL = 
+  "Your log file was left unchanged; no action was taken.";
+
+$MAILMANAGER_AUTOREPLY_LOG_FORMAT = "replied to __EMAIL__";
+$MAILMANAGER_AUTOREPLY_LOG_SUPPRESS_DUE_TO_INTERVAL = 
+  "suppressed autoreply to __EMAIL__ (only 1 reply per 24 hour interval)";
+$MAILMANAGER_AUTOREPLY_LOG_SUPPRESS_DUE_TO_RATE = 
+  "suppressed autoreply to __EMAIL__: rate exceeded";
+$MAILMANAGER_AUTOREPLY_LOG_SUPPRESS_BOUNCE_ADDRESS = 
+  "suppressed autoreply to bounce address __EMAIL__";
+$MAILMANAGER_AUTOREPLY_LOG_DISALLOW_DUE_TO_SENDER =
+  "disallow autoreply to __EMAIL__ (not a real user)";
+$MAILMANAGER_AUTOREPLY_LOG_DISALLOW_DUE_TO_HEADER =
+  "disallow autoreply due to header '__HEADER__' (avoid potential loop)";
+
+$MAILMANAGER_AUTOREPLY_RETURN = "Return to Autoresponder Utilities";
+
+$MAILMANAGER_AUTOREPLY_INVALID_SHELL = 
+  "Warning!  Your login shell is not listed as 'valid'; some mail delivery
+   subsystems require a valid shell in order to deliver e-mail to programs
+   such as the autoresponder.  Please contact your system administrator if
+   the mail delivery subsystem does not successfully deliver incoming e-mail
+   to the autoresponder program.";
+
+##############################################################################
+# shared by both autoresponder utilities and spam filter utilities
+
+$MAILMANAGER_EXTERNAL_CHANGES_WARNING_FILENAME = "Filename";
+$MAILMANAGER_EXTERNAL_CHANGES_WARNING_CURSIZE = "File Size (Current)";
+$MAILMANAGER_EXTERNAL_CHANGES_WARNING_LASTSIZE = "File Size (Registered)";
+$MAILMANAGER_EXTERNAL_CHANGES_WARNING_CURDATE = "Time Stamp (Current)";
+$MAILMANAGER_EXTERNAL_CHANGES_WARNING_LASTDATE = "Time Stamp (Registered)";
+$MAILMANAGER_EXTERNAL_CHANGES_PROCEED_IGNORE =
+  "Proceed (Ignore Possible Conflicts)";
+$MAILMANAGER_EXTERNAL_CHANGES_PROCEED_RESTORE =
+  "Proceed (Restore Original Files)";
+
+##############################################################################
+# mail signature strings
+
+$MAILMANAGER_SIGNATURE_TITLE = "E-mail Signature";
+$MAILMANAGER_SIGNATURE_EDIT = "View/Edit Signature";
+$MAILMANAGER_SIGNATURE_STORE = "Store Signature Settings";
+$MAILMANAGER_SIGNATURE_REMOVE = "Remove Signature";
+
+$MAILMANAGER_SIGNATURE_HELP_TEXT =
+  "You can define an 'e-mail signature' using the text entry field provided
+   below.  Typically, an e-mail signature consists of information such as 
+   your name, position, company name, company web site URL, phone/fax/cell
+   number, and your personal e-mail address.  Often, people customize their 
+   signatures by including a company mission statement, humorous anectdote,
+   or favorite quotation.  Your signature should be brief and compact; 
+   approximately five to eight lines in length.";
+
+$MAILMANAGER_SIGNATURE_CONTENT_TEXT = "Signature Definition";
+$MAILMANAGER_SIGNATURE_APPEND_TEXT = 
+  "Automatically append signature to outoing e-mail messages?";
+
+$MAILMANAGER_SIGNATURE_CANCEL_TEXT =
+  "Your e-mail signature was left unchanged; no action was taken.";
+$MAILMANAGER_SIGNATURE_STORE_SUCCESS_TEXT =
+  "Your new e-mail signature was successfully stored.";
+$MAILMANAGER_SIGNATURE_REMOVE_SUCCESS_TEXT =
+  "Your e-mail signature was successfully removed.";
+$MAILMANAGER_SIGNATURE_TOO_LARGE =
+  "Your submitted e-mail signature is too large (>10kb)";
+
+##############################################################################
+# mailbox parsing 'memory exceeded' crash strings
+
+$MAILMANAGER_FOLDER_OUT_OF_MEMORY_TITLE = "Out of Memory Error Detected";
+$MAILMANAGER_FOLDER_OUT_OF_MEMORY_TEXT =
+  "The contents of the mail folder, __MAILBOX__, cannot be displayed using 
+   your sorting preference (Sort by Date, Sort by Sender, Sort by Subject, 
+   etc) without exceeding system memory consumption limits.  To view the
+   contents of this mail folder without sorting (i.e. in the order the
+   messages were received), please click on the 'Continue' button below.";
+
+##############################################################################
+# eof
+
+1;
+

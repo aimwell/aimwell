@@ -1,0 +1,79 @@
+#
+# global and main menu strings
+#
+# $SMEId: local/imanager/strings/es/main,v 2.12 2004/08/27 18:27:47 rus Exp $
+#
+
+##############################################################################
+#
+# the software title, you can change this to be whatever you want
+#
+$SOFTWARE_TITLE = "GerenteElectr\xf3nico";
+
+##############################################################################
+
+$CONTINUE_STRING = "Continuar";
+$SUBMIT_STRING = "Continuar";
+$CANCEL_STRING = "Cancelar";
+$RESET_STRING = "Borrar Forma";
+$LOGIN_STRING = "Conectar"; 
+$LOGOUT_STRING = "Desconectar";
+$CONFIRM_STRING = "Confirmar";
+
+$YES_STRING = "Si";
+$NO_STRING = "No";
+$NONE_STRING = "Ningun(a)";
+
+##############################################################################
+
+$MAINMENU_TITLE = "Men\xfa Principal de $SOFTWARE_TITLE";
+
+$MAINMENU_TEXT = 
+  "Bienvenido a $SOFTWARE_TITLE, la herramienta de Administraci\xf3n del Servidor Virtual. 
+   Te has conectado sin problemas usando el perfil del usuario \"__USER_ID__\".
+   A continuci\xf3n hay una lista de las herramientas disponibles.";
+
+$MAINMENU_USERPROFILE_TITLE = "Perfil de Usuario";
+$MAINMENU_FILEMANAGER_TITLE = "Cordinador De Archivos";
+$MAINMENU_MAILMANAGER_TITLE = "Cordinador De Correo" ;
+$MAINMENU_IROOT_TITLE = "Herramientas";
+$MAINMENU_PREFERENCES_TITLE = "Preferencias";
+$MAINMENU_ABOUT_TITLE = "Acerca de $SOFTWARE_TITLE";
+
+$MEGABYTES = "MB";
+$KILOBYTES = "kb";
+$BYTES = "bytes";
+
+$UNKNOWN_PLATFORM_TITLE = "$SOFTWARE_TITLE: Plataforma Desconocida";
+$UNKNOWN_PLATFORM_TEXT = 
+  "La plataforma en la cual este programa est\xe1 corriendo no puede ser
+   identificada.  Contacta por favor al administrador del sistema.";
+
+$SOCKET_ERROR_TITLE = "$SOFTWARE_TITLE: Error al establecer conexi\xf3n";
+$SOCKET_ERROR_TEXT = 
+  "Un error occurio al tratar de abrir una conexi\xf3n a la red. Contacte
+   por favor al administrador del sistame.";
+
+# generic help phrases
+$WHAT_STRING = "\xbfQu\xe9 es esto?";
+
+##############################################################################
+# about strings
+
+$ABOUT_VERSION = "Versi\xf3n";
+$ABOUT_BUILD_DATE = "Fecha de Construccion";
+$ABOUT_MASTER_SITE = "Sitio Maestro";
+$ABOUT_UPGRADE_SUMMARY = "Resumen de Actualizacion";
+$ABOUT_UPGRADE_REMOTE_VERSION_CURRENT =
+  "Al parecer est\xe1s corriendo la versi\f3n m\xe1 reciente del programa.";
+$ABOUT_UPGRADE_REMOTE_VERSION_OLD = 
+  "Al parecer hay una versi\xf3n m\xe1 nueva del programa. Es recomendo 
+   actualizar el programa con la versi\xf3n m\xe1 reciente.";
+  
+$ABOUT_UPGRADE_REMOTE_VERSION_UNKNOWN = 
+  "El sition maestro no pudo determinar la versi\xf3n y fecha de construccion";
+##############################################################################
+# eof
+
+1;
+

@@ -1,0 +1,73 @@
+<asx version="3.0">
+
+<!-- Play on Page Load -->
+<entry>
+	<ref href="blank.wav" />
+</entry>
+
+<!-- Paritta Parikamma -->
+<entry>
+	<ref href="Parikamma.mp3" />
+<abstract>Click Next, Then Play</abstract>
+<title>Paritta Discourses</title>
+<author>Mingun Sayadaw U Vicittasara</author>
+<copyright>(c) 2005 - Nibbana.com</copyright>
+</entry>
+
+<!-- Mangala Sutta -->
+<entry>
+	<ref href="Mangala.mp3" />
+</entry>
+
+<!-- Ratana Sutta -->
+<entry>
+	<ref href="Ratana.mp3" />
+</entry>
+
+<!-- Metta Sutta -->
+<entry>
+	<ref href="Metta.mp3" />
+</entry>
+
+<!-- Khandha Paritta -->
+<entry>
+	<ref href="Khandha.mp3" />
+</entry>
+
+<!-- Mora Paritta -->
+<entry>
+	<ref href="Mora.mp3" />
+</entry>
+
+<!-- Vatta Paritta -->
+<entry>
+	<ref href="Vatta.mp3" />
+</entry>
+
+<!-- Dhajagga Sutta -->
+<entry>
+	<ref href="Dhajagga.mp3" />
+</entry>
+
+<!-- Atanatiya Sutta -->
+<entry>
+	<ref href="Atanatiya.mp3" />
+</entry>
+
+<!-- Angulimala Sutta -->
+<entry>
+	<ref href="Angulimala.mp3" />
+</entry>
+
+<!-- Bojjhanga Paritta -->
+<entry>
+	<ref href="Bojjhanga.mp3" />
+</entry>
+
+<!-- Pubbanha Sutta -->
+<entry>
+	<ref href="Pubbanha.mp3" />
+</entry>
+
+</asx>
+

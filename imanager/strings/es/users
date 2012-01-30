@@ -1,0 +1,132 @@
+#
+# users strings
+#
+# $SMEId: local/imanager/strings/es/users,v 2.12 2004/08/27 18:27:47 rus Exp $
+#
+
+$USERS_LOGIN = "Usuario";
+$USERS_NAME = "Nombre Completo";
+$USERS_PASSWORD = "Contrasena";
+$USERS_PASSWORD_CONFIRM = "Confirmar";
+$USERS_PATH = "Directorio Principal";
+$USERS_PRIVILEGES = "Privilegios";
+$USERS_FTP = "FTP";
+$USERS_MAIL = "Correo";
+$USERS_QUOTA = "Limite";
+$USERS_VIRTUALHOST = "Dominio(s) Virtual(es)";
+
+$USERS_ADMINISTRATIVE_ONLY_ERROR = 
+  "Al parecer tu archivo de contrase\xf1as tiene solamente los usuarios
+   administradores ('root y '__USER__'). Usa por favor la herramienta
+   'Agregar Usuario' para agregar otros usarios que no son administradores.";
+
+$USERS_SELECT_TITLE = "Escoje Usuarios";
+$USERS_SELECT_HELP = 
+  "Usa por favor la siguiente forma para escojer uno o m\xe1s usuarios.";
+
+$USERS_LOGIN_HELP_TEXT = 
+  "Nombres de usuarios puedes tener hasta 16 caracteres y consisten de 
+   letrar minisculas o digitos, sin embargo tienen que empezar con una
+   letra del alfabeto.";
+$USERS_PASSWORD_HELP_TEXT = 
+  "Los valores de las contrase\xf1as pueden tenet hasta 8 caracteres. Por 
+   razones de seguridad recomendamos contrase\xf1as de 6 a 8 caracteres y
+   que contengan al menos un caracter que no sea una letra del alfabeto.
+   Escoje contrase\xf1as que sean facil de recordar para que no tengas que
+   escribirlas en algun lugar. No te olvides confirmar tu contrase\xf1a
+   usando la forma proporcionada.";
+$USERS_FULL_NAME_HELP_TEXT = 
+  "El limite de cada Nombre Completo es 80 caracteres y no debe incluir
+   dos puntos (:).";
+$USERS_HOME_DIRECTORY_HELP_TEXT = 
+  "Directorio Principal: escoje '/usr/home/LOGIN' para una cuenta de e-mail;
+   escoje '/usr/local/etc/httpd/htdocs/LOGIN' para una cuenta de web;
+   escoje '/usr/local/etc/httpd/vhosts/LOGIN' para una cuenta de web
+   que usar\xe1 FrontPage; espec\xedfica 'ftp/pub/LOGIN' para una cuenta de FTP 
+   anonimo; o espec\xedfica cualquier otro lugar";
+$USERS_PRIVILEGES_HELP_TEXT = 
+  "Privilegios: escoje FTP para permitir a un usuario cargar/descargar archivos;
+   escoje Correo para permirit a un usuario mandar/recibir email. Un limite de
+   espacio (en MB) puede ser especificado en cada opcion. Un limite de espacio
+   de cero quiere decir que no hay limite de espacio.";
+
+$USERS_HOME_DIRECTORY_HELP_EMAIL_TEXT = "(Cuenta de E-mail)";
+$USERS_HOME_DIRECTORY_HELP_SUBHOST_VHOSTS_TEXT = 
+  "(Cuenta de web compatible con FrontPage)"; 
+$USERS_HOME_DIRECTORY_HELP_SUBHOST_HTDOCS_TEXT = 
+  "(Cuenta generica de web -- no es compatible con FrontPage!)";
+$USERS_HOME_DIRECTORY_HELP_FTP_TEXT = "(Cuenta anonima de FTP)";
+
+$USERS_ADD_HELP_TEXT = "Usa por favor la siguiente forma para agregar usuarios nuevos.";
+$USERS_ADD_SUBMIT_TEXT = $SUBMIT_STRING;
+$USERS_ADD_NEW_VIRTUALHOST = "Configurar Dominios Virtuales para este usuario";
+$USERS_ADD_NEW_VIRTUALHOST_HELP_TEXT = 
+  "Escoje la casilla 'Configurar Dominio Virtual' si quieres configurar
+   una definicion de dominio virtual para una cuenta nueva.";
+
+$USERS_EDIT_HELP_TEXT = 
+  "Usa por favor la siguiente forma para modificar el(los) usuario(s) seleccionado(s).";
+$USERS_EDIT_SUBMIT_TEXT = "Hacer modificaciones";
+
+$USERS_REMOVE_HELP_TEXT = 
+  "\xbfEstas seguro que quieres borrar permanentemente el(los) siguiente(s) usuario(s)?";
+$USERS_REMOVE_SUBMIT_TEXT = "Si, Borra el(los) Usuario(s) Antes Mencionados";
+$USERS_REMOVE_HOME_DIRECTORY = "Borra directorios principales";
+$USERS_REMOVE_MAIL_FILE = "Borra archivo(s) de correo";
+$USERS_REMOVE_VHOST_ENTRY = "Borra Dominio(s) Virtual(es)";
+
+$USERS_SORT_BY_LOGIN = "Ordena por Nombre de Usuario";
+$USERS_SORT_BY_NAME = "Ordena por Nombre Completo";
+$USERS_SORT_BY_PATH = "Ordena por Directorio Principal";
+
+$USERS_SUCCESS_ADD_TEXT = "Tu peticion para Agragar Usuario(s) fue procesada";
+$USERS_SUCCESS_EDIT_TEXT = "Tu peticion de Modificar Usuario(s) fue procesada";
+$USERS_SUCCESS_REMOVE_TEXT = "Tu peticion de Borrar Usuario(s) fue procesada";
+
+$USERS_CANCEL_ADD_TEXT = 
+  "Tu peticion para Agregar Usuario(s) fue cancelada. No se tomo ninguna accion.";
+$USERS_CANCEL_EDIT_TEXT = 
+  "Tu peticion para Modifica Usuario(s) fue cancelada. No se tomo ninguna accion.";
+$USERS_CANCEL_REMOVE_TEXT = 
+  "Tu peticion para Borrar Usuario(s) fue cancelada. No se tomo ninguna accion.";
+
+$USERS_ERROR_LOGIN_IS_BLANK = "El Valor del nombre de usuario est\xe1 vacio.";
+$USERS_ERROR_LOGIN_CONTAINS_INVALID_CHARS = 
+  "El nombre del usuario contiene caracteres invalidos.";
+$USERS_ERROR_LOGIN_BEGINS_WITH_DIGIT = "El valor del nombre de usuario comienza con un numero";
+$USERS_ERROR_LOGIN_EXISTS = "El valor del nombre de usuario ya existe";
+
+$USERS_ERROR_PASSWORD_IS_BLANK = "El valor de la contrase\xf1a est\xe1 vacio.";
+$USERS_ERROR_PASSWORD_CONFIRM_IS_BLANK = "Confirmacion de la contrase\xf1a est\xe1 vacio.";
+$USERS_ERROR_PASSWORD_MISMATCH = 
+  "El valor de la contrase\xf1a no concuerda con el valor de la confirmacion de la contrase\xf1a";
+
+$USERS_ERROR_FULLNAME_IS_BLANK = "El valor para el nombre completo est\xe1 vacio";
+
+$USERS_ERROR_PATHNAME_IS_BLANK = "El valor de lugar est\xe1 vacio";
+
+$USERS_CONFIRM_TEXT =
+  "Vea por favor enseguida una lista con los cambios que se haran al archivo
+   de contrase\xf1as.  Presione el boton 'Confirmar' para hacer los cambios.";
+$USERS_CONFIRM_ADD = "Agregar usuario '__USER__'";
+$USERS_CONFIRM_CHANGE_1 = " Cambiar usuario de '__USER_'";
+$USERS_CONFIRM_CHANGE_2 = "&#160; &#160; &#160; &#160; &#160; &#160; &#160; a '__USER__'";
+
+$USERS_CONFIRM_DIRECTORY_OPTION_ALERT = 
+  "CUIDADO: Directorio Principal de __USER__ ha cambiado";
+$USERS_CONFIRM_DIRECTORY_OPTION_RENAME = 
+  "Cambiar nombre de directorio ('__OLDDIR__') a el directorio ('__NEWDIR__')";
+$USERS_CONFIRM_DIRECTORY_OPTION_COPY = 
+  "Crear directorio ('__NEWDIR__'); copiar contenido de ('__OLDDIR__')";
+$USERS_CONFIRM_DIRECTORY_OPTION_NEWDIRONLY = 
+  "Crear directorio nuevo ('__NEWDIR__'); sin copiar archivos";
+
+$USERS_ACTIONS_COPY = "Copiar Directorio";
+$USERS_ACTIONS_CREATEDIR = "Crear Directorio Nuevo";
+$USERS_ACTIONS_RENAME = "Cambiar Nombre del Directorio";
+
+##############################################################################
+# eof
+
+1;
+

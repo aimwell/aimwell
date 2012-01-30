@@ -1,0 +1,16 @@
+<VirtualHost IP:PORT>
+SuExecUserGroup LOGIN GROUP
+ServerName DOMAIN
+ServerAlias www.DOMAIN
+ServerAdmin LOGIN@DOMAIN
+DocumentRoot /HOME/www/DOMAIN
+ScriptAlias   /cgi-bin/ /HOME/www/cgi-bin/
+<Directory /HOME/www/cgi-bin>
+AllowOverride None
+Options ExecCGI
+Order allow,deny
+Allow from all
+</Directory>
+CustomLog /usr/local/apache/logs/LOGIN/DOMAIN-access_log combined
+ErrorLog /usr/local/apache/logs/LOGIN/DOMAIN-error_log
+</VirtualHost>

@@ -1,0 +1,897 @@
+#
+# mail manager strings
+#
+# $SMEId: local/imanager/strings/ja/mailmanager,v 2.12.2.4 2006/01/11 09:58:07 rus Exp $
+#
+# $Id: local/imanager/strings/ja/mailmanager,v 2.11 2003/10/22 08:10:00 M.Matsuda Exp $
+#
+
+$MAILMANAGER_TITLE  =  "$SOFTWARE_TITLE: メールマネージャー - __MAILBOX__";
+$MAILMANAGER_TITLE_PLAIN  =  "$SOFTWARE_TITLE: メールマネージャー";
+
+$MAILMANAGER_RETURN  =  "メールマネージャーに戻る";
+
+##############################################################################
+# some generic error strings
+
+$MAILMANAGER_DENIED_TITLE  =  "$SOFTWARE_TITLE: メールマネージャー - アクセスが拒絶されました";
+$MAILMANAGER_DENIED_TEXT  =  
+  "お使いのログインプロフィールにはメールの使用権限がありません。
+   メールマネージャーにアクセスできませんでした。";
+$MAILMANAGER_PERMISSION_DENIED  =  
+  "\"__PATH__\" というパスへのアクセスが拒絶されました。";
+
+$MAILMANAGER_RESOURCE_ERROR_TITLE  =  
+  "$SOFTWARE_TITLE: メールマネージャー - リソースエラー";
+$MAILMANAGER_RESOURCE_ERROR_TEXT  =  
+  "コマンドを実行しようとした際にエラーがおきました。
+   エラーの詳細は以下のとおりです。";
+
+$MAILMANAGER_MESSAGE_NOT_FOUND_TEXT  =  
+  "\"__MAILBOX__\"というメールフォルダには (\"__MESSAGEID__\")
+  という Message-ID を持つメールはありません。";
+
+$MAILMANAGER_FOLDER_EMPTY_TEXT  =  
+  "\"__MAILBOX__\"というメールフォルダは空です。";
+
+$MAILMANAGER_NONE_SELECTED  =  "メッセージが選択されていません。";
+
+##############################################################################
+# mailbox and message view strings
+
+$MAILMANAGER_DEFAULT_FOLDER  =  "受信";
+
+$MAILMANAGER_FOLDER_NAME  =  "現在のメールフォルダ";
+$MAILMANAGER_FOLDER_NUM_MESSAGES  =  "到着しているメッセージ数";
+$MAILMANAGER_FOLDER_SIZE  =  "メールフォルダの使用容量";
+$MAILMANAGER_FOLDER_OPEN = "メールフォルダ'__FOLDER__'を開く";
+$MAILMANAGER_FOLDER_RETURN = "メールフォルダ'__FOLDER__'に戻る";
+
+$MAILMANAGER_REFRESH_TEXT = "更新";
+$MAILMANAGER_REFRESH_UNITS = "秒";
+
+$MAILMANAGER_ACTIONS  =  "操作";
+
+$MAILMANAGER_MESSAGE_DATE  =  "日付";
+$MAILMANAGER_MESSAGE_TO  =  "宛先";
+$MAILMANAGER_MESSAGE_SENDER  =  "差出人";
+$MAILMANAGER_MESSAGE_SUBJECT  =  "件名";
+$MAILMANAGER_MESSAGE_NUMBER  =  "メッセージ番号";
+$MAILMANAGER_MESSAGE_SIZE  =  "メッセージサイズ";
+$MAILMANAGER_MESSAGE_SIZE_ABBREVIATED  =  "サイズ";
+$MAILMANAGER_MESSAGE_REPLY_TO  =  "返信先";
+$MAILMANAGER_MESSAGE_CC  =  "CC";
+$MAILMANAGER_MESSAGE_BCC  =  "BCC";
+$MAILMANAGER_MESSAGE_FCC  =  "メールを送信する時にコピーをフォルダに保存する";
+$MAILMANAGER_MESSAGE_FCC_BROWSE  =  "参照";
+$MAILMANAGER_MESSAGE_FCC_BROWSE_HELP = 
+  "ファイルブラウザを使用して、送信メッセージのコピーを保存するためのメールフォルダを
+   選択してください。";
+$MAILMANAGER_MESSAGE_FCC_SELECT  =  "送信済みフォルダを選択する";
+$MAILMANAGER_MESSAGE_VIEW = "メッセージ'__SUBJECT__'を見る";
+
+$MAILMANAGER_SORT_BY_DATE  =  "日付順";
+$MAILMANAGER_SORT_BY_SENDER  =  "差出人順";
+$MAILMANAGER_SORT_BY_SUBJECT  =  "件名順";
+$MAILMANAGER_SORT_BY_SIZE  =  "サイズ順";
+$MAILMANAGER_SORT_BY_THREAD = "スレッド順";
+$MAILMANAGER_SORT_IN_ORDER  =  "並び替えしない";
+
+$MAILMANAGER_SHOW_FULL_HEADERS  =  "メールヘッダを全て表示する";
+$MAILMANAGER_SHOW_PARTIAL_HEADERS  =  "ヘッダを省略する";
+
+$MAILMANAGER_PRINTER_FRIENDLY_FORMAT  =  "印刷用に書式を整える";
+
+$MAILMANAGER_MESSAGE_NOT_SHOWN  =  "オリジナルの__TYPE__ メッセージは非表示";
+$MAILMANAGER_MESSAGE_VIEW_TYPE  =  "__TYPE__ メッセージを別途参照";
+$MAILMANAGER_MESSAGE_VIEW_TYPE_INLINE  =  "__TYPE__メッセージをインラインで参照";
+$MAILMANAGER_MESSAGE_HIDE_TYPE_INLINE  =  "__TYPE__メッセージのインラインで非表示";
+$MAILMANAGER_MESSAGE_SAVE_TYPE  =  "__TYPE__ メッセージを保存";
+$MAILMANAGER_MESSAGE_VIEW_SEPARATELY  =  "別途参照";
+$MAILMANAGER_MESSAGE_VIEW_SEPARATELY_HELP = 
+  "メッセージを別途参照します。
+   このリンクをクリックすると、メッセージはブラウザ上に展開されます。
+   ブラウザの設定によってはテキスト表示されたり、ファイルにより呼び出されるプログラムが
+   起動されたりします。"; 
+$MAILMANAGER_MESSAGE_VIEW_INLINE_HELP = 
+  "__TYPE__メッセージをインライン（現在のウェブページ中に表示）で参照します。"; 
+$MAILMANAGER_MESSAGE_HIDE_INLINE_HELP = 
+  "上記'__TYPE__'メッセージを非表示にします。"; 
+$MAILMANAGER_MESSAGE_SAVE_HELP = 
+  "サーバ上にメッセージを保存します。
+   このリンクをクリックすると、ファイルブラウザが起動し、'__TYPE__'メッセージを
+   指定のファイル名で保存することができます。 message will be saved.";
+
+$MAILMANAGER_ATTACHMENT_NOT_SHOWN  =  "オリジナルの__TYPE__ 添付ファイルは非表示";
+$MAILMANAGER_ATTACHMENT_VIEW_TYPE  =  "__TYPE__ 添付ファイルを別途参照";
+$MAILMANAGER_ATTACHMENT_VIEW_TYPE_INLINE  =  "__TYPE__ 添付ファイルをインラインで参照";
+$MAILMANAGER_ATTACHMENT_HIDE_TYPE_INLINE  =  "__TYPE__ 添付ファイルのインライン非表示";
+$MAILMANAGER_ATTACHMENT_SAVE_TYPE  =  "__TYPE__ 添付ファイルを保存";
+$MAILMANAGER_ATTACHMENT_VIEW_SEPARATELY  =  "別途参照";
+$MAILMANAGER_ATTACHMENT_VIEW_SEPARATELY_HELP = 
+  "添付ファイルを別途参照します。
+   このリンクをクリックすると、添付ファイルはブラウザ上に展開されます。
+   ブラウザの設定によってはテキスト表示されたり、ファイルにより呼び出されるプログラムが
+   起動されたりします。"; 
+$MAILMANAGER_ATTACHMENT_VIEW_INLINE_HELP = 
+  "'__TYPE__'添付ファイルをインライン（現在のウェブページ中に表示）で参照します。"; 
+$MAILMANAGER_ATTACHMENT_HIDE_INLINE_HELP = 
+  "上記'__TYPE__'添付ファイルを非表示にします。"; 
+$MAILMANAGER_ATTACHMENT_SAVE_HELP = 
+  "サーバ上に添付ファイルを保存します。
+   このリンクをクリックすると、ファイルブラウザが起動し、'__TYPE__'添付ファイルを
+   指定のファイル名で保存することができます。";
+
+$MAILMANAGER_ATTACHMENT_NUMBER  =  "添付ファイル \#__NUM__";
+$MAILMANAGER_ATTACHMENT_TYPE  =  "タイプ";
+$MAILMANAGER_ATTACHMENT_ENCODING  =  "エンコード";
+$MAILMANAGER_ATTACHMENT_SIZE  =  "サイズ";
+
+$MAILMANAGER_NO_SUBJECT  =  "[ 件名なし ]";
+
+$MAILMANAGER_CREATEDIR  =  "メールディレクトリの作成";
+
+$MAILMANAGER_FOLDER_SELECT_CURDIR  =  "現在のディレクトリ: __DIR__";
+$MAILMANAGER_FOLDER_SELECT_SYMLINK  =  "リンク";
+$MAILMANAGER_FOLDER_SELECT_MESSAGES  =  "メッセージ";
+$MAILMANAGER_FOLDER_SELECT_SHOW_DETAILS  =  "詳細を表示";
+$MAILMANAGER_FOLDER_SELECT_SHOW_DETAILS_FILE = 
+  "ブラウザの表示を更新して、各ファイルの詳細を表示します。
+   詳細情報にはファイルサイズや最終更新日が含まれています。";
+$MAILMANAGER_FOLDER_SELECT_SHOW_DETAILS_MAIL = 
+  "ブラウザの表示を更新して、各メールフォルダの詳細を表示します。 
+   詳細情報にはフォルダのサイズやメール件数、フォルダの最終更新日が含まれています。";
+$MAILMANAGER_FOLDER_SELECT_HIDE_DETAILS  =  "詳細を非表示";
+$MAILMANAGER_FOLDER_SELECT_HIDE_DETAILS_FILE = 
+  "ブラウザの表示を更新して、各ファイルの詳細を非表示にします。";
+$MAILMANAGER_FOLDER_SELECT_HIDE_DETAILS_MAIL = 
+  "ブラウザの表示を更新して、各メールフォルダの詳細を非表示にします。";
+$MAILMANAGER_FOLDER_SELECT_TARGET = "'__TARGET__'を選択";
+
+$MAILMANAGER_FOLDER_RANGE_SELECT = "表示するメールの範囲";
+$MAILMANAGER_FOLDER_RANGE_SUMMARY = "トータル__TOTAL__件中__LOW__-__HIGH__件目のメッセージを表示";
+
+$MAILMANAGER_CHECK_MAIL  =  "新着メッセージをチェックする";
+
+$MAILMANAGER_FOLDER_CONTENTS  =  "メールフォルダの内容";
+$MAILMANAGER_FOLDER_CONTENTS_STATUS  =  "以下の内容は __TIME__時点のものです。";
+
+$MAILMANAGER_FOLDER_LIST  =  "フォルダリスト";
+$MAILMANAGER_FOLDER_OUT  =  "送信";
+$MAILMANAGER_FOLDER_JUNK  =  "迷惑メール";
+$MAILMANAGER_FOLDER_OTHER  =  "メールフォルダの変更";
+
+$MAILMANAGER_MESSAGE_TAG  =  "タグ";
+$MAILMANAGER_MESSAGE_FLAGS  =  "フラグ";
+
+$MAILMANAGER_MESSAGE_PREV  =  "前";
+$MAILMANAGER_MESSAGE_NEXT  =  "次";
+$MAILMANAGER_MESSAGE_PREV_TITLE = "前の__NUM__件";
+$MAILMANAGER_MESSAGE_NEXT_TITLE = "次の__NUM__件";
+
+$MAILMANAGER_VIEW_NEXT = "次のメッセージ";
+$MAILMANAGER_VIEW_PREV = "前のメッセージ";
+$MAILMANAGER_VIEW_NEXT_TITLE = "次のメッセージを表示";
+$MAILMANAGER_VIEW_PREV_TITLE = "前のメッセージを表示";
+
+$MAILMANAGER_FLAGS_TITLE  =  "メッセージのフラグ";
+$MAILMANAGER_FLAGS_HELP_N  =  "N - 新規または未読のメール";
+$MAILMANAGER_FLAGS_HELP_r  =  "r - 返信済み";
+$MAILMANAGER_FLAGS_HELP_PLUS  =  "+ - 貴方だけを宛先としているメッセージ";
+$MAILMANAGER_FLAGS_HELP_T  =  "T - 宛先に貴方を含むメッセージ";
+$MAILMANAGER_FLAGS_HELP_C  =  "C - 貴方へCCしているメッセージ";
+$MAILMANAGER_FLAGS_HELP_F  =  "F - 貴方からのメッセージ";
+
+$MAILMANAGER_OPEN_URL = "URLを開く";
+
+##############################################################################
+# compose message strings
+
+$MAILMANAGER_COMPOSE  =  "新規メッセージを編集する";
+$MAILMANAGER_COMPOSE_CANCEL_TEXT  =  
+  "新規メッセージの作成要求は取り消されました。";
+
+$MAILMANAGER_MESSAGE_ORIGINAL_ATTACHMENTS  =  "元のメッセージの添付";
+$MAILMANAGER_MESSAGE_UPLOAD_ATTACHMENTS  =  
+  "お使いのマシンのファイルで、添付したいもの";
+$MAILMANAGER_MESSAGE_LOCAL_ATTACHMENTS  =  
+  "サーバ上のファイルで、添付したいもの";
+$MAILMANAGER_MESSAGE_LOCAL_ATTACHMENTS_BROWSE  =  "参照";
+$MAILMANAGER_MESSAGE_LOCAL_ATTACHMENTS_BROWSE_HELP = 
+  "ファイルブラウザを使用して、あなたのサーバ上にある、メッセージに添付したいファイルを
+   選択してください。";
+
+$MAILMANAGER_LOCAL_ATTACHMENT_NOT_EXIST  =  
+  "\"__FILE__\" が存在しないので添付できませんでした。";
+
+##############################################################################
+# redirect message strings
+
+$MAILMANAGER_BOUNCE  =  "バウンスメッセージを送る";
+$MAILMANAGER_BOUNCE_CANCEL_TEXT  =  
+  "バウンスメッセージの要求が取り消されました";
+$MAILMANAGER_BOUNCE_HELP_TEXT  =  
+  "どのアドレスにバウンスメッセージを送りますか？";
+$MAILMANAGER_BOUNCE_ORIGINAL_MESSAGE  =  "オリジナルのメッセージ";
+
+##############################################################################
+# forward message strings
+
+$MAILMANAGER_FORWARD  =  "このメッセージを転送する";
+$MAILMANAGER_FORWARD_CANCEL_TEXT  =  
+  "転送処理が取り消されました。転送しませんでした。";
+$MAILMANAGER_FORWARD_STRING_BEGIN  =  
+  "===== Forwarded message from __EMAIL__ =====";
+$MAILMANAGER_FORWARD_STRING_END  =  "===== End forwarded message =====";
+
+$MAILMANAGER_FORWARD_INCLUDE_HELP  =  
+  "(転送したメッセージに含む場合はチェックする)";
+
+# next string now defunct
+$MAILMANAGER_ATTACHMENT_INCLUDE_FORWARD  =  "転送時に添付する";
+
+##############################################################################
+# reply to message strings
+
+$MAILMANAGER_REPLY  =  "返信する";
+$MAILMANAGER_REPLY_GROUP  =  "グループに返信する";
+$MAILMANAGER_REPLY_CANCEL_TEXT  =  
+  "返信メッセージの作成要求は取り消されました。";
+$MAILMANAGER_REPLY_STRING  =  "On __DATE__, __EMAIL__ wrote:";
+
+$MAILMANAGER_NO_SUBJECT_REPLY  =  "返信";
+
+$MAILMANAGER_REPLY_INCLUDE_HELP  =  
+  "(返信するメッセージに含む場合はチェックする)";
+
+# next string now defunct
+$MAILMANAGER_ATTACHMENT_INCLUDE_RESPONSE  =  "返信時に添付する";
+
+##############################################################################
+# send message strings
+
+$MAILMANAGER_SEND  =  "送信";
+$MAILMANAGER_SEND_ERROR_TO_EMPTY  =  
+  "'$MAILMANAGER_MESSAGE_TO'が記入されていません。";
+$MAILMANAGER_SEND_ERROR_TO_INVALID  =  
+  "指定されたメールアドレス \"__EMAIL__\"
+   には不正な文字が含まれています。
+   A から Z まで、a から z まで、0 から 9 まで、
+   ダッシュ (-)、アンダースコア(_)、ピリオド(.)、アンパサンド(&)
+   以外の文字は含めないでください。";
+$MAILMANAGER_SEND_ERROR_FROM_EMPTY  =  
+  "'$MAILMANAGER_MESSAGE_SENDER'が記入されていません。";
+$MAILMANAGER_SEND_ERROR_UPLOAD_FILE_LOST  =  
+  "注: アップロード済みファイルは無視されました。リセットする必要があります。";
+
+$MAILMANAGER_SEND_SUCCESS  =  "メッセージは送信されました。";
+$MAILMANAGER_SEND_SUCCESS_REPLY  =  "返信メッセージは送信されました。";
+$MAILMANAGER_SEND_SUCCESS_BOUNCE  =  
+  "メッセージは__ADDRESS__にバウンスされました。";
+
+##############################################################################
+# delete message strings
+
+$MAILMANAGER_DELETE_TAGGED  =  "タグのついたメッセージを削除";
+$MAILMANAGER_DELETE_ALL  =  "全てのメッセージを削除";
+$MAILMANAGER_DELETE_SINGLE  =  "このメッセージを削除";
+$MAILMANAGER_DELETE_CANCEL_TEXT  =  
+  "メッセージの削除要求が取り消されました。";
+$MAILMANAGER_DELETE_CONFIRM_TEXT  =  
+  "以下のメッセージを削除してもよろしいですか？";
+$MAILMANAGER_DELETE_CONFIRM_ALL_TEXT  =  
+  "選択されたメールボックス(\"__MAILBOX__\")にある全てのメッセージを削除してもよろしいですか？";
+$MAILMANAGER_DELETE_CONFIRM_ALL_UNDONE_TEXT  =  
+  "一度削除すると戻せません。";
+$MAILMANAGER_DELETE_SUCCESS_TEXT  =  
+  "メッセージを削除しました。";
+
+##############################################################################
+# save message strings
+
+$MAILMANAGER_SAVE_TAGGED  =  "タグのついたメッセージを保存";
+$MAILMANAGER_SAVE_ALL  =  "すべてのメッセージを保存";
+$MAILMANAGER_SAVE_SINGLE  =  "このメッセージを保存";
+$MAILMANAGER_SAVE_ALL_HELP_TEXT  =  
+  "選択されたメールボックス（\"__MAILBOX__\"）にある全てのメッセージを、
+   指定したフォルダに保存します。";
+$MAILMANAGER_SAVE_SELECTED_HELP_TEXT  =  
+  "現在 __NUMBER__ メッセージが選択されています：";
+$MAILMANAGER_SAVE_SELECTED_CROPPED_TEXT  =  "他 __NUMBER__ メッセージ";
+$MAILMANAGER_SAVE_SELECTED_REMOVE_FROM_SOURCE  =  
+  "選択されたメッセージを現在のソースフォルダから削除する";
+$MAILMANAGER_SAVE_SELECT_HELP_TEXT  = 
+  "以下のフォームを利用して、メッセージが保存される移動先のフォルダを選択してください。ファイルセレクターも使用することができます。";
+$MAILMANAGER_SAVE_CANCEL_TEXT  =  
+  "メッセージの保存要求が取り消されました。";
+$MAILMANAGER_SAVE_SUCCESS_TEXT  =  
+  "メッセージを保存しました。";
+$MAILMANAGER_MOVE_SUCCESS_TEXT  =  
+  "メッセージを移動しました。";
+$MAILMANAGER_SAVE_DENIED_TEXT  =  
+  "ログインプロフィールに'ftp'権限の情報が含まれていないため、
+   メッセージ保存ユーティリティを使用できません。";
+$MAILMANAGER_SAVE_IDENTICAL_FOLDER_ERROR  = 
+  "保存先に同じフォルダを指定することはできません。";
+
+$MAILMANAGER_SAVE_ATTACHMENT  =  "添付ファイルの保存";
+$MAILMANAGER_SAVE_MESSAGE_BODY  =  "メール本文の保存";
+$MAILMANAGER_SAVE_ATTACHMENT_SELECT_HELP_TEXT  = 
+  "__ATYPE__ を保存するターゲットファイルを選択してください。
+   選択された __ATYPE__ に関する情報と、ファイルブラウザへのリンク。";
+$MAILMANAGER_SAVE_ATTACHMENT_CANCEL_TEXT  =  
+  "添付ファイルの保存要求が取り消されました。";
+$MAILMANAGER_SAVE_ATTACHMENT_SUCCESS_TEXT  =  
+  "添付ファイルが保存されました。";
+$MAILMANAGER_SAVE_ATTACHMENT_DENIED_TEXT  =  
+  "FTPでファイルをアップロードする権限がありません。
+   添付ファイルを保存する事はできません。";
+$MAILMANAGER_SAVE_ATTACHMENT_SUCCESS_TEXT  =  
+  "添付ファイルが保存されました。";
+$MAILMANAGER_SAVE_ATTACHMENT_QUOTA_ERROR  =  
+  "ディスク領域不足のため __ATYPE__ (約 __SIZE__ の空き容量が必要)を保存することができませんでした。
+   不要なファイルを削除してディスク容量を開放するか、ディスク領域を追加してください。";
+
+$MAILMANAGER_CONTENT_TYPE  =  "タイプ";
+$MAILMANAGER_CONTENT_TRANSFER_ENCODING  =  "エンコード";
+$MAILMANAGER_CONTENT_DISPOSITION  =  "概要";
+$MAILMANAGER_CONTENT_DISPOSITION_ATTACHMENT  =  "添付ファイル";
+$MAILMANAGER_CONTENT_DISPOSITION_BODY  =  "本文";
+$MAILMANAGER_CONTENT_DISPOSITION_FILENAME  =  "ファイル名";
+
+##############################################################################
+# select mailbox strings
+
+$MAILMANAGER_SELECT_MAILBOX  =  "メールフォルダの変更";
+$MAILMANAGER_SELECT_MAILBOX_HELP_TEXT  = 
+  "下記フォームから現在のメールフォルダを変更することができます。
+   ファイルセレクターも使用することができます。";
+$MAILMANAGER_SELECT_INCOMING  =  
+  "('!' を指定すると現在のフォルダをデフォルトの受信箱に指定できます。)";
+$MAILMANAGER_SELECT_CANCEL_TEXT  =  
+  "メールフォルダの変更要求が取り消されました。";
+$MAILMANAGER_SELECT_ERROR_FOLDER_DOES_NOT_EXIST  =  
+  "指定されたメールフォルダは存在しません。";
+$MAILMANAGER_SELECT_DENIED_TEXT  =  
+  "FTPの権限が無いためメールフォルダの変更を行うことができません。";
+
+##############################################################################
+# mail addressbook strings
+
+$MAILMANAGER_ADDRESSBOOK_VIEW  =  "アドレス帳の参照";
+
+$MAILMANAGER_ADDRESSBOOK_TITLE  =  "メールマネージャアドレス帳";
+$MAILMANAGER_ADDRESSBOOK_TITLE_SHORT  =  "アドレス帳";
+$MAILMANAGER_ADDRESSBOOK_SIZE_ENTRIES  =  "総登録数";
+$MAILMANAGER_ADDRESSBOOK_SIZE_BYTES  =  "アドレス帳のサイズ";
+$MAILMANAGER_ADDRESSBOOK_ACTIONS =  "機能";
+
+$MAILMANAGER_ADDRESSBOOK_RANGE_SELECT =  "表示する連絡先の範囲";
+$MAILMANAGER_ADDRESSBOOK_RANGE_SUMMARY =  "トータル__TOTAL__件中__LOW__-__HIGH__件目の連絡先を表示";
+
+$MAILMANAGER_ADDRESSBOOK_CONTACT_TAG  =  "タグ";
+$MAILMANAGER_ADDRESSBOOK_CONTACT_NAME  =  "名前またはグループ";
+$MAILMANAGER_ADDRESSBOOK_CONTACT_EMAIL  =  "メールアドレスまたはアドレスリスト";
+$MAILMANAGER_ADDRESSBOOK_CONTACT_VIEW  =  "連絡先の参照";
+
+$MAILMANAGER_ADDRESSBOOK_SORT_BY_NAME  =  "名前で並び替え";
+$MAILMANAGER_ADDRESSBOOK_SORT_BY_ADDRESS  =  "メールアドレスで並び替え";
+
+$MAILMANAGER_ADDRESSBOOK_WRITE  =  "メール作成";
+$MAILMANAGER_ADDRESSBOOK_WRITE_TAGGED  =  "チェックした連絡先にメール作成";
+$MAILMANAGER_ADDRESSBOOK_WRITE_SINGLE  =  "上記連絡先にメール作成";
+
+$MAILMANAGER_ADDRESSBOOK_ADD  =  "新規連絡先の追加";
+$MAILMANAGER_ADDRESSBOOK_ADD_HELP_TEXT  = 
+  "以下の入力フォームを使って新規連絡先を追加できます。";
+$MAILMANAGER_ADDRESSBOOK_ADD_SUCCESS  =  
+  "新規連絡先を追加しました。";
+$MAILMANAGER_ADDRESSBOOK_ADD_CANCEL  =  
+  "新規連絡先の追加要求を取り消しました。";
+$MAILMANAGER_ADDRESSBOOK_ADD_SINGLE = "メールアドレス'__EMAIL__'をアドレス帳に追加";
+$MAILMANAGER_ADDRESSBOOK_ADD_GROUP  =  "アドレス帳にグループとして追加：";
+$MAILMANAGER_ADDRESSBOOK_ADD_GROUP_HELP = 
+  "メールアドレス'__EMAIL__'をアドレス帳にグループとして追加します。";
+
+$MAILMANAGER_ADDRESSBOOK_EDIT  =  "編集";
+$MAILMANAGER_ADDRESSBOOK_EDIT_TITLE  =  "選択された連絡先の編集";
+$MAILMANAGER_ADDRESSBOOK_EDIT_TAGGED  =  "チェックした連絡先の編集";
+$MAILMANAGER_ADDRESSBOOK_EDIT_SINGLE  =  "上記連絡先の編集";
+$MAILMANAGER_ADDRESSBOOK_EDIT_HELP_TEXT  = 
+  "以下のフォームを使って連絡先の編集ができます。";
+$MAILMANAGER_ADDRESSBOOK_EDIT_SUCCESS  = 
+  "連絡先を編集しました。";
+$MAILMANAGER_ADDRESSBOOK_EDIT_CANCEL  = 
+  "連絡先の編集要求が取り消されました。";
+
+$MAILMANAGER_ADDRESSBOOK_CHANGE_NONE_FOUND  =  "連絡先に変更はありませんでした。";
+$MAILMANAGER_ADDRESSBOOK_CHANGE_CONFIRM_TEXT  = 
+  "以下の変更をアドレス帳に反映されます:";
+$MAILMANAGER_ADDRESSBOOK_CHANGE_CONFIRM_REMOVE  =  
+  "「__ENTRY__」を削除する";
+$MAILMANAGER_ADDRESSBOOK_CHANGE_CONFIRM_EDIT_NAME  =  
+  "「__ENTRY__」を「__NEWENTRY__」に変更する";
+$MAILMANAGER_ADDRESSBOOK_CHANGE_CONFIRM_EDIT_VALUE  =  
+  "「__ENTRY__」の値を変更する";
+$MAILMANAGER_ADDRESSBOOK_CHANGE_CONFIRM_OVERWRITE  =  
+  "「__ENTRY__」を上書きする";
+$MAILMANAGER_ADDRESSBOOK_CHANGE_CONFIRM_OLD_VALUE  =  "古い値";
+$MAILMANAGER_ADDRESSBOOK_CHANGE_CONFIRM_NEW_VALUE  =  "新しい値";
+
+$MAILMANAGER_ADDRESSBOOK_REMOVE  =  "削除";
+$MAILMANAGER_ADDRESSBOOK_REMOVE_TITLE  =  "選択された連絡先の削除";
+$MAILMANAGER_ADDRESSBOOK_REMOVE_TAGGED  =  "チェックした連絡先の削除";
+$MAILMANAGER_ADDRESSBOOK_REMOVE_SINGLE  =  "上記連絡先の削除";
+$MAILMANAGER_ADDRESSBOOK_REMOVE_CONFIRM_TEXT  =  
+  "アドレス帳から以下の連絡先を本当に削除してもいいですか？";
+$MAILMANAGER_ADDRESSBOOK_REMOVE_SUCCESS  =  
+  "アドレス帳から連絡先が削除されました。";
+$MAILMANAGER_ADDRESSBOOK_REMOVE_CANCEL  =  
+  "連絡先の削除要求が取り消されました。";
+
+$MAILMANAGER_ADDRESSBOOK_PURGE  =  "アドレス帳の初期化";
+$MAILMANAGER_ADDRESSBOOK_PURGE_CONFIRM_TEXT  =  
+  "アドレス帳を本当に初期化してもよろしいですか？";
+$MAILMANAGER_ADDRESSBOOK_PURGE_SUCCESS  =  
+  "アドレス帳が初期化されました！";
+$MAILMANAGER_ADDRESSBOOK_PURGE_CANCEL  =  
+  "アドレス帳の初期化要求が取り消されました。";
+
+$MAILMANAGER_ADDRESSBOOK_IMPORT  =  "ファイルから連絡先を取り込む";
+$MAILMANAGER_ADDRESSBOOK_IMPORT_SHORT  =  "連絡先を取り込む";
+$MAILMANAGER_ADDRESSBOOK_IMPORT_HELP_TEXT  = 
+  "アドレス帳の連絡先が登録されているファイル(CSVなど)を下記フォームで指定してください。
+   各連絡先は1行で記載されている必要があります。正しい書式は連絡先氏名またはグループ名、
+   セパレータ(カンマ、タブ、コロン、セミコロンなど)、メールアドレスまたはアドレスリスト
+   のように定義されている必要があります。";
+$MAILMANAGER_ADDRESSBOOK_IMPORT_HELP_TEXT_2  = 
+  "お使いの PC からファイルをアップロードしてアドレス帳ファイルとして取り込むか
+   サーバにあるファイルをアドレス帳ファイルとして取り込むことができます。
+   もし両方にファイル名を入力すると二つのファイルが統合されます。";
+$MAILMANAGER_ADDRESSBOOK_IMPORT_UPLOAD_FILE  =  "あなたのPCからファイルを取り込む";
+$MAILMANAGER_ADDRESSBOOK_IMPORT_LOCAL_FILE  =  "サーバにあるファイルを取り込む";
+$MAILMANAGER_ADDRESSBOOK_IMPORT_BROWSE  =  "参照";
+$MAILMANAGER_ADDRESSBOOK_IMPORT_BROWSE_HELP = 
+  "ファイルブラウザを使用して、あなたのサーバ上にある、アドレス帳に取り込みたいファイルを
+   選択してください。";
+$MAILMANAGER_ADDRESSBOOK_IMPORT_NO_FILENAME  =  "ファイル名が指定されていません。";
+$MAILMANAGER_ADDRESSBOOK_IMPORT_PARSE_SUCCESS  =  
+  "以下の連絡先がファイルから抽出されました。「アドレス帳に連絡先を取り込む」
+   ボタンを押すと連絡先取り込みを完了します。もしすでに存在する連絡先と同じ
+   連絡先が取り込みを行う連絡先にある場合はすでに存在する連絡先が上書きされます。";
+$MAILMANAGER_ADDRESSBOOK_IMPORT_PARSE_INSERT  =  
+  "アドレス帳に連絡先を取り込む";
+$MAILMANAGER_ADDRESSBOOK_IMPORT_PARSE_FAILURE  =  
+  "ファイルには連絡先として認識できるデータが存在しませんでした。
+   使われているセパレータが正しくない可能性があります。ファイルの内容を
+   確認し再度取り込んでください。";
+$MAILMANAGER_ADDRESSBOOK_IMPORT_SUCCESS  = 
+  "アドレス帳の連絡先を取り込みました。";
+$MAILMANAGER_ADDRESSBOOK_IMPORT_CANCEL  = 
+  "アドレス帳の連絡先取り込み要求を取り消しました。";
+
+$MAILMANAGER_ADDRESSBOOK_SELECT_ADD  =  "追加";
+$MAILMANAGER_ADDRESSBOOK_SELECT_ADD_TITLE  = 
+  "アドレス帳からアドレスを '__FIELD__'
+   受信者リストに追加する。";
+$MAILMANAGER_ADDRESSBOOK_SELECT_CLEAR  =  "消去";
+$MAILMANAGER_ADDRESSBOOK_SELECT_CLEAR_TITLE  = 
+  "'__FIELD__' 受信者リストを消去する。";
+
+$MAILMANAGER_ADDRESSBOOK_EMPTY  =  
+  "アドレス帳には連絡先が存在しません。
+   連絡先を取り込むか、新規連絡先を追加してください。";
+
+$MAILMANAGER_ADDRESSBOOK_ERROR_INCOMPLETE  =  
+  "氏名とメールアドレスの両方が定義されている必要があります。";
+
+$MAILMANAGER_ADDRESSBOOK_NONE_SELECTED  =  
+  "連絡先が選択されていません。";
+
+##############################################################################
+# mail filter strings
+
+$MAILMANAGER_FILTERS_TITLE  =  "メールフィルタ";
+$MAILMANAGER_FILTERS_EDIT  =  "メールフィルタを参照/編集";
+
+$MAILMANAGER_FILTERS_ENABLE  =  "メールフィルタを有効にする";
+$MAILMANAGER_FILTERS_DISABLE  =  "メールフィルタを無効にする";
+
+$MAILMANAGER_FILTERS_CONFIRM_WARNING_TEXT_1  = 
+  "メールフィルタリングの設定を変更するためには、複数のファイルを変更する必要があります。
+   （メーラーソフトとしてProcmailが設定されているかどうかで変わります）
+   しかし、iManager 以外で使われている以下のファイルが編集されることもあります：";
+$MAILMANAGER_FILTERS_CONFIRM_WARNING_TEXT_2  = 
+  "'__ACTION__' で要求された動作を実行してファイルを変更するとファイルの整合性を
+   くずしてしまう可能性があります。 これらの不整合はメールが正しく送信されないなどの
+   問題を引き起こしてしまうことも考えられます。不整合が発生する可能性を無視するか、
+   元のファイルをリストアして続けるか、またはこの動作をキャンセルすることができます。";
+   
+$MAILMANAGER_FILTERS_VERSION  =  "SpamAssassinバージョン";
+
+$MAILMANAGER_FILTERS_STATUS  =  "メールフィルタの状況";
+$MAILMANAGER_FILTERS_STATUS_ON  =  "メールフィルタ有効";
+$MAILMANAGER_FILTERS_STATUS_OFF  =  "メールフィルタ無効";
+$MAILMANAGER_FILTERS_STATUS_SPAMASSASSIN_NOT_FOUND  =  
+  "メールフィルタを有効にできません：SpamAssassinが見つかりません。";
+$MAILMANAGER_FILTERS_STATUS_PROCMAIL_NOT_FOUND  =  
+  "メールフィルタを有効にできません：procmailが見つかりません。";
+$MAILMANAGER_FILTERS_STATUS_SET_SUCCESS  = 
+  "'__ACTION__'要求が実行されました。";
+
+$MAILMANAGER_FILTERS_HELP_TEXT  = 
+  "メールフィルタのインターフェースを利用して、
+   スパムメール対策用にSpamAssassinの設定が行えます。
+   そのインターフェース上で、運用モードの変更、
+   ホワイトリスト＆ブラックリストの編集、ログの
+   設定などが可能です。
+   SpamAssassinについての詳細は<http://www.spamassassin.org/>を
+   参照してください。";
+
+$MAILMANAGER_FILTERS_SPAMASSASSIN_NOT_FOUND  =  
+  "注意：貴方のシステムには、まだSpamAssassinがインストールされていません。";
+
+$MAILMANAGER_FILTERS_PROCMAIL_NOT_FOUND  =  
+  "注意：貴方のシステムには、まだprocmailがインストールされていません。
+   尚、フィルタリングの設定に関しては変更できますが、メールフィルタを
+   有効にすることはできません。";
+
+$MAILMANAGER_FILTERS_MODE  =  "メールフィルタレベル";
+$MAILMANAGER_FILTERS_MODE_STRICT  =  "高";
+$MAILMANAGER_FILTERS_MODE_DEFAULT  =  "中";
+$MAILMANAGER_FILTERS_MODE_PERMISSIVE  =  "低";
+$MAILMANAGER_FILTERS_MODE_CUSTOM  =  "カスタム";
+$MAILMANAGER_FILTERS_MODE_CUSTOM_THRESHOLD  =  "カスタム検出レベル";
+$MAILMANAGER_FILTERS_MODE_CHANGE  =  "変更";
+$MAILMANAGER_FILTERS_MODE_CHANGE_TITLE  =  "メールフィルタレベルの変更";
+$MAILMANAGER_FILTERS_MODE_SET  =  "適用";
+$MAILMANAGER_FILTERS_MODE_SET_SUCCESS  = 
+  "メールフィルタのレベルが変更されました。";
+$MAILMANAGER_FILTERS_MODE_SET_CANCEL  =  
+  "メールフィルタレベルの変更要求が取り消されました。";
+$MAILMANAGER_FILTERS_MODE_HELP  =  
+  "メールフィルタレベルは４段階に設定できます。
+   '高'設定にすると、ホワイトリストに登録されたアドレスからの
+   メール以外はフィルタリングされます。
+   '低'設定にすると、ブラックリストに登録されたアドレスからの
+   メールのみフィルタリングされます。";
+$MAILMANAGER_FILTERS_MODE_HELP_DEFAULT  =  
+  "'中'設定にすると、ホワイトリストに登録されたアドレスからの
+   メールは全て受け取り、ブラックリストに登録されたアドレスからの
+   メールは全てフィルタリングします。また、どちらにも登録されていない
+   アドレスからのメールはデフォルトの検出レベルをもとに振り分けられます。";
+$MAILMANAGER_FILTERS_MODE_HELP_CUSTOM  =  
+  "'カスタム'設定は、'中'設定における検出レベルを変更することができます。
+  より低い値を設定すると、より強くフィルタリングし、またより高い値を設定
+  すると、より多くのメールを通す設定になります。初期値は5です。";
+$MAILMANAGER_FILTERS_MODE_ERROR_CUSTOM_INVALID  =  
+  "カスタム検出レベルの値には整数を入力してください。";
+$MAILMANAGER_FILTERS_MODE_ERROR_CUSTOM_UNDEFINED  =  
+  "カスタム検出レベルの値が入力されていません。";
+
+$MAILMANAGER_FILTERS_SPAM_FOLDER_SAVE  =  "フィルタリングされたメッセージを保存";
+$MAILMANAGER_FILTERS_SPAM_FOLDER_DISCARD  =  "フィルタリングされたメッセージを破棄";
+$MAILMANAGER_FILTERS_SPAM_FOLDER_ENABLE  =  "有効";
+$MAILMANAGER_FILTERS_SPAM_FOLDER_ENABLE_TITLE  =  
+  "「フィルタリングされたメッセージの保存」を有効にする。
+    現在、フィルタリングされたメッセージは破棄されています。";
+$MAILMANAGER_FILTERS_SPAM_FOLDER_DISABLE  =  "無効";
+$MAILMANAGER_FILTERS_SPAM_FOLDER_DISABLE_TITLE  =  
+  "「フィルタリングされたメッセージの保存」を無効にする。
+    現在、フィルタリングされたメッセージは__FOLDER__に保存されています。";
+$MAILMANAGER_FILTERS_SPAM_FOLDER_SPEC  =  "迷惑メールフォルダ";
+$MAILMANAGER_FILTERS_SPAM_FOLDER_CHANGE  =  "迷惑メールフォルダの変更";
+$MAILMANAGER_FILTERS_SPAM_FOLDER_SIZE  =  "迷惑メールフォルダのサイズ";
+$MAILMANAGER_FILTERS_SPAM_FOLDER_ONE_MESG  =  "1 メッセージ";
+$MAILMANAGER_FILTERS_SPAM_FOLDER_NUM_MESG  =  "__NUM__ メッセージ";
+$MAILMANAGER_FILTERS_SPAM_FOLDER_NUKE  =  "迷惑メールフォルダを空にする";
+$MAILMANAGER_FILTERS_SPAM_FOLDER_SET  =  "設定を保存する";
+$MAILMANAGER_FILTERS_SPAM_FOLDER_HELP  =  
+  "フィルタリングされたメッセージは、迷惑メールフォルダに保存するか、
+   そのまま破棄することができます。迷惑メールフォルダに保存すると、
+   必要なメッセージが誤って振り分けられた場合でも、回復することができます。
+   そのまま破棄されている場合は、確認もできません。";
+$MAILMANAGER_FILTERS_SPAM_FOLDER_HELP_SPEC  =  
+  "「フィルタリングされたメッセージの保存」を有効にした場合、
+   迷惑メールフォルダの場所を設定しなければなりません。
+   推奨：'\$HOME/Mail/spam'('\$HOME'は貴方のホームディレクトリになります）";
+$MAILMANAGER_FILTERS_SPAM_FOLDER_CHANGE_ERROR  =  
+  "迷惑メールフォルダの値を入力してください。";
+$MAILMANAGER_FILTERS_SPAM_FOLDER_CHANGE_SUCCESS  =  
+  "迷惑メールフォルダの設定が変更されました。";
+$MAILMANAGER_FILTERS_SPAM_FOLDER_CHANGE_CANCEL  =  
+  "迷惑メールフォルダ設定の変更要求が取り消されました。";
+$MAILMANAGER_FILTERS_SPAM_FOLDER_NUKE_TITLE  =  "迷惑メールフォルダを空にする。";
+$MAILMANAGER_FILTERS_SPAM_FOLDER_NUKE_CONFIRM  =  
+  "迷惑メールフォルダを本当に空にしてよろしいですか？";
+$MAILMANAGER_FILTERS_SPAM_FOLDER_NUKE_OPTION_EMPTY  =  
+  "迷惑メールフォルダを空にする";
+$MAILMANAGER_FILTERS_SPAM_FOLDER_NUKE_OPTION_RESET  =  
+  "迷惑メールフォルダを空にしてログも削除する";
+$MAILMANAGER_FILTERS_SPAM_FOLDER_NUKE_SUCCESS  =  
+  "迷惑メールフォルダを空にしました。";
+$MAILMANAGER_FILTERS_SPAM_FOLDER_NUKE_CANCEL  =  
+  "迷惑メールフォルダを空にする要求を取り消しました。";
+
+$MAILMANAGER_FILTERS_LISTS_WHITE_COUNT  =  "ホワイトリスト登録数";
+$MAILMANAGER_FILTERS_LISTS_WHITE_PATTERNS  =  "ホワイトリスト定義";
+$MAILMANAGER_FILTERS_LISTS_WHITE_EDIT  =  "ホワイトリストを編集";
+$MAILMANAGER_FILTERS_LISTS_BLACK_COUNT  =  "ブラックリスト登録数";
+$MAILMANAGER_FILTERS_LISTS_BLACK_PATTERNS  =  "ブラックリスト定義";
+$MAILMANAGER_FILTERS_LISTS_BLACK_EDIT  =  "ブラックリストを編集";
+$MAILMANAGER_FILTERS_LISTS_CROPPED  =  "他 __NUM__ 件";
+$MAILMANAGER_FILTERS_LISTS_EDIT_STORE  =  "新しい定義を保存";
+$MAILMANAGER_FILTERS_LISTS_EDIT_HELP_ABOUT  =  
+  "メールフィルタでは、ホワイトリスト及びブラックリストの定義が可能です。
+   ホワイトリストに登録されたアドレスからのメールは全て受け取り、
+   ブラックリストに登録されたアドレスからのメールは全て拒否します。";
+$MAILMANAGER_FILTERS_LISTS_EDIT_HELP_TYPES_FROM  =  
+  "ホワイトリストとブラックリストにはそれぞれ'from'と'to'の
+   ２タイプの定義があります。'whitelist_from'定義では、内容に関わらず
+   指定されたアドレスからのあらゆるメッセージを受け取ります。
+   'blacklist_from'定義では、内容に関わらず指定されたアドレスからの
+   あらゆるメッセージをフィルタリングします。";
+$MAILMANAGER_FILTERS_LISTS_EDIT_HELP_TYPES_TO  =  
+  "'whitelist_to'と'blacklist_to'定義では、ヘッダーの'To:'と'Cc:'欄の
+   アドレスに一致するか調べます。'To:'または'Cc:'欄のアドレスと
+   'whitelist_to'のアドレスが一致した場合、メッセージを受け取ります。
+   'To:'または'Cc:'欄のアドレスと'blacklist_to'のアドレスが一致した場合、
+   メッセージをフィルタリングします。";
+$MAILMANAGER_FILTERS_LISTS_EDIT_HELP_FORMAT  =  
+  "ホワイトリストとブラックリスト共に各定義でワイルドカード(*)を使用できます。
+   （但し、それ以外の正規表現はサポートされていません）
+   一つの定義に対し、間にスペースを置くことで複数アドレスを設定できます。
+   同じ種類の定義を複数行で設定しても構いません。";
+$MAILMANAGER_FILTERS_LISTS_EDIT_HELP_EXAMPLES_1  =  
+  "以下、whitelist_from, whitelist_to, blacklist_from, and blacklist_to の
+   例を参照してください。";
+$MAILMANAGER_FILTERS_LISTS_EDIT_HELP_EXAMPLES_2  =  
+  "   whitelist_from     *\@some-domain.name
+   whitelist_from     friend\@some.isp neighbor\@another.isp
+   whitelist_to       mailing_list\@add.ress
+   blacklist_from     known\@spam.mer
+   blacklist_from     *.spam-haven.net";
+$MAILMANAGER_FILTERS_LISTS_EDIT_HELP  =  
+  "以下のフォームを使用してホワイトリストとブラックリストの定義を
+   追加／編集／削除してください。";
+$MAILMANAGER_FILTERS_LISTS_EDIT_TITLE  =  "ホワイト／ブラックリストの編集";
+$MAILMANAGER_FILTERS_LISTS_EDIT_SUCCESS  =  
+  "ホワイト／ブラックリストが編集されました。";
+$MAILMANAGER_FILTERS_LISTS_EDIT_CANCEL  =  
+  "ホワイト／ブラックリストの編集が取り消されました。";
+
+$MAILMANAGER_FILTERS_LOG_TITLE  =  "メールフィルタログ";
+$MAILMANAGER_FILTERS_LOG_STATUS  =  "ログをとる";
+$MAILMANAGER_FILTERS_LOG_ENABLE  =  $MAILMANAGER_FILTERS_SPAM_FOLDER_ENABLE;
+$MAILMANAGER_FILTERS_LOG_DISABLE  =  $MAILMANAGER_FILTERS_SPAM_FOLDER_DISABLE;
+$MAILMANAGER_FILTERS_LOG_OPTIONS_EDIT = "フィルタログオプションを変更する";
+$MAILMANAGER_FILTERS_LOG_FILE_SPEC  =  "ログのファイル名";
+$MAILMANAGER_FILTERS_LOG_FILE_CHANGE  =  "ログファイル名を変更する";
+$MAILMANAGER_FILTERS_LOG_FILE_SIZE  =  "ログファイルのサイズ";
+$MAILMANAGER_FILTERS_LOG_STATUS_ON = "ログをとる";
+$MAILMANAGER_FILTERS_LOG_STATUS_OFF  =  "ログをとらない";
+$MAILMANAGER_FILTERS_LOG_FILE_VIEW  =  "ログを見る";
+$MAILMANAGER_FILTERS_LOG_FILE_RESET  =  "ログをリセットする";
+$MAILMANAGER_FILTERS_LOG_OPTIONS_STORE  =  "ログのオプション";
+$MAILMANAGER_FILTERS_LOG_OPTIONS_HELP  =  
+  "フィルタリングされたメッセージのログを保存することができます。
+   ログを辿ることによって、必要なメッセージがないかすぐに確認できます。
+   ログをとる場合、ログの保存場所を設定しなければなりません。
+   推奨：'\$HOME/spam.log'('\$HOME'は貴方のホームディレクトリになります）";
+$MAILMANAGER_FILTERS_LOG_OPTIONS_CHANGE_SUCCESS  =  
+  "ログのオプションが変更されました。";
+$MAILMANAGER_FILTERS_LOG_OPTIONS_CHANGE_CANCEL  =  
+  "ログオプションの変更が取り消されました。";
+$MAILMANAGER_FILTERS_LOG_FILE_RESET_TITLE  =  "ログのリセット";
+$MAILMANAGER_FILTERS_LOG_FILE_RESET_CONFIRM  =  
+  "ログを本当にリセットしてよろしいですか？";
+$MAILMANAGER_FILTERS_LOG_FILE_RESET_OPTION_EMPTY  =  
+  "ログをリセットする";
+$MAILMANAGER_FILTERS_LOG_FILE_RESET_OPTION_RESET  =  
+  "ログをリセットして迷惑メールフォルダを空にする";
+$MAILMANAGER_FILTERS_LOG_FILE_RESET_SUCCESS  =  
+  "ログがリセットされました。";
+$MAILMANAGER_FILTERS_LOG_FILE_RESET_CANCEL  =  
+  "ログのリセット要求が取り消されました。";
+
+$MAILMANAGER_FILTERS_LOG_DISPLAY_CHANGE  =  "表示オプションの変更";
+$MAILMANAGER_FILTERS_LOG_DISPLAY_DATE_RANGE  =  "表示オプション - 表示日数";
+$MAILMANAGER_FILTERS_LOG_DISPLAY_DATE_ALL  =  "全て";
+$MAILMANAGER_FILTERS_LOG_DISPLAY_DATE_TODAY  =  "今日";
+$MAILMANAGER_FILTERS_LOG_DISPLAY_DATE_YESTERDAY  =  "昨日";
+$MAILMANAGER_FILTERS_LOG_DISPLAY_DATE_LAST7DAYS  =  "1週間";
+$MAILMANAGER_FILTERS_LOG_DISPLAY_DATE_CUSTOM  =  "カスタム";
+$MAILMANAGER_FILTERS_LOG_DISPLAY_DATE_CUSTOM_FROM  =  "from:";
+$MAILMANAGER_FILTERS_LOG_DISPLAY_DATE_CUSTOM_TO  =  "to:";
+$MAILMANAGER_FILTERS_LOG_DISPLAY_DATE_CHANGE  =  "表示日数の変更";
+$MAILMANAGER_FILTERS_LOG_DISPLAY_SENDER_MATCH  =  "送信者パターン一致";
+$MAILMANAGER_FILTERS_LOG_DISPLAY_SENDER_PATTERN  =  
+  "表示オプション - 送信者パターン";
+$MAILMANAGER_FILTERS_LOG_DISPLAY_SENDER_CHANGE  =  "送信者パターンの変更";
+$MAILMANAGER_FILTERS_LOG_DISPLAY_SENDER_HELP  =  
+  "次のパターンと一致するアドレスからのフィルタリングされたメッセージを
+   ログとして表示することができます:";
+$MAILMANAGER_FILTERS_LOG_DISPLAY_SUBJECT_MATCH  =  "件名パターン一致";
+$MAILMANAGER_FILTERS_LOG_DISPLAY_SUBJECT_PATTERN  =  
+  "表示オプション - 件名パターン";
+$MAILMANAGER_FILTERS_LOG_DISPLAY_SUBJECT_CHANGE  =  "件名パターンの変更";
+$MAILMANAGER_FILTERS_LOG_DISPLAY_SUBJECT_HELP  =  
+  "次のパターンと一致する件名を持つフィルタリングされたメッセージを
+   ログとして表示することができます。";
+$MAILMANAGER_FILTERS_LOG_DISPLAY_NO_ENTRIES  = 
+  "ログファイルにはメッセージがありません。";
+$MAILMANAGER_FILTERS_LOG_DISPLAY_NO_MATCHES  = 
+  "ログファイルにはオプション条件に合うメッセージがありません。";
+
+$MAILMANAGER_FILTERS_RETURN  =  "メールフィルタユーティリティに戻る";
+
+##############################################################################
+# mail autoreply/vacation strings
+
+$MAILMANAGER_AUTOREPLY_TITLE  =  "メール自動返信機能";
+$MAILMANAGER_AUTOREPLY_TITLE_SHORT = "メール自動返信機能";
+
+$MAILMANAGER_AUTOREPLY_ENABLE  =  "メール自動返信機能をオンにする";
+$MAILMANAGER_AUTOREPLY_DISABLE  =  "メール自動返信機能をオフにする";
+
+$MAILMANAGER_AUTOREPLY_EDIT_SETTINGS  =  "メール自動返信機能設定の編集";
+$MAILMANAGER_AUTOREPLY_EDIT_SETTINGS_SHORT  =  "設定の編集";
+
+$MAILMANAGER_AUTOREPLY_ENABLE_DENIED = 
+  "メール自動返信機能をオンにできません。自動返信メッセージがありません";
+
+$MAILMANAGER_AUTOREPLY_CONFIRM_WARNING_TEXT_1  = 
+  "メール自動返信機能をオン、オフするには複数のファイルを変更する必要があります。
+   (メールフィルタリングが行われているかどうかで回数が変わります)
+   しかし、iManager 以外で使われている以下のファイルが編集されることもあります：";
+$MAILMANAGER_AUTOREPLY_CONFIRM_WARNING_TEXT_2  = 
+  "'__ACTION__' で要求された動作を実行してファイルを変更するとファイルの整合性を
+   くずしてしまう可能性があります。 これらの不整合はメールが正しく送信されないなどの
+   問題を引き起こしてしまうことも考えられます。不整合が発生する可能性を無視するか、
+   元のファイルをリストアして続けるか、またはこの動作をキャンセルすることができます。";
+
+$MAILMANAGER_AUTOREPLY_STATUS  =  "メール自動返信機能の状態";
+$MAILMANAGER_AUTOREPLY_STATUS_ON  =  "メール自動返信機能  オン";
+$MAILMANAGER_AUTOREPLY_STATUS_OFF  =  "メール自動返信機能  オフ";
+$MAILMANAGER_AUTOREPLY_STATUS_SET_SUCCESS  = 
+  "'__ACTION__' になりました。";
+
+$MAILMANAGER_AUTOREPLY_HELP_TEXT  = 
+  "メール自動返信機能は、メールを受信した際に自動で返信を行います。
+   例えば、顧客からのメールに対応して自動で受け取り通知などを
+   返信することや、休暇中の場合のお知らせメールなどに設定できます。
+   以下のユーティリティを使ってメール自動返信機能の設定をしてください。";
+
+$MAILMANAGER_AUTOREPLY_MODE  =  "メール自動返信モード";
+$MAILMANAGER_AUTOREPLY_MODE_AUTOREPLY  =  "自動返信モード";
+$MAILMANAGER_AUTOREPLY_MODE_VACATION  =  "休暇自動返信モード";
+$MAILMANAGER_AUTOREPLY_MODE_UNDEFINED  =  "設定無し";
+$MAILMANAGER_AUTOREPLY_MODE_CHANGE  =  "モードの変更";
+$MAILMANAGER_AUTOREPLY_MODE_SET  =  "モード設定";
+$MAILMANAGER_AUTOREPLY_MODE_SET_SUCCESS  = 
+  "モードを変更しました。";
+$MAILMANAGER_AUTOREPLY_MODE_SET_CANCEL  =  
+  "モードを変更しませんでした。";
+$MAILMANAGER_AUTOREPLY_MODE_HELP  =  
+  "自動返信機能には二つのモードがあります。「自動返信」モードでは
+   受信する全てのメールに対して自動返信します。「休暇自動返信」モード
+   では1日1回受信したメールに対して自動返信します。(例：もし送信者が
+   24時間以内に複数のメールを送ってきた場合でも、送信者は自動返信
+   メッセージを1回しか受け取らないようになります)";
+
+$MAILMANAGER_AUTOREPLY_CONTENT  =  "自動返信メッセージ内容";
+$MAILMANAGER_AUTOREPLY_CONTENT_SIZE  =  "自動返信メッセージサイズ";
+$MAILMANAGER_AUTOREPLY_CONTENT_DATE  =  "自動返信タイムスタンプ";
+$MAILMANAGER_AUTOREPLY_CONTENT_UNDEFINED  =  "設定無し";
+$MAILMANAGER_AUTOREPLY_CONTENT_TEXT  =  "返信メールの内容";
+$MAILMANAGER_AUTOREPLY_CONTENT_FILES  =  "返信メールに添付するファイル";
+$MAILMANAGER_AUTOREPLY_CONTENT_CROPPED  =  "一部引用";
+$MAILMANAGER_AUTOREPLY_CONTENT_EDIT  =  "メッセージの編集";
+$MAILMANAGER_AUTOREPLY_CONTENT_EDIT_SUCCESS  =  
+  "新規自動返信メッセージが保存されました。";
+$MAILMANAGER_AUTOREPLY_CONTENT_EDIT_CANCEL  =  
+  "新規自動返信メッセージは保存されませんでした。";
+$MAILMANAGER_AUTOREPLY_CONTENT_HELP  =  
+  "自動返信で送信されるメッセージの内容はテキストのみ、テキスト以外のファイル
+   を添付ファイルとして添付する、またはこれらの組み合わせから選ぶことができます。
+   自動返信で送信される内容については以下のフォームから定義することができます。
+   件名の入力を忘れると件名なしでメールが送信されてしまいますので注意してください。
+   入力フォームでは送信されるメールの返信先(reply-to)も定義することができます。";
+$MAILMANAGER_AUTOREPLY_CONTENT_FROM  =  "メッセージ送信者名";
+$MAILMANAGER_AUTOREPLY_CONTENT_SUBJECT  =  "送信メッセージの件名";
+$MAILMANAGER_AUTOREPLY_CONTENT_REPLY_TO  =  "送信メッセージの返信先";
+$MAILMANAGER_AUTOREPLY_CONTENT_BODY  =  
+  "送信メッセージの内容 (本文)";
+$MAILMANAGER_AUTOREPLY_CONTENT_ATTACHMENTS_EXISTING  = 
+  "既存の返信メール添付ファイル (残す場合はチェックする)";
+
+$MAILMANAGER_AUTOREPLY_CONTENT_REMOVE_SUCCESS  =  
+  "以前の自動返信メッセージを削除しました。";
+
+$MAILMANAGER_AUTOREPLY_LOG_VIEW  =  "ログの参照";
+$MAILMANAGER_AUTOREPLY_LOG_SIZE  =  "自動返信機能のログのサイズ";
+$MAILMANAGER_AUTOREPLY_LOG_ONE_ENTRY  =  "1 件";
+$MAILMANAGER_AUTOREPLY_LOG_NUM_ENTRIES  =  "__NUM__ 件";
+$MAILMANAGER_AUTOREPLY_LOG_RESET  =  "ログのリセット";
+$MAILMANAGER_AUTOREPLY_LOG_ENTRIES  =  
+  "自動返信機能のログの内容：";
+$MAILMANAGER_AUTOREPLY_LOG_EMPTY  =  "現在自動返信機能のログはありません。";
+$MAILMANAGER_AUTOREPLY_LOG_FORMAT  =  "返信先： __EMAIL__";
+$MAILMANAGER_AUTOREPLY_LOG_RESET_SUCCESS  =  
+  "自動返信機能のログを削除しました。";
+$MAILMANAGER_AUTOREPLY_LOG_RESET_CANCEL  =  
+  "自動返信機能のログを削除しませんでした。";
+  
+$MAILMANAGER_AUTOREPLY_LOG_SUPPRESS_DUE_TO_INTERVAL  =  
+  "__EMAIL__への自動返信を抑制（24時間内に1回の返信のみ）。";
+$MAILMANAGER_AUTOREPLY_LOG_SUPPRESS_DUE_TO_RATE  =  
+  "__EMAIL__への自動返信を抑制：メール量超過。";
+$MAILMANAGER_AUTOREPLY_LOG_SUPPRESS_BOUNCE_ADDRESS  =  
+  "バウンスアドレス__EMAIL__への自動返信を抑制。";
+$MAILMANAGER_AUTOREPLY_LOG_DISALLOW_DUE_TO_SENDER  =  
+  "__EMAIL__への自動返信を非許可（実在しないユーザ）。";
+$MAILMANAGER_AUTOREPLY_LOG_DISALLOW_DUE_TO_HEADER  =  
+  "ヘッダー'__HEADER__'による自動返信の非許可（ループの回避）。";
+
+$MAILMANAGER_AUTOREPLY_RETURN  =  "自動返信機能ユーティリティに戻る";
+
+$MAILMANAGER_AUTOREPLY_INVALID_SHELL  =  
+  "注意：貴方のログインシェルは'有効'になっていません。
+   いくつかのメールシステムでは、自動返信機能を使うために
+   シェルを有効にする必要があります。自動返信機能を使えない場合は
+   システム管理者に問い合わせてください。
+   ";
+
+##############################################################################
+# shared by both autoresponder utilities and mail filter utilities
+
+$MAILMANAGER_EXTERNAL_CHANGES_WARNING_FILENAME  =  "ファイル名";
+$MAILMANAGER_EXTERNAL_CHANGES_WARNING_CURSIZE  =  "ファイルサイズ (現在)";
+$MAILMANAGER_EXTERNAL_CHANGES_WARNING_LASTSIZE  =  "ファイルサイズ (登録時)";
+$MAILMANAGER_EXTERNAL_CHANGES_WARNING_CURDATE  =  "タイムスタンプ (現在)";
+$MAILMANAGER_EXTERNAL_CHANGES_WARNING_LASTDATE  =  "タイムスタンプ (登録時)";
+$MAILMANAGER_EXTERNAL_CHANGES_PROCEED_IGNORE  = 
+  "続ける (不整合を無視する)";
+$MAILMANAGER_EXTERNAL_CHANGES_PROCEED_RESTORE  = 
+  "続ける (元のファイルをリストアする)";
+
+##############################################################################
+# mail signature strings
+
+$MAILMANAGER_SIGNATURE_TITLE  =  "署名";
+$MAILMANAGER_SIGNATURE_EDIT  =  "署名の参照/編集";
+$MAILMANAGER_SIGNATURE_STORE  =  "署名の設定の保存";
+$MAILMANAGER_SIGNATURE_REMOVE  =  "署名の削除";
+
+$MAILMANAGER_SIGNATURE_HELP_TEXT  = 
+  "下記のフォームでメールの署名を定義することができます。通常メールの署名は
+   氏名、役職、会社名、会社のウェブサイトURL、電話・FAX・携帯番号、メールアドレス
+   などが含まれます。このほかにも色々な工夫をして個性的な署名を考える人達も
+   います。署名の長さは5行から8行程度が適当とされています。";
+
+$MAILMANAGER_SIGNATURE_CONTENT_TEXT  =  "署名の定義";
+$MAILMANAGER_SIGNATURE_APPEND_TEXT  =  
+  "メールを作成する際に自動的に署名を追加しますか？";
+
+$MAILMANAGER_SIGNATURE_CANCEL_TEXT  = 
+  "署名は変更されませんでした。";
+$MAILMANAGER_SIGNATURE_STORE_SUCCESS_TEXT  = 
+  "新規署名が保存されました。";
+$MAILMANAGER_SIGNATURE_REMOVE_SUCCESS_TEXT  = 
+  "署名が削除されました。";
+$MAILMANAGER_SIGNATURE_TOO_LARGE  = 
+  "署名が大きすぎます！(10KB 以上)";
+
+##############################################################################
+# mailbox parsing 'memory exceeded' crash strings
+$MAILMANAGER_FOLDER_OUT_OF_MEMORY_TITLE  =  "メモリ不足エラーが検出されました";
+$MAILMANAGER_FOLDER_OUT_OF_MEMORY_TEXT  = 
+  "メールフォルダ __MAILBOX__ を指定された並び替え設定（日付順、送信者順、
+   件名順など）を適用して表示する際にシステムのメモリ上限を超えること
+   はできません。メールを並び替え無しで参照するには以下のボタンをクリックしてください。";
+
+##############################################################################
+# eof
+
+1;
+

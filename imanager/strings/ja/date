@@ -1,0 +1,34 @@
+#
+# date strings
+#
+# $SMEId: local/imanager/strings/ja/date,v 2.12 2004/08/27 18:27:50 rus Exp $
+#
+# $Id: local/imanager/strings/ja/date,v 2.11 2003/09/24 13:10:00 M.Matsuda Exp $
+#
+
+$MONTHS_JAN  =  "1";
+$MONTHS_FEB  =  "2";
+$MONTHS_MAR  =  "3";
+$MONTHS_APR  =  "4";
+$MONTHS_MAY  =  "5";
+$MONTHS_JUN  =  "6";
+$MONTHS_JUL  =  "7";
+$MONTHS_AUG  =  "8";
+$MONTHS_SEP  =  "9";
+$MONTHS_OCT  =  "10";
+$MONTHS_NOV  =  "11";
+$MONTHS_DEC  =  "12";
+
+$WEEKDAYS_MON  =  "月";
+$WEEKDAYS_TUE  =  "火";
+$WEEKDAYS_WED  =  "水";
+$WEEKDAYS_THU  =  "木";
+$WEEKDAYS_FRI  =  "金";
+$WEEKDAYS_SAT  =  "土";
+$WEEKDAYS_SUN  =  "日";
+
+##############################################################################
+# eof
+
+1;
+

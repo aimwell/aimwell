@@ -1,0 +1,136 @@
+
+You should probably be aware of the method I have implemented to allow
+you to custom label the imanager.  Basically there are six files that
+are used, they are:          
+
+    generic_footer      help_footer     login_footer
+    generic_header      help_header     login_header
+
+The structure of each page that the software builds looks like this:
+
+  [header]
+  ----------
+  [dynamic content]
+  ----------
+  [footer]
+
+The header and footer part of each page are stored in the separate
+files above, are simply read in line by line, and then displayed by
+the software with a handful of caveats (which I will explain later).                                            
+There are three types of pages: 'generic', 'help', and 'login'.  So 
+obviously the three types of pages multiplied by the header and footer
+gives you the six files I listed above.  These six files all reside in
+the "label/default" directory.  In the label directory, you also see an
+empty "custom" directory where you can put your own version of the six
+files.  You can also create "hostname" directories in the "label" 
+directory and then store separate versions of these six files for each
+subhost (see the examples found in the mail.sorenson.org directory).
+
+The software will look for label files in the following order:
+
+  1) "label/{HOSTNAME}/[file]"
+  2) "label/custom/[file]"
+  3) "label/default/[file]"
+
+I should also probably mention what the three types of files are used
+for; the "login_" files are used for the login page; the "help_" files
+are used for any help pop-up windows; and the "generic_" header and
+footer files are used for everything else.             
+
+The caveats I mentioned earlier are in regard to how the software 
+reads in each of these six files.  When the software reads in a label
+file, it looks for a few "special" tags.  These are:             
+
+  a) __TITLE__              (parsed for in header only)
+     __JAVASCRIPT__         (parsed for in header only)
+  b) __NAVIGATION_MENU__    (parsed for in header and footer)
+  c) __ROOT_DIR__           (parsed for in header and footer)
+  d) __AUTH_CREDENTIALS__   (parsed for in header and footer)
+  e) __HTTP_HTTPS__         (parsed for in header and footer)
+  f) __LANG_PREF__          (parsed for in header and footer)
+  g) __LANG_STRING__        (parsed for in header and footer)
+
+----------------------------------------------------------------------------
+
+a) The "__TITLE__" and "__JAVASCRIPT__" tags are looked for when a header is
+   parsed.  The "__TITLE__" tag is the title of the page that the software
+   is building.  If the page being built has some supplementary javascript
+   code, then it is passed into the label header function to be inserted
+   into the header where the string "__JAVASCRIPT__" occurs.  Typically, a
+   header file would include this string in this manner:   
+
+     <html>
+     <head>
+     <title>__TITLE__</title>
+     __JAVASCRIPT__</head>
+  
+   See the generic_header for a more thorough example.
+
+----------------------------------------------------------------------------
+
+b) The "__NAVIGATION_MENU__" is parsed by both the label footer and label
+   header functions but typically you would include this tag in the 
+   footer.  The software will replace this string with the text navigation
+   menu appropriate for the page being built.  Here is a usage example:
+
+     <hr noshade>
+     <!-- begin navigation menu -->
+     __NAVIGATION_MENU__
+     <!-- end navigation menu -->
+     <p>
+
+   See the generic_footer for a more thorough example.            
+
+----------------------------------------------------------------------------
+
+c) The "__ROOT_DIR__" is used to indicate to the parsing routines where the 
+   relative location of the root software directory should be used.  This is
+   necessary to allow for subhosts to use the software URLs using relative
+   URLs rather than absolute URLs.  For example:
+
+     <img width="350" height="100" src="__ROOT_DIR__/graphics/entry.gif">
+     <a href="__ROOT_DIR__/wizards/preferences.cgi">Preferences</a>
+
+----------------------------------------------------------------------------
+
+d) The "__AUTH_CREDENTIALS__ " is scanned for and replaced by the session
+   authorization string before the header and/or footer are displayed.  It
+   is necessary to include this tag in any hypertext references to the
+   software wizards inside header and footer files.  For example:
+
+   <a href="__ROOT_DIR__/wizards/filemanager.cgi?__AUTH_CREDENTIALS__">
+      File Manager Wizard</a>
+
+----------------------------------------------------------------------------
+
+e) You would use the "__HTTP_HTTPS__" tag in a url construction if you want
+   to reference an <img> from another machine and want that reference to be
+   either an http:// or https:// reference depending on how the software is
+   being accessed.  For example:
+
+   <img width="550" height="50" 
+        src="__HTTP_HTTPS__://www.some.domain/graphics/image.gif">
+
+----------------------------------------------------------------------------
+
+f) The "__LANG_PREF__" is used where a path to a graphic image which should
+   include a language preference is required.  For example:
+
+   <img width="350" height="25" 
+        src="__ROOT_DIR__/graphics/lang/__LANG_PREF__/entrytext.gif">
+
+----------------------------------------------------------------------------
+
+g) The "__LANG_STRING__#lib#stringname#" tag is used to insert a specific 
+   language string definition that is defined in the 'lib' strings file.
+
+----------------------------------------------------------------------------
+
+If you are confused about tag usage, please refer to the files in the
+"default" or "mail.sorenson.org" directory for examples of usage of these
+special tags in a more complete context.                           
+
+I think that covers everything.
+
+--rus.
+

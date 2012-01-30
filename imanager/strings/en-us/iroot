@@ -1,0 +1,101 @@
+#
+# iroot global and main menu strings
+#
+# $SMEId: local/imanager/strings/en/iroot,v 2.12 2004/08/27 18:27:46 rus Exp $
+#
+
+$IROOT_MAINMENU_TITLE = "$SOFTWARE_TITLE: Tools and Wizards";
+
+$IROOT_MAINMENU_TEXT = 
+  "Welcome to the suite of administration tools and wizards.  A list
+   of available utilities is shown below.";
+
+$IROOT_DENIED_TITLE = "$SOFTWARE_TITLE: Tools and Wizards - Access Denied";
+$IROOT_DENIED_TEXT = 
+  "Your login profile is not considered to be a 'root' profile.  Therefore
+   you will not be allowed to use the administration tools and wizards.";
+
+$IROOT_RESOURCE_ERROR_TITLE = 
+  "$SOFTWARE_TITLE: Tools and Wizards - Resource Error";
+$IROOT_RESOURCE_ERROR_TEXT = 
+  "An error occurred while attempting to execute a __RESOURCE__ command.
+   A description of the error is given below:";
+
+$IROOT_ADD_TEXT = "Add";
+$IROOT_EDIT_TEXT = "Edit";
+$IROOT_REMOVE_TEXT = "Remove";
+$IROOT_VIEW_TEXT = "View All";
+$IROOT_REBUILD_TEXT = "Rebuild DB";
+
+$IROOT_USERS_TITLE = "Users";
+$IROOT_USERS_HELP = 
+  "Your Virtual Server may support multiple users.  Users can be 
+   configured to include e-mail and/or ftp privileges which may or
+   may not be restrained by a disk space quota.  Check with your 
+   server administrator if you are unsure whether your Virtual 
+   Server supports multiple users.";
+
+$IROOT_GROUPS_TITLE = "Groups";
+$IROOT_GROUPS_HELP = 
+  "You can use groups to organize users into classes that inherit 
+   specific privileges and access rights.  Some groups like the
+   'wheel' group give a user elevated system privileges; other
+   groups like the 'ftp' group allow a user ftp access.  Every user
+   belongs to at least one group, but can belong to multiple groups.";
+
+$IROOT_ALIASES_TITLE = "Aliases";
+$IROOT_ALIASES_HELP = 
+  "You can instruct your Virtual Server to 'alias' or forward e-mail 
+   addressed to a specific address to one or more recipients.  You may
+   also forward an e-mail message to a special processing program such 
+   as an autoresponder.";
+
+$IROOT_VIRTMAPS_TITLE = "Virtmaps";
+$IROOT_VIRTMAPS_HELP = 
+  "Virtual address mappings, or 'virtmaps', are similar to aliases but
+   are tailored specifically for virtual subhosts that may be configured
+   on your Virtual Server.  You will want to use virtmaps to resolve
+   possible delivery conflicts between one or more domain names.  For 
+   example, 'webmaster\@virtualhost1' and 'webmaster\@virtualhost2' would
+   require the use of virtmaps to guarantee e-mail is delivered to two
+   separate addresses rather than one.";
+
+$IROOT_SPAMMERS_TITLE = "Spammers";
+$IROOT_SPAMMERS_HELP = 
+  "You can configure your Virtual Server to block incoming e-mail from
+   specific addresses and/or domain names.  Labelled as 'spammers', 
+   the addresses and/or domain names you identify in this file, will
+   not be allowed to deliver e-mail to the users, aliases, or virtmaps 
+   configured on your Virtual Server.";
+
+$IROOT_MAILACCESS_TITLE = "Mail Access";
+$IROOT_MAILACCESS_HELP = 
+  "You can configure your Virtual Server to reject (or accept) incoming 
+   e-mail from specific IP address ranges and/or domain names.  It is 
+   common to list domain names and/or IP addresses of known spammers in 
+   your mail access file.  The definitions you list in this file will
+   not be allowed to deliver e-mail to the users, aliases, or virtmaps 
+   configured on your Virtual Server.";
+
+$IROOT_VHOSTS_TITLE = "Virtual Hosts";
+$IROOT_VHOSTS_HELP = 
+  "Virtual Hosting allows you to support multiple domain names on a 
+   single Virtual Server.  You can give each virtual host its own 
+   unique ftp login, e-mail addresses, and web site.";
+$IROOT_VHOSTS_TEMPLATES_HELP = 
+  "For your convenience when adding or editing Virtual Hosts entries,
+   built-in templates are provided which you can use to quickly populate
+   Virtual Host directive definitions.";
+$IROOT_VHOSTS_TEMPLATES_EDIT_USER = "Edit User-based Template";
+$IROOT_VHOSTS_TEMPLATES_EDIT_ADMIN = "Edit Admin-based Template";
+
+# generic error notification
+$IROOT_ERRORS_FOUND = 
+  "Errors were found in the data you submitted, please see below for
+   more information."; 
+
+##############################################################################
+# eof
+
+1;
+

@@ -1,0 +1,153 @@
+.de Vb
+.ft CW
+.nf
+.ne \\$1
+..
+.de Ve
+.ft R
+..
+.TH autoreply 1
+.SH NAME
+autoreply \- rate limited automatic replies to email messages
+.SH SYNOPSIS
+.B autoreply
+[
+.B \-c \fIcount
+] [
+.B \-h \fIhistory
+] [
+.B \-i \fIinterval
+] [
+.B \-l \fIlogfile
+] [
+.B \-s \fIsubject
+]
+.I response
+.SH DESCRIPTION
+.B autoreply
+is intended to be used to automatically reply to email messages.
+
+.B autoreply
+can be called from a
+.BR sendmail(8)\ .forward
+file, a qmail
+.BR dot-qmail(5)
+control file, a mdforward control file or from
+.BR procmail(1).
+
+.B autoreply
+has a number of features to make it safe to use.  These include
+suppressing replies to addresses that have been replied to
+recently, not responding to mailing lists or administrative
+accounts such as MAILER-DAEMON, not replying to other instances
+of autoreply, and not exceeding a configurable rate limit overall.
+
+These features make it extraordinarily difficult for
+.B autoreply
+to participate in mailing loops.
+
+.B autoreply
+runs in the user's home directory.
+
+.SH "OPTIONS"
+.TP
+.B \-c \fIcount
+Limit replies to
+.I count
+per interval instead of the default 30.
+.TP
+.B \-h \fIhistory
+Use
+.I history
+as the history file instead of $HOME/.autoreply/histfile.
+.TP
+.B \-i \fIinterval
+Use
+.I interval
+instead of the default 30 minutes for suppressing replies and
+in rate calculations.
+.TP
+.B \-l \fIlogfile
+Use
+.I logfile
+instead of $HOME/.autoreply/log for log messages.
+.TP
+.B \-s \fIsubject
+Use
+.I subject
+in the reply Subject: line.  If the incoming message had a Subject:
+line the contents will be appended to
+.I subject.
+If this option is used the reply text should not
+include a Subject: line.
+
+.SH "RESPONSE TEXT"
+The response file should be formatted as a mail message.
+It should include a From: address and typically a Precedence:
+header and a Subject: header if the -s option is not being
+used.
+
+.Sp
+.Vb
+\&	From: info@example.com
+\&	Subject: Hi! I'm an autoresponder!
+\&	Precedence: bulk
+\&
+\&	... message body here ...
+.Ve
+
+.SH "EXAMPLES"
+
+From a qmail or mdforward control file:
+.Sp
+.Vb 1
+\&	| /path/to/autoreply /path/to/response.txt
+.Ve
+
+From a .forward file:
+.Sp
+.Vb 1
+\&	"| /path/to/autoreply /path/to/response.txt"
+.Ve
+
+From procmail:
+.Sp
+.Vb 1
+\&	:0 c
+\&	* ^TO_(autoreply|responder|autoresponder)@
+\&	| /path/to/autoreply /path/to/autoreply.txt
+.Ve
+
+.SH "EXIT CODES"
+.B autoreply
+will exit with a success exit code normally, a temporary failure
+code for most operating system errors (e.g. cannot fork) and a
+permanent failure for configuration errors.
+
+The exact codes used depend upon the mail transport agent autoreply
+is running under.
+
+.SH "FILES"
+.B autoreply
+keeps its default history and log files in $HOME/.autoreply.
+
+.SH "AUTHOR"
+Giles Lean <giles@nemeton.com.au>
+
+
+.SH "SEE ALSO"
+dot-qmail(5),
+procmail(1),
+sendmail(8),
+vacation(1)
+.Sp
+.Vb 1
+http://www.nemeton.com.au/sw/autoreply
+http://www.nemeton.com.au/sw/mdforward
+.Ve
+
+.SH "BUGS"
+A vacation mode has not yet been implemented.
+
+This manual page may not format cleanly with all versions of the man
+macros.

@@ -1,0 +1,13 @@
+<VirtualHost DOMAIN www.DOMAIN>
+ServerName DOMAIN
+ServerAdmin LOGIN@DOMAIN
+DocumentRoot /HOME/www/htdocs
+TransferLog /HOME/www/logs/access_log
+ErrorLog /HOME/www/logs/error_log
+Alias /imanager /usr/local/etc/httpd/htdocs/imanager
+<Directory /HOME/www/htdocs/urchin>
+AddHandler cgi-script .cgi
+DirectoryIndex index.html index.cgi
+Options FollowSymLinks ExecCGI
+</Directory>
+</VirtualHost>

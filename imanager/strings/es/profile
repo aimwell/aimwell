@@ -1,0 +1,45 @@
+#
+# user profile strings
+#
+# $SMEId: local/imanager/strings/es/profile,v 2.12 2004/08/27 18:27:47 rus Exp $
+#
+
+$PROFILE_TITLE = "$SOFTWARE_TITLE: Perfil del Usuario - __USER_ID__";
+
+$PROFILE_TEXT = 
+  "La siguiente tabla es un resumen de la informaci\xf3n del perfil del usuario
+   \"__USER_ID__\":";
+
+$PROFILE_LOGIN = "Nombre del Usuario";
+$PROFILE_NAME = "Nombre";
+$PROFILE_PASSWORD = "Contrasena";
+$PROFILE_PASSWORD_CHANGE = "Modificar Contrasena";
+$PROFILE_FTP = "Privilegios de FTP";
+$PROFILE_FTPQUOTA = "Limite de FTP";
+$PROFILE_FTPUSAGE = "Uso de FTP";
+$PROFILE_MAIL = "Privilegios de Correo";
+$PROFILE_MAILQUOTA = "Limite de Correo";
+$PROFILE_MAILUSAGE = "Uso de Correo";
+
+$PROFILE_VIRTUALHOST = "Dominio(s) Virtual(es)";
+
+$PROFILE_CHPASS_TITLE = $PROFILE_TITLE . ": Modificar Contrasena";
+
+$PROFILE_CHPASS_TEXT = 
+  "Usa por favor la siguiente forma para modificar la contrasesa de
+   \"__USER_ID__\".";
+
+$PROFILE_CHPASS_ERROR = 
+  "Los valores de la contrase\xf1a nueva deben ser exactamente lo mismo en ambos campos.";
+
+$PROFILE_NEWPASS = "Contrasena Nueva";
+$PROFILE_NEWPASS_CONFIRM = $PROFILE_NEWPASS . " (Confirmar)";
+
+$PROFILE_CHPASS_SUCCESS = 
+  "La contrase\xf1a de tu nombre de usuario fue cambiada sin problemas.";
+  
+##############################################################################
+# eof
+
+1;
+

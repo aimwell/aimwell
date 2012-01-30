@@ -1,0 +1,102 @@
+#
+# iroot global and main menu strings
+#
+# $SMEId: local/imanager/strings/pt/iroot,v 2.12 2004/08/27 18:27:51 rus Exp $
+#
+
+$IROOT_MAINMENU_TITLE = "$SOFTWARE_TITLE: Ferramentas Administrativas e Assistentes";
+
+$IROOT_MAINMENU_TEXT = 
+  "Bemvindo às Ferramentas Administrativas e Assistentes.  De seguida 
+   encontrará uma lista dos utilitários disponíveis.";
+
+$IROOT_DENIED_TITLE = "$SOFTWARE_TITLE: Ferramentas Administrativas - Acesso Negado";
+$IROOT_DENIED_TEXT = 
+  "O seu perfil de login não é considerado como sendo um perfil 'root'.  Portanto, 
+   não será possível utilizar as ferramentas e assistentes.";
+
+$IROOT_RESOURCE_ERROR_TITLE = 
+  "$SOFTWARE_TITLE: Ferramentas Administrativas e Assistentes - Erro de Recursos";
+$IROOT_RESOURCE_ERROR_TEXT = 
+  "Ocorreu um erro ao tentar executar um comando __RESOURCE__ .
+   De seguida encontrará uma descrição:";
+
+$IROOT_ADD_TEXT = "Adicionar";
+$IROOT_EDIT_TEXT = "Editar";
+$IROOT_REMOVE_TEXT = "Remover";
+$IROOT_VIEW_TEXT = "Ver Todos";
+$IROOT_REBUILD_TEXT = "Reconstruír DB";
+
+$IROOT_USERS_TITLE = "Utilizadores";
+$IROOT_USERS_HELP = 
+  "O seu Servidor Virtual poderá suportar utilizadores múltiplos.  Os utilizadores poderão  
+   ser configurados para terem privilégios e-mail e/ou ftp, podendo (ou não) serem 
+   limitados a uma quota de espaço em disco.  verifique com o administrador  
+   caso tenha dúvidas se o seu Servidor Virtual suporta múltiplos utilizadores.";
+
+$IROOT_GROUPS_TITLE = "Grupos";
+$IROOT_GROUPS_HELP = 
+  "pode utilizar grupos para organizar os utilizadores em classes que herdam  
+   privilégios específicos e direitos de acesso.  Alguns grupos, como o 
+   'wheel', dão ao utilizador privilégios de sistema elevados; outros 
+   como o grupo 'ftp', permitem acesso FTP.  Cada utilizador pertence,
+   pelo menos, a um grupo, mas pode pertencer a múltiplos grupos.";
+
+$IROOT_ALIASES_TITLE = "Apontadores";
+$IROOT_ALIASES_HELP = 
+  "Você pode criar apontadores (aliases) que direccionam mensagens de correio
+   electrónico a um ou mais endereços de e-mail. Também é possível
+   direccionar mensagens a um programa de processamento especial como
+   o sistema de autorespondedor.";
+
+$IROOT_VIRTMAPS_TITLE = "Virtmaps";
+$IROOT_VIRTMAPS_HELP = 
+  "Os mapeamentos virtuais de endereços, ou 'virtmaps', são semelhantes aos apontadores
+   mas foram projectados especificamente para utilização com os alojamentos virtuais
+   que podem estar configurados no seu servidor virtual.  Deverá utilizar virtmaps
+   para resolver possíveis conflitos entre dois ou mais nomes de domínio no que se refere à entrega de mensagens de e-mail.
+   Por exemplo: vamos supor que para os endereços 'webmaster\@cliente1.com' e 'webmaster\@cliente2.com' seja necessário
+   configurar dois locais de entrega de mensagens separados (algo que não pode ser feito com o recurso de Apontadoress). 
+   Para isto deve utilizar-se o recurso virtmaps.";
+
+$IROOT_SPAMMERS_TITLE = "Spammers";
+$IROOT_SPAMMERS_HELP = 
+  "Você pode configurar o Servidor Virtual para bloquear mensagens originadas
+   de endereços e/ou nomes de domínio específicos.  Nomeados como 'spammers', 
+   esses endereços e/ou nomes de domínio identificados no arquivo não
+   poderão entregar mensagens a utilizadores, apontadores ou virtmaps configurados 
+   no servidor virtual.";
+
+$IROOT_MAILACCESS_TITLE = "Acesso Mail";
+$IROOT_MAILACCESS_HELP = 
+  "Pode configurar o seu servidor Virtual para rejeitar (ou aceitar) mensagens  
+   e-mail com gamas de endereço IP específicos e/ou nomes de domínio.  Funciona  
+   como uma lista comum de domínios e/ou endereços IP de spammers conhecidos.
+   As definições que introduzir neste ficheiro não poderão entregar
+   e-mail a utilizadores, apontadores, ou virtmaps configurados  
+   no seu Servidor Virtual.";
+
+$IROOT_VHOSTS_TITLE = "Alojamento Virtual";
+$IROOT_VHOSTS_HELP = 
+  "O recurso de Alojamento Virtual permite o suportar múltiplos nomes de domínio num 
+   único Servidor Virtual.  Você pode fornecer a cada alojamento seu próprio login de ftp,
+   endereços de e-mail e site web.";
+
+$IROOT_VHOSTS_TEMPLATES_HELP = 
+  "Para sua conveniência, quando adiciona entradas de Alojamento Virtual,
+   estão disponíveis modelos (templates) para rapidamente configurar as directivas
+   Virtual Host directive.";
+   
+$IROOT_VHOSTS_TEMPLATES_EDIT_USER = "Editar Modelo de Utilizador";
+$IROOT_VHOSTS_TEMPLATES_EDIT_ADMIN = "Editar Modelo de Administrador";
+
+# generic error notification
+$IROOT_ERRORS_FOUND = 
+  "Foram encontrados Erros na informação que submeteu. Veja abaixo para 
+   mais informação."; 
+
+##############################################################################
+# eof
+
+1;
+

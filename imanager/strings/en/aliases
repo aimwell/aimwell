@@ -1,0 +1,101 @@
+#
+# aliases strings
+#
+# $SMEId: local/imanager/strings/en/aliases,v 2.12.2.3 2006/01/10 17:50:53 rus Exp $
+#
+
+$ALIASES_NO_MAPPINGS_EXIST = 
+  "It appears that your aliases file does not include any alias definitions.
+   Please use the 'Add Alias' utility to add new aliases.";
+
+$ALIASES_SELECT_TITLE = "Select Aliases";
+$ALIASES_SELECT_HELP = 
+  "Please use the following form to select one or more aliases.";
+
+$ALIASES_OVERVIEW_HELP_TEXT = 
+  "An E-mail Alias is simply a forwarding e-mail address.  Each e-mail
+   alias you specify simply forwards e-mail on to the Alias Definition.
+   The alias definition can simply be one or more e-mail addresses 
+   (multiple addresses must be separated by commas), or it can be a 
+   complex definition that directs your mail service to deliver a 
+   message to a mailing list or a program such as an autoresponder.";
+
+$ALIASES_EXAMPLES_HELP_TEXT_1 = "Consider the following examples:";
+$ALIASES_EXAMPLES_HELP_TEXT_2 = 
+  "  E-mail Alias                   Alias Definition
+  ----------------------         ----------------------------
+  webmaster                      localuser1
+  sales                          localuser2, localuser3
+  biff                           someuser\@aol.com
+  staff                          :include:/etc/mail/staff_address.list
+  info                           webmaster, \"|/usr/bin/autoreply -f webmaster -m /etc/mail/faq_message.txt -a info\"";
+
+$ALIASES_ALIAS_NAME = "E-mail Alias";
+$ALIASES_ALIAS_VALUE = "Alias Definition";
+
+$ALIASES_ALIAS_PLACEMENT = "Alias Placement";
+$ALIASES_ALIAS_PLACEMENT_APPEND = "append to end of file";
+$ALIASES_ALIAS_PLACEMENT_INSERT = "insert after __ALIAS__";
+
+$ALIASES_ADD_HELP_TEXT = 
+  "Please use the form below to add new alias definitions.";
+$ALIASES_ADD_SUBMIT_TEXT = $SUBMIT_STRING;
+
+$ALIASES_EDIT_HELP_TEXT = 
+  "Please use the form below to make changes to the selected alias(es).";
+$ALIASES_EDIT_SUBMIT_TEXT = "Submit Changes";
+
+$ALIASES_REMOVE_HELP_TEXT = 
+  "Are you sure you want to permanently remove the alias(es) listed below?";
+$ALIASES_REMOVE_SUBMIT_TEXT = "Yes, Remove the Above Alias(es)";
+
+$ALIASES_SORT_BY_NAME = "Sort by Alias Name";
+$ALIASES_SORT_BY_ORDER = "Sort by File Order";
+
+$ALIASES_SUCCESS_ADD_TEXT = "Your Add Alias(es) request was processed.";
+$ALIASES_SUCCESS_EDIT_TEXT = "Your Edit Alias(es) request was processed.";
+$ALIASES_SUCCESS_REMOVE_TEXT =
+  "Your Remove Alias(es) request was processed.";
+
+$ALIASES_CANCEL_ADD_TEXT = 
+  "Your Add Alias(es) request was cancelled.  No action was taken.";
+$ALIASES_CANCEL_EDIT_TEXT = 
+  "Your Edit Alias(es) request was cancelled.  No action was taken.";
+$ALIASES_CANCEL_REMOVE_TEXT = 
+  "Your Remove Alias(es) request was cancelled.  No action was taken.";
+
+$ALIASES_ERROR_NAME_FIELD_IS_BLANK =
+  "Value for e-mail alias name is blank.";
+$ALIASES_ERROR_VALUE_FIELD_IS_BLANK =
+  "Value for e-mail alias definition is blank.";
+
+$ALIASES_ERROR_DUPLICATE_ADDITION = 
+  "An alias defintion for the name '__ALIAS__' already exists.
+   Duplicates are not allowed.";
+$ALIASES_ERROR_NAME_REPEATED = 
+  "The alias name value of '__ALIAS__' is a duplicate (see above).";
+$ALIASES_ERROR_NAME_INVALID_CHARS = 
+  "The alias name value of '__ALIAS__' includes an invalid character 
+   such as a colon (:) or an 'At sign' (@).";
+
+$ALIASES_NO_CHANGES_FOUND =
+  "No changes were found in the alias definitions that were submitted.
+   Please use the 'Back' functionality of your browser, check your form 
+   submission, and try again.";
+
+$ALIASES_CONFIRM_TEXT =
+  "Please find below a list summarizing the changes that will be made to
+   your aliases file.  Press the 'Confirm' button to make the changes.";
+$ALIASES_CONFIRM_ADD_NEW = "Add the following alias:";
+$ALIASES_CONFIRM_REMOVE_OLD = "Remove the following alias:";
+$ALIASES_CONFIRM_CHANGE_NAME = 
+  "Change the alias name of '__NAME__' to '__NEWNAME__'";
+$ALIASES_CONFIRM_CHANGE_VALUE = "Change the alias value for '__NAME__'";
+$ALIASES_CONFIRM_CHANGE_VALUE_OLD = "Old value";
+$ALIASES_CONFIRM_CHANGE_VALUE_NEW = "New value";
+
+##############################################################################
+# eof
+
+1;
+

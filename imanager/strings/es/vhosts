@@ -1,0 +1,157 @@
+#
+# vhosts strings
+#
+# $SMEId: local/imanager/strings/es/vhosts,v 2.12 2004/08/27 18:27:47 rus Exp $
+#
+
+
+$VHOSTS_HOSTNAMES = "Nombre(s) del(os) Dominio(s) Virtual(es)";
+$VHOSTS_SERVERNAME = "NombredeServidor";
+$VHOSTS_SERVERADMIN = "AdministradorDelServidor";
+$VHOSTS_DOCUMENTROOT = "RaizDelDocumento";
+$VHOSTS_SCRIPTALIAS = "AliasDeScript";
+$VHOSTS_TRANSFERLOG = "RegistroDeTransferencia";
+$VHOSTS_ERRORLOG = "RegistroDeErrores";
+$VHOSTS_OTHEROPTIONS = "Otros Directivos (uno por linea)";
+
+$VHOSTS_NO_HOSTS_EXIST =
+  "Al parecer, tu archivo httpd.conf no tiene ninguna definicion de
+   dominios virtuales. Use por favor la herramienta 'Agreagar Dominio
+   Virtual' para agregar dominios virtuales nuevos.";
+
+$VHOSTS_SELECT_TITLE = "Escoje Dominios Virtuales";
+$VHOSTS_SELECT_HELP = 
+  "Use por favor la siguiente forma para escojer uno o m\xe1s dominios virtuales.";
+
+$VHOSTS_OVERVIEW_HELP_TEXT =
+  "Dominios Virtuales te permiten tener varios dominios los cuales apuntan
+   a su respectivo directorio mientras comparten la misma direcci\xf3n de IP.
+   En otras palabras, puedes hospedar algun-dominio.com y otro-dominio.com
+   en el mismo servidor, cada uno con su propio contenido. Cada dominio virtual
+   es definido usando &lt;VirtualHost&gt; en el archivo de configuraci\xf3n del 
+   servidor web (httpd.conf). Considera los siguientes ejemplos:";
+
+$VHOSTS_OVERVIEW_EXAMPLE_TEXT =
+  "  &lt;VirtualHost algun-dominio.com www.algun-dominio.com&gt;
+    ServerName www.algun-dominion.com
+    ServerAdmin webmaster\@algun-dominio.com
+    DocumentRoot /usr/local/etc/httpd/vhosts/algun-dominio.com/htdocs
+    ScriptAlias /cgi-bin/ /usr/local/etc/httpd/vhosts/algun-dominio.com/cgi-bin
+    TransferLog /usr/local/etc/httpd/vhosts/algun-dominio.com/logs/access_log
+    ErrorLog /usr/local/etc/httpd/vhosts/algun-dominio.com/logs/error_log
+  &lt;/VirtualHost&gt;";
+
+$VHOSTS_HOSTNAMES_HELP_TEXT =
+  "Los Nombres de los Dominios Virtuales, los cules se encuentran dentro de
+   <VirtualHost>, son dominios que ser\xe1n asociados con la definicion del
+   dominio virtual. Si desea varios dominios, separa cada dominio con un
+   espacio.";
+
+$VHOSTS_SERVERNAME_HELP_TEXT =
+  "El directivo ServerName marca el hostname del dominio virtual.";
+
+$VHOSTS_SERVERADMIN_HELP_TEXT =
+  "El directivo ServerAdmin marca la direcci\xf3n de e-mail que el servidor
+   agregara en mensajes que mande al cliente cuando halla algun error.";
+
+$VHOSTS_DOCUMENTROOT_HELP_TEXT =
+  "El directivo DocumentRoot marca el directorio 'origen' de documentos del cual
+   el servidor web mostrara los archivos. Como el valor de DocumentRoot debe 
+   apuntar a un directorio valido, pre-existente en el Servidor Virtual, un
+   directorio nuevo sera creado si especificas un lugar para el DocumentRoot el cual 
+   no exista. Evite por favor el use de '/' al especificar el directorio origen
+   de documentos.";
+
+$VHOSTS_SCRIPTALIAS_HELP_TEXT =
+  "El directivo ScriptAlias marca el directorio que tendr\xe1 scripts CGI que
+   ser\xe1n ejecutados por el servidor. Considera con cuidado la decision de 
+   dar a otros usuarios la abilidad de tener script ejecutados por el servidor.
+   Todos los scripts CGI (que est\xe9n o no en el directorio de un dominio virtual)
+   tienen privilegios para todos los directorios y archivos en el Servidor
+   Virtual. Si especificas para ScriptAlias un directorio que no existe,
+   un directorio nuevo sera creado.";
+
+$VHOSTS_TRANSFERLOG_HELP_TEXT =
+  "El directivo TransferLog marca el nombre del archivo el cual el servidor usar\xe1 para
+   escribir las peticiones que lleguen al servidor.";
+
+$VHOSTS_ERRORLOG_HELP_TEXT =
+  "El directivo ErrorLog marca el nombre del archivo el cual el servidor mandar\xe1
+   diagn\xf3sticos y errores que encuentre al procesar peticiones que lleguen al servidor.";
+
+$VHOSTS_VHOST_PLACEMENT = "Lugar donde poner Dominio Virtual";
+$VHOSTS_VHOST_PLACEMENT_APPEND = "poner al final del archivo";
+$VHOSTS_VHOST_PLACEMENT_INSERT = "poner despues de __VHOST__";
+
+$VHOSTS_ADD_HELP_TEXT = 
+  "Usa por favor la siguiente forma para agregar nuevas definiciones de dominios virtuales.";
+$VHOSTS_ADD_SUBMIT_TEXT = $SUBMIT_STRING;
+
+$VHOSTS_EDIT_HELP_TEXT = 
+  "Use por favor la siguiente forma para hacer modificaciones a la(s)
+   definicion(es)  de dominio(s) virtual(es) seleccionada(s).";
+$VHOSTS_EDIT_SUBMIT_TEXT = "Hacer Modificaciones";
+
+$VHOSTS_REMOVE_HELP_TEXT = 
+  "\xbfEstas seguro que quieres borrar permanentemente la(s) siguiente(s) definicion(es)
+   de dominio(s) virtual(es)uales?";
+$VHOSTS_REMOVE_SUBMIT_TEXT = "Si, Borra los Dominios Virtuales mencionados antes";
+
+$VHOSTS_SORT_BY_HOST = "Ordena por Nombre del Dominio";
+$VHOSTS_SORT_BY_NAME = "Ordena por Nombre del Servidor";
+$VHOSTS_SORT_BY_ROOT = "Ordena por DocumentRoot"; 
+$VHOSTS_SORT_BY_ORDER = "Ordena por Nombre del Archivo";
+
+$VHOSTS_SUCCESS_ADD_TEXT = "Tu peticion para Agregar Dominio(s) Virtual(es) fue procesada.";
+$VHOSTS_SUCCESS_EDIT_TEXT = "Tu peticion para Modificar Dominio(s) Virtual(es) fue procesada.";
+$VHOSTS_SUCCESS_REMOVE_TEXT = 
+  "Tu peticion para Borrar Dominio(s) Virtul(es) fue procesada.";
+$VHOSTS_SUCCESS_RESTART = "Apache necesita comenzar otra ves.";
+
+$VHOSTS_CANCEL_ADD_TEXT = 
+  "Tu peticion para Agregar Dominio(s) Virtual(es) fue cancelada. No se tomo ninguna accion.";
+$VHOSTS_CANCEL_EDIT_TEXT = 
+  "Tu peticion para Modificar Dominio(s) Virtual(es) fue cancelada. No se tomo ninguna accion.";
+$VHOSTS_CANCEL_REMOVE_TEXT = 
+  "Tu peticion para Borrar Dominio(s) Virtual(es) fue cancelada. No se tomo ninguna accion.";
+
+$VHOSTS_ERROR_HOSTNAMES_IS_BLANK = "El valor del(os) dominio(s) virtual(es) est\xe1 vacio.";
+$VHOSTS_ERROR_SERVERNAME_IS_BLANK = "El valor para ServerName est\xe1 vacio.";
+$VHOSTS_ERROR_DOCUMENTROOT_IS_BLANK = "El valor de RaizDelDocumento est\xe1 vacio.";
+$VHOSTS_ERROR_DOCUMENTROOT_NO_EXIST = "__VALUE__ no existe!";
+
+$VHOSTS_ERROR_DUPLICATE_ADDITION = 
+  "La difinicion para dominio virtual '__VHOST__' ya existe.
+   No se permiten duplicados.";
+
+$VHOSTS_CONFIRM_TEXT =
+  "En seguida hay una lista con los cambios que se haran
+   a tu archivo httpd.conf. Presione el boton 'Confirmar' para hacer los cambios.";
+$VHOSTS_CONFIRM_ADD = "Agrega el siguiente dominio virtuale:";
+$VHOSTS_CONFIRM_REMOVE = "Borra el siguientes dominio virtuale:";
+$VHOSTS_CONFIRM_CHANGE_FROM = "Modifica el siguiente dominio virtual de:"; 
+$VHOSTS_CONFIRM_CHANGE_TO =   "&#160; &#160; to:"; "&#160; &#160; a:"; 
+
+$VHOSTS_POPULATE_FROM_TEMPLATE =
+  "Llenar directivos de VirtualHost de la informaci\xf3n en la Plantilla";
+
+$VHOSTS_TEMPLATE_HELP_TEXT =
+  "Puedes autom\xe1ticamente llenar los valores de cada directivo de <VirtualHost>
+   con la informaci\xf3n en la plantilla. Simplemente escribe el nombre del Dominio
+   en el espacio para el Nombre del Dominio o ServerName y luego selecciona el
+   boton '$VHOSTS_POPULATE_FROM_TEMPLATE' (una herramienta para modificar la
+   plantilla est\xe1 disponible por medio del menu de Herramientas.";
+
+$VHOSTS_TEMPLATE_EDIT_HELP =
+  "Usa la siguiente forma para modificar la plantilla de Dominios Virtuales.";
+$VHOSTS_TEMPLATE_SUBMIT_TEXT = "Guardar Plantilla";
+$VHOSTS_TEMPLATE_EDIT_SUCCESS_TEXT =
+  "La plantilla de Dominios Virtuales fue guardada sin problemas.";
+$VHOSTS_TEMPLATE_CANCEL_TEXT =
+  "La peticion para modificar la Plantilla ha sido cancellada. No se tomo ninguna accion.";
+
+##############################################################################
+# eof
+
+1;
+

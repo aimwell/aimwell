@@ -1,0 +1,89 @@
+#
+# spammers strings
+#
+# $SMEId: local/imanager/strings/en/spammers,v 2.12.2.1 2004/11/12 20:21:21 rus Exp $
+#
+
+$SPAMMERS_NO_MAPPINGS_EXIST = 
+  "It appears that your spammers file does not include any virtual
+   address mappings.  Please use the 'Add Spammer' utility to add new
+   virtual address mappings.";
+
+$SPAMMERS_SELECT_TITLE = "Select Spammers";
+$SPAMMERS_SELECT_HELP = 
+  "Please use the following form to select one or more spammer definitions.";
+
+$SPAMMERS_OVERVIEW_HELP_TEXT = 
+  "The spammers file simply consists of addresses and domain names for which
+   you do not wish to receive e-mail from.  This effectively blocks all 
+   incoming e-mail from the addresses and hostnames.";
+
+$SPAMMERS_EXAMPLES_HELP_TEXT_1 = "Consider the following examples:";
+$SPAMMERS_EXAMPLES_HELP_TEXT_2 = 
+  "  cyberpromo.com   # blocks all mail from the hostname \"cyberpromo.com\"
+  spammer\@aol.com  # blocks mail only from \"spammer\@aol.com\"";
+
+$SPAMMERS_SOURCES_HELP_TEXT_1 = 
+  "Sources for lists of common rogue spammers and spam sites:";
+$SPAMMERS_SOURCES_HELP_TEXT_2 = 
+  "  http://www.vix.com/spam/rogues.html           # Paul Vixie's spam site list
+  http://www-math.uni-paderborn.de/%7Eaxel/BL/  # Advertiser spam list";
+
+$SPAMMERS_VALUE = "Spammer Address or Domain Name";
+
+$SPAMMERS_ADD_HELP_TEXT = 
+  "Please use the form below to add new spammer definitions.";
+$SPAMMERS_ADD_SUBMIT_TEXT = $SUBMIT_STRING;
+
+$SPAMMERS_EDIT_HELP_TEXT = 
+  "Please use the form below to make changes to the selected spammer
+   definition(s).";
+$SPAMMERS_EDIT_SUBMIT_TEXT = "Submit Changes";
+
+$SPAMMERS_REMOVE_HELP_TEXT = 
+  "Are you sure you want to permanently remove the spammer definition(s) 
+   listed below?";
+$SPAMMERS_REMOVE_SUBMIT_TEXT = "Yes, Remove the Above Spammer Definition(s)";
+
+$SPAMMERS_SORT_BY_NAME = "Sort by Name";
+$SPAMMERS_SORT_BY_ORDER = "Sort by File Order";
+
+$SPAMMERS_SUCCESS_ADD_TEXT = "Your Add Spammer(s) request was processed.";
+$SPAMMERS_SUCCESS_EDIT_TEXT = "Your Edit Spammer(s) request was processed.";
+$SPAMMERS_SUCCESS_REMOVE_TEXT = 
+  "Your Remove Spammer(s) request was processed.";
+
+$SPAMMERS_CANCEL_ADD_TEXT = 
+  "Your Add Spammer(s) request was cancelled.  No action was taken.";
+$SPAMMERS_CANCEL_EDIT_TEXT = 
+  "Your Edit Spammer(s) request was cancelled.  No action was taken.";
+$SPAMMERS_CANCEL_REMOVE_TEXT = 
+  "Your Remove Spammer(s) request was cancelled.  No action was taken.";
+
+$SPAMMERS_ERROR_DUPLICATE_ADDITION = 
+  "A spammer definition for '__SPAMMER__' already exists.  Duplicates are
+   not allowed.";
+$SPAMMERS_ERROR_VIRTUAL_FIELD_REPEATED = 
+  "The spammer definition '__SPAMMER__' is a duplicate (see above).";
+
+$SPAMMERS_REJECT_MESSAGE = "We don't accept mail from this hostname/address";
+
+$SPAMMERS_NO_CHANGES_FOUND =
+  "No changes were found in the spammers definitions that were submitted.
+   Please use the 'Back' functionality of your browser, check your form 
+   submission, and try again.";
+
+$SPAMMERS_CONFIRM_TEXT =
+  "Please find below a list summarizing the changes that will be made to
+   your spammers file.  Press the 'Confirm' button to make the changes.";
+$SPAMMERS_CONFIRM_ADD_NEW = "Add the following spammer definition:";
+$SPAMMERS_CONFIRM_REMOVE_OLD = "Remove the following spammer definition:";
+$SPAMMERS_CONFIRM_CHANGE_VALUE = "Change the following spammer definition:";
+$SPAMMERS_CONFIRM_CHANGE_VALUE_OLD = "Old value";
+$SPAMMERS_CONFIRM_CHANGE_VALUE_NEW = "New value";
+
+##############################################################################
+# eof
+
+1;
+

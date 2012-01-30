@@ -1,0 +1,14 @@
+-----------------------------------------------------------
+iManager, Suite Della Gestione del Virtual Server
+scritta da Rus Berrett
+
+iManager è un insieme delle interfacce, strumenti, e wizard
+che permettono che un sistemista o un utente di Virtual 
+Server effettui le mansioni sistematiche via un web 
+browser.  Le interfacce includono una gestione file e
+una gestione email.  Parecchi strumenti e wizard sono a
+disposizione del sistemista.
+
+-----------------------------------------------------------
+Contributi di codici da Dan Brian, l'O'Reilly Programming
+Perl libro, e il perl5 MIME librario.

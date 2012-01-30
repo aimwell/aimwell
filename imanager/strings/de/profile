@@ -1,0 +1,44 @@
+#
+# user profile strings
+#
+# $SMEId: local/imanager/strings/de/profile,v 2.12 2004/08/27 18:27:45 rus Exp $
+#
+
+$PROFILE_TITLE = "$SOFTWARE_TITLE: Benutzerprofil - __USER_ID__";
+
+$PROFILE_TEXT = 
+  "Die folgende Tabelle faßt die informationen des Userprofils für
+   \"__USER_ID__\" zusammen:";
+
+$PROFILE_LOGIN = "Benutzername";
+$PROFILE_NAME = "Name";
+$PROFILE_PASSWORD = "Paßwort";
+$PROFILE_PASSWORD_CHANGE = "Paßwort ändern";
+$PROFILE_FTP = "FTP Berechtigungen";
+$PROFILE_FTPQUOTA = "FTP Quota";
+$PROFILE_FTPUSAGE = "FTP - Nutzung";
+$PROFILE_MAIL = "Mail Berechtigungen";
+$PROFILE_MAILQUOTA = "Mail Quota";
+$PROFILE_MAILUSAGE = "Mail - Nutzung";
+
+$PROFILE_VIRTUALHOST = "Hostname(n)";
+
+$PROFILE_CHPASS_TITLE = $PROFILE_TITLE . ": Paßwort ändern";
+
+$PROFILE_CHPASS_TEXT = 
+  "Bitte benutzen Sie das untenstehende Formular um des Login-Paßwort für
+   \"__USER_ID__\" zu ändern.";
+
+$PROFILE_CHPASS_ERROR = 
+  "Die Werte für das neue Paßwort müssen in beiden Feldern exakt übereinstimmen.";
+
+$PROFILE_NEWPASS = "Neues Paßwort";
+$PROFILE_NEWPASS_CONFIRM = $PROFILE_NEWPASS . " (Bestätigen)";
+
+$PROFILE_CHPASS_SUCCESS = 
+  "Ihr Login-Paßwort wurde erfolgreich geändert.";  
+##############################################################################
+# eof
+
+1;
+

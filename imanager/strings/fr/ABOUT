@@ -1,0 +1,14 @@
+-----------------------------------------------------------
+iManager,  Administrateur du Serveur Virtuel 
+ecris par Rus Berrett
+
+iManager est un ensemble d'interfaces, outils et wizards
+qui premettent a l'Administrateur du Serveur Virtuel ou
+a un utilisateur d'exercer des routines au travers d'un
+client internet.  Les interfaces inclues aussi un 
+gestionnaire de fichiers et de courriers. Plusieurs outils
+et wizards sont aussi disponibles pour l'administrateur.
+
+-----------------------------------------------------------
+Contribution au code par Dan Brian, le livre de
+programmation Perl de O'Reilly, et le perl5 MIME library.

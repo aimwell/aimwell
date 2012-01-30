@@ -1,0 +1,244 @@
+#
+# mail manager strings
+#
+# $SMEId: local/imanager/strings/it/mailmanager,v 2.12 2004/08/27 18:27:49 rus Exp $
+#
+
+$MAILMANAGER_TITLE = "$SOFTWARE_TITLE: Gestione della Posta - __MAILBOX__";
+
+##############################################################################
+# some generic error strings
+
+$MAILMANAGER_DENIED_TITLE = "$SOFTWARE_TITLE: Gestione della Posta - L'accesso Negato";
+$MAILMANAGER_DENIED_TEXT = 
+  "Il tuo profilo utente non include privilegi di 'posta'.  Di 
+   conseguenza, non puoi accedere ai programmi della Gestione 
+   della Posta.";
+$MAILMANAGER_PERMISSION_DENIED = 
+  "Permesso di accedere a  \"__PATH__\" è negato.";
+
+$MAILMANAGER_RESOURCE_ERROR_TITLE = 
+  "$SOFTWARE_TITLE: Gestione della Posta - Errore di Risorsa";
+$MAILMANAGER_RESOURCE_ERROR_TEXT = 
+  "Un errore e' accaduto mentre tentava eseguire il comando.  Una descrizione
+   dell'errore è data qui sotto:";
+
+$MAILMANAGER_MESSAGE_NOT_FOUND_TEXT = 
+  "E' strano... la mailbox, \"__MAILBOX__\", non contiene il messaggio che
+   hai specificato (\"__MESSAGEID__\").";
+
+$MAILMANAGER_FOLDER_EMPTY_TEXT = 
+  "La  mailbox, \"__MAILBOX__\", non contiene messaggi.";
+
+$MAILMANAGER_NONE_SELECTED = 
+  "Non hai selezionato nessun messaggio... ops!";
+
+##############################################################################
+# mailbox and message view strings
+
+$MAILMANAGER_DEFAULT_FOLDER = "INBOX";
+
+$MAILMANAGER_FOLDER_NAME = "Cartella di Posta Attuale";
+$MAILMANAGER_FOLDER_NUM_MESSAGES = "Totale  Messaggi";       #????????
+$MAILMANAGER_FOLDER_SIZE = "Dimensione della Cartella";
+
+$MAILMANAGER_ACTIONS = "Azioni";
+
+$MAILMANAGER_MESSAGE_DATE = "Data";
+$MAILMANAGER_MESSAGE_TO = "A";
+$MAILMANAGER_MESSAGE_SENDER = "Da";
+$MAILMANAGER_MESSAGE_SUBJECT = "Oggetto";
+$MAILMANAGER_MESSAGE_NUMBER = "Messaggio #";
+$MAILMANAGER_MESSAGE_SIZE = "Dimensione del Messaggio";
+$MAILMANAGER_MESSAGE_SIZE_ABBREVIATED = "Dimensione";
+$MAILMANAGER_MESSAGE_REPLY_TO = "Rispondi A";
+$MAILMANAGER_MESSAGE_CC = "Cc";
+$MAILMANAGER_MESSAGE_BCC = "Ccn";
+$MAILMANAGER_MESSAGE_FCC = "Memmorizza una Copia del Messaggio nella Cartella Posta Inviata";
+
+$MAILMANAGER_SORT_BY_DATE = "Ordina per Data";
+$MAILMANAGER_SORT_BY_SENDER = "Ordina per Mittente";
+$MAILMANAGER_SORT_BY_SUBJECT = "Ordina per Oggetto";
+$MAILMANAGER_SORT_BY_SIZE = "Ordina per Dimensione";
+
+$MAILMANAGER_SHOW_FULL_HEADERS = "Visualizza headers";
+$MAILMANAGER_SHOW_PARTIAL_HEADERS = "Visualizza headers parzialmente";
+
+$MAILMANAGER_PRINTER_FRIENDLY_FORMAT = "Formato per stampa";
+
+$MAILMANAGER_MESSAGE_NOT_SHOWN = "messaggio __TYPE__ originale non visualizzato";
+$MAILMANAGER_MESSAGE_VIEW_TYPE = "Visualizza messaggio __TYPE__ separatamente";
+$MAILMANAGER_MESSAGE_VIEW_SEPARATELY = "Visualizza separatamente";
+
+$MAILMANAGER_ATTACHMENT_NOT_SHOWN = "allegato originale  __TYPE__ non mostrato";
+$MAILMANAGER_ATTACHMENT_VIEW_TYPE = "Vissualizza allegato  __TYPE__ separatamente";
+$MAILMANAGER_ATTACHMENT_VIEW_SEPARATELY = "Visualizza separatamente";
+
+$MAILMANAGER_NO_SUBJECT = "[ nessun oggetto ]";
+
+$MAILMANAGER_CREATEDIR = "Crea Directory di Posta";
+
+$MAILMANAGER_FOLDER_SELECT_CURDIR = "Directory Attuale: __DIR__";
+$MAILMANAGER_FOLDER_SELECT_SYMLINK = "link";
+$MAILMANAGER_FOLDER_SELECT_MESSAGES = "messaggi";
+$MAILMANAGER_FOLDER_SELECT_SHOW_DETAILS = "visualizza dettagli";
+$MAILMANAGER_FOLDER_SELECT_HIDE_DETAILS = "nascondi dettagli";
+
+$MAILMANAGER_CHECK_MAIL = "Controlla per vedere se ci sono nuovi messaggi";
+
+$MAILMANAGER_FOLDER_CONTENTS = "Contenuto della Cartella Posta";
+$MAILMANAGER_FOLDER_CONTENTS_STATUS = "A Partire da: __TIME__";
+
+$MAILMANAGER_MESSAGE_TAG = "Seleziona";
+$MAILMANAGER_MESSAGE_FLAGS = "Note";
+
+$MAILMANAGER_MESSAGE_PREV = "Precedente";
+$MAILMANAGER_MESSAGE_NEXT = "Successivo";
+
+$MAILMANAGER_FLAGS_TITLE = "Note del Messaggio";
+$MAILMANAGER_FLAGS_HELP_N = "N - il messaggio è nuovo o non letto";
+$MAILMANAGER_FLAGS_HELP_r = "r - il messaggio è stato risposto a";
+$MAILMANAGER_FLAGS_HELP_PLUS = "+ - il messaggio è soltanto per te";
+$MAILMANAGER_FLAGS_HELP_T = "T - il messaggio è per te (e altri)";
+$MAILMANAGER_FLAGS_HELP_C = "C - il messaggio è un Cc per te";
+$MAILMANAGER_FLAGS_HELP_F = "F - il messaggio proviene da te";
+   
+##############################################################################
+# compose message strings
+
+$MAILMANAGER_COMPOSE = "Nuovo Messaggio";
+$MAILMANAGER_COMPOSE_CANCEL_TEXT = 
+  "La tua richiesta di nuovo messaggio è stata annullata; nessun'azione
+   è stata intrapresa.";
+
+$MAILMANAGER_MESSAGE_ORIGINAL_ATTACHMENTS = "Allegati nel Messagio di Origine";
+$MAILMANAGER_MESSAGE_UPLOAD_ATTACHMENTS = 
+  "File sul Tuo Computer da Includere come Allegati";
+$MAILMANAGER_MESSAGE_LOCAL_ATTACHMENTS = 
+  "File su Questo Server da Includere come Allegati";
+$MAILMANAGER_MESSAGE_LOCAL_ATTACHMENTS_BROWSE = "Sfoglia";
+
+##############################################################################
+# bounce message strings
+
+$MAILMANAGER_BOUNCE = "Rimbalza Messaggio";
+$MAILMANAGER_BOUNCE_CANCEL_TEXT = 
+  "La tua richiesta di rimbalzo messaggio è stata annullata; nessun'azione
+   è stata intrapresa.";
+$MAILMANAGER_BOUNCE_HELP_TEXT = 
+  "A che indirizzi vuoi rimbalzare il messaggio originale?";
+$MAILMANAGER_BOUNCE_ORIGINAL_MESSAGE = "Messaggio Originale";
+
+##############################################################################
+# forward message strings
+
+$MAILMANAGER_FORWARD = "Inoltra Messaggio";
+$MAILMANAGER_FORWARD_CANCEL_TEXT = 
+  "La tua richiesta di inoltrare messaggio è stata annullata; nessun'azione
+   è stata intrapresa.";
+$MAILMANAGER_FORWARD_STRING_BEGIN = 
+  "===== Messaggio inoltrato da __EMAIL__ =====";
+$MAILMANAGER_FORWARD_STRING_END = "===== Fine del messaggio inoltrato =====";
+
+$MAILMANAGER_ATTACHMENT_INCLUDE_FORWARD = "Include al messaggio inoltrato";
+
+##############################################################################
+# reply to message strings
+
+$MAILMANAGER_REPLY = "Rispondi a Messaggio";
+$MAILMANAGER_REPLY_GROUP = "Rispondi a Tutti";
+$MAILMANAGER_REPLY_CANCEL_TEXT = 
+  "La tua richiesta di rispondere al messaggio è stata annullata; nessun'azione
+   è stata intrapresa.";
+$MAILMANAGER_REPLY_STRING = "__DATE__, __EMAIL__ ha scritto:";
+
+$MAILMANAGER_NO_SUBJECT_REPLY = "tuo messaggio";
+
+$MAILMANAGER_ATTACHMENT_INCLUDE_RESPONSE = "Includi in questa risposta";
+
+##############################################################################
+# send message strings
+
+$MAILMANAGER_SEND = "Invia";
+$MAILMANAGER_SEND_ERROR_TO_EMPTY = 
+  "Non hai fornito un indirizzo per '$MAILMANAGER_MESSAGE_TO'... ops!";
+$MAILMANAGER_SEND_ERROR_TO_INVALID = 
+  "L'indirizzo che hai specificato, \"__EMAIL__\", include un carattere non valido.
+   I caratteri validi per indirizzi includono A-Z, a-z, 0-9, trattini,
+   sottolineamenti, punti, e '\@'.";
+$MAILMANAGER_SEND_ERROR_FROM_EMPTY = 
+  "Non hai fornito un indirizzo per '$MAILMANAGER_MESSAGE_SENDER'... ops!";
+$MAILMANAGER_SEND_ERROR_UPLOAD_FILE_LOST = 
+  "Nota: I tuoi file sono stati ignorati e devono essere azzerati.";
+
+$MAILMANAGER_SEND_SUCCESS = "Il tuo messaggio è stato inviato con successo.";
+$MAILMANAGER_SEND_SUCCESS_REPLY = "La tua risposta è stata inviata con successo.";
+$MAILMANAGER_SEND_SUCCESS_BOUNCE = 
+  "Questo messaggio è stato rimbalzato con successo a __ADDRESS__.";
+
+##############################################################################
+# delete message strings
+
+$MAILMANAGER_DELETE_TAGGED = "Elimina Messaggi Selezionati";
+$MAILMANAGER_DELETE_ALL = "Elimina Tutti i Messaggi";
+$MAILMANAGER_DELETE_SINGLE = "Elimina Messaggio";
+$MAILMANAGER_DELETE_CANCEL_TEXT = 
+  "La tua richiesta di eliminare il messaggio è stata annullata; nessun'azione
+   è stata intrapresa.";
+$MAILMANAGER_DELETE_CONFIRM_TEXT = 
+  "Sei sicuro che desideri eliminare il(i) messaggio(i) seguente(i)?";
+$MAILMANAGER_DELETE_CONFIRM_ALL_TEXT = 
+  "Sei sicuro che tu desideri eliminare tutti i messaggi nel mailbox 
+   selezionato (\"__MAILBOX__\")?";
+$MAILMANAGER_DELETE_SUCCESS_TEXT = 
+  "La tua richiesta di eliminare il(i) messaggio(i) è stata compiuta con successo.";
+
+##############################################################################
+# save message strings
+
+$MAILMANAGER_SAVE_TAGGED = "Salva i Messaggi Indicati";
+$MAILMANAGER_SAVE_ALL = "Salva Tutti i Messaggi";
+$MAILMANAGER_SAVE_SINGLE = "Salva il Messaggio";
+$MAILMANAGER_SAVE_ALL_HELP_TEXT =
+  "Hai chiesto il salvataggio di tutti i messaggi nella  mailbox \"__MAILBOX__\"
+   in una cartella che specificherai.";
+$MAILMANAGER_SAVE_SELECTED_HELP_TEXT = 
+  "Hai selezionato i seguenti __NUMBER__ messaggi(o):";
+$MAILMANAGER_SAVE_SELECTED_CROPPED_TEXT = "__NUMBER__ altri";
+$MAILMANAGER_SAVE_SELECT_HELP_TEXT =
+  "Usa il modulo qui sotto per selezionare una cartella di posta
+   a cui il(i) tuo(i) messaggio(i) selezionato(i) sarà(anno) collegato(i).  
+   Un selettore dei file è fornito per tua convenienza.";
+$MAILMANAGER_SAVE_CANCEL_TEXT = 
+  "La tua richiesta di salvare messaggio è stata annullata; nessun'azione
+   è stata intrapresa.";
+$MAILMANAGER_SAVE_SUCCESS_TEXT = 
+  "La tua richiesta di salvare messaggio è stata compiuta con successo.";
+$MAILMANAGER_SAVE_DENIED_TEXT = 
+  "Il tuo profilo non include i privilegi per 'ftp'.  Di conseguenza,
+   non puoi  usare lo strumento di Salva Messaggio(i).";
+
+##############################################################################
+# select mailbox strings
+
+$MAILMANAGER_SELECT_MAILBOX = "Cambia Cartella di Posta";
+$MAILMANAGER_SELECT_MAILBOX_HELP_TEXT =
+  "Usa il modulo seguente per cambiare la tua cartella posta attuale.  
+   Un selettore del file è fornito per tua convenienza.";
+$MAILMANAGER_SELECT_INCOMING = 
+  "(Usa '!' per cambiare la tua cartella di posta attuale come mailbox di 
+   posta in arrivo.)";
+$MAILMANAGER_SELECT_CANCEL_TEXT = 
+  "La tua richiesta di cambiare cartella di posta è stata annullata; nessun'azione
+   è stata intrapresa.";
+$MAILMANAGER_SELECT_ERROR_FOLDER_DOES_NOT_EXIST = 
+  "La cartella di posta che hai specificato non esiste";
+$MAILMANAGER_SELECT_DENIED_TEXT = 
+  "Il tuo profilo non include i privilegi per il 'ftp'.  Di conseguenza,
+   non puoi usare lo strumento Cambiare Cartella Posta.";
+
+##############################################################################
+# eof
+
+1;
+

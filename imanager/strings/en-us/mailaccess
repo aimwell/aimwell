@@ -1,0 +1,114 @@
+#
+# mailaccess strings
+#
+# $SMEId: local/imanager/strings/en/mailaccess,v 2.12.2.1 2004/11/12 20:21:21 rus Exp $
+#
+
+$MAILACCESS_NO_ENTRIES_EXIST = 
+  "It appears that your mail access file does not include any definitions.
+   Please use the 'Add Mail Access Entry' utility to add new mail access 
+   entries.";
+
+$MAILACCESS_SELECT_TITLE = "Select Mail Access Entries";
+$MAILACCESS_SELECT_HELP = 
+  "Please use the following form to select one or more mail access entries.";
+
+$MAILACCESS_OVERVIEW_HELP_TEXT_1 = 
+  "The mail access file is used to accept, reject, or relay mail from 
+   selected domain names and/or IP address ranges.  The mail access file is
+   commonly used to define domain names for which you do not wish to 
+   receive e-mail from, such as from known spammers.";
+$MAILACCESS_OVERVIEW_HELP_TEXT_2 = 
+  "The value for the mail access entry can be any e-mail address, 
+   username (usernames must be appended with the '\@' sign), domain name,
+   IP address, or IP address range (i.e. 192.168.212 would match any host
+   in the 192.168.212.* network).  The mail access action must be one of
+   the following: 'OK', 'REJECT', 'RELAY', or an RFC 821 compliant error
+   code (such as 550) followed by the error code text.";
+
+$MAILACCESS_EXAMPLES_HELP_TEXT_1 = "Consider the following examples:";
+$MAILACCESS_EXAMPLES_HELP_TEXT_2 = 
+  "  Mail Access Entry               Mail Access Action
+  ----------------------          -----------------
+  cyberspammer.com                550 We don't accept mail from spammers
+  FREE.STEALTH.MAILER@            550 We don't accept mail from spammers
+  another.source.of.spam          REJECT
+  okay.cyberspammer.com           OK
+  128.32                          RELAY";
+
+$MAILACCESS_ENTRY = "Mail Access Entry";
+$MAILACCESS_ACTION = "Mail Access Action";
+
+$MAILACCESS_DEFAULT_ERROR_CODE_TEXT = "Spam not accepted";
+
+$MAILACCESS_ENTRY_PLACEMENT = "Mail Access Entry Placement";
+$MAILACCESS_ENTRY_PLACEMENT_APPEND = "append to end of file";
+$MAILACCESS_ENTRY_PLACEMENT_INSERT = "insert after __ENTRY__";
+
+$MAILACCESS_ADD_HELP_TEXT = 
+  "Please use the form below to add new mail access entries.";
+$MAILACCESS_ADD_SUBMIT_TEXT = $SUBMIT_STRING;
+
+$MAILACCESS_EDIT_HELP_TEXT = 
+  "Please use the form below to make changes to the selected mail
+   access entry(ies).";
+$MAILACCESS_EDIT_SUBMIT_TEXT = "Submit Changes";
+
+$MAILACCESS_REMOVE_HELP_TEXT = 
+  "Are you sure you want to permanently remove the mail access entry(iess)
+   listed below?";
+$MAILACCESS_REMOVE_SUBMIT_TEXT = "Yes, Remove the Above Entry(ies)";
+
+$MAILACCESS_SORT_BY_NAME = "Sort by Entry Definition";
+$MAILACCESS_SORT_BY_ACTION = "Sort by Entry Action";
+$MAILACCESS_SORT_BY_ORDER = "Sort by File Order";
+
+$MAILACCESS_SUCCESS_ADD_TEXT = 
+  "Your Add Mail Access Entry(ies) request was processed.";
+$MAILACCESS_SUCCESS_EDIT_TEXT = 
+  "Your Edit Mail Access Entry(ies) request was processed.";
+$MAILACCESS_SUCCESS_REMOVE_TEXT = 
+  "Your Remove Mail Access Entry(ies) request was processed.";
+
+$MAILACCESS_CANCEL_ADD_TEXT = 
+  "Your Add Mail Access Entry(ies) request was cancelled.  No action was taken.";
+$MAILACCESS_CANCEL_EDIT_TEXT = 
+  "Your Edit Mail Access Entry(ies) request was cancelled.  No action was taken.";
+$MAILACCESS_CANCEL_REMOVE_TEXT = 
+  "Your Remove Mail Access Entry(ies) request was cancelled.  No action was taken.";
+
+$MAILACCESS_ERROR_ENTRY_FIELD_IS_BLANK = 
+  "Value for mail access entry definition is blank.";
+$MAILACCESS_ERROR_ACTION_FIELD_IS_BLANK = 
+  "Value for mail access action is blank.";
+$MAILACCESS_ERROR_ACTION_FIELD_IS_INVALID = 
+  "Value for mail access action is not valid.";
+
+$MAILACCESS_ERROR_DUPLICATE_ADDITION = 
+  "A mail access entry for '__ENTRY__' already exists.  Duplicates are not
+   allowed.";
+$MAILACCESSS_ERROR_VIRTUAL_FIELD_REPEATED = 
+  "The mail access entry '__ENTRY__' is a duplicate (see above).";
+
+$MAILACCESS_NO_CHANGES_FOUND =
+  "No changes were found in the mail access definitions that were submitted.
+   Please use the 'Back' functionality of your browser, check your form 
+   submission, and try again.";
+
+$MAILACCESS_CONFIRM_TEXT =
+  "Please find below a list summarizing the changes that will be made to
+   your mail access file.  Press the 'Confirm' button to make the changes.";
+$MAILACCESS_CONFIRM_ADD_NEW = "Add the following mail access entry:";
+$MAILACCESS_CONFIRM_REMOVE_OLD = "Remove the following mail access entry:";
+$MAILACCESS_CONFIRM_CHANGE_NAME = 
+  "Change the mail access entry definition of '__NAME__' to '__NEWNAME__'";
+$MAILACCESS_CONFIRM_CHANGE_VALUE = 
+  "Change the mail access action definition for '__NAME__'";
+$MAILACCESS_CONFIRM_CHANGE_VALUE_OLD = "Old value";
+$MAILACCESS_CONFIRM_CHANGE_VALUE_NEW = "New value";
+
+##############################################################################
+# eof
+
+1;
+

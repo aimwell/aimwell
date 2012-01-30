@@ -1,0 +1,96 @@
+#
+# group strings
+#
+# $SMEId: local/imanager/strings/ja/group,v 2.12.2.1 2004/11/15 20:59:33 rus Exp $
+#
+# $Id: local/imanager/strings/ja/group,v 2.11 2003/09/24 13:10:00 M.Matsuda Exp $
+#
+
+$GROUP_NONE_EXIST  = 
+  "現在グループファイルにはグループが登録されていません。
+   「グループの追加」から新規にグループを追加してください。";
+
+$GROUP_SELECT_TITLE  =  "グループの選択";
+$GROUP_SELECT_HELP  = 
+  "以下のフォームを使用してグループを選択してください。";
+
+$GROUP_OVERVIEW_HELP_TEXT  = 
+  "グループには一定のユーザが特定の集団として定義されます。
+   グループ名はグループのメンバーであるユーザに対してファイル・アクセスを
+   許可するために使用されます。グループ名の重複登録はできません。
+   グループメンバー欄に含まれたユーザは該当グループに関する権限を与えられます。
+   複数ユーザ登録の際は、ユーザ名はカンマをで区切ります（空白は入れません）。
+   ユーザプロフィールで表示されたグループに関しては、既にそのユーザは
+   該当グループのメンバーになっていますので登録の必要はありません。";
+  
+$GROUP_NAME  =  "グループ名";
+$GROUP_ID  =  "GID";
+$GROUP_MEMBER_LIST  =  "グループメンバー";
+$GROUP_EXPLICIT_MEMBERS  =  "(グループファイル内で登録中)";
+$GROUP_IMPLICIT_MEMBERS  =  "(パスワードファイル内で登録中)";
+
+$GROUP_NO_EXPLICIT_MEMBERS  =  "登録されていません";
+$GROUP_NO_IMPLICIT_MEMBERS  =  "登録されていません";
+
+$GROUP_ADD_HELP_TEXT  =  "以下のフォームを使用して新規にグループを追加してください。";
+$GROUP_ADD_SUBMIT_TEXT  =  $SUBMIT_STRING;
+
+$GROUP_EDIT_HELP_TEXT  = 
+  "以下のフォームを使用して選択したグループを変更してください。";
+$GROUP_EDIT_SUBMIT_TEXT  =  "変更する";
+
+$GROUP_REMOVE_HELP_TEXT  = 
+  "以下のグループを完全に削除してもよろしいですか？";
+$GROUP_REMOVE_SUBMIT_TEXT  =  "削除する";
+
+$GROUP_SORT_BY_NAME  =  "グループ名順で並べ替える";
+$GROUP_SORT_BY_GID  =  "グループIDで並べ替える";
+
+$GROUP_SUCCESS_ADD_TEXT  =  "グループを追加しました。";
+$GROUP_SUCCESS_EDIT_TEXT  =  "グループを変更しました";
+$GROUP_SUCCESS_REMOVE_TEXT  =  "グループを削除しました。";
+
+$GROUP_CANCEL_ADD_TEXT  = 
+  "グループ追加要求を取り消しました。";
+$GROUP_CANCEL_EDIT_TEXT  = 
+  "グループ変更要求を取り消しました。";
+$GROUP_CANCEL_REMOVE_TEXT  = 
+  "グループ削除要求を取り消しました。";
+
+$GROUP_ERROR_GROUP_NAME_IS_BLANK  =  "グループ名が記入されていません。";
+$GROUP_ERROR_GROUP_NAME_CONTAINS_INVALID_CHARS  = 
+  "グループ名'__GROUP__'には不正な文字が使用されています。";
+$GROUP_ERROR_GROUP_NAME_MUST_BEGIN_WITH_LETTER  = 
+  "グループ名'__GROUP__'は無効です。グループ名は文字から始めなければいけません。";
+$GROUP_ERROR_GROUP_NAME_EXISTS  =  
+  "グループ名'__GROUP__'は既に存在しています。";
+$GROUP_ERROR_GROUP_NAME_DUPLICATE = 
+  "グループ名'__GROUP__'が重複して入力されています（上の入力値を確認ください）。";
+$GROUP_ERROR_GROUP_MEMBER_LIST_USER_UNKNOWN  = 
+  "グループ名'__GROUP__'のメンバーリストに不明なユーザ'__USER__'が含まれています。";
+
+$GROUP_NO_CHANGES_FOUND  = 
+  "送信されたグループプロフィールに変更点はありません。
+   ブラウザの'戻る'を使用して送信内容を確認後、
+   再送信してください。";
+
+$GROUP_CONFIRM_TEXT  = 
+  "以下はグループファイルに加えられる変更点になります。
+   '確認'ボタンを押すことで実際に変更が加えられます。";
+$GROUP_CONFIRM_ADD_NEW  =  "以下のグループを追加する";
+$GROUP_CONFIRM_CHANGE_FROM  =  "次のグループプロフィールを";
+$GROUP_CONFIRM_CHANGE_TO  =  "以下のように変更する";
+
+$GROUP_SYSTEM_SHOW  =  "システムグループを表示";
+$GROUP_SYSTEM_HIDE  =  "システムグループを非表示";
+
+$GROUP_RESOURCE_ERROR_TITLE  =  "$SOFTWARE_TITLE: グループファイルリソースエラー";
+$GROUP_RESOURCE_ERROR_TEXT  =  
+  "グループファイルへのアクセス中にエラーが発生しました。。
+   エラーの内容は以下の通りです：";
+
+##############################################################################
+# eof
+
+1;
+

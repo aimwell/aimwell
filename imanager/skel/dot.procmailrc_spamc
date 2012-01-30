@@ -1,0 +1,21 @@
+## begin spamassassin vinstall (do not remove these comments)
+TMPLOGFILE=$LOGFILE
+TMPLOGABSTRACT=$LOGABSTRACT
+TMPVERBOSE=$VERBOSE
+
+LOGFILE=__LOGFILE__
+LOGABSTRACT=__LOGABSTRACT__
+VERBOSE=no
+
+:0fw
+|/usr/local/bin/spamc -U /var/run/spamd.sock -u __USER__
+
+:0:
+* ^X-Spam-Status: Yes
+__SPAMFOLDER__
+
+LOGFILE=$TMPLOGFILE
+LOGABSTRACT=$TMPLOGABSTRACT
+VERBOSE=$TMPVERBOSE
+## end spamassassin vinstall (do not remove these comments)
+__AUTORESPONDER__

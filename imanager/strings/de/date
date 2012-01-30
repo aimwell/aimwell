@@ -1,0 +1,32 @@
+#
+# date strings
+#
+# $SMEId: local/imanager/strings/de/date,v 2.12 2004/08/27 18:27:45 rus Exp $
+#
+
+$MONTHS_JAN = "Jan";
+$MONTHS_FEB = "Feb";
+$MONTHS_MAR = "Mär";
+$MONTHS_APR = "Apr";
+$MONTHS_MAY = "Mai";
+$MONTHS_JUN = "Jun";
+$MONTHS_JUL = "Jul";
+$MONTHS_AUG = "Aug";
+$MONTHS_SEP = "Sep";
+$MONTHS_OCT = "Okt";
+$MONTHS_NOV = "Nov";
+$MONTHS_DEC = "Dez";
+
+$WEEKDAYS_MON = "Mon";
+$WEEKDAYS_TUE = "Die";
+$WEEKDAYS_WED = "Mit";
+$WEEKDAYS_THU = "Don";
+$WEEKDAYS_FRI = "Fre";
+$WEEKDAYS_SAT = "Sam";
+$WEEKDAYS_SUN = "Son";
+
+##############################################################################
+# eof
+
+1;
+

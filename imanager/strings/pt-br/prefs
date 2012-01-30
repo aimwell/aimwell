@@ -1,0 +1,312 @@
+#
+# preferences strings
+#
+# $SMEId: local/imanager/strings/pt-br/prefs,v 2.12.2.1 2006/01/11 10:07:36 rus Exp $
+#
+
+$PREFS_TITLE = "$SOFTWARE_TITLE: Preferências para __USER_ID__";
+
+$PREFS_MAINMENU_TITLE = "Menu Principal de Preferências";
+
+$PREFS_EXPLANATION = 
+  "Por favor utilize as seguintes opções para visualizar e modificar as preferências do usuário
+   \"__USER_ID__\".";
+
+$PREFS_SUCCESS_TEXT = "Suas preferências foram memorizadas com sucesso..";
+
+$PREFS_UNKNOWN_TEXT = 
+  "O tipo de preferência escolhido ('__TYPE__') não é desconhecido.";
+
+##############################################################################
+# general preferences
+
+$PREFS_GENERAL_TEXT = "Preferências Gerais";
+
+$PREFS_STARTUP_MENU_TEXT = "Menu Inicial do $SOFTWARE_TITLE";
+$PREFS_STARTUP_MENU_HELP = 
+  "Logo após autenticar-se no $SOFTWARE_TITLE, você pode selecionar uma das seguintes opções para
+   servir como seu menu inicial.";
+
+$PREFS_AUTH_DURATION_TEXT = "Encerramento de Sessão Automático do $SOFTWARE_TITLE";
+$PREFS_AUTH_DURATION_HELP = 
+  "O tempo (em minutos) que suas credenciais de autenticação levarão para expirar devido à inatividade
+   (não utilizar nenhum comando por exemplo). Por razões de segurança, um máximo de 60 minutos é recomendado.";
+$PREFS_AUTH_DURATION_UNITS = "minutos";
+
+##############################################################################
+# language preferences
+
+$PREFS_LANGUAGE_TEXT = "Preferências de Idioma";
+
+$PREFS_DEFAULT_LANGUAGE_TEXT = "Idioma Padrão";
+$PREFS_DEFAULT_LANGUAGE_HELP = "Selecione o idioma Preferido:";
+
+$PREFS_DEFAULT_LANGUAGE_DA   = "Dinamarquês";
+$PREFS_DEFAULT_LANGUAGE_NL   = "Holandês";
+$PREFS_DEFAULT_LANGUAGE_EN   = "Inglês";
+$PREFS_DEFAULT_LANGUAGE_FR   = "Francês";
+$PREFS_DEFAULT_LANGUAGE_DE   = "Alemão";
+$PREFS_DEFAULT_LANGUAGE_IT   = "Italiano";
+$PREFS_DEFAULT_LANGUAGE_JA   = "Japonês";
+$PREFS_DEFAULT_LANGUAGE_PT   = "Português";
+$PREFS_DEFAULT_LANGUAGE_PTBR = "Português (Brasileiro)";
+$PREFS_DEFAULT_LANGUAGE_ES   = "Espanhol";
+$PREFS_DEFAULT_LANGUAGE_SE   = "Sueco";
+
+##############################################################################
+# security preferences
+
+$PREFS_SECURITY_TEXT = "Preferências de Segurança";
+
+$PREFS_SECURITY_FORCE_HTTPS_TEXT = "Forçar Conexão Segura";
+$PREFS_SECURITY_FORCE_HTTPS_HELP = 
+  "Você pode fazer com que todas as solicitações de utilização do iManager
+  que não sejam feitas através de uma conexão SSL sejam redirecionadas à 
+  uma sessão codificada por SSL. Para poder utilizar esse recurso, é preciso
+  que você possua o sistema SSL (servidor seguro) instalado no Servidor Virtual. Por 
+  padrão, sessões não-SSL são permitidas.";
+$PREFS_SECURITY_FORCE_HTTPS_YES = "Forçar Conexões SSL";
+$PREFS_SECURITY_FORCE_HTTPS_NO = "Permite Conexões Não-SSL";
+
+$PREFS_SECURITY_IP_CHECK_TEXT = 
+  "Requer Autenticação do Hostname (Verificação do Número IP)";
+
+$PREFS_SECURITY_IP_CHECK_HELP = 
+  "Um dos métodos de autenticação executados é a comparação de números de IP
+  entre sessões subseqüentes. Esse recurso evita que indíviduos não autorizados utilizem
+  sua chave de autenticação em alguma máquina diferente da que originou a sessão. Porém,
+  alguns usuários talvez se conectem através de um proxy onde o endereço de IP muda de sessão para sessão
+ (atenção especial aos usuários AOL já foi incluída neste software). Por padrão, a verificação do
+  número de IP é sempre efetuada.";
+$PREFS_SECURITY_IP_CHECK_YES = "Ligar Verificação de IP";
+$PREFS_SECURITY_IP_CHECK_NO = "Desligar Verificação de IP";
+
+$PREFS_SECURITY_STRICT_PASSWORD_TEXT = 
+  "Impor Regras Estritas durante a Seleção de Senhas";
+$PREFS_SECURITY_STRICT_PASSWORD_HELP = 
+  "Você pode ativar ou desativar a imposição de regras estritas durante  
+   a seleção de novas senhas para usuários. Essas regras impõem que uma nova senha
+   possua no mínimo 7 caracteres, misture letras maiúsculas e minúsculas e
+   que contenha caracteres numéricos e alfanuméricos ao mesmo tempo. Essas regras 
+   existem para garantir que os usuários não escolherão senhas fracas que possam ser facilmente
+   adivinhadas ou crackeadas. Essa opção de segurança pode ser desativada,
+   mas desencorajamos essa atitude.  Por padrão, a opção é IMPOR essas regras.
+   ";
+$PREFS_SECURITY_STRICT_PASSWORD_YES = "Impor Regras Estritas na Seleção de Senhas";
+$PREFS_SECURITY_STRICT_PASSWORD_NO = "Não Impor Regras Estritas na Seleção de Senhas";
+
+$PREFS_SECURITY_ROOT_LOGIN_TEXT = 
+  "Permite login do 'root'";
+$PREFS_SECURITY_ROOT_LOGIN_HELP = 
+  "É possível permitir ou não a entrada no sistema através da utilização do usuário 'root'.
+   Uma política de segurança rigorosa recomenda não utilizar root login; ao invés disso, o
+   usuário administrativo é que deverá ser utilizado para a execução de tarefas tais como adicionar
+   novos usuários, aliases, etc.  Esta opção pode ser ativada, mas desencorajamos.
+   Por padrão, o login do usuário 'root' está desativado.";
+$PREFS_SECURITY_ROOT_LOGIN_YES = "Ativar 'root' login";
+$PREFS_SECURITY_ROOT_LOGIN_NO = "Desativar 'root' login";
+
+$PREFS_SECURITY_ELEVATE_ADMIN_FTP_PRIVS_TEXT =
+  "Elevar os Privilégios do Usuário Administrativo no Gerenciador de Arquivos"; 
+$PREFS_SECURITY_ELEVATE_ADMIN_FTP_PRIVS_HELP = 
+  "Os privilégios do usuário adminintrativo no Gerenciador de Arquivos podem ser
+   elevados de tal forma que o mesmo passa a operar como se fosse o usuário root. Isso permite
+   ao usuário administrativo ler e escrever arquivos pertencentes ao 'root'. Por padrão, essa 
+   facilidade é negada.";
+$PREFS_SECURITY_ELEVATE_ADMIN_FTP_PRIVS_YES = 
+  "Garantir ao usuário administrativo Privilégios Elevados no Gerenciador de Arquivos";
+$PREFS_SECURITY_ELEVATE_ADMIN_FTP_PRIVS_NO = 
+  "Negar ao usuário administrativo Privilégios Elevados no Gerenciador de Arquivos";
+
+##############################################################################
+# file manager preferences
+
+$PREFS_FILEMANAGER_TEXT = "Preferências do Gerenciador de Arquivos";
+
+$PREFS_FILEMANAGER_DENIED_TEXT = 
+  "Seu perfil de usuário não inclui privilégios 'ftp', portanto
+   não vai ser possível que você configure preferências para o Gerenciador de Arquivos.";
+
+$PREFS_HIDE_ENTRIES_THAT_BEGIN_WITH_A_DOT_TEXT = 
+  "Ocultar entradas de diretório cujos nomes iniciem com um ponto(.)";
+$PREFS_HIDE_ENTRIES_THAT_BEGIN_WITH_A_DOT_HELP = 
+  "As listagens de diretório no Gerenciador podem mostrar entradas cujos nomes iniciem
+   com um ponto (.) ou ignorá-las.  Arquivos que iniciam com um ponto
+   são algumas vezes classificados como 'arquivos ocultos' e são tipicamente
+   criados e mantidos por aplicativos.  Por padrão, nomes de diretório
+   que iniciam com um ponto não são mostrados.";
+
+$PREFS_CONFIRM_FILE_REMOVE_TEXT = "Confirmar Remoção de Arquivo";
+$PREFS_CONFIRM_FILE_REMOVE_HELP = 
+  "O utilitário de remoção de arquivos irá perguntar se um determinado arquivo ou diretório selecionado
+   deve realmente ser removido permanentemente.  Por padrão, a confirmação é sempre
+   solicitada.";
+
+$PREFS_CONFIRM_FILE_OVERWRITE_TEXT = "Confirmar quando for necessário sobrescrever um Arquivo";
+$PREFS_CONFIRM_FILE_OVERWRITE_HELP = 
+  "Alguns utilitários do Gerenciado de Arquivos irão solicitar que você confirme certa ação caso
+   o resultado da mesma dependa de sobrescrever um arquivo existente.  Por padrão, a confirmação é sempre
+   solicitada.";
+   
+$PREFS_CONFIRM_DIR_CREATE_TEXT = "Confirmar Criação de Diretório";
+$PREFS_CONFIRM_DIR_CREATE_HELP = 
+  "Alguns utilitários do Gerenciador de Arquivos irão solicitar que você confirme certa ação caso
+   o resultado da mesma dependa da criação de um novo diretório no disco.  Por padrão, a confirmação é sempre
+   solicitada.";
+
+$PREFS_CHMOD_DEFAULT_OPTION_TEXT = "Opções Padrão de Mudança de Permissão";
+$PREFS_CHMOD_DEFAULT_OPTION_HELP = 
+  "O utilitário de Mudança de Permissões possui dois conjuntos de opções que permitem a você
+   mudar as permissões de um determinado arquivo ou diretório selecionado. Você
+   pode selecionar qual conjunto é mostrado por padrão.";
+   
+$PREFS_UPLOAD_FILE_ELEMENTS_TEXT = "Número de Campos de Formulário para Entrada de Arquivos destinados a Upload";
+$PREFS_UPLOAD_FILE_ELEMENTS_HELP = 
+  "O utilitário de Upload de arquivos permite que você selecione arquivos locais em seu computador
+   e efetue a transferência dos mesmos para o Servidor Virtual através de um formulário web. O número de campos de formulário destinados
+   a seleção de arquivos no utilitário de Upload pode ser especificado aqui.
+   O padrão é 4.";
+$PREFS_UPLOAD_FILE_ELEMENTS_UNITS = "campos destinados a especificação de arquivos para upload";
+
+##############################################################################
+# mail manager preferences
+
+$PREFS_MAILMANAGER_TEXT = "Preferências do Gerenciador de Correio";
+
+$PREFS_MAILMANAGER_DENIED_TEXT = 
+  "Seu perfil de usuário não inclui privilégios de 'correio', portanto
+   não será possível que você configure as preferências do Gerenciador de Correio.";
+
+$PREFS_NUM_MESSAGES_TEXT = "Número de Mensagens para Visualização";
+
+$PREFS_NUM_MESSAGES_HELP = 
+  "Quando estiver visualizando uma pasta de correio, quantas mensagens você deseja poder listar ao
+   mesmo tempo? O valor padrão é 25.";
+
+$PREFS_NUM_MESSAGES_UNITS = "mensagens";
+
+$PREFS_INBOX_REFRESH_RATE_TEXT = "Taxa de Atualização da Caixa de Entrada";
+
+$PREFS_INBOX_REFRESH_RATE_HELP =
+  "Quando você estiver visualizando a Caixa de Entrada, de quanto em quanto 
+  tempo o sistema deve atualizar a tela e verificar se existem novas mensagens?
+  O valor padrão é 180 segundos.";
+
+$PREFS_INBOX_REFRESH_RATE_UNITS = "segundos";
+
+$PREFS_DEFAULT_MAIL_SORTING_TEXT = "Organização Padrão das Mensagens de Correio";
+
+$PREFS_DEFAULT_MAIL_SORTING_HELP = 
+  "No momento de visualizar uma pasta de correio, como as mensagens devem
+  ser mostradas? O padrão é mostrar todas as mensagens organizadas
+  por data.";
+
+$PREFS_CONFIRM_MAIL_REMOVE_TEXT = "Confirmar Exclusão de Correio";
+$PREFS_CONFIRM_MAIL_REMOVE_HELP = 
+  "O Gerenciador de Correio vai solicitar que você confirme antes que uma mensagem seja
+   permanentemente removida.  Por padrão, a confirmação é sempre
+   solicitada.";
+
+$PREFS_DEFAULT_MAIL_FOLDER_TEXT = "Diretório Padrão da Pasta de Correio";
+$PREFS_DEFAULT_MAIL_FOLDER_HELP = 
+  "O diretório padrão da pasta de correio identifica onde a sua coleção de
+   pastas de correio reside.  O Gerenciador de Correio permite que você mude
+   sua pasta ativa; salve mensagens para uma pasta em específico; e copie
+   mensagens de saída para uma pasta em específico -- presume-se inicialmente que cada uma dessas pastas
+   esteja localizada em seu diretório padrão de correio.
+   Os diretórios \"/Mail\" ou \"/mail\" são locais bastante comuns
+   para a localização padrão de uma pasta de correio.";
+
+$PREFS_MAIL_ATTACH_ELEMENTS_TEXT = "Número de Elementos de Formulário para Anexação";
+$PREFS_MAIL_ATTACH_ELEMENTS_HELP_NO_FTP_PRIVS = 
+  "No momento de criar mensagens, o Gerenciador de Correio permite a especificação
+   de arquivos locais em seu computador para serem anexados junto ao correio.
+   Esses arquivos são selecionados através de um formulário e então são
+   anexados as mensagens antes das mesmas serem enviadas.  O número de campos
+   destinados à anexação mostrados no formulário de composição de mensagens pode
+   ser especificado aqui.  O padrão é 2.";
+
+$PREFS_MAIL_ATTACH_ELEMENTS_HELP_FULL_PRIVS = 
+  "No momento de criar mensagens, o Gerenciador de Correio permite a especificação
+   tanto de arquivos locais em seu computador, quanto arquivos no próprio servidor virtual para serem anexados junto ao correio.
+   Esses arquivos são selecionados através de um formulário e então são
+   anexados as mensagens antes das mesmas serem enviadas.  O número de campos
+   destinados à anexação mostrados no formulário de composição de mensagens pode
+   ser especificado aqui.  O padrão para cada tipo é 2.";
+
+$PREFS_UPLOAD_ATTACH_ELEMENTS_UNITS = "campos para anexação de arquivos localizados em seu computador";
+$PREFS_LOCAL_ATTACH_ELEMENTS_UNITS = "campos para anexação de arquivos localizados no servidor";
+
+$PREFS_CONFIRM_ADDRESS_BOOK_CHANGES_TEXT = "Confirmar Alterações no Caderno de Endereços";
+$PREFS_CONFIRM_ADDRESS_BOOK_CHANGES_HELP = 
+  "Configura os utilitários do Gerenciados de Correio para sempre pedir sua confirmação
+  toda vez que um contato do Caderno de endereços for ser alterado, removido ou
+  sobrescrito. Por padrão, o sistema sempre solicita uma confirmação.";
+  
+$PREFS_MAIL_ADDRESSBOOK_ELEMENTS_TEXT = "Número de Campos de Formulário do Caderno de Endereços";
+
+$PREFS_MAIL_ADDRESSBOOK_ELEMENTS_HELP = 
+  "O Caderno de Endereços do Gerenciador de Correio permite que você armazene nomes
+  e endereços de pessoas com as quais você se comunica freqüentemente. O número de
+  campos de formulário mostrados na opção de Alterar/Editar Entradas do Caderno de
+  Endereços pode ser especificada aqui. O padrão é 8.";
+
+$PREFS_MAIL_ADDRESSBOOK_ELEMENTS_UNITS = "campos do Caderno de Endereços";
+
+##############################################################################
+# iroot preferences
+
+$PREFS_IROOT_TEXT = "Preferências das Ferramentas e Assistentes";
+
+$PREFS_IROOT_DENIED_TEXT = 
+  "Seu perfil de usuário não é considerado um perfil 'raiz', portanto
+   não é possível que você configure as preferências das Ferramentas e Assistentes.";
+
+$PREFS_NUM_NEWUSERS_TEXT = "Número de Novos Usuários Adicionados Simultaneamente";
+$PREFS_NUM_NEWUSERS_HELP = 
+  "O número de novos usuários que podem ser adicionados simultaneamente usando o utilitário de
+   Adição de Usuários.  O padrão é 1.";
+$PREFS_NUM_NEWUSERS_UNITS = "novos usuários";
+
+$PREFS_NUM_NEWGROUPS_TEXT = "Número de Novos Grupos Adicionados Simultaneamente";
+$PREFS_NUM_NEWGROUPS_HELP = 
+  "O número de novos grupos que podem ser adicionados simultaneamente usando o utilitário
+  de Adição de Grupos. O padrão é 1.";
+$PREFS_NUM_NEWGROUPS_UNITS = "novos grupos";
+
+$PREFS_NUM_NEWALIASES_TEXT = "Número de Novos Apelidos Adicionados Simultaneamente";
+$PREFS_NUM_NEWALIASES_HELP = 
+  "O número de novos apelidos (aliases) que podem ser adicionados simultaneamente usando o utilitário de
+   Adição de Apelidos.  O padrão é 3.";
+$PREFS_NUM_NEWALIASES_UNITS = "novos apelidos de e-mail";
+
+$PREFS_NUM_NEWVIRTMAPS_TEXT = "Número de Novos Virtmaps Adicionados Simultaneamente";
+$PREFS_NUM_NEWVIRTMAPS_HELP = 
+  "O número de novos virtmaps que podem ser adicionados simultaneamente usando o utilitário de
+   Adição de Virtmaps.  O padrão é 5.";
+$PREFS_NUM_NEWVIRTMAPS_UNITS = "novos mapeamentos virtuais de endereço";
+
+$PREFS_NUM_NEWSPAMMERS_TEXT = "Número de Novos Spammers Adicionados Simultaneamente";
+$PREFS_NUM_NEWSPAMMERS_HELP = 
+  "O número de novos spammers que podem ser adicionados simultaneamente usando o utilitário de
+   Adição de Spammers.  O padrão é 5.";
+$PREFS_NUM_NEWSPAMMERS_UNITS = "novas definições de spammers";
+
+$PREFS_NUM_NEWMAILACCESS_TEXT = 
+  "Número de Novas Entradas de Acesso ao Correio Adicionadas Simultaneamente";
+$PREFS_NUM_NEWMAILACCESS_HELP = 
+  "O número de definições de domínio e/ou endereços de e-mail que podem ser adicionados
+  simultaneamente usando o utilitário de Acesso ao Correio.  O padrão é 5.";
+$PREFS_NUM_NEWMAILACCESS_UNITS = "novas entradas";
+
+$PREFS_NUM_NEWVHOSTS_TEXT = "Número de Hospedagens Virtuais Adicionadas Simultaneamente";
+$PREFS_NUM_NEWVHOSTS_HELP = 
+  "O número de novas Hospedagens Virtuais que podem ser adicionados simultaneamente usando o utilitário de
+   Adição de Hospedagens Virtuais. O padrão é 1.";
+$PREFS_NUM_NEWVHOSTS_UNITS = "novas definições de Hospedagem Virtual";
+
+##############################################################################
+# eof
+
+1;
+

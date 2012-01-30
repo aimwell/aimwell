@@ -1,0 +1,31 @@
+#
+# auth strings
+#
+# $SMEId: local/imanager/strings/it/auth,v 2.12 2004/08/27 18:27:49 rus Exp $
+#
+
+$AUTH_TITLE = "Autorizzazione Richiesta";
+
+$AUTH_LOGINID  = "Login ID";                    # ???
+$AUTH_PASSWORD = "Password";
+
+$AUTH_SETCOOKIE = "Ricorda Password";
+$AUTH_SETCOOKIE_HELP_TEXT = 
+  "L'opzione 'Ricorda Password', una volta scelta, mantiene nella memoria
+   del tuo computer i dati che hai inserito, utilizzando i cookies del tuo
+   browser.";
+
+$AUTH_UNKNOWNLOGIN = "La Login ID che hai fornito è sconosciuta.";
+$AUTH_BADPASSWORD = "La Password che hai fornito è errata.";
+$AUTH_LOGGEDOUT = "Sei uscito da $SOFTWARE_TITLE.";         ### 'you have left' ??? ok
+$AUTH_BADHOST = 
+  "L'hostname autorizzato è cambiato.  Ripetere l'autenticazione.";
+$AUTH_EXPIRED = 
+  "Le tue credenziali di autenticazione sono scadute. Ripetere l'autenticazione.";  ### can you use 
+#stantie like this? no, you should use scadute. stantie only for food
+
+##############################################################################
+# eof
+
+1;
+

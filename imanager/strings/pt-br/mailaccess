@@ -1,0 +1,127 @@
+#
+# mailaccess strings
+#
+# $SMEId: local/imanager/strings/pt-br/mailaccess,v 2.12.2.1 2006/01/11 10:07:35 rus Exp $
+#
+
+$MAILACCESS_NO_ENTRIES_EXIST = 
+  "Parece que o arquivo de Acesso ao Correio não contém nenhum endereço mapeado.
+   Use o utilitário 'Adicionar Entrada de Acesso ao Correio' para começar a incluir endereços.";
+
+$MAILACCESS_SELECT_TITLE = "Selecionar Entradas de Acesso ao Correio (Mail Access)";
+$MAILACCESS_SELECT_HELP = 
+  "Por gentileza, utilize o formulário abaixo para selecionar uma ou mais entradas de acesso ao correio.";
+
+$MAILACCESS_OVERVIEW_HELP_TEXT_1 = 
+  "O arquivo de acesso ao correio é utilizado para aceitar, rejeitar ou entregar
+  correio de intervalos de endereços de IP e/ou nomes de domínio. O mail access
+  é geralmente utilizado para definir nomes de domínio dos quais
+  você não deseja receber mensagens.";
+
+$MAILACCESS_OVERVIEW_HELP_TEXT_2 = 
+  "Valores válidos como entradas do arquivo de acesso ao correio incluem
+  endereços de e-mail (sendo que a porção do nome, deve ser seguida pela
+  '\@'), nomes de domínio, endereços de IP ou intervalos
+  de endereço de IP (ex. o IP 192.168.212 representaria qualquer máquina
+  localizada na rede 192.168.212.*). A ação efetuada pelo mail access deve ser uma das
+  seguintes: 'OK', 'REJECT' (rejeitar), 'RELAY' (entregar, passando adiante) ou
+  algum código de erro nas normas RFC 821 (como o código 550) seguido
+  pelo texto correspondente.";
+$MAILACCESS_EXAMPLES_HELP_TEXT_1 = "Considere os seguintes exemplos:";
+$MAILACCESS_EXAMPLES_HELP_TEXT_2 = 
+  "  Entrada no Mail Access          Ação do Mail Access
+  ----------------------          -----------------
+  cyberspammer.com                550 Não aceitamos e-mail de spammers
+  FREE.STEALTH.MAILER@            550 Não aceitamos e-mail de spammers
+  outra.fonte.de.spam             REJECT
+  okay.domínio.com                OK
+  128.32                          RELAY";
+
+$MAILACCESS_ENTRY = "Entrada no Mail Access";
+$MAILACCESS_ACTION = "Ação a ser Efetuada";
+
+$MAILACCESS_DEFAULT_ERROR_CODE_TEXT = "Spam não é aceito";
+
+$MAILACCESS_ENTRY_PLACEMENT = "Colocação da Entrada no Mail Access";
+$MAILACCESS_ENTRY_PLACEMENT_APPEND = "adicionar ao final do arquivo";
+$MAILACCESS_ENTRY_PLACEMENT_INSERT = "inserir após __ENTRY__";
+
+$MAILACCESS_ADD_HELP_TEXT = 
+  "Por gentileza utilize o formulário abaixo para adicionar novas
+   entradas no arquivo de acesso ao correio";
+$MAILACCESS_ADD_SUBMIT_TEXT = $SUBMIT_STRING;
+
+$MAILACCESS_EDIT_HELP_TEXT = 
+  "Por gentileza utilize o formulário abaixo para efetuar alterações na(s)
+  entrada(s) do arquivo de acesso ao correio escolhida(s).";
+
+$MAILACCESS_EDIT_SUBMIT_TEXT = "Enviar Alteração(ões)";
+
+$MAILACCESS_REMOVE_HELP_TEXT = 
+  "Tem certeza que deseja remover todas as entradas do arquivo de acesso 
+  ao correio listadas abaixo?";
+
+$MAILACCESS_REMOVE_SUBMIT_TEXT = "Sim, Remova a(s) Entrada(s) Acima";
+
+$MAILACCESS_SORT_BY_NAME = "Organizar por Definição da Entrada";
+$MAILACCESS_SORT_BY_ACTION = "Organizar por Ação a ser Efetuada";
+$MAILACCESS_SORT_BY_ORDER = "Organizar pela Ordem do Arquivo";
+
+$MAILACCESS_SUCCESS_ADD_TEXT = 
+  "A solicitação para a adição de entradas no arquivo de acesso ao correio foi
+  processada com sucesso.";
+$MAILACCESS_SUCCESS_EDIT_TEXT = 
+ "A solicitação para a alteração de entradas do arquivo de acesso ao correio foi
+  processada com sucesso.";
+$MAILACCESS_SUCCESS_REMOVE_TEXT = 
+ "A solicitação para a remoção de entradas do arquivo de acesso ao correio foi
+  processada com sucesso.";
+
+$MAILACCESS_CANCEL_ADD_TEXT = 
+  "A solicitação para a adição de entradas no arquivo de acesso ao correio foi
+  cancelada. Nenhuma ação efetuada.";
+
+$MAILACCESS_CANCEL_EDIT_TEXT = 
+  "A solicitação para a alteração de entradas do arquivo de acesso ao correio foi
+  cancelada. Nenhuma ação efetuada.";
+
+$MAILACCESS_CANCEL_REMOVE_TEXT = 
+  "A solicitação para a remoção de entradas do arquivo de acesso ao correio foi
+  cancelada. Nenhuma ação efetuada.";
+
+$MAILACCESS_ERROR_ENTRY_FIELD_IS_BLANK = 
+  "Você não digitou nenhum valor para o campo que define a entrada no mail access.";
+$MAILACCESS_ERROR_ACTION_FIELD_IS_BLANK = 
+  "Você não digitou nenhum valor para o campo que define a açao a ser efetuada no mail access.";
+$MAILACCESS_ERROR_ACTION_FIELD_IS_INVALID = 
+  "O valor informado para a ação a ser efetuada não é válido.";
+
+$MAILACCESS_ERROR_DUPLICATE_ADDITION = 
+  "A entrada '__ENTRY__' já existe.  Valores duplicados não são permitidas.";
+
+$MAILACCESSS_ERROR_VIRTUAL_FIELD_REPEATED = 
+  "A entrada '__ENTRY__' é uma duplicata (veja acima).";
+
+$MAILACCESS_NO_CHANGES_FOUND =
+  "Nenhuma alteração foi encontrada nas definições de mail access que você
+  acabou de enviar. Utilize o botão 'voltar' de seu navegador, verifique
+  as modificações e tente novamente.";
+ 
+$MAILACCESS_CONFIRM_TEXT =
+  "Por favor verifique abaixo as mudanças que serão efetuadas no
+  arquivo de acesso ao correio. Pressione o botão 'Confirmar' para
+  aplicar as alterações.";
+$MAILACCESS_CONFIRM_ADD_NEW = "Adicionar a seguinte definição de acesso ao correio:";
+$MAILACCESS_CONFIRM_REMOVE_OLD = "Remover a seguinte definição de acesso ao correio:";
+$MAILACCESS_CONFIRM_CHANGE_NAME = 
+  "Alterar a definição de acesso ao correio de '__NAME__' para '__NEWNAME__'";
+$MAILACCESS_CONFIRM_CHANGE_VALUE = 
+  "Alterar a ação a ser efetuada para '__NAME__'";
+$MAILACCESS_CONFIRM_CHANGE_VALUE_OLD = "Antigo Valor";
+$MAILACCESS_CONFIRM_CHANGE_VALUE_NEW = "Novo Valor";
+
+##############################################################################
+# eof
+
+1;
+

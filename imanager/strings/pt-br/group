@@ -1,0 +1,101 @@
+#
+# group strings
+#
+# $SMEId: local/imanager/strings/pt-br/group,v 2.12.2.1 2006/01/11 10:07:35 rus Exp $
+#
+
+$GROUP_NONE_EXIST =
+  "Parece que o arquivo de grupos está vazio.
+  Use o utilitário 'Adicionar Grupo' para adicionar novos perfis de grupo.";
+
+$GROUP_SELECT_TITLE = "Selecionar Grupos";
+$GROUP_SELECT_HELP =
+  "Por favor utilize o seguinte formulário para selecionar um ou mais grupos.";
+
+$GROUP_OVERVIEW_HELP_TEXT =
+  "Um grupo é um conjunto de usuários. O nome do grupo é o identificador
+   utilizado para garantir o acesso a arquivos aos usuários membros do
+   grupo em questão. O nome escolhido deve ser único no sistema. O
+   campo membro contém o nome dos usuários que gozam dos privilégios
+   proporcionados pelo grupo. Os nomes dos membros devem ser separados
+   por virgula e sem espaços. Um usuário é considerado implicado em um
+   determinado grupo quando o nome do grupo em questão está especificado
+   no perfil desse usuário. Portanto, usuários implicados em um grupo,
+   não precisam estar na lista de membros daquele grupo.";
+  
+$GROUP_NAME = "Nome do Grupo";
+$GROUP_ID = "GID";
+$GROUP_MEMBER_LIST = "Membros do Grupo";
+$GROUP_EXPLICIT_MEMBERS = "(Definido no Arquivo do Grupo)";
+$GROUP_IMPLICIT_MEMBERS = "(Implicado no Arquivo de Senhas)";
+
+$GROUP_NO_EXPLICIT_MEMBERS = "nenhum explicitamente listado";
+$GROUP_NO_IMPLICIT_MEMBERS = "nenhum membro implícito foi encontrado";
+
+$GROUP_ADD_HELP_TEXT = "Utilize o formulário abaixo para adicionar novos grupos.";
+$GROUP_ADD_SUBMIT_TEXT = $SUBMIT_STRING;
+
+$GROUP_EDIT_HELP_TEXT =
+  "Utilize o formulário abaixo para efetuar alterações a(os) grupo(s) selecionado(s).";
+$GROUP_EDIT_SUBMIT_TEXT = "Enviar Alterações";
+
+$GROUP_REMOVE_HELP_TEXT =
+  "Tem certeza que deseja remover o(s) grupo(s) listado(s) abaixo?";
+$GROUP_REMOVE_SUBMIT_TEXT = "Sim, Remova o(s) Grupo(s) acima.";
+
+$GROUP_SORT_BY_NAME = "Organizar por Nome do Grupo";
+$GROUP_SORT_BY_GID = "Organizar por ID do Grupo";
+
+$GROUP_SUCCESS_ADD_TEXT = "A solicitação para a adição de Grupo(s) foi processada com sucesso.";
+$GROUP_SUCCESS_EDIT_TEXT = "A solicitação para a alteração de Grupo(s) foi processada com sucesso.";
+$GROUP_SUCCESS_REMOVE_TEXT = "A solicitação para a remoção de Grupo(s) foi processada com sucesso.";
+
+$GROUP_CANCEL_ADD_TEXT =
+  "A solicitação para a adição de Grupo(s) foi cancelada.  Nenhuma ação foi efetuada.";
+$GROUP_CANCEL_EDIT_TEXT =
+  "A solicitação para a alteração de Grupo(s) foi cancelada.  Nenhuma ação foi efetuada.";
+$GROUP_CANCEL_REMOVE_TEXT =
+  "A solicitação para a remoção de Grupo(s) foi cancelada.  Nenhuma ação foi efetuada.";
+
+$GROUP_ERROR_GROUP_NAME_IS_BLANK = "O nome do Grupo está em branco.";
+$GROUP_ERROR_GROUP_NAME_CONTAINS_INVALID_CHARS =
+  "O nome de grupo, '__GROUP__', contém caracteres inválidos.";
+$GROUP_ERROR_GROUP_NAME_MUST_BEGIN_WITH_LETTER =
+  "O nome de grupo '__GROUP__', é inválido.  Nomes de Grupo devem iniciar
+   com uma letra.";
+$GROUP_ERROR_GROUP_NAME_EXISTS = 
+  "O nome de grupo '__GROUP__' já existe.";
+  
+$GROUP_ERROR_GROUP_NAME_DUPLICATE = 
+  "O nome de grupo '__GROUP__' é uma duplicata (veja acima).";
+
+$GROUP_ERROR_GROUP_MEMBER_LIST_USER_UNKNOWN =
+  "A lista de membros do grupo '__GROUP__' contém um usuário desconhecido, '__USER__'.";
+
+$GROUP_NO_CHANGES_FOUND =
+ "Nenhuma alteração foi encontrada nos perfis de grupo que você
+  acabou de enviar. Utilize o botão 'voltar' de seu navegador, verifique
+  as modificações e tente novamente.";
+
+$GROUP_CONFIRM_TEXT =
+  "Abaixo encontra-se uma lista resumindo as mudanças que serão efetuadas
+  ao arquivo de grupos. Pressione o botão 'Confirmar' para aplicar
+  as mudanças.";
+  
+$GROUP_CONFIRM_ADD_NEW = "Adicionar o seguinte grupo:";
+$GROUP_CONFIRM_CHANGE_FROM = "Mudar o seguinte perfil de grupo de:";
+$GROUP_CONFIRM_CHANGE_TO = "para:";
+
+$GROUP_SYSTEM_SHOW = "Mostrar Grupos de Sistema";
+$GROUP_SYSTEM_HIDE = "Ocultar Grupos de Sistema";
+
+$GROUP_RESOURCE_ERROR_TITLE = "$SOFTWARE_TITLE: Group File Resource Error";
+$GROUP_RESOURCE_ERROR_TEXT = 
+  "Um erro ocorreu durante a tentativa de acessar o arquivo de grupo.
+  A descrição do erro é mostrada abaixo:";
+
+##############################################################################
+# eof
+
+1;
+

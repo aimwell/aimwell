@@ -1,0 +1,88 @@
+#
+# aliases strings
+#
+# $SMEId: local/imanager/strings/de/aliases,v 2.12 2004/08/27 18:27:45 rus Exp $
+#
+
+$ALIASES_NO_MAPPINGS_EXIST = 
+  "Ihre 'aliases' - Datei entkält noch keine Alias-Definitionen.
+   Bitte benutzen Sie das 'Alias hinzufügen' - Utility um neue Aliase anzulegen.";
+
+$ALIASES_SELECT_TITLE = "Aliase wählen";
+$ALIASES_SELECT_HELP = 
+  "Bitte benutzen Sie das folgende Formular um ein oder mehere Aliase auszuwählen.";
+
+$ALIASES_OVERVIEW_HELP_TEXT = 
+  "Ein E-Mail Alias ist einfach eine E-Mail Weiterleitung. Jedes Alias,
+   das Sie einrichten leitet E-Mails an eine oder mehrere definierte Adressen weiter.
+   Mehrere Adresse müssen dabei durch Komma getrennt sein. Es kann aber
+   auch eine komplexe Definition sein, die Ihren Mailservice dazu veranlasst, eine 
+   Nachricht an eine Mailingliste oder ein Programm, wie z.B. einen Autoresponder
+   weiterzuleiten.";
+
+$ALIASES_EXAMPLES_HELP_TEXT_1 = "Beachten Sie die folgenden Beispiele:";
+$ALIASES_EXAMPLES_HELP_TEXT_2 = 
+  "  E-Mail Alias                   Alias-Definition
+  ----------------------         ----------------------------
+  webmaster                lokalerbenutzer1
+  sales                        lokalerbenutzer2, lokalerbenutzer3
+  biff                           irgendeinbenutzer\@aol.com
+  staff                          :include:/etc/mail/personal_address.list
+  info                           webmaster, \"|/usr/bin/autoreply -f webmaster -m /etc/mail/faq_message.txt -a info\"";
+
+$ALIASES_ALIAS_NAME = "E-Mail Alias";
+$ALIASES_ALIAS_VALUE = "Alias-Definition";
+
+$ALIASES_ALIAS_PLACEMENT = "Alias-Einstellung";
+$ALIASES_ALIAS_PLACEMENT_APPEND = "an das Dateiende Anhängen";
+$ALIASES_ALIAS_PLACEMENT_INSERT = "einfügen nach __ALIAS__";
+
+$ALIASES_ADD_HELP_TEXT = 
+  "Bitte benutzen Sie das folgende Formular, um neue Alias-Definitionen hinzuzufügen.";
+$ALIASES_ADD_SUBMIT_TEXT = $SUBMIT_STRING;
+
+$ALIASES_EDIT_HELP_TEXT = 
+  "Bitte benutzen Sie folgendes Formular, um Änderungen an den ausgewählten Aliasen durchzuführen.";
+$ALIASES_EDIT_SUBMIT_TEXT = "Änderungen durchführen";
+
+$ALIASES_REMOVE_HELP_TEXT = 
+  "Sind Sie sicher, daß Sie die untenstehenden Aliase endgültig löschen wollen?";
+$ALIASES_REMOVE_SUBMIT_TEXT = "Ja, obenstehende Aliase löschen.";
+
+$ALIASES_SORT_BY_NAME = "Aliase nach Namen Sortieren";
+$ALIASES_SORT_BY_ORDER = "Aliase nach Dateireihenfolge sortieren";
+
+$ALIASES_SUCCESS_ADD_TEXT = "Alias(e) wurde(n) hinzugefügt.";
+$ALIASES_SUCCESS_EDIT_TEXT = "Alias(e) wurde(n) geändert.";
+$ALIASES_SUCCESS_REMOVE_TEXT =
+  "Alias(e) wurde(n) gelöscht.";
+
+$ALIASES_CANCEL_ADD_TEXT = 
+  "Hinzufügen von Alias(en) wurde abgebrochen. Es wurde keine Aktion durchgeführt.";
+$ALIASES_CANCEL_EDIT_TEXT = 
+  "Änderung an Alias(en) wurde abgebrochen. Es wurde keine Aktion durchgeführt.";
+$ALIASES_CANCEL_REMOVE_TEXT = 
+  "Löschen von Alias(en) wurde abgebrochen. Es wurde keine Aktion durchgeführt.";
+
+$ALIASES_ERROR_NAME_FIELD_IS_BLANK =
+  "Der Wert für den Namen des E-Mail Aliases ist leer.";
+$ALIASES_ERROR_VALUE_FIELD_IS_BLANK =
+  "Der Wert für die E-Mail Alias-Definition ist leer.";
+
+$ALIASES_ERROR_DUPLICATE_ADDITION = 
+  "Für den Namen '__ALIAS__' existiert bereits eine Alias-Definition.
+   Duplikate sind nicht erlaubt.";
+
+$ALIASES_CONFIRM_TEXT =
+  "Untenstehend finden Sie eine Liste der Änderungen, die an Ihrer 'aliases' - Datei
+   durchgeführt werden.  Klicken Sie auf den Button 'Bestätigen' um die Änderungen zu aktivieren.";
+$ALIASES_CONFIRM_ADD = "Alias hinzufügen '__NAME__ => __VALUE__'";
+$ALIASES_CONFIRM_REMOVE = "Alias löschen '__NAME__ => __VALUE__'";
+$ALIASES_CONFIRM_CHANGE_1 = "Alias ändern von '__NAME__ => __VALUE__'";
+$ALIASES_CONFIRM_CHANGE_2 = "&#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160;to '__NAME__ => __VALUE__'";
+
+##############################################################################
+# eof
+
+1;
+

@@ -1,0 +1,34 @@
+#
+# auth strings
+#
+# $SMEId: local/imanager/strings/fr/auth,v 2.12 2004/08/27 18:27:48 rus Exp $
+#
+
+$AUTH_TITLE = "l'Autorisation Requis";
+
+$AUTH_LOGINID    = "Nom d'Utilisateur";
+$AUTH_PASSWORD = "Mot de Passe";
+
+$AUTH_SETCOOKIE = "Enregistrez ce mot de passe";
+$AUTH_SETCOOKIE_HELP_TEXT = 
+  "Le fonction 'Enregistrez Mot de Passe', quand séléctionnée, renvoie votre
+   information d'authentification à votre navigateur Web et demande qu'il soit
+   entreposé temporairement. L'information est renvoyée par votre navigateur Web
+   au serveur à chaque demande consécutive que vous faites.  Ce type
+   d'échange de données est commun, elle est préférée au lieu de passer
+   votre information d'authentification incorporé en éléments de format
+   d'écran qui sont cachés ou éléments en vue en tant qu'argument aux
+   adresses webs."; 
+
+$AUTH_UNKNOWNLOGIN = "Le Nom d'Utilisateur que vous avez fourni est inconnue.";
+$AUTH_BADPASSWORD = "Le Mot de Passe que vous avez fourni est incorrect.";
+$AUTH_LOGGEDOUT = "Le session de $SOFTWARE_TITLE a été fermée.";
+$AUTH_BADHOST = 
+  "Le nom d'hôte autorisé a été changé.  Merci de bien vouloir essayer encore une fois.";
+$AUTH_EXPIRED = 
+  "Votre autorisation a expiré.  Merci de bien vouloir vous identifier à nouveau.";
+
+##############################################################################
+# eof
+
+1;

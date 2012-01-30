@@ -1,0 +1,378 @@
+#
+# file manager strings
+#
+# $SMEId: local/imanager/strings/fr/filemanager,v 2.12 2004/08/27 18:27:48 rus Exp $
+#
+
+$FILEMANAGER_TITLE = "$SOFTWARE_TITLE: Gestionnaire de Fichiers - __FILE__";
+
+$FILEMANAGER_HOMEDIR = "HOME";
+
+##############################################################################
+# some generic error strings
+
+$FILEMANAGER_DENIED_TITLE = "$SOFTWARE_TITLE: Gestionnaire de Fichiers - Accés Refusé";
+$FILEMANAGER_DENIED_TEXT = 
+  "Votre nom d'utilisateur n'inclut pas de privilèges 'ftp'. Vous n'êtes donc pas autorisé à accéder aux outils de Gestionnaire de Fichiers.";
+
+$FILEMANAGER_HOMEDIR_INVALID_TITLE = 
+  "$SOFTWARE_TITLE: Gestionnaire de Fichiers - Répertoire Personnel non valide";
+$FILEMANAGER_HOMEDIR_INVALID_TEXT = 
+  "Le répertoire personnel de votre nom d'utilisateur n'existe pas.  
+   Vous n'êtes donc pas autorisé à accéder aux outils de Gestionnaire de Fichiers.";
+
+$FILEMANAGER_NOTFOUND_TITLE = 
+  "$SOFTWARE_TITLE: Gestionnaire de Fichiers - Ressource n'est pas trouvée";
+$FILEMANAGER_NOTFOUND_TEXT = 
+  "C'est bizarre... Il semble que le fichier que vous avez selectionné n'existe pas !";
+
+$FILEMANAGER_RESOURCE_ERROR_TITLE = 
+  "$SOFTWARE_TITLE: Gestionnaire de Fichiers - Erreur de Ressource";
+$FILEMANAGER_RESOURCE_ERROR_TEXT = 
+  "Une erreur s'est présentée en essayant d'executer une commande de __RESOURCE__.
+   Une description de cette erreur est donnée ci-dessous:";
+
+$FILEMANAGER_SOURCE_TARGET_IDENTICAL_ERROR = 
+  "Le fichier cible \"__TARGET__\" que vous avez spécifié est identique au 
+   fichier source \"__SOURCE__\" que vous avez selectionné!  Oups.";
+
+$FILEMANAGER_NO_CLOBBER_ERROR = 
+  "Le fichier source \"__SOURCE__\" que vous avez selectionné est un
+   répertoire. Cependant, le fichier cible \"__TARGET__\" que vous avez
+   spécifié est un fichier existant. On ne peut pas remplacer un fichier
+   existant avec un répertoire. Merci de bien vouloir enlever d'abord le
+   fichier existant.";
+
+$FILEMANAGER_FILE_IN_TARGET_PATH_ERROR = 
+  "Le chemin cible \"__TARGET__\" que vous avez spécifié inclus un composant 
+   sous-chemin \"__SUBPATH__\" qui est en fichier existant.  Afin de compléter 
+   votre demande, vous devez enlever le fichier existant.";
+
+$FILEMANAGER_FILETYPE_INVALID_ERROR = 
+  "Le fichier de source \"__SOURCE__\" que vous avez selectionné est un
+   __LCTYPE__. C'est un fichier invalide pour ce genre d'outil.";
+
+$FILEMANAGER_PERMISSION_DENIED = 
+  "Autorisation à accès/modifier le chemin \"__PATH__\" est nié."; 
+
+$FILEMANAGER_EMPTY_FIELD_ERROR = 
+  "Vous n'avez pas donné une valeur du __NAME__."; 
+
+##############################################################################
+# some common file manager utility strings
+
+$FILEMANAGER_CWD = "Répertoire en Cours";
+$FILEMANAGER_CONFIRM_OVERWRITE = "Écraser et Continuer";
+$FILEMANAGER_CONFIRM_CREATEDIR = "Créer un Répertoire et Continuer";
+
+##############################################################################
+# file and directory browser strings
+
+$FILEMANAGER_CURFILE = "Fichier Courant";
+$FILEMANAGER_CURDIR = "Répertoire Courant";
+
+$FILEMANAGER_TOTAL_ENTRIES = "Entrées Totales";
+$FILEMANAGER_ENTRY_DIRECTORY = "répertoire";
+$FILEMANAGER_ENTRY_DIRECTORY_PLURAL = "répertoires";
+$FILEMANAGER_ENTRY_FILE = "fichier";
+$FILEMANAGER_ENTRY_FILE_PLURAL = "fichiers";
+$FILEMANAGER_ENTRY_SYMLINK = "lien";
+$FILEMANAGER_ENTRY_SYMLINK_PLURAL = "liens";
+$FILEMANAGER_ENTRY_HIDDEN = "__FILES__ fichiers cachés";
+$FILEMANAGER_ENTRY_CAN_BE_HIDDEN = "__FILES__ peut être cachés";
+
+$FILEMANAGER_DIRECTORY_CONTENTS = "Contenu du Répertoire";
+$FILEMANAGER_DIRECTORY_CONTENTS_STATUS = 
+  "Le contenu du Répertoire ci-dessous est courant depuis __TIME__";
+
+$FILEMANAGER_ACTIONS = "Actions";
+
+$FILEMANAGER_TYPE = "Genre du Fichier";
+$FILEMANAGER_TYPE_ASCII = "ASCII";
+$FILEMANAGER_TYPE_BINARY = "Binaire";
+$FILEMANAGER_TYPE_SYMLINK = "Lien Symbolique";
+$FILEMANAGER_TYPE_FILE = "Fichier";
+$FILEMANAGER_TYPE_DIRECTORY = "Répertoire";
+
+$FILEMANAGER_MIMETYPE = "Genre de MIME";
+$FILEMANAGER_TARGET = "Cible";
+$FILEMANAGER_FILESIZE = "Taille du Fichier";
+$FILEMANAGER_MTIME = "Date de la deniere Modification";
+
+$FILEMANAGER_PERMS = "Permissions sur ce __TYPE__";
+$FILEMANAGER_PERMS_READABLE = "Lisible";
+$FILEMANAGER_PERMS_WRITABLE = "Ecrivable";
+$FILEMANAGER_PERMS_EXECUTABLE = "Exécutable";
+$FILEMANAGER_PERMS_NONE = "aucune";
+$FILEMANAGER_PERMS_OWNER = "propriétaire";
+$FILEMANAGER_PERMS_GROUP = "groupe";
+$FILEMANAGER_PERMS_OTHERS = "autre";
+
+$FILEMANAGER_JUMP_TEXT = "Sauter directement à";
+$FILEMANAGER_JUMP_HELP = "/insérer/nom de chemin/ici";
+
+##############################################################################
+# create new directory strings
+
+$FILEMANAGER_ACTIONS_CREATEDIR = "Créer Nouveau Répertoire";
+$FILEMANAGER_ACTIONS_CREATEDIR_TARGET = "Nouveau Nom de Répertoire";
+$FILEMANAGER_ACTIONS_CREATEDIR_NEW_TEXT = "NEW_DIRECTORY";
+$FILEMANAGER_ACTIONS_CREATEDIR_CANCEL = $CANCEL_STRING;
+$FILEMANAGER_ACTIONS_CREATEDIR_CANCEL_TEXT = 
+  "Votre demande 'créer répertoire' a été annulée; aucune action n'a été prise."; 
+$FILEMANAGER_ACTIONS_CREATEDIR_ALREADY_EXIST_ERROR = 
+  "Il semble que le nom de répertoire \"__TARGET__\" que vous avez spécifié
+   existe déjà comme répertoire!  Oups.";
+$FILEMANAGER_ACTIONS_CREATEDIR_NO_CLOBBER_ERROR = 
+  "Le chemin de répertoire \"__TARGET__\" que vous avez spécifié est un fichier 
+   existant.  On ne peut pas remplacer un fichier existant avec un répertoire.
+   Merci de bien vouloir enlever d'abord le fichier existant.";
+$FILEMANAGER_ACTIONS_CREATEDIR_SUCCESS_TEXT = 
+  "Votre demande 'Créer Répertoire' a été complétée avec succés.  Le nouveau 
+   répertoire vous est montré ci-dessous.";
+
+##############################################################################
+# create new file strings
+
+$FILEMANAGER_ACTIONS_NEWFILE = "Créer Nouveau Fichier";
+$FILEMANAGER_ACTIONS_NEWFILE_TARGET = "Nome de Nouveau Fichier";
+$FILEMANAGER_ACTIONS_NEWFILE_NEW_TEXT = "NEW_FILE";
+$FILEMANAGER_ACTIONS_NEWFILE_ENF = "Éditer Fichier Créé Récemment";
+$FILEMANAGER_ACTIONS_NEWFILE_CANCEL = $CANCEL_STRING;
+$FILEMANAGER_ACTIONS_NEWFILE_CANCEL_TEXT = 
+  "Votre demande 'créer fichier' a été annulée; aucune action n'a été prise."; 
+$FILEMANAGER_ACTIONS_NEWFILE_CONFIRM_OVERWRITE_TEXT = 
+  "It semble que le Nom du Fichier que vous avez sélectionné (\"__FILE__\") 
+   identifie une ressource qui existe déjà.  Si vous voulez l'écraser,
+   sélectionnez le bouton \"$FILEMANAGER_CONFIRM_OVERWRITE\".  Si vous ne voulez
+   pas l'écraser, vous pouvez annuler (sans danger) la demande.";
+$FILEMANAGER_ACTIONS_NEWFILE_CONFIRM_CREATEDIR_TEXT = 
+  "Il semble que le Nom du Fichier que vous avez sélectionné (\"__FILE__\") 
+   inclu les specifications d'un répertoire qui n'existe pas. Si vous
+   continuez, le répertoire sera créé afin que votre nouvelle demande de
+   fichier soit completée.  Pour confirmer votre demande, merci de bien vouloir
+   sélectionner le bouton \"$FILEMANAGER_CONFIRM_CREATEDIR\".  Si vous ne voulez
+   pas créer le répertoire, vous pouvez annuler (sans danger) la demande.";
+$FILEMANAGER_ACTIONS_NEWFILE_NO_CLOBBER_ERROR = 
+  "Il semble que le nom du fichier \"__TARGET__\" que vous avez spécifié est un
+   répertoire existant ! Avant de créer un fichier avec le nom que vouz avez
+   spécifié, vouz devez enlever le répertoire existant du même nom.";
+$FILEMANAGER_ACTIONS_NEWFILE_SUCCESS_TEXT = 
+  "Votre demande 'Créer Fichier' a été complétée avec succés.  Le nouveau fichier est
+   montré ci-dessous.";
+$FILEMANAGER_ACTIONS_NEWFILE_SUCCESS_EDIT_TEXT = 
+  "Votre demande 'Créer Fichier' a été complétée avec succés.  Vous pouvez éditer
+   le nouveau fichier en utilisant la formulaire ci-dessous.";
+
+##############################################################################
+# upload file strings
+
+$FILEMANAGER_ACTIONS_UPLOADFILE = "Télécharger Fichier vers l’amont";
+$FILEMANAGER_ACTIONS_UPLOADFILE_SOURCE = "Nom du Fichier à Votre Ordinateur.";
+$FILEMANAGER_ACTIONS_UPLOADFILE_SOURCE_HELP = 
+  "Utiliser le bouton de Naviguer afin de sélecter un fichier local à télécharger vers l’amont.";
+$FILEMANAGER_ACTIONS_UPLOADFILE_TARGET = "Nom du Fichier Éloigné";
+$FILEMANAGER_ACTIONS_UPLOADFILE_TARGET_HELP = 
+  "Si vous ne remplissez pas la case, le nom du fichier local sera utilisé.";
+$FILEMANAGER_ACTIONS_UPLOADFILE_CANCEL = $CANCEL_STRING;
+$FILEMANAGER_ACTIONS_UPLOADFILE_CANCEL_UPLOAD_TEXT = 
+  "Votre demande 'télécharger fichier vers l’amont' a été annulé; aucune action n'a été prise."; 
+$FILEMANAGER_ACTIONS_UPLOADFILE_QUOTA_ERROR = 
+  "Votre demande 'Télécharger Fichier vers l’amont' (qui a totalisé __NUMBER__
+   bits) ne pouvait pas être complétée avec succés à cause de restrictions de
+   quota.  Vous devez libérer de l'espace en supprimant des fichiers inutiles
+   ou demander davantage d'espace disque à votre administrateur de serveur.";
+$FILEMANAGER_ACTIONS_UPLOADFILE_CONFIRM_OVERWRITE_TEXT = 
+  "Il semble que les Noms de Fichiers suivant que vous avez sélectionnés
+   identifient des ressources qui existent déjà.  Si vous voulez les écraser,
+   sélectez le bouton
+   \"$FILEMANAGER_CONFIRM_OVERWRITE\".  Si vous ne voulez pas écraser ces fichiers, 
+   vous pouvez annuler la demande sans danger.";
+$FILEMANAGER_ACTIONS_UPLOADFILE_CONFIRM_CREATEDIR_TEXT = 
+  "Il semble que les Noms de Fichiers suivants que vous avez sélectionnés, 
+   incluent la spécification d'un répertoire qui n'existe pas.  Si vous
+   continuez, des répertoires seront créés afin que votre demande 'télécharger
+   fichier vers l’amont' soit complétée.  Pour confirmer votre demande, merci
+   de bien vouloir sélectionner le bouton \"$FILEMANAGER_CONFIRM_CREATEDIR\".
+   Si vous ne voulez pas créer des nouveaux répertoires, vous pouvez annuler la
+   demande sans danger.";
+$FILEMANAGER_ACTIONS_UPLOADFILE_CONFIRM_NOTE = 
+  "(Noter: Vos fichiers ont été téléchargés et mémorisés temporairement dans 
+   votre répertoire personnel.  Ces fichiers temporaires seront enlevés si
+   vous décidez d'annuler cette demande de confirmation.)";
+$FILEMANAGER_ACTIONS_UPLOADFILE_SUCCESS_SINGLE_TEXT = 
+  "Votre demande 'Télécharger Fichier vers l’amont' a été complétée avec succés.  Le nouveau
+   fichier est montré ci-dessous.";
+$FILEMANAGER_ACTIONS_UPLOADFILE_SUCCESS_MULTIPLE_TEXT = 
+  "Votre demande 'Télécharger Fichier vers l’amont' a été complétée avec succés.  Les nouveaux
+   fichiers sont montrés ci-dessous.";
+
+##############################################################################
+# view file strings
+
+$FILEMANAGER_ACTIONS_VIEW = "Examiner Fichier";
+$FILEMANAGER_ACTIONS_DOWNLOAD = "Télécharger Fichier";
+
+##############################################################################
+# edit file strings
+
+$FILEMANAGER_ACTIONS_EDIT = "Modifier Fichier";
+$FILEMANAGER_ACTIONS_EDIT_SAVE = "Enregistrer Fichier Modifié";
+$FILEMANAGER_ACTIONS_EDIT_CANCEL = "Annuler et jeter les Modifications";
+$FILEMANAGER_ACTIONS_EDIT_TEXT = 
+  "Utilisez la formulaire ci-dessous afin de modifier le fichier, \"__FILE__\".
+   Si vous voulez enregistrer les modifications que vous faites au fichier,
+   selectionnez le bouton \"$FILEMANAGER_ACTIONS_EDIT_SAVE\".  Si vous décidez
+   d'annuler et jeter vos modifications, un bouton est aussi disponible.";
+
+$FILEMANAGER_ACTIONS_EDIT_WRAP_OFF = "Utiliser 'Retour à la Ligne Automatique";
+$FILEMANAGER_ACTIONS_EDIT_WRAP_VIRTUAL = "'Retour à la Ligne Automatique' douce";
+$FILEMANAGER_ACTIONS_EDIT_WRAP_PHYSICAL = "'Retour à la Ligne Automatique' dure";
+$FILEMANAGER_ACTIONS_EDIT_WRAP_HELP_TITLE =
+  "Options d'aides de 'Retour à la Ligne Automatique'.";
+$FILEMANAGER_ACTIONS_EDIT_WRAP_HELP_TEXT =
+  "Les options de 'Retour à la Ligne Automatique' spécifient comment le
+   manipuler dans l'élément 'modifier fichier'.  WRAP='éteint'
+   désactives 'Retour à la Ligne Automatique' complètement, i.e. les seules
+   caractères nouvelles-lignes sont ceux qui ont tapés explicitement ou inclus
+   avec le fichier.";
+$FILEMANAGER_ACTIONS_EDIT_WRAP_HELP_TEXT_SOFT =
+  "WRAP='doux' fait 'Retour à la Ligne Automatique' virtuel, i.e. caractères de
+   nouvelles-lignes sont présentés pour s'assurer que le texte est placé dans
+   l'élément 'modifier fichier', mais ces caractères ne sont pas inclus avec
+   l'information lorsque la formulaire du fichier modifié est soumis.";
+$FILEMANAGER_ACTIONS_EDIT_WRAP_HELP_TEXT_HARD =
+  "WRAP='dur', devrait faire 'Retour à la Ligne Automatique' équivalent à
+   WRAP='doux', mais dans ce cas, les nouvelles-lignes caractères
+   supplémentaires devraient être inclues avec l'information lorsque la
+   formulaire du fichier modifié est soumis."; 
+
+$FILEMANAGER_ACTIONS_EDIT_QUOTA_ERROR = 
+  "Votre demande à enregister \"__FILE__\" ne pouvait pas être complétée avec
+   succès à cause de restrictions de quota.  Vous devez libérer de l'espace en
+   supprimant les fichiers dont vous n'avez pas besoin -OU- Vous devez demander
+   davantage d'espace de disque à votre administrateur de serveur.";
+$FILEMANAGER_ACTIONS_EDIT_SAVE_TEXT = 
+  "Vos modifications ont été enregistrées avec succès; noter les modifications
+   de date du fichier récent, affichées ci-dessous.";
+$FILEMANAGER_ACTIONS_EDIT_SAVE_HTTPD_CONF_TEXT = 
+  "Vos modifications au httpd.conf ont été enregistrées.  Votre serveur Web
+   devrait être en ligne maintenant.  Veuillez patienter quelques secondes
+   avant de continuer à utiliser $SOFTWARE_TITLE.";
+$FILEMANAGER_ACTIONS_EDIT_CANCEL_TEXT = 
+  "Votre demande 'modifier fichier' a été annulée et toutes modifications que
+   vous avez fait au fichier a été jeté.";
+
+##############################################################################
+# copy file strings
+
+$FILEMANAGER_ACTIONS_COPY = "Copier __TYPE__";
+$FILEMANAGER_ACTIONS_COPY_SOURCE = "Source __TYPE__";
+$FILEMANAGER_ACTIONS_COPY_TARGET = "Nom de Cible";
+$FILEMANAGER_ACTIONS_COPY_OF_TEXT = "COPY_OF";
+$FILEMANAGER_ACTIONS_COPY_SUBMIT = "Faire une copie de __TYPE__";
+$FILEMANAGER_ACTIONS_COPY_CANCEL = $CANCEL_STRING;
+$FILEMANAGER_ACTIONS_COPY_TEXT_FILE = 
+  "Vous pouvez faire une copie du fichier, \"__FILE__\", en spécifiant un
+   nom de fichier utilisant la formulaire ci-dessous.  Ce n'est pas nécessaire
+   que le 'Nom de Cible' se trouve dans le même répertoire du fichier source.";
+$FILEMANAGER_ACTIONS_COPY_TEXT_DIRECTORY = 
+  "Vouz pouvez faire une copie du répertoire, \"__FILE__\", (et copier
+   automatiquement tout contenu dans le répertoire) en spécifiant un nom de
+   répertoire utilisant la formulaire ci-dessous.  Ce n'est pas nécessaire que
+   le 'Nom de Cible' se trouve dans le même répertoire du fichier source.";
+$FILEMANAGER_ACTIONS_COPY_CANCEL_TEXT = 
+  "Votre demande 'Copier Ressource' a été annulée; aucune action n'a été prise."; 
+$FILEMANAGER_ACTIONS_COPY_CONFIRM_OVERWRITE_TEXT = 
+  "Il semble que le Nom de Cible que vouz avez sélectionné (\"__FILE__\") 
+   identifie une ressource qui existe déjà.  Si vous voulez écraser ce
+   fichier, sélectionnez le bouton \"$FILEMANAGER_CONFIRM_OVERWRITE\".  Si vous
+   ne voulez pas écraser ce fichier, vouz pouvez annuler cette demande sans danger.";
+$FILEMANAGER_ACTIONS_COPY_CONFIRM_CREATEDIR_TEXT = 
+  "Il semble que le Nom de Cible que vous avez sélectionné (\"__FILE__\") 
+   inclu le spécification d'un répertoire qui n'existe pas.  Si vous continuez, 
+   le répertoire sera créé afin que votre demande de copier soit complétée. Pour
+   confirmer votre demande, sélectionnez le bouton \"$FILEMANAGER_CONFIRM_CREATEDIR\".
+   Si vous ne voulez pas créer le répertoire, vous pouvez annuler cette demande sans danger.";
+$FILEMANAGER_ACTIONS_COPY_QUOTA_ERROR = 
+  "Votre demande de copier \"__SOURCE__\" à \"__TARGET__\" n'était pas
+   complétée avec succès à cause de restrictions de quota.  Vous devez
+   libéré de l'espace mémoire en supprimant les fichiers dont vous n’avez pas
+   besoin, ou vous devez demander davantage d’espace à votre administrateur de
+   serveur.";
+$FILEMANAGER_ACTIONS_COPY_SUCCESS_TEXT = 
+  "Votre demande de copie __TYPE__ a été complétée avec succés.  Le nouveau 
+   __LCTYPE__ est montré ci-dessous.";
+
+##############################################################################
+# rename/move file strings
+
+$FILEMANAGER_ACTIONS_RENAME = "Renommer (Déplacer) __TYPE__";
+$FILEMANAGER_ACTIONS_RENAME_SOURCE = "Nom d’origin de __TYPE__ . (Chemin)";
+$FILEMANAGER_ACTIONS_RENAME_TARGET = "Nouveau Nom de __TYPE__ (Chemin)";
+$FILEMANAGER_ACTIONS_RENAME_TEXT = "COPY_OF";
+$FILEMANAGER_ACTIONS_RENAME_SUBMIT = "Renommer (Déplacer) __TYPE__";
+$FILEMANAGER_ACTIONS_RENAME_CANCEL = $CANCEL_STRING;
+$FILEMANAGER_ACTIONS_RENAME_TEXT = 
+  "Vous pouvez renommer (ou déplacer) le __LCTYPE__, \"__FILE__\", en spécifiant
+   un nouveau nom (ou chemin) en utilisant la formulaire ci-dessous.
+   Le 'Nouveau Nom de __TYPE__' ne doit pas nécessairement se trouver dans le
+   même répertoire du fichier d’origine. i.e. Vous pouvez renommer et déplacer
+   simultanément si désiré).";
+$FILEMANAGER_ACTIONS_RENAME_CANCEL_TEXT = 
+  "Votre demande de Nouveau Nom (déplacement) a été annulée; aucune action n'a été prise."; 
+$FILEMANAGER_ACTIONS_RENAME_CONFIRM_OVERWRITE_TEXT = 
+  "Il semble que le Nouveau Nom de __TYPE__ que vouz avez sélectionné (\"__FILE__\") 
+   identifie une ressource qui existe déjà.  Si vous voulez écraser ce fichier,
+   sélectionnez le bouton \"$FILEMANAGER_CONFIRM_OVERWRITE\".  Si vous ne voulez
+   pas écraser ce fichier, vous pouvez annuler la demande sans danger.";
+$FILEMANAGER_ACTIONS_RENAME_CONFIRM_CREATEDIR_TEXT = 
+  "Il semble que le Nouveau Nom de __TYPE__ que vous avez sélectionné (\"__FILE__\") 
+   inclu la spécification d’un répertoire qui n’existe pas.  Si vous continuez,
+   le répertoire sera créé afin que votre demande Nouveau Nom (déplacer) soit 
+   completée. Pour confirmer votre demande, merci de bien vouloir selectionner
+   le bouton \"$FILEMANAGER_CONFIRM_CREATEDIR\". Si vous ne voulez pas créer le
+   répertoire, vous pouvez annuler la demande sans danger.";
+$FILEMANAGER_ACTIONS_RENAME_SUCCESS_TEXT = 
+  "Votre demande de Nouveau Nom (Déplacer) __TYPE__ a été complétée avec succès.";
+
+##############################################################################
+# remove file strings
+
+$FILEMANAGER_ACTIONS_REMOVE = "Enlever __TYPE__";
+$FILEMANAGER_ACTIONS_REMOVE_NAME = "Sélectionné Nom de __TYPE__";
+$FILEMANAGER_ACTIONS_REMOVE_DIRCONTENTS = "Enlever Contenu de Répertoire";
+$FILEMANAGER_ACTIONS_REMOVE_CONFIRM_SINGLE = "Oui, Enlever ce __TYPE__";
+$FILEMANAGER_ACTIONS_REMOVE_CONFIRM_SINGLE_TEXT = 
+  "Êtes-vous certain de vouloir enlever le __LCTYPE__, \"__FILE__\", que
+   vous avez sélectionné ?";
+$FILEMANAGER_ACTIONS_REMOVE_CONFIRM_MULTIPLE = "Oui, Enlever Tous";
+$FILEMANAGER_ACTIONS_REMOVE_CONFIRM_MULTIPLE_TEXT = 
+  "Le répertoire que vous avez sélectionné n'est pas vide, êtes-vous certain de vouloir enlever tous les fichiers contenus dans ce répertoire?";
+$FILEMANAGER_ACTIONS_REMOVE_KEPD = "Garder Vide Répertoire Parent";
+$FILEMANAGER_ACTIONS_REMOVE_CANCEL = $CANCEL_STRING;
+$FILEMANAGER_ACTIONS_REMOVE_CANCEL_TEXT = 
+  "Votre demande à enlever a été annulée; aucune action n'a été prise.";
+$FILEMANAGER_ACTIONS_REMOVE_SUCCESS_TEXT = 
+  "Votre demande à enlever __TYPE__ à été complétée avec succés.";
+
+##############################################################################
+# chmod file strings
+
+$FILEMANAGER_ACTIONS_CHMOD = "Changer Permissions";
+$FILEMANAGER_ACTIONS_CHMOD_NAME = "Sélectionner Nom de __TYPE__";
+$FILEMANAGER_ACTIONS_CHMOD_CURRENT = "Courant $FILEMANAGER_PERMS";
+$FILEMANAGER_ACTIONS_CHMOD_NEW = "Nouveaux Permissions";
+$FILEMANAGER_ACTIONS_CHMOD_SUBMIT = "Mettre Nouveaux Permissions";
+$FILEMANAGER_ACTIONS_CHMOD_ADVANCED_OPTS = "Options Avancées";
+$FILEMANAGER_ACTIONS_CHMOD_BASIC_OPTS = "Options fondamentales";
+$FILEMANAGER_ACTIONS_CHMOD_CANCEL = $CANCEL_STRING;
+$FILEMANAGER_ACTIONS_CHMOD_CANCEL_TEXT = 
+  "Votre demande 'Changer Permissions' a été annulée; aucune action n'a été prise.";
+$FILEMANAGER_ACTIONS_CHMOD_SUCCESS_TEXT = 
+  "Votre demande 'Changer Permissions' a été complétée avec succés.";
+
+##############################################################################
+# eof
+
+1;

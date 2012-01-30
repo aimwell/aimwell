@@ -1,0 +1,36 @@
+#
+# auth strings
+#
+# $SMEId: local/imanager/strings/es/auth,v 2.12 2004/08/27 18:27:47 rus Exp $
+#
+
+$AUTH_TITLE = "Autorizacion Requerida";
+
+$AUTH_LOGINID    = "Nombre de Usuario";
+$AUTH_PASSWORD = "Contrasena";
+
+$AUTH_SETCOOKIE = "Recordar Contrasena";
+$AUTH_SETCOOKIE_HELP_TEXT = 
+  "La caracteristica 'Recordar Contrasena', cuando es seleccionada, empieza
+   un mecanismo en el servidor el cual envia tus datos de autentificacion al
+   navegador y le pide que los guarde temporalmente. Los datos o 'cookie'
+   como son conocidos comunmente, luego son mandados por el navegador al
+   servidor cada ves que t\xfa haces una peticion al servidor. Esta forma de
+   intercambios de datos es comun y es preferida en lugar de mandar los
+   datos escodidos en elementos de alguna forma o a plena vista como parametros
+   de un URL.";
+
+
+$AUTH_UNKNOWNLOGIN = "El Nombre de usuario que escribiste es desconocido";
+$AUTH_BADPASSWORD = "La contrase\xf1a que escribiste es incorrecta.";
+$AUTH_LOGGEDOUT = "Has sido desconectado de $SOFTWARE_TITLE.";
+$AUTH_BADHOST = 
+  "El nombre del usuario autorizado ha cambiado. Escribe tu contrase\xf1a otra ves.";
+$AUTH_EXPIRED = 
+  "Tus credenciales de autentificacion expiraron. Entra tu contrase\xf1a otra ves.";
+
+##############################################################################
+# eof
+
+1;
+

@@ -1,0 +1,427 @@
+#
+# file manager strings
+#
+# $SMEId: local/imanager/strings/ja/filemanager,v 2.12 2004/08/27 18:27:50 rus Exp $
+#
+# $Id: local/imanager/strings/ja/filemanager,v 2.11 2003/10/22 08:10:00 M.Matsuda Exp $
+#
+
+$FILEMANAGER_TITLE  =  "$SOFTWARE_TITLE: ファイルマネージャー - __FILE__";
+
+$FILEMANAGER_HOMEDIR  =  "HOME";
+
+$FILEMANAGER_RETURN = "ファイルマネージャーに戻る";
+
+##############################################################################
+# some generic error strings
+
+$FILEMANAGER_DENIED_TITLE  =  "$SOFTWARE_TITLE: ファイルマネージャー - アクセスが拒絶されました";
+$FILEMANAGER_DENIED_TEXT  =  
+  "ログインプロファイルに'ftp'権限の情報が含まれていないため、
+   ファイルマネージャーユーティリティを使用できません。";
+
+$FILEMANAGER_HOMEDIR_INVALID_TITLE  =  
+  "$SOFTWARE_TITLE: ファイルマネージャー - ホームディレクトリが無効です";
+$FILEMANAGER_HOMEDIR_INVALID_TEXT  =  
+  "ログインプロファイルで指定したホームディレクトリが存在しません。
+   ファイルマネージャーユーティリティにアクセスできません。";
+
+$FILEMANAGER_NOTFOUND_TITLE  =  
+  "$SOFTWARE_TITLE: ファイルマネージャー - リソースが見つかりません";
+$FILEMANAGER_NOTFOUND_TEXT  =  
+  "指定したファイルまたはディレクトリは存在しません。";
+
+$FILEMANAGER_RESOURCE_ERROR_TITLE  =  
+  "$SOFTWARE_TITLE: ファイルマネージャー - リソースエラー";
+$FILEMANAGER_RESOURCE_ERROR_TEXT  =  
+  "『__RESOURCE__』を実行中にエラーが発生しました。
+  問題点は以下の通りです。";
+
+$FILEMANAGER_SOURCE_TARGET_IDENTICAL_ERROR  =  
+  "指定したターゲットファイル\"__TARGET__\" が
+   選択したソースファイル\"__SOURCE__\"と同じです。";
+
+$FILEMANAGER_NO_CLOBBER_ERROR  =  
+  "指定したソースファイル\"__SOURCE__\"はディレクトリです。
+   指定したターゲットファイル\"__TARGET__\"は既存しているファイルになります。
+   ディレクトリで既存ファイルを上書きすることはできません。
+   まず、既存ファイルを削除してください。";
+
+$FILEMANAGER_FILE_IN_TARGET_PATH_ERROR  =  
+  "指定したターゲットのパス\"__TARGET__\"は既存ファイルである\"__SUBPATH__\"の要素を含んでいます。
+   リクエストを実行するには、まず既存ファイルを削除する必要があります。";
+
+$FILEMANAGER_FILETYPE_INVALID_ERROR  =  
+  "指定したソースファイル\"__SOURCE__\"は__LCTYPE__です。
+   このユーティリティではこのファイルタイプは無効です。";
+
+$FILEMANAGER_PERMISSION_DENIED  =  
+  "\"__PATH__\"へのアクセス権限がありません。";
+
+$FILEMANAGER_EMPTY_FIELD_ERROR  =  
+  "__NAME__の値が入力されていません。";
+
+$FILEMANAGER_NONE_SELECTED  =  "ファイルが選択されていません";
+
+$FILEMANAGER_NO_SOURCE_VALID  =  
+  "有効なリソースが選択されていません";
+
+##############################################################################
+# some common file manager utility strings
+
+$FILEMANAGER_CWD  =  "現在のディレクトリ";
+$FILEMANAGER_CONFIRM_OVERWRITE  =  "既存のファイルを上書きする";
+$FILEMANAGER_CONFIRM_CREATEDIR  =  "ディレクトリを作成し次に進む。";
+
+##############################################################################
+# file and directory browser strings
+
+$FILEMANAGER_CURFILE  =  "現在のファイル";
+$FILEMANAGER_CURDIR  =  "現在のディレクトリ";
+
+$FILEMANAGER_TOTAL_ENTRIES  =  "エントリーの合計";
+$FILEMANAGER_ENTRY_DIRECTORY  =  "ディレクトリ";
+$FILEMANAGER_ENTRY_DIRECTORY_PLURAL  =  "ディレクトリ";
+$FILEMANAGER_ENTRY_FILE  =  "ファイル";
+$FILEMANAGER_ENTRY_FILE_PLURAL  =  "ファイル";
+$FILEMANAGER_ENTRY_SYMLINK  =  "シンボリックリンク";
+$FILEMANAGER_ENTRY_SYMLINK_PLURAL  =  "シンボリックリンク";
+$FILEMANAGER_ENTRY_HIDDEN  =  "__FILES__ 隠しファイル";
+$FILEMANAGER_ENTRY_CAN_BE_HIDDEN  =  "__FILES__隠しファイル";
+
+$FILEMANAGER_SHOW_HIDDEN_FILES  =  "隠しファイルを表示する";
+$FILEMANAGER_HIDE_FILES  =  "(.)ドットで始まるファイルを隠す";
+
+$FILEMANAGER_DIRECTORY_CONTENTS  =  "ディレクトリの内容";
+$FILEMANAGER_DIRECTORY_CONTENTS_STATUS  =  
+  "下に示された内容は __TIME__の時点のものです。";
+
+$FILEMANAGER_TAG  =  "タグ";
+$FILEMANAGER_NAME  =  "ファイル名";
+$FILEMANAGER_ACTIONS  =  "操作";
+
+$FILEMANAGER_TYPE  =  "ファイルタイプ";
+$FILEMANAGER_TYPE_ASCII  =  "テキスト (ASCII)";
+$FILEMANAGER_TYPE_BINARY  =  "バイナリ (Binary)";
+$FILEMANAGER_TYPE_SYMLINK  =  "シンボリックリンク";
+$FILEMANAGER_TYPE_FILE  =  "ファイル";
+$FILEMANAGER_TYPE_DIRECTORY  =  "ディレクトリ";
+
+$FILEMANAGER_OWNERSHIP  =  "__TYPE__の所有者";
+
+$FILEMANAGER_MODE_SHOW_BASIC  =  "所有者のパーミッションのみ表示";
+$FILEMANAGER_MODE_SHOW_OCTAL  =  "全パーミッションをrwxで表示";
+
+$FILEMANAGER_MIMETYPE  =  "MIME タイプ";
+$FILEMANAGER_TARGET  =  "ターゲット";
+$FILEMANAGER_FILESIZE  =  "ファイルサイズ";
+$FILEMANAGER_MTIME  =  "最終修正時刻";
+
+$FILEMANAGER_PERMS  =  "__TYPE__のパーミッション (permission)";
+$FILEMANAGER_PERMS_READABLE  =  "読み出し可能";
+$FILEMANAGER_PERMS_WRITABLE  =  "書き込み可能";
+$FILEMANAGER_PERMS_EXECUTABLE  =  "実行可能";
+$FILEMANAGER_PERMS_OWNER  =  "所有者";
+$FILEMANAGER_PERMS_GROUP  =  "グループ";
+$FILEMANAGER_PERMS_OTHERS  =  "一般ユーザ";
+
+$FILEMANAGER_JUMP_TEXT  =  "ディレクトリの移動先";
+$FILEMANAGER_JUMP_HELP_TEXT  = 
+  "/insert/pathname/here or {$FILEMANAGER_HOMEDIR}";
+
+$FILEMANAGER_ACTIONS_OPEN  =  "__TYPE__を開く";
+
+$FILEMANAGER_COPY_TAGGED  =  "チェック項目のコピー";
+$FILEMANAGER_MOVE_TAGGED  =  "チェック項目の移動";
+$FILEMANAGER_DELETE_TAGGED  =  "チェック項目の削除";
+
+##############################################################################
+# create new directory strings
+
+$FILEMANAGER_ACTIONS_CREATEDIR  =  "新規ディレクトリの作成";
+$FILEMANAGER_ACTIONS_CREATEDIR_TARGET  =  "新規ディレクトリ名";
+$FILEMANAGER_ACTIONS_CREATEDIR_NEW_TEXT  =  "NEW_DIRECTORY";
+$FILEMANAGER_ACTIONS_CREATEDIR_CANCEL  =  $CANCEL_STRING;
+$FILEMANAGER_ACTIONS_CREATEDIR_CANCEL_TEXT  =  
+  "新規ディレクトリの作成要求はキャンセルされました。";
+$FILEMANAGER_ACTIONS_CREATEDIR_ALREADY_EXIST_ERROR  =  
+  "指定した\"__TARGET__\"というディレクトリは既に存在します。";
+$FILEMANAGER_ACTIONS_CREATEDIR_NO_CLOBBER_ERROR  =  
+  "指定した\"__TARGET__\"には同名のファイルが既に存在します。
+   ディレクトリで既存ファイルを上書きすることはできません。
+   まず、既存ファイルを削除してください。";
+$FILEMANAGER_ACTIONS_CREATEDIR_SUCCESS_TEXT  =  
+  "新規ディレクトリを作成しました。結果は以下の通りです。";
+
+##############################################################################
+# create new file strings
+
+$FILEMANAGER_ACTIONS_NEWFILE  =  "新規ファイルの作成";
+$FILEMANAGER_ACTIONS_NEWFILE_TARGET  =  "新規ファイル名";
+$FILEMANAGER_ACTIONS_NEWFILE_NEW_TEXT  =  "NEW_FILE";
+$FILEMANAGER_ACTIONS_NEWFILE_ENF  =  "新規ファイルの編集";
+$FILEMANAGER_ACTIONS_NEWFILE_CANCEL  =  $CANCEL_STRING;
+$FILEMANAGER_ACTIONS_NEWFILE_CANCEL_TEXT  =  
+  "ファイルの作成要求が取り消されました。";
+$FILEMANAGER_ACTIONS_NEWFILE_CONFIRM_OVERWRITE_TEXT  =  
+  "指定したファイル名(\"__FILE__\")はすでに存在しています。
+   このファイルを上書きする場合には\"$FILEMANAGER_CONFIRM_OVERWRITE\" ボタンを
+   選択してください。上書きしない場合はキャンセルしてください。";
+$FILEMANAGER_ACTIONS_NEWFILE_CONFIRM_CREATEDIR_TEXT  =  
+  "指定したファイル名(\"__FILE__\")には存在しないディレクトリが含まれています。
+   ディレクトリを作成してもよい場合は\"$FILEMANAGER_CONFIRM_CREATEDIR\"ボタンを
+   選択してください。ディレクトリ作成後、ファイルが作成されます。
+   ディレクトリを作成したくない場合はキャンセルしてください。";
+$FILEMANAGER_ACTIONS_NEWFILE_NO_CLOBBER_ERROR  =  
+  "指定したファイル名\"__TARGET__\"はすでにディレクトリとして存在しています。
+   このファイル名でファイルを作成するには、まず同名の既存ディレクトリを
+   削除または移動する必要があります。";
+$FILEMANAGER_ACTIONS_NEWFILE_SUCCESS_TEXT  =  
+  "新規ファイルを作成しました。結果は以下の通りです。";
+$FILEMANAGER_ACTIONS_NEWFILE_SUCCESS_EDIT_TEXT  =  
+  "新規ファイルを作成しました。以下の機能を利用して、ファイル編集が可能です。";
+
+##############################################################################
+# upload file strings
+
+$FILEMANAGER_ACTIONS_UPLOADFILE  =  "ファイルをアップロードする";
+$FILEMANAGER_ACTIONS_UPLOADFILE_SOURCE  =  "ローカルマシンでのファイル名";
+$FILEMANAGER_ACTIONS_UPLOADFILE_SOURCE_HELP  =  
+  "「参照」ボタンを押して、アップロードするファイルを選んでください。";
+$FILEMANAGER_ACTIONS_UPLOADFILE_TARGET  =  "アップロード先でのファイル名";
+$FILEMANAGER_ACTIONS_UPLOADFILE_TARGET_HELP  =  
+  "この欄が空白の場合には、ファイル名がそのまま使われます。";
+$FILEMANAGER_ACTIONS_UPLOADFILE_CANCEL  =  $CANCEL_STRING;
+$FILEMANAGER_ACTIONS_UPLOADFILE_CANCEL_UPLOAD_TEXT  =  
+  "ファイルのアップロード要求が取り消されました。";
+$FILEMANAGER_ACTIONS_UPLOADFILE_QUOTA_ERROR  =  
+  "ファイルのアップロード要求（トータルで__NUMBER__バイト）は
+   クォータ制限により正しく実行されませんでした。
+   不必要なファイルを削除することでディスク容量の空きを確保するか、
+   サーバ管理者にディスク容量の追加をしてもらう必要があります。";
+$FILEMANAGER_ACTIONS_UPLOADFILE_CONFIRM_OVERWRITE_TEXT  =  
+  "次のファイルに関しては、アップロード先に同一ファイル名のものが存在します。
+   上書きする場合は「$FILEMANAGER_CONFIRM_OVERWRITE」ボタンを選択してください。
+   上書きしない場合には「キャンセル」ボタンを押してください。";
+$FILEMANAGER_ACTIONS_UPLOADFILE_CONFIRM_CREATEDIR_TEXT  =  
+  "指定したファイル名には存在しないディレクトリが含まれています。
+   ディレクトリを作成してもよい場合は\"$FILEMANAGER_CONFIRM_CREATEDIR\"ボタンを
+   選択してください。ディレクトリ作成後、ファイルがアップロードされます。
+   ディレクトリを作成したくない場合はキャンセルしてください。";
+$FILEMANAGER_ACTIONS_UPLOADFILE_CONFIRM_NOTE  =  
+  "(注意：選択したファイルは既にアップロードされ、
+   一時的にホームディレクトリに保存されています。
+   キャンセルボタンを押すと、一時ファイルは消去されます)";
+$FILEMANAGER_ACTIONS_UPLOADFILE_SUCCESS_SINGLE_TEXT  =  
+  "ファイルをアップロードしました。結果は以下の通りです。";
+$FILEMANAGER_ACTIONS_UPLOADFILE_SUCCESS_MULTIPLE_TEXT  =  
+  "ファイルをアップロードしました。結果は以下の通りです。";
+
+##############################################################################
+# view and e-mail file strings
+
+$FILEMANAGER_ACTIONS_VIEW  =  "ファイルの内容を見る";
+$FILEMANAGER_ACTIONS_DOWNLOAD  =  "ファイルをダウンロード";
+$FILEMANAGER_ACTIONS_EMAIL  =  "ファイルをメールで送る";
+
+##############################################################################
+# edit file strings
+
+$FILEMANAGER_ACTIONS_EDIT  =  "ファイルの内容を編集する";
+$FILEMANAGER_ACTIONS_EDIT_SAVE  =  "編集した内容を保存する";
+$FILEMANAGER_ACTIONS_EDIT_CANCEL  =  "キャンセルして修正を破棄する";
+$FILEMANAGER_ACTIONS_EDIT_TEXT  =  
+  "下のフォームを使って \"__FILE__\" を編集してください。
+  編集した内容を保存したければ、
+  \"$FILEMANAGER_ACTIONS_EDIT_SAVE\" ボタンを選択してください。
+  キャンセルして修正を破棄したければ、そちらのボタンを選択してください。";
+
+$FILEMANAGER_ACTIONS_EDIT_WRAP_OFF  =  "行末で折り返さない";
+$FILEMANAGER_ACTIONS_EDIT_WRAP_VIRTUAL  =  "折り返し表示を行なう";
+$FILEMANAGER_ACTIONS_EDIT_WRAP_PHYSICAL  =  "改行文字を保存する設定にする";
+$FILEMANAGER_ACTIONS_EDIT_WRAP_HELP_TITLE  = 
+  "行末折り返しのヘルプ";
+$FILEMANAGER_ACTIONS_EDIT_WRAP_HELP_TEXT  = 
+  "行末折り返しの設定によって、ファイルの編集窓での処理方法が決まります。
+   『行末で折り返さない』とすると、折り返し処理を行ないません。
+   改行文字を入力したり、あるいはファイルに改行文字が含まれている場合にのみ
+   折り返します。";
+$FILEMANAGER_ACTIONS_EDIT_WRAP_HELP_TEXT_SOFT  = 
+  "『折り返し表示を行なう』とすると、疑似折り返しを行ないます。
+   ファイルの編集窓の幅に合うように改行しますが、
+   実際のファイルには反映されません。";
+$FILEMANAGER_ACTIONS_EDIT_WRAP_HELP_TEXT_HARD  = 
+  "『改行文字を保存する設定にする』とすると、
+   表示に関しては『折り返し表示を行なう』と同一になります。
+   この場合、編集した内容を保存する時に、
+   表示に合った改行文字が実際のファイルに書き込まれます。";
+
+$FILEMANAGER_ACTIONS_EDIT_QUOTA_ERROR  =  
+  "\"__FILE__\"の保存要求は、クォータ制限により正しく実行されませんでした。
+   不必要なファイルを削除することでディスク容量の空きを確保するか、
+   サーバ管理者にディスク容量の追加をしてもらう必要があります。";
+$FILEMANAGER_ACTIONS_EDIT_SAVE_TEXT  =  
+  "編集したファイルを保存しました。結果は以下の通りです。";
+$FILEMANAGER_ACTIONS_EDIT_SAVE_HTTPD_CONF_TEXT  =  
+  "編集したhttpd.confファイルが正しく保存されました。
+   ウェブサーバを再起動する必要があります。
+   $SOFTWARE_TITLEの使用は数秒お待ちください。";
+$FILEMANAGER_ACTIONS_EDIT_CANCEL_TEXT  =  
+  "ファイル編集要求が取り消されました。編集内容は破棄されました。";
+
+##############################################################################
+# copy file strings
+
+$FILEMANAGER_ACTIONS_COPY  =  "__TYPE__をコピーする";
+$FILEMANAGER_ACTIONS_COPY_SOURCE  =  "コピー元の__TYPE__";
+$FILEMANAGER_ACTIONS_COPY_TARGET  =  "コピー先の名前";
+$FILEMANAGER_ACTIONS_COPY_OF_TEXT  =  "COPY_OF";
+$FILEMANAGER_ACTIONS_COPY_SUBMIT  =  "__TYPE__のコピーを作成する";
+$FILEMANAGER_ACTIONS_COPY_CANCEL  =  $CANCEL_STRING;
+$FILEMANAGER_ACTIONS_COPY_TEXT_FILE  =  
+  "ファイル \"__FILE__\" のコピーを作成できます。
+   下のフォームを使ってコピーの名前を決めてください。
+   『コピー先の名前』は、コピー元と同じディレクトリでなくても構いません。";
+$FILEMANAGER_ACTIONS_COPY_TEXT_DIRECTORY  =  
+  "ディレクトリ \"__FILE__\" のコピーを作成できます
+   (ディレクトリ内のファイルは、再帰的にコピーされます)。
+   下のフォームを使ってコピーの名前を決めてください。
+   『コピー先の名前』は、コピー元と同じディレクトリでなくても構いません。";
+$FILEMANAGER_ACTIONS_COPY_CANCEL_TEXT  =  
+  "コピー要求が取り消されました。";
+$FILEMANAGER_ACTIONS_COPY_CONFIRM_OVERWRITE_TEXT  =  
+  "指定したファイル(\"__FILE__\")は同名のリソースがすでに存在しています。
+   上書きする場合は\"$FILEMANAGER_CONFIRM_OVERWRITE\" ボタンを選択してください。   上書きしない場合はキャンセルしてください。";
+$FILEMANAGER_ACTIONS_COPY_CONFIRM_CREATEDIR_TEXT  =  
+  "指定したコピーファイルの移動先(\"__FILE__\")には、存在しないディレクトリが
+   含まれています。このままディレクトリを作成してもよい場合は
+   \"$FILEMANAGER_CONFIRM_CREATEDIR\"ボタンを押してください。
+   ディレクトリ作成後、ファイルのコピーが行われます。
+   ディレクトリを作成したくない場合はリクエストをキャンセルしてください";
+$FILEMANAGER_ACTIONS_COPY_QUOTA_ERROR  =  
+  "\"__SOURCE__\"を\"__TARGET__\"にコピーする要求は、クォータ制限により
+   実行できませんでした。不必要なファイルを削除することでディスク容量の空きを
+   確保するか、サーバ管理者にディスク容量の追加をしてもらう必要があります。";
+$FILEMANAGER_ACTIONS_COPY_SUCCESS_TEXT  =  
+  "__TYPE__がコピーされました。新しい__LCTYPE__は以下の通りです。";
+
+$FILEMANAGER_ACTIONS_COPY_MULTIPLE  =  "複数ファイルのコピー";
+$FILEMANAGER_ACTIONS_COPY_TARGET_DIRECTORY  =  "コピー先ディレクトリ";
+$FILEMANAGER_ACTIONS_COPY_MULTIPLE_TEXT  =  
+  "下のフォームを使って指定した複数のファイルをコピーできます。
+  コピー先ディレクトリは指定したファイルのあるディレクトリ以外でも構いません。";
+$FILEMANAGER_ACTIONS_COPY_MULTIPLE_SOURCE = "ソースファイル";
+$FILEMANAGER_ACTIONS_COPY_MULTIPLE_SUBMIT  =  "ファイルのコピー";
+$FILEMANAGER_ACTIONS_COPY_MULITPLE_SUCCESS_TEXT  =  
+  "指定したファイルをコピーしました。";
+
+$FILEMANAGER_MULTIPLE_COPY_NO_CLOBBER_ERROR  =  
+  "指定したコピー先\"__TARGET__\" はすでにファイルとして存在しています。
+   複数のファイルを指定したコピー先にコピーできません。
+   まず、既存ファイルを削除してください。";
+
+##############################################################################
+# rename/move file strings
+
+$FILEMANAGER_ACTIONS_RENAME  =  "__TYPE__名を変更する";
+$FILEMANAGER_ACTIONS_RENAME_SOURCE  =  "旧__TYPE__名(Path)";
+$FILEMANAGER_ACTIONS_RENAME_TARGET  =  "新__TYPE__名(Path)";
+$FILEMANAGER_ACTIONS_RENAME_NEW_TEXT  =  "New";
+$FILEMANAGER_ACTIONS_RENAME_SUBMIT  =  "__TYPE__の名前を変更する";
+$FILEMANAGER_ACTIONS_RENAME_CANCEL  =  $CANCEL_STRING;
+$FILEMANAGER_ACTIONS_RENAME_TEXT  =  
+  "__LCTYPE__ \"__FILE__\"の名前を変更できます。
+   下のフォームを使って新しい名前(Path) を指定してください。
+   『新__TYPE__名』は、必ずしも同一のディレクトリになくても構いません
+   (お望みなら、名前を変更しつつ移動させることも可能ということです)。";
+$FILEMANAGER_ACTIONS_RENAME_CANCEL_TEXT  =  
+  "リソース名の変更・移動要求が取り消されました。";
+$FILEMANAGER_ACTIONS_RENAME_CONFIRM_OVERWRITE_TEXT  =  
+  "指定した__TYPE__名(\"__FILE__\")はすでに存在しています。
+   上書きする場合は\"$FILEMANAGER_CONFIRM_OVERWRITE\" ボタンを選択してください。   上書きしたくない場合はキャンセルしてください。";
+$FILEMANAGER_ACTIONS_RENAME_CONFIRM_CREATEDIR_TEXT  =  
+  "指定した__TYPE__名(\"__FILE__\")には存在しないディレクトリが含まれています。
+   ディレクトリを作成してもよい場合は\"$FILEMANAGER_CONFIRM_CREATEDIR\"ボタンを    選択してください。ディレクトリ作成後、変更が行われます。
+   ディレクトリを作成したくない場合はキャンセルしてください。";
+$FILEMANAGER_ACTIONS_RENAME_SUCCESS_TEXT  =  
+  "__TYPE__の名前変更・移動が行われました。";
+
+$FILEMANAGER_ACTIONS_RENAME_MULTIPLE  =  "複数ファイルの移動";
+$FILEMANAGER_ACTIONS_RENAME_TARGET_DIRECTORY  =  "移動先ディレクトリ";
+$FILEMANAGER_ACTIONS_RENAME_MULTIPLE_TEXT  =  
+  "下のフォームを使って指定した複数ファイルを移動できます。
+   移動先ディレクトリは指定したファイルのあるディレクトリ以外でも構いません。";
+$FILEMANAGER_ACTIONS_RENAME_MULTIPLE_SOURCE  =  "ソースファイル";
+$FILEMANAGER_ACTIONS_RENAME_MULTIPLE_SUBMIT  =  "ファイルの移動";
+$FILEMANAGER_ACTIONS_RENAME_MULITPLE_SUCCESS_TEXT  =  
+  "指定したファイルを移動しました。";
+
+$FILEMANAGER_MULTIPLE_RENAME_NO_CLOBBER_ERROR  =  
+  "指定した移動先\"__TARGET__\" はすでにファイルとして存在しています。
+   複数のファイルを指定した移動先に移動できません。
+   まず、既存ファイルを削除してください。";
+
+##############################################################################
+# remove file strings
+
+$FILEMANAGER_ACTIONS_REMOVE  =  "__TYPE__削除する";
+$FILEMANAGER_ACTIONS_REMOVE_NAME  =  "選択された__TYPE__名";
+$FILEMANAGER_ACTIONS_REMOVE_DIRCONTENTS  =  "ディレクトリを削除する";
+$FILEMANAGER_ACTIONS_REMOVE_CONFIRM_SINGLE  =  "__TYPE__を削除する";
+$FILEMANAGER_ACTIONS_REMOVE_CONFIRM_SINGLE_TEXT  =  
+  "__LCTYPE__ \"__FILE__\" を本当に削除していいですか?";
+$FILEMANAGER_ACTIONS_REMOVE_CONFIRM_MULTIPLE  =  "全て削除する";
+$FILEMANAGER_ACTIONS_REMOVE_CONFIRM_MULTIPLE_TEXT  =  
+  "選択されたディレクトリは空ではありません。
+   全ての内容を削除してよろしいですか?";
+$FILEMANAGER_ACTIONS_REMOVE_KEPD  =  "空のディレクトリを残す";
+$FILEMANAGER_ACTIONS_REMOVE_CANCEL  =  $CANCEL_STRING;
+$FILEMANAGER_ACTIONS_REMOVE_CANCEL_TEXT  =  
+  "リソースの削除要求が取り消されました。";
+$FILEMANAGER_ACTIONS_REMOVE_SUCCESS_TEXT  =  
+  "__TYPE__が削除されました。";
+
+$FILEMANAGER_ACTIONS_PURGE_SUCCESS_TEXT  =  
+  "ディレクトリ内のファイルを削除しました";
+
+$FILEMANAGER_ACTIONS_REMOVE_MULTIPLE  =  "複数ファイルの削除";
+$FILEMANAGER_ACTIONS_REMOVE_MULTIPLE_CONFIRM  =  
+  "選択された以下のファイルを削除してもよろしいですか？";
+$FILEMANAGER_ACTIONS_REMOVE_MULITPLE_SUCCESS_TEXT  =  
+  "ファイルを削除しました。";
+
+##############################################################################
+# chmod file strings
+
+$FILEMANAGER_ACTIONS_CHMOD  =  "パーミッション (permission) を変更する";
+$FILEMANAGER_ACTIONS_CHMOD_NAME  =  "選択された__TYPE__名";
+$FILEMANAGER_ACTIONS_CHMOD_NEW  =  "変更後のパーミッション";
+$FILEMANAGER_ACTIONS_CHMOD_SUBMIT  =  "パーミッションを変更する";
+$FILEMANAGER_ACTIONS_CHMOD_ADVANCED_OPTS  =  "全パーミッションをrwxで表示";
+$FILEMANAGER_ACTIONS_CHMOD_BASIC_OPTS  =  "所有者のパーミッションのみ表示";
+$FILEMANAGER_ACTIONS_CHMOD_CANCEL  =  $CANCEL_STRING;
+$FILEMANAGER_ACTIONS_CHMOD_CANCEL_TEXT  =  
+  "パーミッションの変更要求は取り消されました。";
+$FILEMANAGER_ACTIONS_CHMOD_SUCCESS_TEXT  =  
+  "パーミッションを変更しました。";
+
+##############################################################################
+# chown/chgrp file strings
+
+$FILEMANAGER_ACTIONS_CHOWN  =  "所有者の変更";
+$FILEMANAGER_ACTIONS_CHOWN_NAME  =  "名前 __TYPE__ の選択";
+$FILEMANAGER_ACTIONS_CHOWN_NEW  =  "新しい所有者";
+$FILEMANAGER_ACTIONS_CHOWN_SUBMIT  =  "新しい所有者の設定";
+$FILEMANAGER_ACTIONS_CHOWN_CANCEL  =  $CANCEL_STRING;
+$FILEMANAGER_ACTIONS_CHOWN_CANCEL_TEXT  = 
+  "所有者の変更リクエストがキャンセルされました。";
+$FILEMANAGER_ACTIONS_CHOWN_SUCCESS_TEXT  = 
+  "所有者の変更リクエストが正しく処理されました。";
+$FILEMANAGER_ACTIONS_CHOWN_DENIED  = 
+  "ユーザ・グループの変更を行うことができません。";
+
+##############################################################################
+# eof
+
+1;
+

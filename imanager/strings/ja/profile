@@ -1,0 +1,99 @@
+#
+# user profile strings
+#
+# $SMEId: local/imanager/strings/ja/profile,v 2.12.2.1 2004/11/12 20:21:46 rus Exp $
+#
+# $Id: local/imanager/strings/ja/profile,v 2.11 2003/09/24 13:10:00 M.Matsuda Exp $
+#
+
+$PROFILE_TITLE  =  "$SOFTWARE_TITLE: ユーザープロフィール - __USER_ID__";
+
+$PROFILE_TEXT  =  
+  "以下のテーブルは\"__USER_ID__\"の
+   ユーザープロフィールの一覧です。";
+
+$PROFILE_LOGIN  =  "ログイン名";
+$PROFILE_NAME  =  "名前";
+$PROFILE_PASSWORD  =  "パスワード";
+$PROFILE_PASSWORD_CHANGE  =  "パスワードを変更する";
+
+$PROFILE_FTP  =  "FTP の使用権限";
+$PROFILE_FTPQUOTA  =  "FTP の容量制限";
+$PROFILE_FTPUSAGE  =  "FTP で現在使っている容量";
+
+$PROFILE_MAIL  =  "Mail 使用権限";
+$PROFILE_MAILQUOTA  =  "メールの容量制限";
+$PROFILE_MAILUSAGE  =  "現在のメール容量";
+
+$PROFILE_WEB  =  "Web 使用権限";
+
+$PROFILE_OVERALLQUOTA  =  "ディスク容量制限";
+$PROFILE_OVERALLUSAGE  =  "現在のディスク使用量";
+
+$PROFILE_HOME_DIRECTORY  =  "ホームディレクトリ";
+
+$PROFILE_GROUP_MEMBERSHIP  =  "グループ属性";
+
+$PROFILE_SHELL  =  "ログインシェル";
+
+$PROFILE_VIRTUALHOST  =  "ホスト名";
+
+$PROFILE_CHPASS_TITLE  =  $PROFILE_TITLE . ": パスワードを変更する";
+
+$PROFILE_CHPASS_TEXT  =  
+  "以下のフォームを使用して
+   \"__USER_ID__\" のログインパスワードを変更してください。";
+
+$PROFILE_CHPASS_ERROR  =  
+  "新しいパスワード値は、ふたつのフィールドで一致しなければなりません。";
+
+$PROFILE_INCORRECT_PASSWORD  =  
+  "古いパスワードが正しくありません。";
+
+$PROFILE_OLDPASS  =  "古いパスワード";
+$PROFILE_NEWPASS  =  "新しいパスワード";
+$PROFILE_NEWPASS_CONFIRM  =  $PROFILE_NEWPASS . " (確認)";
+
+$PROFILE_CHPASS_SUCCESS  =  
+  "ログインパスワードを変更しました。";
+$PROFILE_CHPASS_CANCEL  =  
+  "ログインパスワードの変更要求を取り消しました。";
+
+$PROFILE_ROOT_SYSTEM_INFORMATION = 
+  "システム重要情報サマリ：";
+$PROFILE_ROOT_FILESYSTEM_SIZE = "ファイルシステム全体のディスク容量制限";
+$PROFILE_ROOT_FILESYSTEM_USAGE = "ファイルシステム全体の現在のディスク使用量";
+
+$PROFILE_ROOT_NUM_USER_ACCOUNTS  =  "ユーザアカウント数";
+$PROFILE_ROOT_NUM_SYSTEM_ACCOUNTS  =  "システムアカウント数";
+
+$PROFILE_ROOT_ACCOUNTS_USER  =  
+  "以下のテーブルはこのシステムのユーザプロファイルの一覧です。";
+$PROFILE_ROOT_ACCOUNTS_USER_SHOW  =  "ユーザアカウントを表示";
+$PROFILE_ROOT_ACCOUNTS_USER_HIDE  =  "ユーザアカウントを非表示";
+
+$PROFILE_ROOT_ACCOUNTS_SYSTEM  =  
+  "以下のテーブルはこのシステムのシステムアカウントの一覧です。";
+$PROFILE_ROOT_ACCOUNTS_SYSTEM_SHOW  =  "システムアカウントを表示";
+$PROFILE_ROOT_ACCOUNTS_SYSTEM_HIDE  =  "システムアカウントを非表示";
+
+$PROFILE_DISK_USAGE_UNDETERMINED  =  "未計算";
+
+$PROFILE_DISK_USAGE_CALCULATE  =  "ディスク使用量の計算";
+$PROFILE_DISK_USAGE_CALCULATE_TITLE  =  
+  "__USER_ID__のディスク使用量の計算";
+
+$PROFILE_DISK_USAGE_RECALCULATE  =  "ディスク使用量の再計算";
+$PROFILE_DISK_USAGE_RECALCULATE_TITLE  =  
+  "__USER_ID__のディスク使用量の再計算";
+
+$PROFILE_DISK_USAGE_NOTE  =  
+  "ディスク使用量は概算です。実際の使用量とは異なる場合があります。";
+
+$PROFILE_PRINTER_FRIENDLY_FORMAT  =  "印刷用画面";
+
+##############################################################################
+# eof
+
+1;
+

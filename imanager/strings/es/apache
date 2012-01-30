@@ -1,0 +1,39 @@
+#
+# apache strings
+#
+# $Id: apache,v 1.1.2.3 2002/07/22 17:06:28 rus Exp $
+#
+
+$APACHE_RESTART_TITLE = "Recomenzar Apache";
+
+$APACHE_RESTART_HELP_TEXT_1 = 
+  "La herramienta para recomenzar apache te permite mandar una orden al sistema
+   para recomenzar los servicios del servidor web.  Recomenzar el servidor es
+   necesario cuando hagas cambios a la configuraci\xf3n del servidor como agregar,
+   modificar o borrar dominios virtuales. Basado en la fecha de la \xfaltima 
+   modificaci\xf3n del archivo de configuraci\xf3n del servidor, apache recomenzo al
+   menos a mas tardar el:"; 
+
+$APACHE_RESTART_HELP_TEXT_2 = 
+  "Tu petici\xf3n para recomenzar el servidor web puede ser ejecutada imediatamente
+   o de 5 a 10 segundos (dependiendo en la actividad del sistema). Cuando 
+   selecciones el boton para mandar la petici\xf3n para recomenzar, es posible que
+   veas un 'Network Error' u otro mensaje de tu navegador. Esto probablemente
+   quiere decir que tu petici\xf3n para recomenzar apache fue procesada imediatamente
+   y que el t\xe9rmino de la petici\xf3n fue parte normal de la operaci\xf3n del proceso.
+   Si observas este comportamiento, recarga esta p\xe1gina para determinar si la 
+   fecha del archivo de configuraci\xf3n del servidor fue cambiada sin ningun problema."; 
+
+$APACHE_RESTART_SUCCESS_TEXT = 
+  "Tu petici\xf3n para Recomenzar Apache fue procesada";
+
+$APACHE_RESTART_CANCEL_TEXT = 
+  "Tu petici\xf3n para Recomenzar Apache fue cancelada. No se tomo ninguna acci\xf3n.";
+
+$APACHE_RESTART_SUBMIT_TEXT = "Mandar Petici\xf3n para Recomenzar";
+
+##############################################################################
+# eof
+
+1;
+

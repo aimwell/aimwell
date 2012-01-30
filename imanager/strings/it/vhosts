@@ -1,0 +1,144 @@
+#
+# vhosts strings
+#
+# $SMEId: local/imanager/strings/it/vhosts,v 2.12 2004/08/27 18:27:49 rus Exp $
+#
+
+$VHOSTS_HOSTNAMES = "Nomi dei Domini Virtuali";
+$VHOSTS_SERVERNAME = "ServerName";
+$VHOSTS_SERVERADMIN = "ServerAdmin";
+$VHOSTS_DOCUMENTROOT = "DocumentRoot";
+$VHOSTS_TRANSFERLOG = "TransferLog";
+$VHOSTS_ERRORLOG = "ErrorLog";
+$VHOSTS_OTHEROPTIONS = "Altre Opzioni";
+$VHOSTS_SCRIPTALIAS = "ScriptAlias";
+
+$VHOSTS_NO_HOSTS_EXIST = 
+  "Sembra che il tuo file httpd.conf non includa alcuna definizione
+   di domini virtuali.  Prego usa lo strumento 'Aggiungi Dominio Virtuale'
+   per aggiungere dei nuovi domini virtuali.";
+
+$VHOSTS_SELECT_TITLE = "Seleziona Domini Virtuali";
+$VHOSTS_SELECT_HELP = 
+  "Prego usa il modulo seguente per selezionare uno o più domini virtuali.";
+
+$VHOSTS_OVERVIEW_HELP_TEXT = "Esempio di configurazione.";
+
+$VHOSTS_OVERVIEW_EXAMPLE_TEXT =
+  "  &lt;VirtualHost some-domain.name www.some-domain.name&gt;
+    ServerName www.some-domain.name
+    ServerAdmin webmaster\@some-domain.name
+    DocumentRoot /usr/local/etc/httpd/vhosts/some-domain.name/htdocs
+    ScriptAlias /cgi-bin/ /usr/local/etc/httpd/vhosts/some-domain.name/cgi-bin
+    TransferLog /usr/local/etc/httpd/vhosts/some-domain.name/logs/access_log
+    ErrorLog /usr/local/etc/httpd/vhosts/some-domain.name/logs/error_log
+  &lt;/VirtualHost&gt;";
+
+$VHOSTS_HOSTNAMES_HELP_TEXT = 
+  "Il Domino Virtuale riportato nel <VirtualHost> tag 
+   corrisponde al nome dominio che definisce il virtual host. 
+   Se desideri inserire piu' di un Dominio Virtuale separa ogni 
+   hostname con uno spazio (es: nomedominio.com  www.nomedominio.com).";
+$VHOSTS_SERVERNAME_HELP_TEXT = 
+  "ServerName imposta l'hostname per il nuovo dominio virtuale.";
+$VHOSTS_SERVERADMIN_HELP_TEXT = 
+  "ServerAdmin definisce l'indirizzo e-mail per i messaggi d'errore.";
+$VHOSTS_DOCUMENTROOT_HELP_TEXT = 
+   "DocumentRoot definisce e crea la directory root per il Dominio 
+   Virtuale, che verra' mostrata quando il Domino Virtuale ricevera' 
+   una richesta. Se la directory indicata non esiste verra' creata 
+   secondo il percorso indicato.  E' consigliabile non utilizzare 
+   un trailing slash ('/') alla fine del percorso.";
+$VHOSTS_SCRIPTALIAS_HELP_TEXT = 
+  "ScriptAlias definisce la directory CGI che verra' eseguita dal 
+   webserver per il tuo dominio virtuale. Considera attentamente la 
+   possibilita' di permettere l'utilizzo di script CGI; questi script 
+   hanno pieno accesso alla struttura del tuo Virtual Server. Se la 
+   directory indicata non esiste verra' creata secondo il percorso indicato.";
+$VHOSTS_TRANSFERLOG_HELP_TEXT = 
+  "La directory TransferLog indica e crea la directory dove verrano 
+   registrate le richieste per il tuo Dominio Virtuale.";
+$VHOSTS_ERRORLOG_HELP_TEXT = 
+  "La directory ErrorLog indica e crea la directory dove verrano 
+   registrate le richieste per il tuo Dominio Virtuale che hanno 
+   riscontrato un errore.";
+
+$VHOSTS_VHOST_PLACEMENT = "Posizione del Dominio Virtuale";
+$VHOSTS_VHOST_PLACEMENT_APPEND = "metti alla fine del file";
+$VHOSTS_VHOST_PLACEMENT_INSERT = "inserisci dopo __VHOST__";
+
+$VHOSTS_ADD_HELP_TEXT = 
+  "Prego usa il modulo seguente per aggiungere dei nuovi domini virtuali.";
+$VHOSTS_ADD_SUBMIT_TEXT = $SUBMIT_STRING;
+
+$VHOSTS_EDIT_HELP_TEXT = 
+  "Prego usa il modulo seguente per fare cambiamenti ai domini virtuali
+   selezionati.";
+$VHOSTS_EDIT_SUBMIT_TEXT = "Invia Cambiamenti";
+
+$VHOSTS_REMOVE_HELP_TEXT = 
+  "Sei sicuro che vuoi eliminare il dominio virtuale elencato sotto?";
+$VHOSTS_REMOVE_SUBMIT_TEXT = "Sì, elimina il dominio virtuale sopra";
+
+$VHOSTS_SORT_BY_HOST = "Ordina per Hostname";
+$VHOSTS_SORT_BY_NAME = "Ordina per Nome di Server";
+$VHOSTS_SORT_BY_ROOT = "Ordina per DocumentRoot";
+$VHOSTS_SORT_BY_ORDER = "Ordina per Ordine del File";
+
+$VHOSTS_SUCCESS_ADD_TEXT = 
+  "La tua richiesta di aggiungere domini virtuali è stata compiuta.";
+$VHOSTS_SUCCESS_EDIT_TEXT = 
+  "La tua richiesta di modificare domini virtuali è stata compiuta.";
+$VHOSTS_SUCCESS_REMOVE_TEXT = 
+  "La tua richiesta di eliminare domini virtuali è stata compiuta.";
+$VHOSTS_SUCCESS_RESTART = 
+  "Ora devi riavviare il demone Apache.";
+
+$VHOSTS_CANCEL_ADD_TEXT = 
+  "La tua richiesta di aggiungere domini virtuali è stata annullata.  
+   Nessun'azione è stata intrapresa.";
+$VHOSTS_CANCEL_EDIT_TEXT = 
+  "La tua richiesta di modificare domini virtuali è stata annullata.  
+   Nessun'azione è stata intrapresa.";
+$VHOSTS_CANCEL_REMOVE_TEXT = 
+  "La tua richiesta di eliminare domini virtuali è stata annullata.  
+   Nessun'azione è stata intrapresa.";
+
+$VHOSTS_ERROR_HOSTNAMES_IS_BLANK = "Il valore per nome di dominio virtuale è vuoto.";
+$VHOSTS_ERROR_SERVERNAME_IS_BLANK = "Il valore per ServerName è vuoto.";
+$VHOSTS_ERROR_DOCUMENTROOT_IS_BLANK = "Il valore per DocumentRoot è vuoto.";
+$VHOSTS_ERROR_DOCUMENTROOT_NO_EXIST = "__VALUE__ non esiste!";
+
+$VHOSTS_ERROR_DUPLICATE_ADDITION = 
+  "Un dominio virtuale '__VHOSTS__' già esiste.  I duplicati non sono permessi.";
+
+$VHOSTS_CONFIRM_TEXT =
+  "Trova prego sotto un elenco che ricapitola i cambiamenti che saranno fatti
+   al tuo file httpd.conf.  Fai clic sul tasto 'Conferma' per fare i
+   cambiamenti.";
+$VHOSTS_CONFIRM_ADD = "Aggiungi il dominio virtuale seguente:";
+$VHOSTS_CONFIRM_REMOVE = "Elimina il dominio virtuale seguente:";
+$VHOSTS_CONFIRM_CHANGE_FROM = "Cambiare il dominio virtuale seguente da:"; 
+$VHOSTS_CONFIRM_CHANGE_TO =   "&#160; &#160; a:"; 
+
+$VHOSTS_POPULATE_FROM_TEMPLATE =
+  "Configura le direttive per il vhost dal Template";
+$VHOSTS_TEMPLATE_HELP_TEXT =
+  "Puoi configurare automaticamente i valori per ognuna delle direttive del <VirtualHost> 
+da un pratico template.
+Inserisci semplicemente il nome di dominio
+nel campo Host Name oppure nel campo Server Name e poi seleziona il tasto
+    '$VHOSTS_POPULATE_FROM_TEMPLATE' (un utility per modificare il template e' disponibile nel menu Tools and Wizards)."; 
+$VHOSTS_TEMPLATE_EDIT_HELP =
+  "Utilizza il modulo qui sotto per modificare il Virtual Host template.";
+$VHOSTS_TEMPLATE_SUBMIT_TEXT = "Memorizza Template";
+$VHOSTS_TEMPLATE_EDIT_SUCCESS_TEXT =
+  "Il tuo nuovo Virtual Hosts template e' stato memorizzato con successo.";
+$VHOSTS_TEMPLATE_CANCEL_TEXT =
+  "La tua richiesta di modifica template e' stata cancellata. Nessuna modifica effetuata."; 
+
+##############################################################################
+# eof
+
+1;
+

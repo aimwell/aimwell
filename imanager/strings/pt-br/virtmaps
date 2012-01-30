@@ -1,0 +1,120 @@
+#
+# virtmaps strings
+#
+# $SMEId: local/imanager/strings/pt-br/virtmaps,v 2.12 2004/08/27 18:27:52 rus Exp $
+#
+
+$VIRTMAPS_NO_MAPPINGS_EXIST = 
+  "Parece que seu arquivo virtmap não contém nenhum mapeamento de endereço.
+   Por favor use o utilitário 'Adicionar Virtmap' para adicionar
+   novos mapeamentos virtuais de endereço.";
+
+$VIRTMAPS_SELECT_TITLE = "Selecionar Virtmaps";
+$VIRTMAPS_SELECT_HELP = 
+  "Por favor utilize o seguinte formulário para selecionar um ou mais virtmaps.";
+
+$VIRTMAPS_OVERVIEW_HELP_TEXT = 
+  "Especifique um Endereço de E-mail Virtual (coluna da esquerda) que deverá apontar para um Endereço
+   de E-mail Real (coluna da direita).  O endereço de e-mail virtual pode ser um endereço completo
+   (usuario\@nomededomínio.com) ou simplesmente um domínio (nomededominio.com por exemplo).
+   Caso você utilize um nome de domínio, então qualquer e-mail enviado àquele nome vai ser direcionado
+   para o e-mail real correspondente especificado, a menos que algum dos mapeamentos virtuais anteriores
+   combine com o endereço indicado como destinatário da mensagem. Utilizar um virtmap desse modo é bastante útil, porque o mesmo se torna um recurso que 'pega' todas as mensagens enviadas
+   ao nome de domínio em questão.";
+
+$VIRTMAPS_EXAMPLES_HELP_TEXT_1 = "Considere os seguintes exemplos:";
+$VIRTMAPS_EXAMPLES_HELP_TEXT_2 = 
+  "  Endereços Virtuais de E-mail                Endereços Reais de E-mail
+  -------------------------------             --------------------------
+  webmaster\@hospedagemvirtuail1.com           usuario\@mail.conexadodiscada.com
+  usuario\@hospedagemvirtuail1.com             usuariolocal-1
+  hospedagemvirtuail1.com                     usuario\@provedor.com
+  # Nota: o correio enviado para algum \"UsuarioDesconhecido\@hospedagemvirtual1\"
+  # será entregue em usuario\@provedor.com
+ 
+  webmaster\@hospedagemvirtuail2.com           usuariolocal2
+  usuario\@hospedagemvirtuail2.com             algumusuario\@aol.com
+  foobar\@hospedagemvirtuail2.com              outrousuario\@hotmail.com
+  hospedagemvirtuail2.com                     usuariolocal2";
+  
+$VIRTMAPS_EXAMPLES_HELP_TEXT_2_DEDICATED = 
+ "  Endereços Virtuais de E-mail                Endereços Reais de E-mail
+  -------------------------------             --------------------------
+  webmaster\@hospedagemvirtuail1.com           usuario\@mail.conexadodiscada.com
+  usuario\@hospedagemvirtuail1.com             usuariolocal-1
+  hospedagemvirtuail1.com                     usuario\@provedor.com
+  # Nota: o correio enviado para algum \"UsuarioDesconhecido\@hospedagemvirtual1\"
+  # será entregue em usuario\@provedor.com
+ 
+  webmaster\@hospedagemvirtuail2.com           usuariolocal2
+  usuario\@hospedagemvirtuail2.com             algumusuario\@aol.com
+  foobar\@hospedagemvirtuail2.com              outrousuario\@hotmail.com
+  hospedagemvirtuail2.com                     usuariolocal2";
+
+$VIRTMAPS_VIRTUAL_EMAIL_ADDRESS = "Endereço de E-mail Virtual";
+$VIRTMAPS_REAL_EMAIL_ADDRESS = "Endereço de E-mail Real";
+
+$VIRTMAPS_VIRTMAP_PLACEMENT = "Posicionamento do Virtmap";
+$VIRTMAPS_VIRTMAP_PLACEMENT_APPEND = "juntar ao final do arquivo";
+$VIRTMAPS_VIRTMAP_PLACEMENT_INSERT = "inserir após __VIRTMAP__";
+
+$VIRTMAPS_ADD_HELP_TEXT = 
+  "Por favor utilize o seguinte formulário para adicionar novos mapeamentos virtuais de endereço.";
+$VIRTMAPS_ADD_SUBMIT_TEXT = $SUBMIT_STRING;
+
+$VIRTMAPS_EDIT_HELP_TEXT = 
+  "Por favor utilize o seguinte formulário para efetuar alterações no(s) mapeamento(s) virtual(ais) de endereço
+   selecionado(s).";
+$VIRTMAPS_EDIT_SUBMIT_TEXT = "Aplicar Mudanças";
+
+$VIRTMAPS_REMOVE_HELP_TEXT = 
+  "Você tem certeza de que deseja remover permanentemente o(s) virtmap(s) listados abaixo?";
+$VIRTMAPS_REMOVE_SUBMIT_TEXT = "Sim, Remova os Virtmap(s) acima";
+
+$VIRTMAPS_SORT_BY_NAME = "Organizar por Nome do Virtmap";
+$VIRTMAPS_SORT_BY_ORDER = "Organizar por Ordem do Arquivo";
+
+$VIRTMAPS_SUCCESS_ADD_TEXT = "Sua solicitação para a Adição de novo(s) Virtmap(s) foi processada.";
+$VIRTMAPS_SUCCESS_EDIT_TEXT = "Sua solicitação para a Edição de Virtmap(s) foi processada.";
+$VIRTMAPS_SUCCESS_REMOVE_TEXT = 
+  "Sua solicitação para a Remoção de Virtmap(s) foi processada.";
+
+$VIRTMAPS_CANCEL_ADD_TEXT = 
+  "Sua solicitação para a Adição de novo(s) Virtmap(s) foi cancelada.  Nenhuma ação efetuada.";
+$VIRTMAPS_CANCEL_EDIT_TEXT = 
+  "Sua solicitação para a Edição de Virtmap(s) foi cancelada.  Nenhuma ação efetuada.";
+$VIRTMAPS_CANCEL_REMOVE_TEXT = 
+  "Sua solicitação para a Remoção de Virtmap(s) foi cancelada.  Nenhuma ação efetuada.";
+
+$VIRTMAPS_ERROR_VIRTUAL_FIELD_IS_BLANK = 
+  "O valor do endereço virtual de e-mail está em branco.";
+$VIRTMAPS_ERROR_REAL_FIELD_IS_BLANK = 
+  "O valor para o endereço de e-mail real está em branco.";
+
+$VIRTMAPS_ERROR_DUPLICATE_ADDITION = 
+  "Um mapeamento virtual de endereço '__VIRTMAP__' já existe.
+   Duplicatas não são permitidas.";
+
+$VIRTMAPS_NO_CHANGES_FOUND =
+  "Nenhuma alteração foi encontrada nas definições de virtmap que você
+  acabou de enviar. Utilize o botão 'voltar' de seu navegador, verifique
+  as modificações e tente novamente.";
+
+$VIRTMAPS_CONFIRM_TEXT =
+  "Abaixo você encontra uma lista resumindo as mudanças que serão efetuadas
+   em seu arquivo virtmaps.  Pressione o botão 'Confirmar' para aplicar as mudanças.";
+
+$VIRTMAPS_CONFIRM_ADD_NEW = "Adicionar o seguinte virtmap:";
+$VIRTMAPS_CONFIRM_REMOVE_OLD = "Remover o seguinte virtmap:";
+$VIRTMAPS_CONFIRM_CHANGE_NAME = 
+  "Alterar o endereço de e-mail virtual (virtmap) de '__NAME__' para '__NEWNAME__'";
+$VIRTMAPS_CONFIRM_CHANGE_VALUE = 
+  "Altera endereço real do virtmap para '__NAME__'";
+$VIRTMAPS_CONFIRM_CHANGE_VALUE_OLD = "Valor Antigo";
+$VIRTMAPS_CONFIRM_CHANGE_VALUE_NEW = "Novo Valor";
+
+##############################################################################
+# eof
+
+1;
+

@@ -1,0 +1,81 @@
+#
+# global and main menu strings
+#
+# $SMEId: local/imanager/strings/de/main,v 2.12.2.1 2006/02/07 19:02:01 rus Exp $
+#
+
+##############################################################################
+#
+# the software title, you can change this to be whatever you want
+#
+$SOFTWARE_TITLE = "iManager";
+
+##############################################################################
+
+$CONTINUE_STRING = "Fortfahren";
+$SUBMIT_STRING = "Abschicken";
+$CANCEL_STRING = "Abbrechen";
+$RESET_STRING = "Formular zurücksetzen";
+$LOGIN_STRING = "Einloggen";
+$LOGOUT_STRING = "Ausloggen";
+$CONFIRM_STRING = "Bestätigen";
+
+$YES_STRING = "Ja";
+$NO_STRING = "Nein";
+$NONE_STRING = "Keine";
+
+##############################################################################
+
+$MAINMENU_TITLE = "$SOFTWARE_TITLE Hauptmenu";
+
+$MAINMENU_TEXT = 
+  "Willkommen bei $SOFTWARE_TITLE, den Verwaltungstools für Ihren Virtuellen Server.
+   Sie haben sich erfolgreich mit dem Benutzerprofil 
+   \"__USER_ID__\" angemeldet. Untenstehend sehen Sie eine Liste der zur Verfügung
+   stehenden Utilities.";
+   
+
+$MAINMENU_USERPROFILE_TITLE = "Benutzerprofil";
+$MAINMENU_FILEMANAGER_TITLE = "Dateimanager";
+$MAINMENU_MAILMANAGER_TITLE = "Mail Manager";
+$MAINMENU_IROOT_TITLE = "Tools und Assistenten";
+$MAINMENU_PREFERENCES_TITLE = "Einstellungen";
+$MAINMENU_ABOUT_TITLE = "Über $SOFTWARE_TITLE";
+
+$MEGABYTES = "MB";
+$KILOBYTES = "KB";
+$BYTES = "Bytes";
+
+$UNKNOWN_PLATFORM_TITLE = "$SOFTWARE_TITLE: Unbekannte Plattform";
+$UNKNOWN_PLATFORM_TEXT = 
+  "Die Plattform auf der das SDcript läufet klann nicht identifiziert werden. Bitte
+   kontaktieren Sie Ihren Systemverwalter.";
+
+$SOCKET_ERROR_TITLE = "$SOFTWARE_TITLE: Fehler beim öffnen eines Socket";
+$SOCKET_ERROR_TEXT = 
+  "Ein Fehler beim öffnen eines Netzwerksocket. Bitte
+   kontaktieren Sie Ihren Systemverwalter.";
+
+# generic help phrases
+$WHAT_STRING = "Was ist das?";
+
+##############################################################################
+# about strings
+
+$ABOUT_VERSION = "Version";
+$ABOUT_BUILD_DATE = "Erstellungsdatum";
+$ABOUT_MASTER_SITE = "Hauptsite";
+$ABOUT_UPGRADE_SUMMARY = "Upgrade-Übersicht";
+$ABOUT_UPGRADE_REMOTE_VERSION_CURRENT =
+  "Sie verwenden die aktuellste Softwareversion.";
+$ABOUT_UPGRADE_REMOTE_VERSION_OLD = 
+  "Eine neue Softwareversion ist erhältlich. Sie sollten
+   auf die aktuellste Version updaten.";
+$ABOUT_UPGRADE_REMOTE_VERSION_UNKNOWN = 
+  "Die Hauptsite konnte Version und Erstellungsdtum nicht feststellen.";
+
+##############################################################################
+# eof
+
+1;
+

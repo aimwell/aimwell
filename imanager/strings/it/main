@@ -1,0 +1,80 @@
+#
+# global and main menu strings
+#
+# $SMEId: local/imanager/strings/it/main,v 2.12 2004/08/27 18:27:49 rus Exp $
+#
+
+##############################################################################
+#
+# the software title, you can change this to be whatever you want
+#
+$SOFTWARE_TITLE = "iManager";
+
+##############################################################################
+
+$CONTINUE_STRING = "Continua";
+$SUBMIT_STRING = "Invia";           # inserisce? inoltra? submit?invia ok
+$CANCEL_STRING = "Cancella";
+$RESET_STRING = "Cancella Form";
+$LOGIN_STRING = "Accedi";
+$LOGOUT_STRING = "Esci";           
+$CONFIRM_STRING = "Conferma";
+
+$YES_STRING = "Sì";
+$NO_STRING = "No";
+$NONE_STRING = "Nessuno";           #???
+
+##############################################################################
+
+$MAINMENU_TITLE = "$SOFTWARE_TITLE Menù Principale";
+
+$MAINMENU_TEXT = 
+  "Benvenuto nella $SOFTWARE_TITLE Suite per la Gestione del tuo Virtual Server.
+   Hai autenticato con successo usando il profilo login  
+   \"__USER_ID__\".  Una lista delle funzioni disponibili è riportata sotto.";
+
+$MAINMENU_USERPROFILE_TITLE = "Profilo Utente";
+$MAINMENU_FILEMANAGER_TITLE = "Gestione File";    # ??? stick with file manager?
+$MAINMENU_MAILMANAGER_TITLE = "Gestione Posta";   # ??? stick with email?
+$MAINMENU_IROOT_TITLE = "Strumenti e Wizard";          
+$MAINMENU_PREFERENCES_TITLE = "Preferenze";
+$MAINMENU_ABOUT_TITLE = "Informazioni su $SOFTWARE_TITLE";
+
+$MEGABYTES = "MB";
+$KILOBYTES = "kb";
+$BYTES = "byte";
+
+$UNKNOWN_PLATFORM_TITLE = "$SOFTWARE_TITLE: Piattaforma Sconosciuta";
+$UNKNOWN_PLATFORM_TEXT = 
+  "La piattaforma utilizzata non può essere
+   identificata.  Contatta il tuo amministratore di sistema.";
+
+$SOCKET_ERROR_TITLE = "$SOFTWARE_TITLE: Open Socket Error";   # ????
+$SOCKET_ERROR_TEXT = 
+  "Un errore si e'verificato  mentre tentavi di aprire un socket di rete.  
+   Contatta il tuo amministratore di sistema.";
+
+# generic help phrases
+$WHAT_STRING = "Cosa e' Questo?";
+
+##############################################################################
+# about strings
+
+$ABOUT_VERSION = "Versione";
+$ABOUT_BUILD_DATE = "Data Configurazione";
+$ABOUT_MASTER_SITE = "Sito Principale";               # Master site? ok
+$ABOUT_UPGRADE_SUMMARY = "Sommario Aggiornamento";
+$ABOUT_UPGRADE_REMOTE_VERSION_CURRENT =
+  "Sembra che tu stia usando la versione più corrente del software.";
+$ABOUT_UPGRADE_REMOTE_VERSION_OLD = 
+  "Sembra che una versione piu' recente  del software sia disponibile. 
+   E' preferibile aggiornare il software con la versione piu' recente.";
+$ABOUT_UPGRADE_REMOTE_VERSION_UNKNOWN = 
+  "Il sito principale non ha potuto determinare la tua versione e la  
+   data di configurazione.";             # ??? Master site??
+
+##############################################################################
+# eof
+
+1;
+

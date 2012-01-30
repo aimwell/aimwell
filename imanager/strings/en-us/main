@@ -1,0 +1,104 @@
+#
+# global and main menu strings
+#
+# $SMEId: local/imanager/strings/en/main,v 2.12 2004/08/27 18:27:46 rus Exp $
+#
+
+##############################################################################
+#
+# the software title, you can change this to be whatever you want
+#
+$SOFTWARE_TITLE = "iManager";
+
+##############################################################################
+
+$CONTINUE_STRING = "Continue";
+$SUBMIT_STRING = "Submit";
+$CANCEL_STRING = "Cancel";
+$RESET_STRING = "Reset Form";
+$LOGIN_STRING = "Login";
+$LOGOUT_STRING = "Logout";
+$CONFIRM_STRING = "Confirm";
+$CLOSE_STRING = "Close Window";
+
+$LOGOUT_CONFIRM = "Are you sure you want to logout?";
+
+$YES_STRING = "Yes";
+$NO_STRING = "No";
+$NONE_STRING = "None";
+
+$TAG_ALL = "Tag All";
+$UNTAG_ALL = "Untag All";
+
+##############################################################################
+
+$MAINMENU_TITLE = "$SOFTWARE_TITLE Main Menu";
+
+$MAINMENU_TEXT = 
+  "Welcome to the $SOFTWARE_TITLE Virtual Server Administration Suite.
+   You have successfully authenticated using the login profile for 
+   \"__USER_ID__\".  A list of utilities available is given below.";
+
+$MAINMENU_USERPROFILE_TITLE = "User Profile";
+$MAINMENU_FILEMANAGER_TITLE = "File Manager";
+$MAINMENU_MAILMANAGER_TITLE = "Mail Manager";
+$MAINMENU_IROOT_TITLE = "Tools and Wizards";
+$MAINMENU_PREFERENCES_TITLE = "Preferences";
+$MAINMENU_ABOUT_TITLE = "About $SOFTWARE_TITLE";
+$MAINMENU_UPDATE_TITLE = "$SOFTWARE_TITLE Update";
+
+$GIGABYTES = "GB";
+$MEGABYTES = "MB";
+$KILOBYTES = "kb";
+$BYTES = "bytes";
+
+$UNKNOWN_PLATFORM_TITLE = "$SOFTWARE_TITLE: Unknown Platform";
+$UNKNOWN_PLATFORM_TEXT = 
+  "The platform this script is running on cannot be identified.  Please
+   contact your system administrator.";
+
+$SOCKET_ERROR_TITLE = "$SOFTWARE_TITLE: Open Socket Error";
+$SOCKET_ERROR_TEXT = 
+  "An error occurred while attempting to open a network socket.  Please
+   contact your system administrator.";
+
+# generic help phrases
+$WHAT_STRING = "What's This?";
+$URL_OPEN_STRING = "Open '__URL__' in new browser window.";
+
+##############################################################################
+# about and update strings
+
+$ABOUT_VERSION = "Version";
+$ABOUT_BUILD_DATE = "Build Date";
+$ABOUT_MASTER_SITE = "Master Site";
+$ABOUT_UPGRADE_SUMMARY = "Upgrade Summary";
+$ABOUT_UPGRADE_REMOTE_VERSION_CURRENT =
+  "It appears that you are running the most current version of the software.";
+$ABOUT_UPGRADE_REMOTE_VERSION_CURRENT_DEV =
+  "It appears that you are running the most current beta version of the 
+   software (development branch).";
+$ABOUT_UPGRADE_REMOTE_VERSION_OLD = 
+  "It appears that a newer version of the software may exist.  You are 
+   encouraged to upgrade to the latest version of the software.";
+$ABOUT_UPGRADE_REMOTE_VERSION_OLD_DEV = 
+  "It appears that a newer beta version of the software may exist.  You are 
+   encouraged to upgrade to the latest development version of the software.";
+$ABOUT_UPGRADE_REMOTE_VERSION_UNKNOWN = 
+  "The master site could not determine your version and build date.";
+
+$UPDATE_CURRENT_INFO = "Your Current Installation";
+$UPDATE_INSTALL_LATEST = "Install latest available version";
+$UPDATE_INSTALL_LATEST_FAILURE = "Installation failed.";
+$UPDATE_INSTALL_LATEST_SUCCESS = "Installation was successful.";
+
+$UPDATE_DENIED_TITLE = "$SOFTWARE_TITLE Update - Access Denied";
+$UPDATE_DENIED_TEXT = 
+  "Your login profile is not considered to be a 'root' profile.  Therefore
+   you will not be allowed to install the latest available version.";
+
+##############################################################################
+# eof
+
+1;
+

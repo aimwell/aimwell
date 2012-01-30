@@ -1,0 +1,303 @@
+#
+# preferences strings
+#
+# $SMEId: local/imanager/strings/en/prefs,v 2.12.2.4 2005/02/24 01:50:37 rus Exp $
+#
+
+$PREFS_TITLE = "$SOFTWARE_TITLE: Preferences for __USER_ID__";
+
+$PREFS_MAINMENU_TITLE = "Preferences Main Menu";
+
+$PREFS_EXPLANATION = 
+  "Please use the following links to view and modify the preferences for 
+   \"__USER_ID__\".";
+
+$PREFS_SUCCESS_TEXT = "Your preferences were successfully saved.";
+
+$PREFS_UNKNOWN_TEXT = 
+  "The specified preference type ('__TYPE__') is unknown.";
+
+##############################################################################
+# general preferences
+
+$PREFS_GENERAL_TEXT = "General Preferences";
+
+$PREFS_STARTUP_MENU_TEXT = "$SOFTWARE_TITLE Start Up Menu";
+$PREFS_STARTUP_MENU_HELP = 
+  "After logging into $SOFTWARE_TITLE, you can select one of the following
+   as your 'start up' menu.";
+
+$PREFS_AUTH_DURATION_TEXT = "$SOFTWARE_TITLE Auto Logout";
+$PREFS_AUTH_DURATION_HELP = 
+  "The length in time (in minutes) after which your login authorization
+   credentials will 'expire' due to inactivity.  For your security, a
+   maximum of 60 minutes is recommended.";
+$PREFS_AUTH_DURATION_UNITS = "minutes";
+
+##############################################################################
+# language preferences
+
+$PREFS_LANGUAGE_TEXT = "Language Preferences";
+
+$PREFS_DEFAULT_LANGUAGE_TEXT = "Default Language";
+$PREFS_DEFAULT_LANGUAGE_HELP = "Select the language you prefer:";
+
+$PREFS_DEFAULT_LANGUAGE_DA   = "Danish";
+$PREFS_DEFAULT_LANGUAGE_NL   = "Dutch";
+$PREFS_DEFAULT_LANGUAGE_EN   = "English";
+$PREFS_DEFAULT_LANGUAGE_FR   = "French";
+$PREFS_DEFAULT_LANGUAGE_DE   = "German";
+$PREFS_DEFAULT_LANGUAGE_IT   = "Italian";
+$PREFS_DEFAULT_LANGUAGE_JA   = "Japanese";
+$PREFS_DEFAULT_LANGUAGE_PT   = "Portuguese";
+$PREFS_DEFAULT_LANGUAGE_PTBR = "Portuguese (Brazil)";
+$PREFS_DEFAULT_LANGUAGE_ES   = "Spanish";
+$PREFS_DEFAULT_LANGUAGE_SE   = "Swedish";
+
+##############################################################################
+# security preferences
+
+$PREFS_SECURITY_TEXT = "Security Preferences";
+
+$PREFS_SECURITY_FORCE_HTTPS_TEXT = "Force a Secure Connection";
+$PREFS_SECURITY_FORCE_HTTPS_HELP = 
+  "You can force that all unencrypted (non-SSL) requests be redirected
+   to a SSL-encrypted session.  Of course, forcing SSL connections 
+   requires that you have SSL installed on your Virtual Server.  By 
+   default, non-SSL sessions are allowed.";
+$PREFS_SECURITY_FORCE_HTTPS_YES = "Force SSL Connections";
+$PREFS_SECURITY_FORCE_HTTPS_NO = "Allow Non-SSL Connections";
+
+$PREFS_SECURITY_IP_CHECK_TEXT = 
+  "Require Hostname Authentication (IP Checking)";
+$PREFS_SECURITY_IP_CHECK_HELP = 
+  "One of the authentication handshakes performed is a comparison of 
+   hostnames (or IP addresses) between subsequent sessions.  This comparison
+   prevents an unauthorized party from using your authentication key at any
+   machine except from the one at which the session originated.  However, 
+   some users may connect to the Internet behind a proxy where the hostname
+   (or IP address) is dynamic from session to session (special consideration
+   for AOL users is already built into the software).  By default, hostname
+   authentication (IP checking) is always done.";
+$PREFS_SECURITY_IP_CHECK_YES = "Enable IP Checking";
+$PREFS_SECURITY_IP_CHECK_NO = "Disable IP Checking";
+
+$PREFS_SECURITY_STRICT_PASSWORD_TEXT = 
+  "Enforce 'Strict' Password Selection Rules";
+$PREFS_SECURITY_STRICT_PASSWORD_HELP = 
+  "You can enforce or disable 'strict' password selection rules that 
+   require new passwords be at least seven characters in length, that
+   new passwords include mixed case letters, and that new passwords
+   consists of both alpha and numeric characters.  The password 
+   selection rules ensure that users do not select weak passwords that
+   are easily guessed or cracked.  This security setting can be disabled,
+   but it is discouraged.  By default, the strict password selection 
+   rules are enforced.";
+$PREFS_SECURITY_STRICT_PASSWORD_YES = "Enforce strict password rules";
+$PREFS_SECURITY_STRICT_PASSWORD_NO = "Disable strict password rules";
+
+$PREFS_SECURITY_ROOT_LOGIN_TEXT = 
+  "Allow 'root' Login";
+$PREFS_SECURITY_ROOT_LOGIN_HELP = 
+  "You can allow or disallow the 'root' user valid login access.  A robust
+   security policy discourages remote root login privileges; instead, you
+   should login using an administrative user in order to perform system
+   tasks such as adding new users, etc.  This security setting can be 
+   enabled, but it is discouraged.  By default, 'root' login is disabled.";
+$PREFS_SECURITY_ROOT_LOGIN_YES = "Enable 'root' login";
+$PREFS_SECURITY_ROOT_LOGIN_NO = "Disable 'root' login";
+
+$PREFS_SECURITY_ELEVATE_ADMIN_FTP_PRIVS_TEXT =
+  "Elevate File Manager Privileges for Admin User"; 
+$PREFS_SECURITY_ELEVATE_ADMIN_FTP_PRIVS_HELP = 
+  "The File Manager privileges for the admin user can be elevated such that 
+   the admin user operates as if it were the 'root' user.  This allows the
+   admin user to read and write 'root' owned files.  By default, elevated 
+   File Manager privileges for the admin user is denied.";
+$PREFS_SECURITY_ELEVATE_ADMIN_FTP_PRIVS_YES = 
+  "Grant admin user elevated File Manager privileges";
+$PREFS_SECURITY_ELEVATE_ADMIN_FTP_PRIVS_NO = 
+  "Deny admin user elevated File Manager privileges";
+
+##############################################################################
+# file manager preferences
+
+$PREFS_FILEMANAGER_TEXT = "File Manager Preferences";
+
+$PREFS_FILEMANAGER_DENIED_TEXT = 
+  "Your login profile does not include privileges for 'ftp'.  Therefore
+   you will not be allowed to access the File Manager preferences.";
+
+$PREFS_HIDE_ENTRIES_THAT_BEGIN_WITH_A_DOT_TEXT = 
+  "Hide directory entries whose names begin with a dot (.)";
+$PREFS_HIDE_ENTRIES_THAT_BEGIN_WITH_A_DOT_HELP = 
+  "Directory listings in the File Manager can include entries whose
+   names begin with a dot (.) or ignore them.  Files that begin with a
+   dot are sometimes classified as 'hidden files' and are typically 
+   created and maintained by applications.  By default, directory
+   entries whose names begin with a dot are not shown.";
+
+$PREFS_CONFIRM_FILE_REMOVE_TEXT = "Confirm File Remove";
+$PREFS_CONFIRM_FILE_REMOVE_HELP = 
+  "The Remove File utility will prompt you to confirm that a file or
+   directory should be permanently removed.  By default, confirmation
+   is always asked.";
+
+$PREFS_CONFIRM_FILE_OVERWRITE_TEXT = "Confirm File Overwrite";
+$PREFS_CONFIRM_FILE_OVERWRITE_HELP = 
+  "Certain File Manager utilities will prompt you to confirm an action if
+   the result will overwrite an existing file.  By default, confirmation
+   is always asked.";
+   
+$PREFS_CONFIRM_DIR_CREATE_TEXT = "Confirm Directory Creation";
+$PREFS_CONFIRM_DIR_CREATE_HELP = 
+  "Certain File Manager utilities will prompt you to confirm an action if
+   the result will create a new directory.  By default, confirmation is 
+   always asked.";
+
+$PREFS_CHMOD_DEFAULT_OPTION_TEXT = "Default Change Permissions Options";
+$PREFS_CHMOD_DEFAULT_OPTION_HELP = 
+  "The Change Permissions utility has two sets of options that allow you
+   to change the file permissions of a selected file or directory.  You
+   can select which one is shown by default.";
+   
+$PREFS_UPLOAD_FILE_ELEMENTS_TEXT = "Number of Upload File Form Elements";
+$PREFS_UPLOAD_FILE_ELEMENTS_HELP = 
+  "The Upload File utility allows you to specify local files on your
+   computer and upload them via a form submission.  The number of upload
+   file form elements displayed in the Upload File utility can be 
+   specified here.  The default is 4.";
+$PREFS_UPLOAD_FILE_ELEMENTS_UNITS = "upload file form elements";
+
+##############################################################################
+# mail manager preferences
+
+$PREFS_MAILMANAGER_TEXT = "Mail Manager Preferences";
+
+$PREFS_MAILMANAGER_DENIED_TEXT = 
+  "Your login profile does not include privileges for 'mail'.  Therefore
+   you will not be allowed to access the Mail Manager preferences.";
+
+$PREFS_NUM_MESSAGES_TEXT = "Number of Messages to View";
+$PREFS_NUM_MESSAGES_HELP = 
+  "When viewing a mail folder, how many messages do you want to see 
+   at a time?  The default value is 25.";
+$PREFS_NUM_MESSAGES_UNITS = "messages";
+
+$PREFS_INBOX_REFRESH_RATE_TEXT = "Inbox Page Refresh Rate";
+$PREFS_INBOX_REFRESH_RATE_HELP = 
+  "When viewing your incoming mail folder, how often should the page
+   refresh to check for new messages?  The default value is 180 seconds.";
+$PREFS_INBOX_REFRESH_RATE_UNITS = "seconds";
+
+$PREFS_DEFAULT_MAIL_SORTING_TEXT = "Default Mail Sorting Option";
+$PREFS_DEFAULT_MAIL_SORTING_HELP = 
+  "When viewing a mail folder, how should the messages be displayed?
+   The default is to display messages in a folder sorted by date.";
+
+$PREFS_CONFIRM_MAIL_REMOVE_TEXT = "Confirm Mail Remove";
+$PREFS_CONFIRM_MAIL_REMOVE_HELP = 
+  "The Mail Manager utility will prompt you to confirm that a message
+   should be permanently removed.  By default, confirmation is always
+   asked.";
+
+$PREFS_DEFAULT_MAIL_FOLDER_TEXT = "Default Mail Folder Directory";
+$PREFS_DEFAULT_MAIL_FOLDER_HELP = 
+  "Your default mail folder directory identifies where your collection of
+   mail folders resides.  The Mail Manager allows you to change your 
+   active mail folder; save messages to a specified mail folder; and copy
+   outgoing messages to a specified mail folder -- each of these mail 
+   folders is initially presumed to be located in your default mail folder 
+   directory.  The directories \"/Mail\" or \"/mail\" are common
+   specifications for the default mail folder.";
+
+$PREFS_MAIL_ATTACH_ELEMENTS_TEXT = "Number of Mail Attachment Form Elements";
+$PREFS_MAIL_ATTACH_ELEMENTS_HELP_NO_FTP_PRIVS = 
+  "When composing messages, the Mail Manager utility allows you to specify
+   local files on your computer which you would like to attach to an
+   outgoing message.  These files are uploaded via a form submission and
+   then attached to the message before it is sent.  The number of mail
+   attachment form elements displayed in the Mail Manager compose message
+   form can be specified here.  The default is 2.";
+$PREFS_MAIL_ATTACH_ELEMENTS_HELP_FULL_PRIVS = 
+  "When composing messages, the Mail Manager utility allows you to specify
+   both local files on your computer and files on this server which you 
+   would like to attach to an outgoing message.  The files you select on 
+   your local computer will be uploaded via a form submission and then
+   attached to the message before it is sent.  The number of form elements
+   for each type of mail attachment displayed in the Mail Manager compose
+   message form can be specified here.  The default for each type is 2.";
+$PREFS_UPLOAD_ATTACH_ELEMENTS_UNITS = "upload attachment form elements";
+$PREFS_LOCAL_ATTACH_ELEMENTS_UNITS = "server file attachment form elements";
+
+$PREFS_CONFIRM_ADDRESS_BOOK_CHANGES_TEXT = "Confirm Address Book Changes";
+$PREFS_CONFIRM_ADDRESS_BOOK_CHANGES_HELP = 
+  "The Mail Manager Address Book utilities will prompt you to confirm when
+   a contact is edited, removed, or about to be overwritten.  By default, 
+   confirmation for these actions is always asked.";
+
+$PREFS_MAIL_ADDRESSBOOK_ELEMENTS_TEXT = "Number of Address Book Form Elements";
+$PREFS_MAIL_ADDRESSBOOK_ELEMENTS_HELP = 
+  "The Address Book functionality in the Mail Manager allows you to store
+   names and addresses of persons you communicate with frequently.  The 
+   number of address book form elements displayed in the Add/Edit Address 
+   Book Entries utility can be specified here.  The default is 8.";
+$PREFS_MAIL_ADDRESSBOOK_ELEMENTS_UNITS = "address book elements";
+
+##############################################################################
+# iroot preferences
+
+$PREFS_IROOT_TEXT = "Tools and Wizards Preferences";
+
+$PREFS_IROOT_DENIED_TEXT = 
+  "Your login profile is not considered to be a 'root' profile.  Therefore
+   you will not be allowed to use the Tools and Wizards preferences.";
+
+$PREFS_NUM_NEWUSERS_TEXT = "Number of New User Form Submissions";
+$PREFS_NUM_NEWUSERS_HELP = 
+  "The number of new users that can be added at one time using the
+   Add User utility.  The default is 1.";
+$PREFS_NUM_NEWUSERS_UNITS = "new users";
+
+$PREFS_NUM_NEWGROUPS_TEXT = "Number of New Group Form Submissions";
+$PREFS_NUM_NEWGROUPS_HELP = 
+  "The number of new groups that can be added at one time using the
+   Add Group utility.  The default is 1.";
+$PREFS_NUM_NEWGROUPS_UNITS = "new groups";
+
+$PREFS_NUM_NEWALIASES_TEXT = "Number of New Alias Form Submissions";
+$PREFS_NUM_NEWALIASES_HELP = 
+  "The number of new aliases that can be added at one time using the
+   Add Alias utility.  The default is 3.";
+$PREFS_NUM_NEWALIASES_UNITS = "new e-mail aliases";
+
+$PREFS_NUM_NEWVIRTMAPS_TEXT = "Number of New Virtmap Form Submissions";
+$PREFS_NUM_NEWVIRTMAPS_HELP = 
+  "The number of new virtmaps that can be added at one time using the
+   Add Virtmap utility.  The default is 5.";
+$PREFS_NUM_NEWVIRTMAPS_UNITS = "new virtual address mappings";
+
+$PREFS_NUM_NEWSPAMMERS_TEXT = "Number of New Spammer Form Submissions";
+$PREFS_NUM_NEWSPAMMERS_HELP = 
+  "The number of new spammers that can be added at one time using the
+   Add Spammer utility.  The default is 5.";
+$PREFS_NUM_NEWSPAMMERS_UNITS = "new spammer definitions";
+
+$PREFS_NUM_NEWMAILACCESS_TEXT = 
+  "Number of New Mail Access Entry Form Submissions";
+$PREFS_NUM_NEWMAILACCESS_HELP = 
+  "The number of new mail access entries that can be added at one time 
+   using the Add Mail Access Entry utility.  The default is 5.";
+$PREFS_NUM_NEWMAILACCESS_UNITS = "new mail access entries";
+
+$PREFS_NUM_NEWVHOSTS_TEXT = "Number of New Virtual Host Form Submissions";
+$PREFS_NUM_NEWVHOSTS_HELP = 
+  "The number of new virtual hosts that can be added at one time using the
+   Add Virtual Host utility.  The default is 1.";
+$PREFS_NUM_NEWVHOSTS_UNITS = "new virtual host definitions";
+
+##############################################################################
+# eof
+
+1;
+

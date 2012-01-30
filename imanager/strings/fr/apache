@@ -1,0 +1,39 @@
+#
+# apache strings
+#
+# $SMEId: local/imanager/strings/fr/apache,v 2.12 2004/08/27 18:27:48 rus Exp $
+#
+
+$APACHE_RESTART_TITLE = "Redémarrer Apache";
+
+$APACHE_RESTART_HELP_TEXT_1 = 
+  "L'utilitaire 'Redémarrer Apache' vous permet d'envoyer une demande au
+   système afin de redémarrer votre serveur virtuel. Un redémarrage est
+   requis chaque fois que vous faites des modifications de la configuration
+   de votre serveur virtuel, fichier 'httpd.conf'. Selon la dernière date de la
+   modification de votre fichier de configuration, votre serveur Apache a été
+   redémarré:";
+
+$APACHE_RESTART_HELP_TEXT_2 = 
+  "Votre demande de redémarrer vos services web peut être exécuter immédiatement
+   ou il peut être executer dans 5 à 10 secondes (dépendant du système).
+   Quand vous sélectionnez le bouton de dépôt ci-dessous, vous pouvez recevoir
+   un message 'Erreur de Réseau' ou un autre message présenté par votre
+   navigateur Web. Cela veut dire que votre demande 'redémarrer Apache' a été
+   exécutée immédiatement et le dépôt a été terminé comme d'habitude. Si ce
+   genre de comportement est observé, recharger cette page afin de déterminer
+   si la date de modification de votre fichier de configuration de serveur Web
+   a été modifiée avec succès.";
+
+$APACHE_RESTART_SUCCESS_TEXT = 
+  "Votre demande 'Redémarrer Apache' a été exécutée.";
+
+$APACHE_RESTART_CANCEL_TEXT = 
+  "Votre demande 'Redémarrer Apache' a été annulée. Aucune action n'a été prise.";
+
+$APACHE_RESTART_SUBMIT_TEXT = "Envoyer demande 'Redémarrer'";
+
+##############################################################################
+# eof
+
+1;

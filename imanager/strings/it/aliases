@@ -1,0 +1,96 @@
+#
+# aliases strings
+#
+# $SMEId: local/imanager/strings/it/aliases,v 2.12 2004/08/27 18:27:49 rus Exp $
+#
+
+$ALIASES_NO_MAPPINGS_EXIST = 
+  "Sembra che il tuo file di alias non includa alcun alias.
+   Usa lo strumento 'Aggiungi Alias' per aggiungere dei nuovi 
+   alias.";
+
+$ALIASES_SELECT_TITLE = "Seleziona Alias";
+$ALIASES_SELECT_HELP = 
+  "Usa il modulo seguente per selezionare uno o più alias.";
+
+$ALIASES_OVERVIEW_HELP_TEXT = 
+  "Un alias di posta è semplicemente un indirizzo di posta elettronica.
+   Ogni alias che specifichi inoltra la posta alla Definizione alias.
+   La definizione alias può essere uno o più indirizzi di posta
+   (gli indirizzi multipli devono essere separati dalle virgole), o
+   può essere una definizione complessa che dirige il tuo servizio di posta
+   per trasportare un messaggio ad una lista o programma come un sistema
+   auto-risponditore.";
+
+$ALIASES_EXAMPLES_HELP_TEXT_1 = "Considera gli esempi seguenti";
+$ALIASES_EXAMPLES_HELP_TEXT_2 = 
+  "  Alias                          Definizione del Alias 
+  ----------------------         --------------------------
+  webmaster                      utentelocale1
+  saldi                          utentelocale2, utentelocale3
+  luigi                          qualcheutente\@aol.com
+  personale                      :include:/etc/mail/indirizze_di_personale.elenco
+  info                           webmaster, \"|/usr/bin/autoreply -f webmaster -m -/etc/mail/faq_messaggio.txt -a info\"";
+
+$ALIASES_ALIAS_NAME = "Alias";
+$ALIASES_ALIAS_VALUE = "Definizione Alias";
+
+$ALIASES_ALIAS_PLACEMENT = "Posizione Alias";
+$ALIASES_ALIAS_PLACEMENT_APPEND = "accoda al file";
+$ALIASES_ALIAS_PLACEMENT_INSERT = "inserisci dopo __ALIAS__";
+
+$ALIASES_ADD_HELP_TEXT = 
+  "Usa prego il modulo seguente per aggiungere nuovi alias.";
+$ALIASES_ADD_SUBMIT_TEXT = $SUBMIT_STRING;
+
+$ALIASES_EDIT_HELP_TEXT = 
+  "Usa prego il modulo seguente per fare cambiamenti agli alias selezionati.";
+$ALIASES_EDIT_SUBMIT_TEXT = "Invia Cambiamenti";
+
+$ALIASES_REMOVE_HELP_TEXT = 
+  "Sei sicure che vuoi eliminare gli alias indicati sotto?";
+$ALIASES_REMOVE_SUBMIT_TEXT = "Sì, elimina i alias indicati sopra";
+
+$ALIASES_SORT_BY_NAME = "Ordina per Nome di Alias";
+$ALIASES_SORT_BY_ORDER = "Ordina per Ordine nel File";
+
+$ALIASES_SUCCESS_ADD_TEXT = 
+  "La tua richiesta di aggiungere alias è stata eseguita.";
+$ALIASES_SUCCESS_EDIT_TEXT = 
+  "La tua richiesta di modificare alias è stata eseguita.";
+$ALIASES_SUCCESS_REMOVE_TEXT =
+  "La tua richiesta di eliminare alias è stata eseguita.";
+
+$ALIASES_CANCEL_ADD_TEXT = 
+  "La tua richiesta di aggiungere alias è stata annullata.  Nessun'azione
+   è stata intrapresa.";
+$ALIASES_CANCEL_EDIT_TEXT = 
+  "La tua richiesta di modificare alias è stata annullata.  Nessun'azione
+   è stata intrapresa.";
+$ALIASES_CANCEL_REMOVE_TEXT = 
+  "La tua richiesta di eliminare alias è stata annullata.  Nessun'azione
+   è stata intrapresa.";
+
+$ALIASES_ERROR_NAME_FIELD_IS_BLANK =
+  "Il valore per il nome del alias è in bianco.";
+$ALIASES_ERROR_VALUE_FIELD_IS_BLANK =
+  "Il valore per la definizione alias è in bianco.";
+
+$ALIASES_ERROR_DUPLICATE_ADDITION = 
+  "Una definizione di alias per '__ALIAS__' già esiste.
+   I duplicati non sono permessi.";
+
+$ALIASES_CONFIRM_TEXT =
+  "Sotto trovi un elenco che ricapitola i cambiamenti che saranno
+   fatti al tuo file di alias.  Fai clic sul tasto 'Conferma' per effettuare
+   i cambiamenti.";
+$ALIASES_CONFIRM_ADD = "Aggiungi alias '__NAME__ => __VALUE__'";
+$ALIASES_CONFIRM_REMOVE = "Elimina alias '__NAME__ => __VALUE__'";
+$ALIASES_CONFIRM_CHANGE_1 = "Cambia alias '__NAME__ => __VALUE__'";
+$ALIASES_CONFIRM_CHANGE_2 = "&#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160;a '__NAME__ => __VALUE__'";
+
+##############################################################################
+# eof
+
+1;
+

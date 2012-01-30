@@ -1,0 +1,92 @@
+#
+# virtmaps strings
+#
+# $SMEId: local/imanager/strings/es/virtmaps,v 2.12 2004/08/27 18:27:47 rus Exp $
+#
+
+$VIRTMAPS_NO_MAPPINGS_EXIST = 
+  "Al parecer, tu archivo de virtmaps no incluye ninguna associacion
+   de direcci\xf3n virtual. Usa por favor la herramienta 'Agregar Virtmap'
+   para agregar una nueva associacion de direcci\xf3n virtual."; 
+
+$VIRTMAPS_SELECT_TITLE = "Escoje Virtmaps";
+$VIRTMAPS_SELECT_HELP = 
+  "Usa por favor la siguiente forma para escojer una or m\xe1s virtmaps.";
+
+$VIRTMAPS_OVERVIEW_HELP_TEXT = 
+  "Especifica una Direccion Virtual de E-mail (en la izquierda) la cual apuntara
+   a la Direccion Real de E-mail (en la derecha). La direcci\xf3n virtual de
+   e-mail puede ser una direcci\xf3n de e-mail completa (usuario\@dominio.com) o 
+   simplemente un dominio (dominio.com). Si escojes un dominio entonces e-mails
+   enviados a ese dominio ser\xe1n enviados a la direcci\xf3n real de e-mail
+   correspondiente que especificaste si ninguna de las asociaciones de direcciones
+   virtuales anteriores para ese dominio concuerdan. Esto es util como un
+   'catch-all' para e-mails que son enviados a alguna direcci\xf3n de un cierto
+   dominio.";
+
+$VIRTMAPS_EXAMPLES_HELP_TEXT_1 = "Considera los ejemplos siguentes:";
+$VIRTMAPS_EXAMPLES_HELP_TEXT_2 = 
+  "  Direccion Virtual de E-mail	  Direccion Real de E-mail
+  ----------------------                ------------------
+  webmaster\@dominiovirtual1.com		usuario\@correo.dialup.com
+  usuario\@dominiovirtual1.com		usuariolocal1
+  dominiovirtual1.com			usuario\@isp.com
+  # Nota: Correo de \"usuario desconocido\" a dominiovirtual1.com va a ir a usuario\@isp.com 
+
+  webmaster\@dominiovirtual2.com	usuariolocal2
+  usario\@dominiovirtual2.com		unusario\@aol.com
+  algo@\@dominiovirtual2.com		otrousuario\@hotmail.com
+  dominiovirtual2.com			usuariolocal2";
+
+$VIRTMAPS_VIRTUAL_EMAIL_ADDRESS = "Direccion Virtual de E-mail";
+$VIRTMAPS_REAL_EMAIL_ADDRESS = "Direccion Real de E-mail";
+
+$VIRTMAPS_VIRTMAP_PLACEMENT = "Lugar donde Poner Virtmap";
+$VIRTMAPS_VIRTMAP_PLACEMENT_APPEND = "poner al final del archivo";
+$VIRTMAPS_VIRTMAP_PLACEMENT_INSERT = "poner despues de __VIRTMAP__";
+
+$VIRTMAPS_ADD_HELP_TEXT = 
+  "Use por favor le siguiente forma para agregar asosiaciones de direcciones virtuales."; 
+$VIRTMAPS_ADD_SUBMIT_TEXT = $SUBMIT_STRING;
+
+$VIRTMAPS_EDIT_HELP_TEXT = 
+  "Use por favor la siguiente forma para hacer modificaciones a la(s)
+   asosiacion(es) de direccion(es) virtual(es) seleccionada(s).";
+$VIRTMAPS_EDIT_SUBMIT_TEXT = "Hacer Modificaciones";
+
+$VIRTMAPS_REMOVE_HELP_TEXT = 
+  "\xbfEstas seguro que quieres borrar permanentemente la(s) siguiente(s) virtmap(s)?"; 
+$VIRTMAPS_REMOVE_SUBMIT_TEXT = "Si, Borra la(s) Virtmap(s)";
+
+$VIRTMAPS_SORT_BY_NAME = "Ordena por Nombre de Virtmap";
+$VIRTMAPS_SORT_BY_ORDER = "Ordena por Orden de Archivo";
+
+$VIRTMAPS_SUCCESS_ADD_TEXT = "Tu peticion para Agragar la(s) Virtmap(s) fue procesada.";
+$VIRTMAPS_SUCCESS_EDIT_TEXT = "Tu peticion para Modificar la(s) Virtmap(s) fue procesada.";
+$VIRTMAPS_SUCCESS_REMOVE_TEXT = 
+  "Tu peticion para Borrar la(s) Virtmap(s) fue procesada.";
+
+$VIRTMAPS_CANCEL_ADD_TEXT = 
+  "Tu peticion para Agregar la(s) Virtmap(s) fue cancelada. No se tomo ninguna accion.";
+$VIRTMAPS_CANCEL_EDIT_TEXT = 
+  "Tu peticion para Modifica la(s) Virtmap(s) fue cancelada. No se tomo ninguna accion.";
+$VIRTMAPS_CANCEL_REMOVE_TEXT = 
+  "Tu peticion para Borrar la(s) Virtmap(s) fue cancelada. No se tomo ninguna accion.";
+
+$VIRTMAPS_ERROR_VIRTUAL_FIELD_IS_BLANK = 
+  "El valor de la direcci\xf3n virtual de e-mail est\xe1 vacio.";
+$VIRTMAPS_ERROR_REAL_FIELD_IS_BLANK = 
+  "El valor de la direcci\xf3n real de e-mail est\xe1 vacio.";
+
+$VIRTMAPS_ERROR_DUPLICATE_ADDITION = 
+  "La associacion de direcci\xf3n virtual '__VIRTMAP__' ya existe.
+   No se permiten duplicados.";
+
+$VIRTMAPS_CONFIRM_TEXT =
+  "Vea por favor abajo una lista con los cambios que se haran al archivo de
+   virtmaps. Precione el boton 'Confirmar' para efectuar los cambios.";
+$VIRTMAPS_CONFIRM_ADD = "Agregar virtmap '__VIRTUAL__ => __REAL__'"; 
+$VIRTMAPS_CONFIRM_REMOVE = "Borrar virtmap '__VIRTUAL__ => __REAL__'";
+$VIRTMAPS_CONFIRM_CHANGE_1 = "Modificar virtmap de '__VIRTUAL__ => __REAL__'";
+$VIRTMAPS_CONFIRM_CHANGE_2 = "&#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160;a '__VIRTUAL__ => __REAL__'";
+

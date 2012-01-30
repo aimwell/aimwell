@@ -1,0 +1,220 @@
+#
+# preferences strings
+#
+# $SMEId: local/imanager/strings/it/prefs,v 2.12 2004/08/27 18:27:49 rus Exp $
+#
+
+$PREFS_TITLE = "$SOFTWARE_TITLE: Preferenze per __USER_ID__";
+
+$PREFS_MAINMENU_TITLE = "Preferenze Menù Principale";
+$PREFS_EXPLANATION = 
+  "Usa i link seguenti per visualizzare e modificare le preferenze
+   per \"__USER_ID__\".";
+
+$PREFS_SUCCESS_TEXT = "Le tue preferenze sono state salvate con successo.";
+
+$PREFS_UNKNOWN_TEXT = 
+  "Il tipo di preferenza specificato ('__TYPE__') è sconosciuta.";
+
+##############################################################################
+# general preferences
+
+$PREFS_GENERAL_TEXT = "Preferenze Generali";
+
+$PREFS_STARTUP_MENU_TEXT = "$SOFTWARE_TITLE Menù Iniziale";
+$PREFS_STARTUP_MENU_HELP = 
+  "Dopo aver avuto accesso a $SOFTWARE_TITLE, puoi scegliere uno dei seguenti
+   come menù iniziale.";
+
+$PREFS_AUTH_DURATION_TEXT = "$SOFTWARE_TITLE Esci Automaticamente";
+$PREFS_AUTH_DURATION_HELP = 
+  "Il tempo (in minuti) dopo il quale le tue credenziali di
+   autorizzazione scadranno per inattività.  Per la tua sicurezza,
+   un massimo di 60 minuti è consigliato.";
+$PREFS_AUTH_DURATION_UNITS = "minuti";
+
+##############################################################################
+# language preferences
+
+$PREFS_LANGUAGE_TEXT = "Preferenze Lingua";
+
+$PREFS_DEFAULT_LANGUAGE_TEXT = "Lingua Default";
+$PREFS_DEFAULT_LANGUAGE_HELP = "Seleziona la lingua che preferisci:";
+
+$PREFS_DEFAULT_LANGUAGE_DA   = "Danese";
+$PREFS_DEFAULT_LANGUAGE_NL   = "Olandese";
+$PREFS_DEFAULT_LANGUAGE_NLBE = "Olandese-Belgio";
+$PREFS_DEFAULT_LANGUAGE_EN   = "Inglese";
+$PREFS_DEFAULT_LANGUAGE_FR   = "Francese";
+$PREFS_DEFAULT_LANGUAGE_DE   = "Tedesco";
+$PREFS_DEFAULT_LANGUAGE_IT   = "Italiano";
+$PREFS_DEFAULT_LANGUAGE_JA   = "Giapponese";
+$PREFS_DEFAULT_LANGUAGE_PT   = "Portoghese";
+$PREFS_DEFAULT_LANGUAGE_PTBR = "Portoghese-Brasile";
+$PREFS_DEFAULT_LANGUAGE_ES   = "Spagnolo";
+$PREFS_DEFAULT_LANGUAGE_SE   = "Svedese";
+
+##############################################################################
+# security preferences      
+  
+$PREFS_SECURITY_TEXT = "Preferenze Sicurezza";
+
+$PREFS_SECURITY_FORCE_HTTPS_TEXT = "Forza un collegamento sicuro";
+$PREFS_SECURITY_FORCE_HTTPS_HELP =
+  "Puoi forzare tutte le richieste non cifrate (non-SSL) 
+   orientandole ad una sessione SSL-cifrata. Naturalmente, forzare
+   questo  richiede che tu abbia SSL installato
+   sul tuo Virtual Server. Di default le sessioni non-SSL sono
+   permesse.";
+$PREFS_SECURITY_FORCE_HTTPS_YES = "Forza Collegamenti SSL";
+$PREFS_SECURITY_FORCE_HTTPS_NO = "Permetti Collegamenti non-SSL";
+
+$PREFS_SECURITY_IP_CHECK_TEXT =
+  "Richiedi L'Autenticazione Hostname (Controllo IP)";
+$PREFS_SECURITY_IP_CHECK_HELP =
+  "Una degli handshake di autenticazione effettuati è il  confronto
+   degli hostname (o degli indirizzi IP) con le sessioni successive.  Questo
+   confronto impedisce un accesso non autorizzato usanda la tua chiave di
+   autenticazione a qualunque macchina tranne a quella a cui la sessione ha
+   avuto iniziato.  Tuttavia, alcuni utenti possono collegarsi ad Internet tramite un
+   proxy con hostname (o Indirizzo IP) dinamico per ogni sessione
+   Di default, l'autenticazione del hostname (Controllo IP) è sempre eseguita.";
+$PREFS_SECURITY_IP_CHECK_YES = "Controlla IP";
+$PREFS_SECURITY_IP_CHECK_NO = "Non Controllare IP";
+
+##############################################################################
+# file manager preferences
+
+$PREFS_FILEMANAGER_TEXT = "Preferenze Gestione File";
+
+$PREFS_FILEMANAGER_DENIED_TEXT = 
+  "Il tuo profilo non include i privilegi 'ftp'.  Di conseguenza,
+   non puoi accedere alle preferenze Gestione File.";
+
+$PREFS_HIDE_ENTRIES_THAT_BEGIN_WITH_A_DOT_TEXT = 
+  "Nascondi le directory i cui nomi cominciano con un punto (.)";
+$PREFS_HIDE_ENTRIES_THAT_BEGIN_WITH_A_DOT_HELP = 
+  "Gli elenchi directory nella Gestione File possono includere directory
+   con nomi che cominciano con un punto (.) oppure ignorarle.  I file che cominciano 
+   con un punto sono solitamente classificati come 'file nascosti' e tipicamente sono
+   creati ed effettuati dalle applicazioni.  Di default, le directory 
+   con nomi che cominciano con un punto non sono indicate.";
+
+$PREFS_CONFIRM_FILE_REMOVE_TEXT = "Conferma Elimina File";
+$PREFS_CONFIRM_FILE_REMOVE_HELP = 
+  "Lo strumento Elimina File ti chiederà conferma prima dell'eliminazione 
+   del file .  Di default, una conferma è sempre richiesta.";
+
+$PREFS_CONFIRM_FILE_OVERWRITE_TEXT = "Conferma Sovrascrivi File";
+$PREFS_CONFIRM_FILE_OVERWRITE_HELP = 
+  "Alcuni strumenti della Gestione File ti chiederanno una conferma
+   se il risultato rchiede la sovrascrittura di un file.  
+   Di default, una conferma è sempre richiesta.";
+
+$PREFS_CONFIRM_DIR_CREATE_TEXT = "Confirma Crea Directory";
+$PREFS_CONFIRM_DIR_CREATE_HELP = 
+  "Alcuni strumenti della Gestione File ti chiederanno una conferma
+   se il risultato creerà una nuova directory.
+   Di default, una conferma è sempre richiesta.";
+
+$PREFS_CHMOD_DEFAULT_OPTION_TEXT = "Cambia Permessi Opzioni di Default";
+$PREFS_CHMOD_DEFAULT_OPTION_HELP = 
+  "Lo strumento Cambia Permessi mostra l'insieme delle opzioni
+   del file o directory selezionati.  Puoi scegliere
+   il valore di default.";
+
+$PREFS_UPLOAD_FILE_ELEMENTS_TEXT = "Numero di Elementi Modulo Trasferisci File";
+$PREFS_UPLOAD_FILE_ELEMENTS_HELP = 
+  "Lo strumento Traferisci File permette il trasferimento dei file locali
+   sul tuo server.  Il numero di
+   elementi del modulo visualizzati nel programma può essere specificato qui.
+   Di default sono 4.";
+$PREFS_UPLOAD_FILE_ELEMENTS_UNITS = "elementi nel modulo di trasferisci file";
+
+##############################################################################
+# mail manager preferences
+
+$PREFS_MAILMANAGER_TEXT = "Preferenze Gestione Posta";
+
+$PREFS_MAILMANAGER_DENIED_TEXT = 
+  "Il tuo profilo non include i privilegi per la 'posta'.  Di conseguenza,
+   non sarai permesso accedere alle preferenze di Gestione Posta.";
+
+$PREFS_NUM_MESSAGES_TEXT = "Numero di Messaggi da Visualizzare";
+$PREFS_NUM_MESSAGES_HELP = 
+  "Quando visualizzi una cartella posta, quanti messaggi desideri
+   vengano mostrati?  Il valore di default è 25.";
+$PREFS_NUM_MESSAGES_UNITS = "messaggi";
+
+$PREFS_CONFIRM_MAIL_REMOVE_TEXT = "Conferma Elimina Posta";
+$PREFS_CONFIRM_MAIL_REMOVE_HELP = 
+  "Lo strumento di Gestione Posta ti chiederà una conferma  prima
+   di eliminare un messaggio.  Di default, una conferma è sempre richiesta.";
+
+$PREFS_DEFAULT_MAIL_FOLDER_TEXT = "Directory di Default della Cartella Posta";
+$PREFS_DEFAULT_MAIL_FOLDER_HELP = 
+  "La directory di default della cartella di posta indica dove le tue 
+   cartelle di  posta risiederanno.  La Gestione Posta permette
+   il cambio la tua cartella attuale;
+   Le directory \"/Mail\" o \"/mail\" sono ottimali per la cartella posta di default.";
+
+$PREFS_MAIL_ATTACH_ELEMENTS_TEXT = "Numero di Elementi nel Modulo degli Allegati di Posta";
+$PREFS_MAIL_ATTACH_ELEMENTS_HELP_NO_FTP_PRIVS = 
+  "Quando scrivi messaggi, lo strumento Gestione Posta permette la selezione
+   dei file locali sul tuo computer che vorresti allegare  ad un messaggio 
+   in uscita.  Questi file vengono trasferiti attraverso un modulo 
+   Il numero di elementi massimo specificabile puo' essere scelto qui
+   Di default, sono 2.";
+$PREFS_MAIL_ATTACH_ELEMENTS_HELP_FULL_PRIVS = 
+  "Quando scrivi messaggi, lo strumento Gestione Posta permette di specificare
+   entrambi i file locali sul tuo computer ed i  file sul questo server che vorresti
+   allegare al messaggio in uscita. Questi file vengono trasferiti attraverso un modulo.
+   Il numero di elementi massimo specificabile puo' essere scelto qui.
+   Di default, sono 2.";
+$PREFS_UPLOAD_ATTACH_ELEMENTS_UNITS = "numero massimo di allegati";
+$PREFS_LOCAL_ATTACH_ELEMENTS_UNITS = "numero massimo di allegati sul server";
+
+##############################################################################
+# iroot preferences
+
+$PREFS_IROOT_TEXT = "Preferenze Strumenti e Wizard";
+
+$PREFS_IROOT_DENIED_TEXT = 
+  "Il tuo profilo non è considerato come profilo di 'root'.  Di conseguenza,
+   puoi settare le preferenze degli strumenti ed i wizard.";
+
+$PREFS_NUM_NEWUSERS_TEXT = "Numero di Nuovi Utenti da Aggiungere Contemporaneamente";
+$PREFS_NUM_NEWUSERS_HELP = 
+  "Il numero di nuovi utenti che possono essere aggiunti contemporaneamente usando
+   lo strumento Aggiungi Utente.  Di default è 1.";
+$PREFS_NUM_NEWUSERS_UNITS = "utenti nuovi";
+
+$PREFS_NUM_NEWALIASES_TEXT = "Numero di alias da Aggiungere Contemporaneamente";
+$PREFS_NUM_NEWALIASES_HELP = 
+  "Il numero di alias nuovi che possono essere aggiunti contemporaneamente usando
+   lo strumento Aggiungi alias.  Di default è 3.";
+$PREFS_NUM_NEWALIASES_UNITS = "nuovi alias";
+
+$PREFS_NUM_NEWVIRTMAPS_TEXT = "Numero di Virtmaps Nuovi da Aggiungere Contemporaneamente";
+$PREFS_NUM_NEWVIRTMAPS_HELP = 
+  "Il numero di virtmaps nuovi che possono essere aggiunti contemporaneamente usando
+   lo strumento Aggiungi Virtmaps.  Di default è 5.";
+$PREFS_NUM_NEWVIRTMAPS_UNITS = "virtmaps nuovi";
+
+$PREFS_NUM_NEWSPAMMERS_TEXT = "Numero di Spammers Nuovi da Aggiungere Contemporaneamente";
+$PREFS_NUM_NEWSPAMMERS_HELP = 
+  "Il numero di spammers nuovi che possono essere aggiunti contemporaneamente usando
+   lo strumento Aggiungi Spammers.  Di default è 5.";
+$PREFS_NUM_NEWSPAMMERS_UNITS = "spammers nuovi";
+
+$PREFS_NUM_NEWVHOSTS_TEXT = "Numero di Subhost Virtuali da Aggiungere Contemporaneamente";
+$PREFS_NUM_NEWVHOSTS_HELP = 
+  "Il numero di subhost virtuali nuovi che possono essere aggiunti contemporaneamente usando
+   lo strumento Aggiungi Subhost Virtuali. Di default è 1.";
+$PREFS_NUM_NEWVHOSTS_UNITS = "subhost virtuali nuovi";
+
+##############################################################################
+# eof
+
+1;
+

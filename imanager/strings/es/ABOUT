@@ -1,0 +1,13 @@
+-----------------------------------------------------------
+GerenteElectronico, Paquete de Administraci\xf3n del Servidor
+Virtual escrito por Rus Berrett
+
+GerenteElectronico es un grupo de herramientas que permiten
+al administrador del Servidor Virtual ejecutar tareas por
+medio de un navegador de web. Las herramientas incluyen un
+Cordinador de Archivos y un Cordinador de Correo. Otras 
+herramientas tambi\xe9n est\xe1n disponibles al administrador.
+
+-----------------------------------------------------------
+Contribuciones de codigo por Dan Brian, el libro O'Reilly Programming
+Perl, y la biblioteca perl5 MIME.

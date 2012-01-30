@@ -1,0 +1,382 @@
+#
+# file manager strings
+#
+# $SMEId: local/imanager/strings/es/filemanager,v 2.12 2004/08/27 18:27:47 rus Exp $
+#
+
+$FILEMANAGER_TITLE = "$SOFTWARE_TITLE: Cordinador de Archivos - __FILE__";
+
+$FILEMANAGER_HOMEDIR = "PRINCIPAL";
+
+##############################################################################
+# some generic error strings
+
+$FILEMANAGER_DENIED_TITLE = "$SOFTWARE_TITLE: Cordinador de Archivos - Acceso Negado";
+$FILEMANAGER_DENIED_TEXT = 
+  "Tu perfil no incluye privilegios de 'ftp'. Por esta razon
+   no tendras acceso a las herramientas del Cordinador de Archivos."; 
+
+$FILEMANAGER_HOMEDIR_INVALID_TITLE = 
+  "$SOFTWARE_TITLE: Cordinador de Archivos - Directorio Principal Invalido";
+$FILEMANAGER_HOMEDIR_INVALID_TEXT = 
+  "Al parece el directorio principal de tu perfil no existe. Por esta
+   razon no tendras acceso a las herramientas del Cordinador de Archivos.";
+
+$FILEMANAGER_NOTFOUND_TITLE = 
+  "$SOFTWARE_TITLE: Cordinador de Archivos - Recurso Perdido";
+$FILEMANAGER_NOTFOUND_TEXT = 
+  "Que raro... parece que el archivo que seleccionaste no existe!";
+
+$FILEMANAGER_RESOURCE_ERROR_TITLE = 
+  "$SOFTWARE_TITLE: Cordinador de Archivos - Error de Recurso."; 
+$FILEMANAGER_RESOURCE_ERROR_TEXT = 
+  "Un error ocurio tratando de ejecutar una order __RESOURCE__ .
+   En seguida es dada una descripcion del error.";
+
+$FILEMANAGER_SOURCE_TARGET_IDENTICAL_ERROR = 
+  "El archivo de destinacion \"__TARGET__\" es identico al
+   archivo de origen \"__SOURCE__\".";
+
+$FILEMANAGER_NO_CLOBBER_ERROR = 
+  "El archivo de origen \"__SOURCE__\" que seleccionaste es un directorio.
+   Sin embargo, el archivo de destinacion \"__TARGET__\" que especificaste
+   es un archivo que ya existe. Tu no puedes borrar un archivo que ya 
+   existe con un directorio. Borra por favor el archivo que ya existe.";
+
+$FILEMANAGER_FILE_IN_TARGET_PATH_ERROR = 
+  "El lugar del archivo de destinacion \"__TARGET__\" que especificaste
+   uncluye un lugar \"__SUBPATH__\" el cual es un archivo que ya existe.
+   Para poder terminar tu peticion, tendras que borrar el archivo que
+   ya existe.";
+
+$FILEMANAGER_FILETYPE_INVALID_ERROR = 
+  "El archivo de origen \"__SOURCE__\" que has seleccionado es de tipo __LCTYPE__. 
+   Este tipo de archivo es invalido para esa herramienta.";
+
+$FILEMANAGER_PERMISSION_DENIED = 
+  "Permiso para entrar/modificar al lugar \"__PATH__\" no es permitido.";
+
+$FILEMANAGER_EMPTY_FIELD_ERROR = 
+  "Se te olvido poner un valor para __NAME__.";
+
+##############################################################################
+# some common file manager utility strings
+
+$FILEMANAGER_CWD = "Directorio Actual"; 
+$FILEMANAGER_CONFIRM_OVERWRITE = "Sobreescribe y Continua"; 
+$FILEMANAGER_CONFIRM_CREATEDIR = "Crear Directorio y Continuar";
+
+##############################################################################
+# file and directory browser strings
+
+$FILEMANAGER_CURFILE = "Archivo Actual";
+$FILEMANAGER_CURDIR = "Directorio Actual";
+
+$FILEMANAGER_TOTAL_ENTRIES = "Total";
+$FILEMANAGER_ENTRY_DIRECTORY = "directorio";
+$FILEMANAGER_ENTRY_DIRECTORY_PLURAL = "directorios";
+$FILEMANAGER_ENTRY_FILE = "archivo";
+$FILEMANAGER_ENTRY_FILE_PLURAL = "archivos";
+$FILEMANAGER_ENTRY_SYMLINK = "enlace simbolico";
+$FILEMANAGER_ENTRY_SYMLINK_PLURAL = "enlaces simb\xf3licos";
+$FILEMANAGER_ENTRY_HIDDEN = "__FILES__ archivos `escondidos'";
+$FILEMANAGER_ENTRY_CAN_BE_HIDDEN = "__FILES__ archivos que pueden ser escondidos";
+
+$FILEMANAGER_DIRECTORY_CONTENTS = "Contenido del Directorio";
+$FILEMANAGER_DIRECTORY_CONTENTS_STATUS = 
+  "El contenido del siguiente directorio est\xe1 al corriente con fecha __TIME__";
+
+$FILEMANAGER_ACTIONS = "Acciones";
+
+$FILEMANAGER_TYPE = "Tipo de Archivo";
+$FILEMANAGER_TYPE_ASCII = "ASCII";
+$FILEMANAGER_TYPE_BINARY = "Binario";
+$FILEMANAGER_TYPE_SYMLINK = "Enlace Simbolico";
+$FILEMANAGER_TYPE_FILE = "Archivo";
+$FILEMANAGER_TYPE_DIRECTORY = "Directorio";
+
+$FILEMANAGER_MIMETYPE = "Tipo de MIME";
+$FILEMANAGER_TARGET = "Destino";
+$FILEMANAGER_FILESIZE = "Tama\xf1o del Archivo";
+$FILEMANAGER_MTIME = "Hora de la Ultima Modificacion";
+
+$FILEMANAGER_PERMS = "Permisos de __TYPE__";
+$FILEMANAGER_PERMS_READABLE = "Leible";
+$FILEMANAGER_PERMS_WRITABLE = "Escribible";
+$FILEMANAGER_PERMS_EXECUTABLE = "Ejecutable";
+$FILEMANAGER_PERMS_NONE = "Ningun(a)";
+$FILEMANAGER_PERMS_OWNER = "dueno";
+$FILEMANAGER_PERMS_GROUP = "grupo";
+$FILEMANAGER_PERMS_OTHERS = "otros";
+
+$FILEMANAGER_JUMP_TEXT = "Ir directamente a";
+$FILEMANAGER_JUMP_HELP = "agregar lugar aqu\xed";
+
+##############################################################################
+# create new directory strings
+
+$FILEMANAGER_ACTIONS_CREATEDIR = "Crear Directorio Nuevo";
+$FILEMANAGER_ACTIONS_CREATEDIR_TARGET = "Nombre del Directorio Nuevo";
+$FILEMANAGER_ACTIONS_CREATEDIR_NEW_TEXT = "DIRECTORIO_NUEVO";
+$FILEMANAGER_ACTIONS_CREATEDIR_CANCEL = $CANCEL_STRING;
+$FILEMANAGER_ACTIONS_CREATEDIR_CANCEL_TEXT = 
+  "Tu peticion para crear el directorio fue cancelada; no se tomo ninguna accion.";
+$FILEMANAGER_ACTIONS_CREATEDIR_ALREADY_EXIST_ERROR = 
+  "El nombre del directorio \"__TARGET__\" que especificaste ya existe!.";
+$FILEMANAGER_ACTIONS_CREATEDIR_NO_CLOBBER_ERROR = 
+  "El lugar del directorio \"__TARGET__\" que especificaste en un
+   archivo que ya existe. No puedes borrar un archivo on un directorio.
+   Borra por favor al archivo que ya existe.";
+$FILEMANAGER_ACTIONS_CREATEDIR_SUCCESS_TEXT = 
+  "Tu peticion para Crear el Directorio fue terminada sin problemas. En
+   seguida es mostrado el directorio nuevo.";
+
+##############################################################################
+# create new file strings
+
+$FILEMANAGER_ACTIONS_NEWFILE = "Crear Archivo Nuevo";
+$FILEMANAGER_ACTIONS_NEWFILE_TARGET = "Nombre del Arhivo Nuevo";
+$FILEMANAGER_ACTIONS_NEWFILE_NEW_TEXT = "ARCHIVO_NUEVO";
+$FILEMANAGER_ACTIONS_NEWFILE_ENF = "Modificar Archivo que acabas de Crear";
+$FILEMANAGER_ACTIONS_NEWFILE_CANCEL = $CANCEL_STRING;
+$FILEMANAGER_ACTIONS_NEWFILE_CANCEL_TEXT = 
+  "Tu peticion para crear el archivo fue cancelada; no se tomo ninguna accion.";
+$FILEMANAGER_ACTIONS_NEWFILE_CONFIRM_OVERWRITE_TEXT = 
+  "Al parecer el Nombre del Archivo que escojiste (\"__FILE__\")
+   est\xe1 asociado con un recurso que ya existe. If quieres borrar
+   este archivo, selecciona el boton \"$FILEMANAGER_CONFIRM_OVERWRITE\". Si
+   no quieres borrar este archivo, puedes cancelar tu peticion.";
+$FILEMANAGER_ACTIONS_NEWFILE_CONFIRM_CREATEDIR_TEXT = 
+  "Al parecer el Nombre del Archivo que escojiste (\"__FILE__\")
+   contiene especificaciones de un directorio que no existe. Si continuas,
+   el directorio sera creado para que tu peticion de crear un archivo nuevo
+   pueda ser terminada. Para confirmar tu peticion, escoje por favor el
+   boton \"$FILEMANAGER_CONFIRM_CREATEDIR\". Si no quieres crear el
+   directorio, puedes cancelar tu peticion.";
+
+$FILEMANAGER_ACTIONS_NEWFILE_NO_CLOBBER_ERROR = 
+  "El nombre del archivo \"__TARGET__\" que escojiste parece que ya existe
+   como un directorio!. Antes de que te sea permitido crear un archivo con
+   el nombre que escojiste, vas a tener que primero borrar el directorio
+   que ya existe con el mismo nombre.";
+$FILEMANAGER_ACTIONS_NEWFILE_SUCCESS_TEXT = 
+  "Tu peticion para Crear el Archivo fue terminada sin problemas.
+   Enseguida es mostrado el archivo nuevo.";
+$FILEMANAGER_ACTIONS_NEWFILE_SUCCESS_EDIT_TEXT = 
+  "Tu peticion para Crear el Archivo fue terminada sin problemas. Puedes
+   ahora modificar el archivo que acabas de crear con la siguiente forma.";
+
+##############################################################################
+# upload file strings
+
+$FILEMANAGER_ACTIONS_UPLOADFILE = "Cargar Archivo";
+$FILEMANAGER_ACTIONS_UPLOADFILE_SOURCE = "Nombre del Archivo en tu Computadora";
+$FILEMANAGER_ACTIONS_UPLOADFILE_SOURCE_HELP = 
+  "Usa el boton Navegar para escojer el archivo que cargar.";
+$FILEMANAGER_ACTIONS_UPLOADFILE_TARGET = "Nombre remoto del Archivo";
+$FILEMANAGER_ACTIONS_UPLOADFILE_TARGET_HELP = 
+  "Si se deja vacio, el nombre del archivo local sera usado.";
+$FILEMANAGER_ACTIONS_UPLOADFILE_CANCEL = $CANCEL_STRING;
+$FILEMANAGER_ACTIONS_UPLOADFILE_CANCEL_UPLOAD_TEXT = 
+  "Your upload file request was cancelled; no action was taken."; 
+  "Tu peticion para cargar el archivo fue terminada sin problemas; no
+   se tomo ningua accion.";
+$FILEMANAGER_ACTIONS_UPLOADFILE_QUOTA_ERROR = 
+  "Tu peticion para Cargar el Archivo (con un total de __NUMBER__ bytes)
+   no pudo ser terminada por l\xedmites de espacio en el servidor. Vas a necesitar
+   hacer espacio borrando archivos que no necesites o tendras que pedirle a
+   tu administrador del servidor m\xe1s espacio";
+$FILEMANAGER_ACTIONS_UPLOADFILE_CONFIRM_OVERWRITE_TEXT = 
+  "Al parecer los siguientes Nombres de Archivos que escojiste est\xe1n
+   asocioados con recursos que ya existen. Si quieres borrar estos 
+   archivos escoje el boton \"$FILEMANAGER_CONFIRM_OVERWRITE\". Si no
+   quieres borrar estos archivos, puedes cancelar tu peticion.";
+$FILEMANAGER_ACTIONS_UPLOADFILE_CONFIRM_CREATEDIR_TEXT = 
+  "Al parecer los siguientes nombres de Archivos que escojiste incluyen
+   la especificacion de un directorio que no existe. Si continuas,
+   directorios ser\xe1n creados para que tu peticion de cargar el archivo
+   pueda ser terminada. Para confirmar tu peticion, escoje el boton
+   \"$FILEMANAGER_CONFIRM_CREATEDIR\". Si no quieres crear directorios
+   nuevos, puedes cancelar tu peticion.";
+$FILEMANAGER_ACTIONS_UPLOADFILE_CONFIRM_NOTE = 
+  "(Nota: Tus archivos han sido cargados y guardados temporalmente en tu
+   directorio principal. Estos archivos temporales ser\xe1n borrados si 
+   decides cancelar la confirmacion de esta peticion.)";
+$FILEMANAGER_ACTIONS_UPLOADFILE_SUCCESS_SINGLE_TEXT = 
+  "Tu peticion para Cargar Archivos fue terminada sin problemas. Enseguida
+   es mostrado el archivo nuevo.";
+$FILEMANAGER_ACTIONS_UPLOADFILE_SUCCESS_MULTIPLE_TEXT = 
+  "Tu peticion para Cargar Archivos fue terminada sin problemas. Enseguida
+   son mostrados los archivos nuevos.";
+
+##############################################################################
+# view file strings
+
+$FILEMANAGER_ACTIONS_VIEW = "Ver Archivo";
+$FILEMANAGER_ACTIONS_DOWNLOAD = "Bajar Archivo";
+
+##############################################################################
+# edit file strings
+
+$FILEMANAGER_ACTIONS_EDIT = "Modificar Archivo";
+$FILEMANAGER_ACTIONS_EDIT_SAVE = "Guardar Archivo Modificado";
+$FILEMANAGER_ACTIONS_EDIT_CANCEL = "Cancelar y Tirar Modificaciones";
+$FILEMANAGER_ACTIONS_EDIT_TEXT = 
+  "Usa la siguiente forma para modificar el archivo, \"__FILE__\".
+   Si quieres guardar las modificaciones que hagas al archivo, selecciona
+   el boton \"$FILEMANAGER_ACTIONS_EDIT_SAVE\". Si decides cancelar
+   y tirar las modificaciones un boton sera proporcionado."; 
+
+$FILEMANAGER_ACTIONS_EDIT_WRAP_OFF = "Apagar Word-wrapping";
+$FILEMANAGER_ACTIONS_EDIT_WRAP_VIRTUAL = "Word-wrapping Suave";
+$FILEMANAGER_ACTIONS_EDIT_WRAP_PHYSICAL = "Word-wrapping Duro";
+$FILEMANAGER_ACTIONS_EDIT_WRAP_HELP_TITLE =
+  "Ayuda con las Opciones de Word-wrapping";
+$FILEMANAGER_ACTIONS_EDIT_WRAP_HELP_TEXT =
+  "Las opciondes de word-wrapping especifican como word-wrapping es usado
+   al modificar archivos. WRAP='off' apaga word-wrapping completamente,
+   por ejemplo los unicos caracteres de linea nueva son aquellos incluidos
+   especificamente o que son incluidos con el archivo.";
+$FILEMANAGER_ACTIONS_EDIT_WRAP_HELP_TEXT_SOFT =
+  "WRAP='soft' hace un word-wrapping virtual, por ejemplo, caracteres de
+   linea nueva son introducidos para asegurar que el texto quepa dentro
+   del elemento del archivo modificado, pero estor caracteres no son incluidos
+   con los datos cuando el archivo modificado es mandado.";
+$FILEMANAGER_ACTIONS_EDIT_WRAP_HELP_TEXT_HARD =
+  "WRAP='hard', debe de causar word-wrapping igual que WRAP='soft',
+   pero en este case los caracteres de linea nueva deben ser incluidos
+   con los datos cuando el archivo modificado es mandado.";
+
+$FILEMANAGER_ACTIONS_EDIT_QUOTA_ERROR = 
+  "Tu peticion para guardar \"__FILE__\" no pudo ser terminada por l\xedmites
+   de espacio en el servidor. Vas a necesitar hacer espacio borrando
+   archivos que no necesites o tendras que pedirle a tu administrador del
+   servidor m\xe1s espacio";
+$FILEMANAGER_ACTIONS_EDIT_SAVE_TEXT = 
+  "Tus cambios fueron guardadas sin problemas; Enseguida est\xe1 la 
+   fecha de modificacion del archivo.";
+$FILEMANAGER_ACTIONS_EDIT_SAVE_HTTPD_CONF_TEXT = 
+  "Tu cambios al archivo httpd.conf fueron guardados sin problemas. Tu
+   servidor de web debe estar comenzando otra ves. Espera por favor unos
+   segundos antes de continuar usando $SOFTWARE_TITLE.";
+$FILEMANAGER_ACTIONS_EDIT_CANCEL_TEXT = 
+  "Tu peticion para modificar el archivo fue cancelada y los cambios que
+   hiciste al archivo fueron descartados.";
+
+##############################################################################
+# copy file strings
+
+$FILEMANAGER_ACTIONS_COPY = "Copiar __TYPE__";
+$FILEMANAGER_ACTIONS_COPY_SOURCE = "Origen __TYPE__";
+$FILEMANAGER_ACTIONS_COPY_TARGET = "Nombre de Destino";
+$FILEMANAGER_ACTIONS_COPY_OF_TEXT = "COPIA_DE";
+$FILEMANAGER_ACTIONS_COPY_SUBMIT = "Hacer copia de __TYPE__";
+$FILEMANAGER_ACTIONS_COPY_CANCEL = $CANCEL_STRING;
+$FILEMANAGER_ACTIONS_COPY_TEXT_FILE = 
+  "Puedes hacer una copia del archivo, \"__FILE__\", escojiendo un 
+   nombre con la siguiente forma. El 'Nombre de Destinacion' no tiene
+   que estar necesariamente en el mismo directorio donde est\xe1 el archivo
+   de origen.";
+$FILEMANAGER_ACTIONS_COPY_TEXT_DIRECTORY = 
+  "Puedes hacer una copia del directorio, \"__FILE__\", (y copiar recursivamente
+   todo el contenido en el directorio) especificando un nombre de directorio
+   usando la siguiente forma. El 'Nombre de Destinacion' no tiene que estar en el
+   mismo directorio que el archivo de origen"; 
+$FILEMANAGER_ACTIONS_COPY_CANCEL_TEXT = 
+  "Tu peticion para copiar el recurso fue cancelada; no se tomo ninguna accion";
+$FILEMANAGER_ACTIONS_COPY_CONFIRM_OVERWRITE_TEXT = 
+  "Al parecer el Nombre de Destinacion que escojiste (\"__FILE__\")
+   tiene que ver con un recurso que ya existe. Si quieres borrar este
+   archivo, escoke el boton \"$FILEMANAGER_CONFIRM_OVERWRITE\". Si no 
+   quieres borrar este archivo, puedes cancelar la peticion.";
+$FILEMANAGER_ACTIONS_COPY_CONFIRM_CREATEDIR_TEXT = 
+  "Al parecer el Nombre de Destinacion que escojiste (\"__FILE__\")
+   incluye un directorio que no existe. Si continuas, el directorio sera
+   creado para poder terminar tu peticion. Para confirmar escoje el boton
+   \"$FILEMANAGER_CONFIRM_CREATEDIR\". Si no quieres crear el directorio
+   puedes cancelar la peticion.";
+$FILEMANAGER_ACTIONS_COPY_QUOTA_ERROR = 
+  "Tu peticion para copiar \"__SOURCE__\" a \"__TARGET__\" no pudo ser
+   terminada por l\xedmites de espacio en el servidor. Vas a necesitar
+   hacer espacio borrando archivos que no necesites o tendras que pedirle a
+   tu administrador del servidor m\xe1s espacio";
+$FILEMANAGER_ACTIONS_COPY_SUCCESS_TEXT = 
+  "Tu peticion para Copiar __TYPE__ fue terminada sin problema. El __LCTYPE__
+   nuevo es mostrado enseguida.";
+
+##############################################################################
+# rename/move file strings
+
+$FILEMANAGER_ACTIONS_RENAME = "Renombrar (Mover) __TYPE__";
+$FILEMANAGER_ACTIONS_RENAME_SOURCE = "Nombre Original de __TYPE__ (Lugar)";
+$FILEMANAGER_ACTIONS_RENAME_TARGET = "Nombre Nuevo de __TYPE__ (Lugar)";
+$FILEMANAGER_ACTIONS_RENAME_TEXT = "COPIA_DE";
+$FILEMANAGER_ACTIONS_RENAME_SUBMIT = "Renombrar (Mover) __TYPE__";
+$FILEMANAGER_ACTIONS_RENAME_CANCEL = $CANCEL_STRING;
+$FILEMANAGER_ACTIONS_RENAME_TEXT = 
+  "Puedes cambiar el nombre (o mover) __LCTYPE__, \"__FILE__\", escojiendo
+   un nombre (o lugar) con la siguiente forma. El 'Nombre Nuevo __TYPE__' no
+   tiene que estar en el mismo directorio (ej. puedes cambiar nombre y mover
+   al mismo tiempo.)";
+$FILEMANAGER_ACTIONS_RENAME_CANCEL_TEXT = 
+  "Tu peticion para cambiar nombre (mover) al recurso fue cancelada; no se tomo
+   ninguna acccion.";
+$FILEMANAGER_ACTIONS_RENAME_CONFIRM_OVERWRITE_TEXT = 
+  "Al parecer el Nombre Nuevo __TYPE__ que escojiste (\"__FILE__\")
+   indetifica a un recurso que ya existe. Si quieres sobreescribir
+   este archivo selecciona el boton \"$FILEMANAGER_CONFIRM_OVERWRITE\". Si
+   no quieres borrar este archivo, puedes cancelar tu peticiont.";
+$FILEMANAGER_ACTIONS_RENAME_CONFIRM_CREATEDIR_TEXT = 
+  "Al parecer el Nombre Nuevo __TYPE__ que seleccionaste (\"__FILE__\")
+   incluye especificaciones de un directorio que no existe. Si continuas,
+   el directorio sera creado para que tu peticion de cambiar nombre (mover)
+   sea terminada. Para confirmar tu peticion, selecciona por favor el 
+   boton \"$FILEMANAGER_CONFIRM_CREATEDIR\". Si no quieres crear el
+   directorio puedes cancelar la peticion.";
+$FILEMANAGER_ACTIONS_RENAME_SUCCESS_TEXT = 
+  "Tu peticion para Cambiar Nombre (Mover) __TYPE__ fue terminada sin problemas.";
+
+##############################################################################
+# remove file strings
+
+$FILEMANAGER_ACTIONS_REMOVE = "Borrar __TYPE__";
+$FILEMANAGER_ACTIONS_REMOVE_NAME = "Nombre __TYPE__ Seleccionado";
+$FILEMANAGER_ACTIONS_REMOVE_DIRCONTENTS = "Borrar Contenido de Directorio";
+$FILEMANAGER_ACTIONS_REMOVE_CONFIRM_SINGLE = "Si, Borra Este __TYPE__";
+$FILEMANAGER_ACTIONS_REMOVE_CONFIRM_SINGLE_TEXT = 
+  "\xbfEstas seguro que quieres borrar __LCTYPE__, \"__FILE__\", el cual
+   escojiste?";
+$FILEMANAGER_ACTIONS_REMOVE_CONFIRM_MULTIPLE = "Si, Borra Todo";
+$FILEMANAGER_ACTIONS_REMOVE_CONFIRM_MULTIPLE_TEXT = 
+  "El directorio que escojiste no est\xe1 vacio, \xbfest\xe1s seguro que quieres
+   borrar todos los archivos en este directorio?";
+$FILEMANAGER_ACTIONS_REMOVE_KEPD = "Mantener Directorio Padre Vacio";
+$FILEMANAGER_ACTIONS_REMOVE_CANCEL = $CANCEL_STRING;
+$FILEMANAGER_ACTIONS_REMOVE_CANCEL_TEXT = 
+  "Tu peticion para borrar el recurso fue cancelada; no se tomo ninguna accion.";
+$FILEMANAGER_ACTIONS_REMOVE_SUCCESS_TEXT = 
+  "Tu peticion para Borrar __TYPE__ fue terminada sin ningun problema.";
+
+##############################################################################
+# chmod file strings
+
+$FILEMANAGER_ACTIONS_CHMOD = "Modificar Permisos";
+$FILEMANAGER_ACTIONS_CHMOD_NAME = "Nombre de __TYPE__ Seleccionado";
+$FILEMANAGER_ACTIONS_CHMOD_CURRENT = "Actual $FILEMANAGER_PERMS";
+$FILEMANAGER_ACTIONS_CHMOD_NEW = "Permisos Nuevos";
+$FILEMANAGER_ACTIONS_CHMOD_SUBMIT = "Dar Permisos Nuevos";
+$FILEMANAGER_ACTIONS_CHMOD_ADVANCED_OPTS = "Opciones Avanzadas";
+$FILEMANAGER_ACTIONS_CHMOD_BASIC_OPTS = "Opciones Basicas";
+$FILEMANAGER_ACTIONS_CHMOD_CANCEL = $CANCEL_STRING;
+$FILEMANAGER_ACTIONS_CHMOD_CANCEL_TEXT = 
+  "Tu peticion para cambiar los permisos fue cancelada; no se tomo ninguna accion.";
+  
+$FILEMANAGER_ACTIONS_CHMOD_SUCCESS_TEXT = 
+  "Your change permissions request was successfully fulfilled.";
+  "Tu peticion para cambiar permisos fue terminada sin problemas.";
+
+##############################################################################
+# eof
+
+1;
+

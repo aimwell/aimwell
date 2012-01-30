@@ -1,0 +1,235 @@
+#
+# mail manager strings
+#
+# $SMEId: local/imanager/strings/de/mailmanager,v 2.12.2.1 2006/02/07 19:02:01 rus Exp $
+#
+
+$MAILMANAGER_TITLE = "$SOFTWARE_TITLE: Mail Manager - __MAILBOX__";
+
+##############################################################################
+# some generic error strings
+
+$MAILMANAGER_DENIED_TITLE = "$SOFTWARE_TITLE: Mail Manager - Zugriff verweigert";
+$MAILMANAGER_DENIED_TEXT = 
+  "Ihr Benutzerprofil enthält keine Berechtigungen für 'mail'. Deshalb
+   ist es Ihnen nicht gestattet die Mail Manager Utilities zu benutzen.";
+$MAILMANAGER_PERMISSION_DENIED = 
+  "Zugriff auf den Pfad \"__PATH__\" ist nicht gestattet.";
+
+$MAILMANAGER_RESOURCE_ERROR_TITLE = 
+  "$SOFTWARE_TITLE: Mail Manager - Ressourcenfehler";
+$MAILMANAGER_RESOURCE_ERROR_TEXT = 
+  "Bei der Ausführung eines Befehls ist ein Fehler aufgetreten. Eine
+   Fehlerbeschreibung sehen Sie unten:";
+
+$MAILMANAGER_MESSAGE_NOT_FOUND_TEXT = 
+  "Seltsam... das Postfach \"__MAILBOX__\" enthält die
+   von Ihnen angegebene Nachricht (\"__MESSAGEID__\") nicht.";
+
+$MAILMANAGER_FOLDER_EMPTY_TEXT = 
+  "Das Postfach \"__MAILBOX__\" enthält keine Nachrichten.";
+
+$MAILMANAGER_NONE_SELECTED = 
+  "Sie haben keine Nachrichten ausgewählt... Uups.";
+
+##############################################################################
+# mailbox and message view strings
+
+$MAILMANAGER_DEFAULT_FOLDER = "INBOX";
+
+$MAILMANAGER_FOLDER_NAME = "Aktueller Mailordner";
+$MAILMANAGER_FOLDER_NUM_MESSAGES = "gesamte Nachrichten";
+$MAILMANAGER_FOLDER_SIZE = "Größe des Mailordners";
+
+$MAILMANAGER_ACTIONS = "Aktionen";
+
+$MAILMANAGER_MESSAGE_DATE = "Datum";
+$MAILMANAGER_MESSAGE_TO = "An";
+$MAILMANAGER_MESSAGE_SENDER = "Von";
+$MAILMANAGER_MESSAGE_SUBJECT = "Betreff";
+$MAILMANAGER_MESSAGE_NUMBER = "Nachricht #";
+$MAILMANAGER_MESSAGE_SIZE = "Nachrichtengröße";
+$MAILMANAGER_MESSAGE_SIZE_ABBREVIATED = "Größe";
+$MAILMANAGER_MESSAGE_REPLY_TO = "Antwort an";
+$MAILMANAGER_MESSAGE_CC = "Cc";
+$MAILMANAGER_MESSAGE_BCC = "Bcc";
+$MAILMANAGER_MESSAGE_FCC = "Kopie von gesendeter E-Mail in Mailordner speichern";
+
+$MAILMANAGER_SORT_BY_DATE = "Nach Datum sortieren";
+$MAILMANAGER_SORT_BY_SENDER = "Nach Absender sortieren";
+$MAILMANAGER_SORT_BY_SUBJECT = "Nach Betreff sortieren";
+$MAILMANAGER_SORT_BY_SIZE = "Nach Größe sortieren";
+
+$MAILMANAGER_SHOW_FULL_HEADERS = "Komplette Kopfzeilen anzeigen";
+$MAILMANAGER_SHOW_PARTIAL_HEADERS = "Verkürzte Kopfzeilen anzeigen";
+
+$MAILMANAGER_PRINTER_FRIENDLY_FORMAT = "Druckerfreundliches Format";
+
+$MAILMANAGER_MESSAGE_NOT_SHOWN = "originaler __TYPE__ E-Mail nicht angezeigt";
+$MAILMANAGER_MESSAGE_VIEW_TYPE = "E-Mail __TYPE__ separat anzeigen";
+$MAILMANAGER_MESSAGE_VIEW_SEPARATELY = "Separat anzeigen";
+
+$MAILMANAGER_ATTACHMENT_NOT_SHOWN = "originaler __TYPE__ Anhang nicht angezeigt";
+$MAILMANAGER_ATTACHMENT_VIEW_TYPE = "Anhang __TYPE__ separat anzeigen";
+$MAILMANAGER_ATTACHMENT_VIEW_SEPARATELY = "Separat anzeigen";
+
+$MAILMANAGER_NO_SUBJECT = "[ kein Betreff ]";
+
+$MAILMANAGER_CREATEDIR = "E-Mail Verzeichnis erstellen";
+
+$MAILMANAGER_FOLDER_SELECT_CURDIR = "Aktuelles Verzeichnis: __DIR__";
+$MAILMANAGER_FOLDER_SELECT_SYMLINK = "Link";
+$MAILMANAGER_FOLDER_SELECT_MESSAGES = "Nachrichten";
+$MAILMANAGER_FOLDER_SELECT_SHOW_DETAILS = "Details zeigen";
+$MAILMANAGER_FOLDER_SELECT_HIDE_DETAILS = "Details verbergen";
+
+$MAILMANAGER_CHECK_MAIL = "Auf neue Nachrichten prüfen";
+
+$MAILMANAGER_FOLDER_CONTENTS = "Inhalt des Mailordners";
+$MAILMANAGER_FOLDER_CONTENTS_STATUS = "Von: __TIME__";
+
+$MAILMANAGER_MESSAGE_TAG = "Tag";
+$MAILMANAGER_MESSAGE_FLAGS = "Merker";
+
+$MAILMANAGER_MESSAGE_PREV = "Vorherige";
+$MAILMANAGER_MESSAGE_NEXT = "Nächste";
+
+$MAILMANAGER_FLAGS_TITLE = "Nachrichtenmerker";
+$MAILMANAGER_FLAGS_HELP_N = "N - neue oder ungelesene Nachricht";
+$MAILMANAGER_FLAGS_HELP_r = "r - Nachricht wurde beantwortet";
+$MAILMANAGER_FLAGS_HELP_PLUS = "+ - Nachricht ist für Sie und nur für Sie";
+$MAILMANAGER_FLAGS_HELP_T = "T - Nachricht ist für Sie (und Andere)";
+$MAILMANAGER_FLAGS_HELP_C = "C - Nachricht wurde Ihnen 'cc' geschickt";
+$MAILMANAGER_FLAGS_HELP_F = "F - Nachricht ist von Ihnen";
+   
+##############################################################################
+# compose message strings
+
+$MAILMANAGER_COMPOSE = "Neue Nachricht erstellen";
+$MAILMANAGER_COMPOSE_CANCEL_TEXT = 
+  "Das Erstellen eine neuen Nachricht wurde abgebrochen; es wurde keine Aktion durchgeführt.";
+
+$MAILMANAGER_MESSAGE_ORIGINAL_ATTACHMENTS = "Anhänge in Originalnachricht";
+$MAILMANAGER_MESSAGE_UPLOAD_ATTACHMENTS = 
+  "Dateien auf Ihrem Computer als Anhang hinzufügen";
+$MAILMANAGER_MESSAGE_LOCAL_ATTACHMENTS = 
+  "Dateien auf dem Server als Anhang hinzufügen";
+$MAILMANAGER_MESSAGE_LOCAL_ATTACHMENTS_BROWSE = "Browsen";
+
+##############################################################################
+# bounce message strings
+
+$MAILMANAGER_BOUNCE = "Nachricht zurückweisen";
+$MAILMANAGER_BOUNCE_CANCEL_TEXT = 
+  "Das Zurückweisen der Nachricht wurde abgebrochen; es wurde keine Aktion durchgeführt.";
+$MAILMANAGER_BOUNCE_HELP_TEXT = 
+  "An welche Adresse(n) wollen Sie die Originalnachricht zurücksenden?";
+$MAILMANAGER_BOUNCE_ORIGINAL_MESSAGE = "Originalnachricht";
+
+##############################################################################
+# forward message strings
+
+$MAILMANAGER_FORWARD = "Nachricht weiterleiten";
+$MAILMANAGER_FORWARD_CANCEL_TEXT = 
+  "Die Weiterleitung der Nachricht wurde abgebrochen; es wurde keien Aktion durchgeführt.";
+$MAILMANAGER_FORWARD_STRING_BEGIN = 
+  "===== Weitergeleitete Nachricht von __EMAIL__ =====";
+$MAILMANAGER_FORWARD_STRING_END = "===== Ende der weitergeleiteten Nachricht =====";
+
+$MAILMANAGER_ATTACHMENT_INCLUDE_FORWARD = "Weitergeleitete Nachricht einschließen";
+
+##############################################################################
+# reply to message strings
+
+$MAILMANAGER_REPLY = "Nachricht beantworten";
+$MAILMANAGER_REPLY_GROUP = "Allen antworten";
+$MAILMANAGER_REPLY_CANCEL_TEXT = 
+  "Die beantwortung der Nachricht wurde abgebrochen; es wurden keine Aktionen durchgeführt.";
+$MAILMANAGER_REPLY_STRING = "Am __DATE__ schrieb __EMAIL__:";
+
+$MAILMANAGER_NO_SUBJECT_REPLY = "Ihre E-Mail";
+
+$MAILMANAGER_ATTACHMENT_INCLUDE_RESPONSE = "In die Antwort einschließen";
+
+##############################################################################
+# send message strings
+
+$MAILMANAGER_SEND = "Senden";
+$MAILMANAGER_SEND_ERROR_TO_EMPTY = 
+  "Sie haben keine '$MAILMANAGER_MESSAGE_TO' Adresse angegeben... Uups.";
+$MAILMANAGER_SEND_ERROR_TO_INVALID = 
+  "Die angegebene Adresse \"__EMAIL__\" enthält ein ungültiges Zeichen.
+   Gültige Zeichen für Adressen sind A-Z, a-z, 0-9, Bindestriche,
+   Unterstriche, Punkte und das Kaufmannsund (&).";
+$MAILMANAGER_SEND_ERROR_FROM_EMPTY = 
+  "Sie haben keine '$MAILMANAGER_MESSAGE_SENDER' Adresse angegeben... Uups.";
+$MAILMANAGER_SEND_ERROR_UPLOAD_FILE_LOST = 
+  "Achtung: Ihre upgeloadeden Dateien wurden ignoriert und müssen zurückgesetzt werden.";
+
+$MAILMANAGER_SEND_SUCCESS = "Ihre Nachricht wurde erfolgreich verschickt.";
+$MAILMANAGER_SEND_SUCCESS_REPLY = "Ihre Antwort wurde erfolgreich verschickt.";
+$MAILMANAGER_SEND_SUCCESS_BOUNCE = 
+  "Diese nachricht wurde erfolgreich an __ADDRESS__ zurükgeschickt.";
+
+##############################################################################
+# delete message strings
+
+$MAILMANAGER_DELETE_TAGGED = "Markierte Nachrichten löschen";
+$MAILMANAGER_DELETE_ALL = "Alle Nachrichten löschen";
+$MAILMANAGER_DELETE_SINGLE = "Nachricht löschen";
+$MAILMANAGER_DELETE_CANCEL_TEXT = 
+  "Der Löschvorgang wurde abgebrochen; es wurde keine Aktion durchgeführt.";
+$MAILMANAGER_DELETE_CONFIRM_TEXT = 
+  "Sind Sie sicher, dass Sie die folgende(n) Nachicht(en) löschen wollen?";
+$MAILMANAGER_DELETE_CONFIRM_ALL_TEXT = 
+  "Sind Sie sicher, dass Sie alle Nachrichten im Postfach 
+   (\"__MAILBOX__\") löschen wollen?";
+$MAILMANAGER_DELETE_SUCCESS_TEXT = 
+  "Der Löschvorgang wurde erfolgreich durchgeführt.";
+
+##############################################################################
+# save message strings
+
+$MAILMANAGER_SAVE_TAGGED = "Markierte Nachrichten speichern";
+$MAILMANAGER_SAVE_ALL = "Alle Nachrichten speichern";
+$MAILMANAGER_SAVE_SINGLE = "Nachricht speichern";
+$MAILMANAGER_SAVE_ALL_HELP_TEXT = 
+  "Sie haben eine Funktion zum Speichern aller Nachrichten des gewählten Postfachs
+   \"__MAILBOX__\" in ein zu bestimmendes Zielverzeichnisinto aufgerufen.";
+$MAILMANAGER_SAVE_SELECTED_HELP_TEXT = 
+  "Sie haben die folgende(n) __NUMBER__ Nachricht(en) gewählt:";
+$MAILMANAGER_SAVE_SELECTED_CROPPED_TEXT = "__NUMBER__ andere";
+$MAILMANAGER_SAVE_SELECT_HELP_TEXT =
+  "Bitte benutzen Sie untenstehendes Formular, um einen Mailordner zu wählen, zu dem
+   Ihre gewählten Nachrichten hinzugefügt werden sollen. Eine Dateiauswahl steht Ihnen 
+   zur Verfügung.";
+$MAILMANAGER_SAVE_CANCEL_TEXT = 
+  "Der Speichervorgang wurde abgebrochen; es wurde keine Aktion durchgeführt.";
+$MAILMANAGER_SAVE_SUCCESS_TEXT = 
+  "Ihre Nachricht wurde erfolgreich gespeichert.";
+$MAILMANAGER_SAVE_DENIED_TEXT = 
+  "Ihr Benutzerprofil enthält keine Rechte zur FTP-Nutzung. Deshalb ist es Ihnen
+   nicht gestattet, Nachrichten auf dem Virtuellen Server zu speichern.";
+
+##############################################################################
+# select mailbox strings
+
+$MAILMANAGER_SELECT_MAILBOX = "Mailordner wechseln";
+$MAILMANAGER_SELECT_MAILBOX_HELP_TEXT =
+  "Benutzen Sie das folgende Formular, um Ihren aktiven Mailordner zu wechseln.  
+   Eine Dateiauswahl steht Ihnen zur Verfügung.";
+$MAILMANAGER_SELECT_INCOMING = 
+  "(Benutzen Sie '!' um von Ihrem aktiven Mailordner wie der zu Ihrem Posteingang zu wechseln).";
+$MAILMANAGER_SELECT_CANCEL_TEXT = 
+  "Das Wechseln in einen anderen Mailordner wurde abgebrochen; es wurde keine Aktion durchgeführt.";
+$MAILMANAGER_SELECT_ERROR_FOLDER_DOES_NOT_EXIST = 
+  "Der angegebene Mailordner existiert nicht.";
+$MAILMANAGER_SELECT_DENIED_TEXT = 
+  "Ihr Benutzerprofil enthält keine FTP-Berechtigungen. Deshalb ist
+   es Ihnen nicht gestattet in einen anderen Mailordner zu wechseln.";
+
+##############################################################################
+# eof
+
+1;
+
