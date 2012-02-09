@@ -1,4 +1,0 @@
-VERSION=	iManager 2.12.4
-MASTER_SITE=	http://imanager.berrett.org/imanager/
-MASTER_TYPE=	stable
-TIMESTAMP=      1149599166

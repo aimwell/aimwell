@@ -1,8 +1,0 @@
-Options FollowSymLinks ExecCGI
-AddType application/x-httpd-cgi .cgi
-DirectoryIndex index.cgi
-
-<Limit GET POST>
-allow from all
-</Limit>
-
